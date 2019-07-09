@@ -44,7 +44,7 @@ const loopTheConfigs = function(reportID, configData) {
 	return null;
 };
 
-const makeReports = false; // set this to false for testing, it's a lot faster!
+const makeReports = true; // set this to false for testing, it's a lot faster!
 
 exports.createPages = ({ actions, graphql }) => {
 	const { createPage } = actions;
