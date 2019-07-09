@@ -1,0 +1,37 @@
+{
+	"report": {
+		"id": "dieng",
+		"title": "Dieng Temple Complex Excavation Report",
+		"author": "Prepared by Team Projek Dieng 2010, Jurusan Arkeologi, Fakultas Ilmu Budaya, and Universitas Gadjah Mada. Translated by Goh Geok Yian and John N. Miksic. Editors: Mahirta Sasongko, Goh Geok Yian, Widya Nayati, and John N. Miksic",
+		"titleShort": "Dieng",
+		"projectTitle": "Southeast Asian Archaeological Site Reports",
+		"texts": [{
+			"id": "background",
+			"name": "Part One: Background and Previous Research at the Dieng Temple Complex"
+		}, {
+			"id": "implementation",
+			"name": "Part Two: Implementation of Research"
+		}, {
+			"id": "excavationdharmacala",
+			"name": "Excavation in the Dharmacala Sector"
+		}, {
+			"id": "excavationsfootballfield",
+			"name": "Excavations in the Football Field Sector"
+		}, {
+			"id": "excavationgatotkaca",
+			"name": "Excavation in the Gatotkaca Sector"
+		}, {
+			"id": "excavationstp2",
+			"name": "Excavations in the TP2 Sector"
+		}, {
+			"id": "batuhitambelitungshipwreck",
+			"name": "Dieng and the Batuhitam/Belitung Shipwreck"
+		}, {
+			"id": "acknowledgements",
+			"name": "Acknowledgements"
+		}, {
+			"id": "bibliography",
+			"name": "Bibliography"
+		}]
+	}
+}

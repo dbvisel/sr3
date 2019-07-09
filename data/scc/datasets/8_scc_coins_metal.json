@@ -1,0 +1,1813 @@
+{"dataset": {
+	"reportID": "scc",
+	"id": "8_scc_coins_metal",
+	"name": "Metal",
+	"header": "SCC Database:",
+	"googleURL": "1sAsAoLIEsQchCgOXPIxGLTRUyBgz7eT4563iYo4Q9kY",
+	"lastSynched": "18 January 2018",
+	"dataSetGroup": "Artifact data",
+	"orderInGroup": 4,
+	"source": "Dec 19 2017/SCC coins metal.docx",
+	"editedDate": "10 January 2018",
+	"defaultSort": "hiddenOrder",
+	"fields": [{
+			"fieldKey": "hiddenOrder",
+			"fieldName": "Default Order",
+			"fieldHidden": true
+		},
+		{
+			"fieldKey": "material",
+			"fieldName": "Material"
+		},
+		{
+			"fieldKey": "square",
+			"fieldName": "Square"
+		},
+		{
+			"fieldKey": "spit",
+			"fieldName": "Spit",
+			"fieldTransform": "toLowerCase",
+			"sortMethod": "integer"
+		},
+		{
+			"fieldKey": "date",
+			"fieldName": "Date"
+		},
+		{
+			"fieldKey": "number",
+			"fieldName": "Number"
+		},
+		{
+			"fieldKey": "weight",
+			"fieldName": "Weight"
+		},
+		{
+			"fieldKey": "type",
+			"fieldName": "Type",
+			"fieldTransform": "titleCase"
+		},
+		{
+			"fieldKey": "remarks",
+			"fieldName": "Remarks",
+			"fieldTransform": "toLowerCase"
+		},
+		{
+			"fieldKey": "dynasty",
+			"fieldName": "Dynasty",
+			"fieldTransform": "titleCase"
+		},
+		{
+			"fieldKey": "inscription",
+			"fieldName": "Inscription"
+		}
+	],
+	"data": [{
+			"hiddenOrder": 1,
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "N Song",
+			"inscription": "Huang Song Tong bao",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 2,
+			"material": "Coins",
+			"square": "",
+			"spit": "10A",
+			"date": "",
+			"dynasty": "N Song",
+			"inscription": "Huang Song TonG bao “value 2” [iron]",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 3,
+
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7 FALLEN WALL",
+			"date": "",
+			"dynasty": "N SONG",
+			"inscription": "ZHENG HE TONG BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 4,
+
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "N SONG",
+			"inscription": "SHENG SONG YUAN BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 5,
+
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7 FALLEN WALL",
+			"date": "",
+			"dynasty": "N SONG",
+			"inscription": "JING DE YUAN BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 6,
+
+			"material": "Coins",
+			"square": "TP2",
+			"spit": "9",
+			"date": "25-04-03",
+			"dynasty": "N SONG",
+			"inscription": "YUAN FENG TONG BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 7,
+
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "N SONG",
+			"inscription": "XUAN HE TONG BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 8,
+
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "N SONG",
+			"inscription": "XI NING YUAN BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 9,
+
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "N SONG",
+			"inscription": "HUANG SONG TONG BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 10,
+
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "N SONG",
+			"inscription": "SHENG SONG YUAN BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 11,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "10A",
+			"date": "",
+			"dynasty": "N SONG",
+			"inscription": "YUAN FENG TONG BAO [VALUE TWO]",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 12,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "70-80 CM",
+			"date": "19-04-03",
+			"dynasty": "N SONG",
+			"inscription": "JIA YU TONG BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 13,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "70-80 CM",
+			"date": "19-04-03",
+			"dynasty": "N SONG",
+			"inscription": "XI NING YUAN BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 14,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "70-80",
+			"date": "19-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": "ILLEGIBLE 2 COIN PANCAKE"
+		},
+		{
+			"hiddenOrder": 15,
+
+			"material": "Coins",
+			"square": "TP2",
+			"spit": "8",
+			"date": "25-04-03",
+			"dynasty": "N SONG",
+			"inscription": "HUANG SONG TONG BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 16,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "7",
+			"date": "",
+			"dynasty": "N SONG",
+			"inscription": "JING (?) DE (YUAN BAO?)",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 17,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "7",
+			"date": "",
+			"dynasty": "N SONG",
+			"inscription": "ZHENG HE TONG BAO/",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 18,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "",
+			"date": "",
+			"dynasty": "",
+			"inscription": "XUAN HE TONGBAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 19,
+
+			"material": "Coins",
+			"square": "TP1",
+			"spit": "6",
+			"date": "",
+			"dynasty": "",
+			"inscription": "KAI YUAN TONG BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 20,
+
+			"material": "Coins",
+			"square": "TP3",
+			"spit": "7",
+			"date": "",
+			"dynasty": "N SONG",
+			"inscription": "DA GUAN TONG BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 21,
+
+			"material": "Coins",
+			"square": "TP2",
+			"spit": "COLLAPSED PROFILE",
+			"date": "27-04-03",
+			"dynasty": "N SONG",
+			"inscription": "ZHI DAO YUAN BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 22,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "9",
+			"date": "20-04-03",
+			"dynasty": "S SONG",
+			"inscription": "SHUN XI YUAN BAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 23,
+
+			"material": "Coins",
+			"square": "TP1",
+			"spit": "9",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "FRAGMENT",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 24,
+
+			"material": "Coins",
+			"square": "",
+			"spit": "70-80",
+			"date": "19-04-03",
+			"dynasty": "N SONG",
+			"inscription": "(HUANG?) SONG TONGBAO",
+			"number": "",
+			"weight": "",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 25,
+
+			"material": "Coins",
+			"square": "Various locations",
+			"spit": "",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "3",
+			"weight": "",
+			"type": "",
+			"remarks": "DISTORTED COINS: 3 INTACT"
+		},
+		{
+			"hiddenOrder": 26,
+
+			"material": "Coins",
+			"square": "Various locations",
+			"spit": "",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "",
+			"type": "",
+			"remarks": "DISTORTED COINS: ¾ INTACT"
+		},
+		{
+			"hiddenOrder": 27,
+
+			"material": "Coins",
+			"square": "Various locations",
+			"spit": "",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "8",
+			"weight": "",
+			"type": "",
+			"remarks": "DISTORTED COINS: 8 FRAGMENTS"
+		},
+		{
+			"hiddenOrder": 28,
+
+			"material": "Iron",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "15",
+			"weight": "20",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 29,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "9",
+			"date": "20-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "51",
+			"weight": "176",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 30,
+
+			"material": "Iron",
+			"square": "TP3",
+			"spit": "8",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "3",
+			"weight": "2",
+			"type": "PLATES",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 31,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "8",
+			"date": "19-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "30",
+			"weight": "75",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 32,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "8",
+			"date": "25-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "52",
+			"weight": "145",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 33,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "10",
+			"date": "25/04/03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "59",
+			"weight": "144",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 34,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "15",
+			"date": "22/04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "5",
+			"type": "PLATE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 35,
+
+			"material": "Iron",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "26",
+			"weight": "92",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 36,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "7",
+			"date": "23-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "44",
+			"weight": "201",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 37,
+
+			"material": "Iron",
+			"square": "TP3",
+			"spit": "7",
+			"date": "25-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "96",
+			"weight": "455",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 38,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "COLLAPSED PROFILE",
+			"date": "27-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "12",
+			"weight": "89",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 39,
+
+			"material": "Iron",
+			"square": "PROFILE",
+			"spit": "9",
+			"date": "21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "4",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 40,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "11A",
+			"date": "21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "7",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 41,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "13A",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "8",
+			"weight": "12",
+			"type": "ARTIFACTS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 42,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "9",
+			"date": "25-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "14",
+			"weight": "117",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 43,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "7",
+			"date": "18-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "138",
+			"weight": "926",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 44,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "8",
+			"date": "24-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "120",
+			"weight": "376",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 45,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "9",
+			"date": "20/21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "41",
+			"weight": "273",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 46,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "9",
+			"date": "20/21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "25",
+			"weight": "247",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 47,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "10",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "3",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 48,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "10A",
+			"date": "21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "32",
+			"weight": "113",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 49,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "7",
+			"date": "18-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "25",
+			"weight": "334",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 50,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "8",
+			"date": "20-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "18",
+			"weight": "251",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 51,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "3",
+			"date": "17-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "10",
+			"weight": "87",
+			"type": "SLAG/MODERN",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 52,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "3",
+			"date": "17-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "10",
+			"type": "BULLET CASING",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 53,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "3",
+			"date": "20-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "30",
+			"weight": "45",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 54,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "9",
+			"date": "30-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "11",
+			"type": "ARTIFACT",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 55,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "6",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "15",
+			"weight": "205",
+			"type": "NAILS ARTIFACTS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 56,
+
+			"material": "Iron",
+			"square": "3",
+			"spit": "8",
+			"date": "28-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "15",
+			"weight": "42",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 57,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "7",
+			"date": "18-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "38",
+			"weight": "36",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 58,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "8",
+			"date": "19-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "49",
+			"weight": "209",
+			"type": "NAILS, SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 59,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "6",
+			"date": "17-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "4",
+			"weight": "45",
+			"type": "NAILS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 60,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "13",
+			"date": "24-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "10",
+			"type": "ARTIFACT",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 61,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "8",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "80",
+			"weight": "121",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 62,
+
+			"material": "Iron",
+			"square": "1",
+			"spit": "9",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "ARTIFACT",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 63,
+
+			"material": "Iron",
+			"square": "TP3",
+			"spit": "7",
+			"date": "20-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "3",
+			"type": "ARTIFACT",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 64,
+
+			"material": "Iron",
+			"square": "",
+			"spit": "7",
+			"date": "18-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "15",
+			"weight": "176",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 65,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "8",
+			"date": "24-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "7",
+			"weight": "114",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 66,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "10A",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "6",
+			"weight": "8",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 67,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "3",
+			"weight": "10",
+			"type": "NAILS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 68,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "8",
+			"date": "25-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "17",
+			"weight": "177",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 69,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "11A",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "9",
+			"weight": "10",
+			"type": "ARTIFACTS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 70,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "7",
+			"date": "18-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "8",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 71,
+
+			"material": "Iron",
+			"square": "",
+			"spit": "70-80",
+			"date": "16-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "20",
+			"type": "SLAG",
+			"remarks": "628"
+		},
+		{
+			"hiddenOrder": 72,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "10",
+			"date": "26-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "5",
+			"weight": "17",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 73,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "12",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "4",
+			"type": "NAIL",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 74,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "12",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "7",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 75,
+
+			"material": "Iron",
+			"square": "",
+			"spit": "",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "2",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 76,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "11",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "6",
+			"weight": "16",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 77,
+
+			"material": "Iron",
+			"square": "",
+			"spit": "11",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "2",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 78,
+
+			"material": "Iron",
+			"square": "TP3",
+			"spit": "6",
+			"date": "28-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "9",
+			"weight": "34",
+			"type": "NAIL, SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 79,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "6",
+			"date": "17-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "6",
+			"weight": "15",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 80,
+
+			"material": "Iron",
+			"square": "",
+			"spit": "11",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "12",
+			"weight": "37",
+			"type": "NAILS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 81,
+
+			"material": "Iron",
+			"square": "TP1",
+			"spit": "10A",
+			"date": "21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "2",
+			"type": "STONE+IRON",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 82,
+
+			"material": "Iron",
+			"square": "TP2",
+			"spit": "9",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "9",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 83,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "PLATE, ROUNDED RIM",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 84,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "8",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "2",
+			"type": "BELL",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 85,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "9",
+			"date": "20-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "PLATE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 86,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "6",
+			"date": "17-04-03`",
+			"dynasty": "",
+			"inscription": "",
+			"number": "7",
+			"weight": "5",
+			"type": "PERCUSSION CAPS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 87,
+
+			"material": "Copper",
+			"square": "TP3",
+			"spit": "7",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "PLATE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 88,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "8",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "5",
+			"weight": "1",
+			"type": "PRILLS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 89,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "7",
+			"date": "18-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "10",
+			"weight": "5",
+			"type": "PLATES",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 90,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "8",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "1",
+			"type": "PLATE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 91,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "8",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "7",
+			"weight": "4",
+			"type": "WIRE, RIM, PLATES",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 92,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "TAG (MODERN)",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 93,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "9",
+			"date": "21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "15",
+			"type": "BAR",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 94,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "9",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "PLATE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 95,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "6",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "1",
+			"type": "LOOP (LEATHER STRAP)",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 96,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "12",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "MINIHORN",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 97,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "",
+			"date": "25-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "2",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 98,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "4",
+			"type": "THICK WIRE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 99,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "10A",
+			"date": "24-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "15",
+			"type": "HANDLE (KETTLE)",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 100,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "7",
+			"weight": "12",
+			"type": "WIRES, TUBES, 1 PERCUSSION CAP",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 101,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "1",
+			"date": "22-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "3",
+			"weight": "11",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 102,
+
+			"material": "Copper",
+			"square": "TP3",
+			"spit": "8",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "PRILL",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 103,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "9",
+			"date": "20-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "67",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 104,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "10A",
+			"date": "24-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "4",
+			"type": "WIRE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 105,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "5",
+			"date": "17-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "4",
+			"weight": "11",
+			"type": "3 PERCUSSION CAPS, 1 BOLT",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 106,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "8",
+			"date": "25-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "6",
+			"type": "PLATE, RIM",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 107,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "3",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "PERCUSSION CAP",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 108,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "9",
+			"date": "21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "5",
+			"type": "1 BAR, FRAGMENTS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 109,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "8",
+			"date": "24-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "2",
+			"type": "PLATE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 110,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "7",
+			"date": "18-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "2",
+			"type": "FLANGE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 111,
+
+			"material": "Copper",
+			"square": "TP3",
+			"spit": "7",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "34",
+			"type": "METAL ADHESION ON EWARE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 112,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "8",
+			"date": "18-04=03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "16",
+			"weight": "13",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 113,
+
+			"material": "Copper",
+			"square": "TP3",
+			"spit": "7",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "2",
+			"type": "PLATE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 114,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "10A",
+			"date": "24-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "3",
+			"weight": "3",
+			"type": "PRILLS",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 115,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "7",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "7",
+			"type": "HIGH IRON CONTENT XRF",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 116,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "8",
+			"date": "19-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "4",
+			"weight": "11",
+			"type": "DISTORTED PLATES",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 117,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "7",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "PRILL",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 118,
+
+			"material": "Copper",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 119,
+
+			"material": "Copper",
+			"square": "TP2",
+			"spit": "6",
+			"date": "24-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "2",
+			"type": "CURVED RIM",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 120,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "10",
+			"date": "21-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "1",
+			"type": "WIRE",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 121,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "7",
+			"date": "18-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "6",
+			"weight": "8",
+			"type": "BANGLES, BARS, GEAR WHEEL",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 122,
+
+			"material": "Copper",
+			"square": "TP1",
+			"spit": "6",
+			"date": "",
+			"dynasty": "",
+			"inscription": "",
+			"number": "2",
+			"weight": "4",
+			"type": "BUTTON, PERCUSSION CAP",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 123,
+
+			"material": "Copper",
+			"square": "TP3",
+			"spit": "7",
+			"date": "29-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "3",
+			"type": "SLAG",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 124,
+
+			"material": "Lead/Tin",
+			"square": "TP2",
+			"spit": "9",
+			"date": "25-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "13",
+			"type": "",
+			"remarks": ""
+		},
+		{
+			"hiddenOrder": 125,
+
+			"material": "Lead/Tin",
+			"square": "TP2",
+			"spit": "",
+			"date": "27-04-03",
+			"dynasty": "",
+			"inscription": "",
+			"number": "1",
+			"weight": "7",
+			"type": "WAGON WHEEL",
+			"remarks": ""
+		}
+	]
+}}

@@ -1,0 +1,40 @@
+{
+	"report": {
+		"id": "lingga",
+		"title": "The Lingga Wreck: An Early 12th Century Southeast Asian Ship with a Chinese Cargo",
+		"author": "John N. Miksic et al.",
+		"titleShort": "Lingga",
+		"projectTitle": "Southeast Asian Archaeological Site Reports",
+		"texts": [{
+			"id": "introduction",
+			"name": "1. Introduction"
+		}, {
+			"id": "investigation",
+			"name": "2. Investigation and Excavation"
+		}, {
+			"id": "nonceramicartefacts",
+			"name": "3. Non-Ceramic Artefacts"
+		}, {
+			"id": "ceramicscargocatalogue",
+			"name": "4. The Ceramics Cargo Catalogue"
+		}, {
+			"id": "datingtheship",
+			"name": "5. Dating the Ship"
+		}, {
+			"id": "shiporigin",
+			"name": "6. Ship Origin"
+		}, {
+			"id": "sailingroute",
+			"name": "7. Sailing Route"
+		}, {
+			"id": "conclusion",
+			"name": "8. Conclusion"
+		}, {
+			"id": "acknowledgements",
+			"name": "9. Acknowledgements"
+		}, {
+			"id": "bibliography",
+			"name": "References"
+		}]
+	}
+}

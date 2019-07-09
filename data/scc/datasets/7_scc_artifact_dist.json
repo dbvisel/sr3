@@ -1,0 +1,2619 @@
+{
+	"dataset": {
+		"reportID": "scc",
+		"id": "7_scc_artifact_dist",
+		"name": "SCC Artifact Distribution by Square and Spit",
+		"source": "Dec 19 2017/SCC ARTIFACT DISTRIBUTION BY SQUARE AND SPIT.docx",
+		"editedDate": "10 January 2018",
+		"googleURL": "1tWmXrAbyMjpDl8uHiuGgCcR_D0-GLh2YFw9nETrhuxQ",
+		"lastSynched": "18 January 2018",
+		"dataSetGroup": "Summary data",
+		"orderInGroup": 4,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "majorType",
+				"fieldName": "Major Type"
+			},
+			{
+				"fieldKey": "unit",
+				"fieldName": "Unit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "type",
+				"fieldName": "Type"
+			},
+			{
+				"fieldKey": "numbers",
+				"fieldName": "Numbers",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldName": "Weight",
+				"sortMethod": "integer"
+			}
+		],
+		"data": [{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "2",
+				"numbers": "5",
+				"weight": "107"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "3",
+				"numbers": "38",
+				"weight": "338"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "4",
+				"numbers": "7",
+				"weight": "190"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "62",
+				"weight": "131"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "2735",
+				"weight": "3259"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "4773",
+				"weight": "8901"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "1930",
+				"weight": "3483"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "10",
+				"numbers": "842",
+				"weight": "753"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "10A",
+				"numbers": "278",
+				"weight": "1131"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "11",
+				"numbers": "151",
+				"weight": "219"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "11A",
+				"numbers": "316",
+				"weight": "994"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "12A",
+				"numbers": "111",
+				"weight": "155"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "13A",
+				"numbers": "193",
+				"weight": "327"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "14",
+				"numbers": "54",
+				"weight": "96"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "1",
+				"spit": "15",
+				"numbers": "33",
+				"weight": "17"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "46",
+				"weight": "170"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "368",
+				"weight": "790"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "1302",
+				"weight": "2705"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "190",
+				"weight": "552"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "2",
+				"spit": "10",
+				"numbers": "106",
+				"weight": "267"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "2",
+				"spit": "11",
+				"numbers": "53",
+				"weight": "17"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "3",
+				"spit": "5",
+				"numbers": "15",
+				"weight": "97"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "3",
+				"weight": "21"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "1857",
+				"weight": "3286"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "146",
+				"weight": "228"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Bases",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "5",
+				"weight": "37"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Bases",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "13",
+				"weight": "214"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Bases",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "12",
+				"weight": "101"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Bases",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "3",
+				"weight": "104"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Bases",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "4",
+				"weight": "29"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Bases",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "2",
+				"weight": "17"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "21",
+				"weight": "17"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "369",
+				"weight": "448"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "670",
+				"weight": "1017"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "4",
+				"weight": "23"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "61",
+				"weight": "122"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "261",
+				"weight": "547"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "46",
+				"weight": "124"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "504",
+				"weight": "628"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Decorative Features",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "44",
+				"weight": "38"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "4",
+				"weight": "18"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "309",
+				"weight": "698"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "373",
+				"weight": "1117"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "189",
+				"weight": "613"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "8",
+				"weight": "49"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "42",
+				"weight": "118"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "114",
+				"weight": "589"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "22",
+				"weight": "118"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "1",
+				"weight": "5"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "202",
+				"weight": "745"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Rims",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "14",
+				"weight": "38"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "37",
+				"weight": "95"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "2069",
+				"weight": "2176"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "3527",
+				"weight": "6632"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "1294",
+				"weight": "2074"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "38",
+				"weight": "121"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "266",
+				"weight": "515"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "861",
+				"weight": "1460"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "1151",
+				"weight": "1613"
+			},
+			{
+				"majorType": "Earthenware",
+				"type": "Earthenware Body Sherds",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "1239",
+				"weight": "1689"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "2",
+				"numbers": "12",
+				"weight": "166"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "3",
+				"numbers": "105",
+				"weight": "561"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "4",
+				"numbers": "26",
+				"weight": "190"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "27",
+				"weight": "232"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "2553",
+				"weight": "10990"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "2096",
+				"weight": "10289"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "965",
+				"weight": "7371"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "10",
+				"numbers": "289",
+				"weight": "1008"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "10A",
+				"numbers": "419",
+				"weight": "2975"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "11",
+				"numbers": "48",
+				"weight": "526"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "11A",
+				"numbers": "148",
+				"weight": "1649"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "12",
+				"numbers": "1",
+				"weight": "2"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "12A",
+				"numbers": "11",
+				"weight": "463"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "13A",
+				"numbers": "46",
+				"weight": "335"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "14",
+				"numbers": "24",
+				"weight": "95"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "1",
+				"spit": "15",
+				"numbers": "8",
+				"weight": "11"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "2",
+				"spit": "4",
+				"numbers": "3",
+				"weight": "82"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "182",
+				"weight": "761"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "1406",
+				"weight": "8112"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "35",
+				"weight": "958"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "295",
+				"weight": "1346"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "2",
+				"spit": "10",
+				"numbers": "50",
+				"weight": "363"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "2",
+				"spit": "11",
+				"numbers": "95",
+				"weight": "653"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "3",
+				"spit": "5",
+				"numbers": "22",
+				"weight": "180.5"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "97",
+				"weight": "952"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "1297",
+				"weight": "7448"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware",
+				"unit": "3",
+				"spit": "10",
+				"numbers": "637",
+				"weight": "11"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware Body Sherds",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "16",
+				"weight": "122"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware Body Sherds",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "2427",
+				"weight": "9359"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Stoneware Body Sherds",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "1893",
+				"weight": "1161"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "8",
+				"weight": "51"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "65",
+				"weight": "735"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "72",
+				"weight": "758"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "39",
+				"weight": "636"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "6",
+				"weight": "69"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "11",
+				"weight": "50"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "25",
+				"weight": "345"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "14",
+				"weight": "130"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "13",
+				"weight": "253"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Decorative Stoneware",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "57",
+				"weight": "635"
+			},
+
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "3",
+				"weight": "59"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "43",
+				"weight": "418"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "84",
+				"weight": "773"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "49",
+				"weight": "955"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "8",
+				"weight": "99"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "25",
+				"weight": "313"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "38",
+				"weight": "701"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "6",
+				"weight": "41"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "4",
+				"weight": "84"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Rims",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "54",
+				"weight": "711"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "18",
+				"weight": "478"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "47",
+				"weight": "757"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "21",
+				"weight": "565"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "1",
+				"weight": "52"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "6",
+				"weight": "84"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "31",
+				"weight": "848"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "10",
+				"weight": "126"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "3",
+				"weight": "163"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "22",
+				"weight": "700"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Bases",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "2",
+				"weight": "588"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "111",
+				"weight": "551"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "474",
+				"weight": "1555"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "829",
+				"weight": "5085"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "90",
+				"weight": "705"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "1164",
+				"weight": "5402"
+			},
+			{
+				"majorType": "Stoneware",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "49",
+				"weight": "121"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "2",
+				"numbers": "3",
+				"weight": "21"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "3",
+				"numbers": "7",
+				"weight": "24"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "4",
+				"numbers": "2",
+				"weight": "11"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "25",
+				"weight": "65"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "20",
+				"weight": "47"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "10",
+				"numbers": "13",
+				"weight": "25"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "11",
+				"numbers": "4",
+				"weight": "5"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "11A",
+				"numbers": "2",
+				"weight": "9"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "12A",
+				"numbers": "2",
+				"weight": "9"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "ND",
+				"numbers": "2",
+				"weight": "9"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "4",
+				"numbers": "8",
+				"weight": "17"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "1",
+				"weight": "1"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "10",
+				"numbers": "3",
+				"weight": "7"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "3",
+				"numbers": "6",
+				"weight": "19"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "4",
+				"numbers": "1",
+				"weight": "2"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "5",
+				"numbers": "3",
+				"weight": "6"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "4",
+				"weight": "18"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "21",
+				"weight": "39"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Rims",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "20",
+				"weight": "47"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Bases",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "4",
+				"weight": "50"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "2",
+				"numbers": "18",
+				"weight": "78"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "3",
+				"numbers": "4",
+				"weight": "58"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "4",
+				"numbers": "2",
+				"weight": "13"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "4",
+				"weight": "39"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "447",
+				"weight": "1936"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "672",
+				"weight": "3494"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "276",
+				"weight": "1576"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "10",
+				"numbers": "70",
+				"weight": "499"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "10A",
+				"numbers": "60",
+				"weight": "372"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "11",
+				"numbers": "6",
+				"weight": "12"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "11A",
+				"numbers": "21",
+				"weight": "203"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "12A",
+				"numbers": "10",
+				"weight": "85"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "13A",
+				"numbers": "18",
+				"weight": "88"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "1",
+				"spit": "14",
+				"numbers": "4",
+				"weight": "29"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "ND",
+				"numbers": "4",
+				"weight": "22"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "4",
+				"numbers": "8",
+				"weight": "41"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "36",
+				"weight": "194"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "144",
+				"weight": "770"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "2",
+				"weight": "12"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "102",
+				"weight": "511"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "10",
+				"numbers": "23",
+				"weight": "160"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "11",
+				"numbers": "26",
+				"weight": "148"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "314",
+				"weight": "2896"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "11",
+				"weight": "95"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "10",
+				"numbers": "4",
+				"weight": "153"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "2",
+				"spit": "11",
+				"numbers": "2",
+				"weight": "57"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "3",
+				"spit": "5",
+				"numbers": "2",
+				"weight": "10"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "32",
+				"weight": "235"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "124",
+				"weight": "1287"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "12",
+				"weight": "16"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Rims",
+				"unit": "1",
+				"spit": "ND",
+				"numbers": "2",
+				"weight": "6"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Rims",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "1",
+				"weight": "2"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Rims",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "329",
+				"weight": "4091"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Bases",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "17",
+				"weight": "497"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Bases",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "37",
+				"weight": "607"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Bases",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "15",
+				"weight": "263"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Body Sherds",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "3",
+				"weight": "37"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Body Sherds",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "311",
+				"weight": "864"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Body Sherds",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "412",
+				"weight": "1435"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Green Body Sherds",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "193",
+				"weight": "675"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Decorative Pieces",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "11",
+				"weight": "48"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Decorative Pieces",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "54",
+				"weight": "224"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Decorative Pieces",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "14",
+				"weight": "105"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Decorative Pieces",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "1",
+				"weight": "34"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Decorative Pieces",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "12",
+				"weight": "221"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Decorative Pieces",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "9",
+				"weight": "50"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Decorative Pieces",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "2",
+				"weight": "14"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Decorative Pieces",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "4",
+				"weight": "33"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Body Sherds",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "23",
+				"weight": "97"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Body Sherds",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "83",
+				"weight": "348"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Body Sherds",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "251",
+				"weight": "991"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Body Sherds",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "54",
+				"weight": "211"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Body Sherds",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "18",
+				"weight": "122"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Body Sherds",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "200",
+				"weight": "819"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Body Sherds",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "10",
+				"weight": "9"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Rims",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "10",
+				"weight": "49"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Rims",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "50",
+				"weight": "170"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Rims",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "128",
+				"weight": "883"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Rims",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "39",
+				"weight": "250"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Rims",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "12",
+				"weight": "99"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Rims",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "89",
+				"weight": "545"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Rims",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "2",
+				"weight": "5"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Bases",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "3",
+				"weight": "48"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Bases",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "12",
+				"weight": "255"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Bases",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "35",
+				"weight": "816"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Bases",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "11",
+				"weight": "95"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Greenware Bases",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "18",
+				"weight": "470"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "2",
+				"numbers": "6",
+				"weight": "16"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "3",
+				"numbers": "3",
+				"weight": "9"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "4",
+				"numbers": "3",
+				"weight": "10"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "206",
+				"weight": "474"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "21",
+				"weight": "40"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "10",
+				"numbers": "7",
+				"weight": "16"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "10A",
+				"numbers": "10",
+				"weight": "28"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "11",
+				"numbers": "1",
+				"weight": "1"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "11A",
+				"numbers": "14",
+				"weight": "63"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "12A",
+				"numbers": "2",
+				"weight": "6"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "13A",
+				"numbers": "2",
+				"weight": "6"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "1",
+				"spit": "14",
+				"numbers": "1",
+				"weight": "4"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "2",
+				"spit": "ND",
+				"numbers": "2",
+				"weight": "77"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "22",
+				"weight": "74"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "39",
+				"weight": "45"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "42",
+				"weight": "163"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "6",
+				"weight": "16"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "2",
+				"spit": "10",
+				"numbers": "1",
+				"weight": "10"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "14",
+				"weight": "41"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "43",
+				"weight": "122"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Decorative Pieces",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "4",
+				"weight": "20"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "1",
+				"spit": "4_5",
+				"numbers": "2",
+				"weight": "25"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "6",
+				"weight": "26"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "6",
+				"weight": "38"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "7",
+				"weight": "35"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "1",
+				"spit": "10",
+				"numbers": "1",
+				"weight": "7"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "1",
+				"spit": "10A",
+				"numbers": "1",
+				"weight": "10"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "1",
+				"spit": "11A",
+				"numbers": "5",
+				"weight": "53"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "1",
+				"weight": "6"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "3",
+				"weight": "16"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "1",
+				"weight": "8"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "1",
+				"weight": "17"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "5",
+				"weight": "76"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Bases",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "1",
+				"weight": "4"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "73",
+				"weight": "142"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "49",
+				"weight": "81"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "21",
+				"weight": "40"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "11",
+				"weight": "28"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "24",
+				"weight": "47"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "28",
+				"weight": "100"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "4",
+				"weight": "11"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "2",
+				"spit": "10",
+				"numbers": "1",
+				"weight": "32"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "10",
+				"weight": "128"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "42",
+				"weight": "121"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Body Sherds",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "4",
+				"weight": "19"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "28",
+				"weight": "70"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "41",
+				"weight": "140"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "11",
+				"weight": "46"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "11",
+				"weight": "41"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "14",
+				"weight": "63"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "2",
+				"weight": "5"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "5",
+				"weight": "23"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "3",
+				"weight": "11"
+			},
+			{
+				"majorType": "Porcelain",
+				"type": "Whiteware Rims",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "1",
+				"weight": "5"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "2",
+				"numbers": "53",
+				"weight": "318"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "6",
+				"weight": "41"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "348",
+				"weight": "2056"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "961",
+				"weight": "4597"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "449",
+				"weight": "1781"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "10A",
+				"numbers": "183",
+				"weight": "1825"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "10",
+				"numbers": "83",
+				"weight": "167"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "11",
+				"numbers": "6",
+				"weight": "16"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "11A",
+				"numbers": "111",
+				"weight": "1127"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "12A",
+				"numbers": "18",
+				"weight": "183"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "13A",
+				"numbers": "24",
+				"weight": "263"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "1",
+				"spit": "15",
+				"numbers": "11",
+				"weight": "10"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "2",
+				"spit": "ND",
+				"numbers": "5",
+				"weight": "65"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "2",
+				"spit": "4",
+				"numbers": "3",
+				"weight": "42"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "39",
+				"weight": "287"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "134",
+				"weight": "478"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "473",
+				"weight": "2649"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "168",
+				"weight": "1298"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "2",
+				"spit": "10",
+				"numbers": "2",
+				"weight": "32"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "2",
+				"spit": "11",
+				"numbers": "10",
+				"weight": "83"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "3",
+				"spit": "5",
+				"numbers": "2",
+				"weight": "35"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "2",
+				"weight": "58"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "8",
+				"weight": "256"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "42",
+				"weight": "226"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "373",
+				"weight": "1454"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Mercury Jars",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "9",
+				"weight": "34"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "7",
+				"weight": "153"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "14",
+				"weight": "333"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "7",
+				"weight": "94"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "3",
+				"weight": "46"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "2",
+				"weight": "23"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "10",
+				"weight": "455"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "4",
+				"weight": "125"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "2",
+				"weight": "58"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Bases",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "8",
+				"weight": "256"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Rims",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "17",
+				"weight": "108"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Rims",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "48",
+				"weight": "225"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Rims",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "3",
+				"weight": "9"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Rims",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "1",
+				"weight": "45"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Rims",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "3",
+				"weight": "18"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Rims",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "11",
+				"weight": "42"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Rims",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "5",
+				"weight": "33"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Rims",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "16",
+				"weight": "126"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "6",
+				"numbers": "6",
+				"weight": "41"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "7",
+				"numbers": "324",
+				"weight": "1462"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "8",
+				"numbers": "899",
+				"weight": "4262"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "1",
+				"spit": "9",
+				"numbers": "439",
+				"weight": "1678"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "6",
+				"numbers": "35",
+				"weight": "196"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "7",
+				"numbers": "129",
+				"weight": "437"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "8",
+				"numbers": "452",
+				"weight": "2152"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "2",
+				"spit": "9",
+				"numbers": "159",
+				"weight": "1140"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "6",
+				"numbers": "42",
+				"weight": "226"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "7",
+				"numbers": "357",
+				"weight": "1328"
+			},
+			{
+				"majorType": "Mercury Jars",
+				"type": "Body Sherds",
+				"unit": "3",
+				"spit": "8",
+				"numbers": "9",
+				"weight": "34"
+			}
+		]
+	}
+}

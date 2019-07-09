@@ -1,0 +1,398 @@
+{"dataset":{
+	"reportID": "scc",
+	"id": "7_scc_artifact_dist_totals",
+	"name": "SCC Artifact Distribution Totaled by Square",
+	"source": "Dec 19 2017/SCC ARTIFACT DISTRIBUTION BY SQUARE AND SPIT.docx",
+	"editedDate": "10 January 2018",
+	"googleURL": "",
+	"lastSynched": "",
+	"dataSetGroup": "hidden",
+	"orderInGroup": 5,
+	"header": "SCC ARTIFACT DISTRIBUTION BY SQUARE AND SPIT (totals)",
+	"subheader": "DATA FROM A COWAN PDF 2003 2004",
+	"defaultSort": "hiddenOrder",
+	"fields": [{
+			"fieldKey": "hiddenOrder",
+			"fieldName": "Default Order",
+			"fieldHidden": true
+		},
+		{
+			"fieldKey": "majorType",
+			"fieldName": "Major Type"
+		},
+		{
+			"fieldKey": "type",
+			"fieldName": "Type"
+		},
+		{
+			"fieldKey": "unit",
+			"fieldName": "Unit"
+		},
+		{
+			"fieldKey": "totalPieces",
+			"fieldName": "Total Pieces",
+			"sortMethod": "integer"
+		},
+		{
+			"fieldKey": "totalWeight",
+			"fieldName": "Total Weight (g)",
+			"sortMethod": "integer"
+		},
+		{
+			"fieldKey": "remarks",
+			"fieldName": "Notes"
+		}
+	],
+	"data": [{
+			"majorType": "Earthenware",
+			"type": "Earthenware",
+			"totalPieces": "15278",
+			"totalWeight": "28177"
+		},
+		{
+			"majorType": "Earthenware",
+			"type": "Earthenware Bases",
+			"totalPieces": "39",
+			"totalWeight": "398"
+		},
+		{
+			"majorType": "Earthenware",
+			"type": "Earthenware Decorative Features",
+			"totalPieces": "2401",
+			"totalWeight": "3586"
+		},
+		{
+			"majorType": "Earthenware",
+			"type": "Earthenware Rims",
+			"totalPieces": "1275",
+			"totalWeight": "4186"
+		},
+		{
+			"majorType": "Earthenware",
+			"type": "Earthenware Body Sherds",
+			"totalPieces": "9448",
+			"totalWeight": "14975"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Stoneware",
+			"totalPieces": "10279",
+			"totalWeight": "58976"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Stoneware",
+			"unit": "TP2",
+			"totalPieces": "",
+			"totalWeight": "",
+			"remarks": "[NO PROVENANCE/SURFACE: SCC 2 4 PCS, 40 G]"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Decorative Stoneware",
+			"totalPieces": "240",
+			"totalWeight": "2774",
+			"unit": "TP1/TP2"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Decorative Stoneware",
+
+			"totalPieces": "70",
+			"totalWeight": "888",
+			"unit": "TP3"
+		},
+
+		{
+			"majorType": "Stoneware",
+			"type": "Rims",
+
+			"totalPieces": "256",
+			"totalWeight": "3359",
+			"unit": "TP1/TP2"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Rims",
+
+			"totalPieces": "58",
+			"totalWeight": "795",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Bases",
+
+			"totalPieces": "134",
+			"totalWeight": "2911",
+			"unit": "TP1/TP2"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Bases",
+
+			"totalPieces": "27",
+			"totalWeight": "1451",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Body Sherds",
+
+			"totalPieces": "1303",
+			"totalWeight": "6228"
+		},
+		{
+			"majorType": "Stoneware",
+			"type": "Body Sherds",
+			"totalPieces": "1681",
+			"totalWeight": "8327"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Body Sherds",
+			"totalPieces": "99",
+			"totalWeight": "277"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Green",
+			"totalPieces": "2755",
+			"totalWeight": "15515"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Green Rims",
+			"totalPieces": "330",
+			"totalWeight": "2103"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Green Bases",
+
+			"totalPieces": "69",
+			"totalWeight": "1367",
+			"unit": "TP1"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Green Body Sherds",
+
+			"totalPieces": "919",
+			"totalWeight": "3011"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Greenware Decorative Pieces",
+
+			"totalPieces": "79",
+			"totalWeight": "377",
+			"unit": "TP1"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Greenware Decorative Pieces",
+
+			"totalPieces": "22",
+			"totalWeight": "305",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Greenware Decorative Pieces",
+
+			"totalPieces": "6",
+			"totalWeight": "47",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Greenware Body Sherds",
+
+			"totalPieces": "411",
+			"totalWeight": "1647",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Greenware Body Sherds",
+
+			"totalPieces": "228",
+			"totalWeight": "950",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Greenware Rims",
+
+			"totalPieces": "227",
+			"totalWeight": "1352",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Greenware Rims",
+
+			"totalPieces": "103",
+			"totalWeight": "649",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Greenware Bases",
+
+			"totalPieces": "61",
+			"totalWeight": "1214",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Decorative Pieces",
+			"unit": "",
+			"totalPieces": 487,
+			"totalWeight": 1641,
+			"remarks": "WHITEWARE BASES: 487 PCS, 1641 G?"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Bases",
+			"totalPieces": "28",
+			"totalWeight": "194",
+			"unit": "TP1",
+			"remarks": "28 PCS, 194 G"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Bases",
+
+			"totalPieces": "5",
+			"totalWeight": "30",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Bases",
+
+			"totalPieces": "7",
+			"totalWeight": "97",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Body Sherds",
+
+			"totalPieces": "143",
+			"totalWeight": "263",
+			"unit": "TP1"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Body Sherds",
+
+			"totalPieces": "73",
+			"totalWeight": "218",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Body Sherds",
+
+			"totalPieces": "56",
+			"totalWeight": "268",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Rims",
+
+			"totalPieces": "69",
+			"totalWeight": "210",
+			"unit": "TP1"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Rims",
+
+			"totalPieces": "38",
+			"totalWeight": "155",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Porcelain",
+			"type": "Whiteware Rims",
+			"totalPieces": "9",
+			"totalWeight": "39",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Mercury Jars",
+			"totalPieces": "3547",
+			"totalWeight": "19370"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Bases",
+
+			"totalPieces": "28",
+			"totalWeight": "580",
+			"unit": "TP1"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Bases",
+
+			"totalPieces": "19",
+			"totalWeight": "649",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Bases",
+
+			"totalPieces": "10",
+			"totalWeight": "314",
+			"unit": "TP3"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Rims",
+
+			"totalPieces": "68",
+			"totalWeight": "342",
+			"unit": "TP1"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Rims",
+
+			"totalPieces": "20",
+			"totalWeight": "138",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Body Sherds",
+
+			"totalPieces": "1668",
+			"totalWeight": "7443",
+			"unit": "TP1"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Body Sherds",
+
+			"totalPieces": "785",
+			"totalWeight": "3925",
+			"unit": "TP2"
+		},
+		{
+			"majorType": "Mercury Jars",
+			"type": "Body Sherds",
+
+			"totalPieces": "408",
+			"totalWeight": "1588",
+			"unit": "TP3"
+		}
+	]
+}}

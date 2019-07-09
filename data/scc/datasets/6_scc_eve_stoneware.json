@@ -1,0 +1,94 @@
+{
+	"dataset": {
+		"reportID": "scc",
+		"id": "6_scc_eve_stoneware",
+		"name": "Estimated Vessel Equivalents Stoneware",
+		"shortName": "Est. Vessel Equivalents Stoneware",
+		"source": "Dec 19 2017/SCC ESTIMATED VESSEL EQUIVALENTS STONEWARE.xlsx",
+		"editedDate": "10 January 2018",
+		"googleURL": "1LLiSxK9HnypjddQlPyf5hOJXYGFQGN6g-3khT46tnks",
+		"lastSynched": "18 January 2018",
+		"dataSetGroup": "Summary data",
+		"orderInGroup": 1,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "pit",
+				"fieldName": "Pit"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit"
+			},
+			{
+				"fieldKey": "vesselType",
+				"fieldName": "Vessel Type",
+				"fieldTransform": "titleCase"
+			},
+			{
+				"fieldKey": "biscuitColour",
+				"fieldName": "Biscuit Colour",
+				"fieldTransform": "titleCase"
+			},
+			{
+				"fieldKey": "glazeColour",
+				"fieldName": "Glaze Colour",
+				"fieldTransform": "titleCase"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "percentage",
+				"fieldName": "Percentage",
+				"fieldNameShort": "%",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "remarks",
+				"fieldName": "Remarks"
+			}
+		],
+		"data": [{
+				"hiddenOrder": 0,
+				"pit": "1",
+				"spit": "10",
+				"vesselType": "BOWL/JAR",
+				"biscuitColour": "",
+				"glazeColour": "UNGLAZED",
+				"diameter": "11",
+				"percentage": "16",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": "1",
+				"spit": "10",
+				"vesselType": "BOWL/JAR",
+				"biscuitColour": "",
+				"glazeColour": "UNGLAZED",
+				"diameter": "10",
+				"percentage": "12.5",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": "1",
+				"spit": "10",
+				"vesselType": "DISH",
+				"biscuitColour": "BUFF",
+				"glazeColour": "UNGLAZED",
+				"diameter": "5",
+				"percentage": "5",
+				"remarks": ""
+			}
+		]
+	}
+}

@@ -1,0 +1,341 @@
+{
+	"dataset": {
+		"reportID": "scc",
+		"id": "5_scc_eve_mercury_jar",
+		"name": "Estimated Vessel Equivalents Mercury Jar",
+		"shortName": "Est. Vessel Equivalents Mercury Jar",
+		"source": "Dec 19 2017/SCC EVE MERCURY JAR.xlsx",
+		"editedDate": "10 January 2018",
+		"googleURL": "1veP0XYD_qZxu_n0NrFf4mtq-CRaMD2H64g08_sO7LMU",
+		"lastSynched": "18 January 2018",
+		"dataSetGroup": "Summary data",
+		"orderInGroup": 2,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "pit",
+				"fieldName": "Pit"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter"
+			},
+			{
+				"fieldKey": "percentage",
+				"fieldName": "Percentage",
+				"fieldNameShort": "%"
+			}
+		],
+		"data": [{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 2,
+				"diameter": 6,
+				"percentage": 10
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 2,
+				"diameter": 4.4,
+				"percentage": 15
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 7,
+				"diameter": 7,
+				"percentage": 14
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 7,
+				"diameter": 7,
+				"percentage": 17
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 7,
+				"diameter": 6,
+				"percentage": 34
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 7,
+				"diameter": 6,
+				"percentage": 22
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 7,
+				"diameter": 6,
+				"percentage": 16
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 7,
+				"diameter": 4,
+				"percentage": 21
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": "?",
+				"percentage": "?"
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6,
+				"percentage": 25
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6.6,
+				"percentage": 32
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6,
+				"percentage": 43
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 5,
+				"percentage": 25
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6,
+				"percentage": 33
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 4,
+				"percentage": 18
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6,
+				"percentage": 20
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6.4,
+				"percentage": 32
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6.5,
+				"percentage": 22
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6.4,
+				"percentage": 48
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6,
+				"percentage": 25
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6,
+				"percentage": 14
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 8,
+				"diameter": 6,
+				"percentage": 10
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 9,
+				"diameter": 6,
+				"percentage": 38
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 9,
+				"diameter": 4,
+				"percentage": 33
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 9,
+				"diameter": "?",
+				"percentage": "?"
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 9,
+				"diameter": 6,
+				"percentage": 15
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 9,
+				"diameter": 4,
+				"percentage": 15
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": 9,
+				"diameter": 5,
+				"percentage": 35
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "10A",
+				"diameter": 6.4,
+				"percentage": 20
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "10A",
+				"diameter": 6,
+				"percentage": 19
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "10A",
+				"diameter": 6,
+				"percentage": 30
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "10A",
+				"diameter": 8,
+				"percentage": 7
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "10A",
+				"diameter": 6,
+				"percentage": 20
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "11A",
+				"diameter": 5.8,
+				"percentage": 7.7
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "11A",
+				"diameter": 5,
+				"percentage": 100
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "11A",
+				"diameter": 5,
+				"percentage": 20
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "11A",
+				"diameter": 6.4,
+				"percentage": 19
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "11A",
+				"diameter": 7,
+				"percentage": 10
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "11A",
+				"diameter": 7,
+				"percentage": 33
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "11a",
+				"diameter": 6.4,
+				"percentage": 40
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "12a",
+				"diameter": 6,
+				"percentage": 51
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "12a",
+				"diameter": 6.4,
+				"percentage": 20
+			},
+			{
+				"hiddenOrder": 0,
+				"pit": 1,
+				"spit": "13a",
+				"diameter": 5,
+				"percentage": 39
+			}
+		]
+	}
+}

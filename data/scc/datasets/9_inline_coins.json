@@ -1,0 +1,299 @@
+{
+	"dataset": {
+		"reportID": "scc",
+		"id": "9_inline_coins",
+		"name": "Coin Finds, SCC",
+		"source": "Final Report SCC Part Six Discussion of Artifacts.docx (1 February version)",
+		"editedDate": "2 February 2018",
+		"googleURL": "1t0B8O2mqJA-q7aQjxSXZzMbVgjuERKbkRWQVSL0Bxgs",
+		"lastSynched": "18 January 2018",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "square",
+				"fieldName": "Square"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit"
+			},
+			{
+				"fieldKey": "date",
+				"fieldName": "Date of Excavation"
+			},
+			{
+				"fieldKey": "dynasty",
+				"fieldName": "Dynasty"
+			},
+			{
+				"fieldKey": "inscription",
+				"fieldName": "Inscription"
+			},
+			{
+				"fieldKey": "remarks",
+				"fieldName": "Remarks",
+				"fieldTransform": "toLowerCase"
+			}
+		],
+		"data": [{
+				"hiddenOrder": 1,
+				"square": "TP1",
+				"spit": "6",
+				"date": "19-04-03",
+				"dynasty": "",
+				"inscription": "KAI YUAN TONG BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 2,
+				"square": "TP1",
+				"spit": "7",
+				"date": "19-04-03",
+				"dynasty": "N Song",
+				"inscription": "JING (?) DE (YUAN BAO?)",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 3,
+				"square": "TP1",
+				"spit": "7",
+				"date": "19-04-03",
+				"dynasty": "N Song",
+				"inscription": "ZHENG HE TONG BAO/",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 4,
+				"square": "TP1",
+				"spit": "8",
+				"date": "19-04-03",
+				"dynasty": "N Song",
+				"inscription": "JIA YU TONG BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 5,
+				"square": "TP1",
+				"spit": "8",
+				"date": "19-04-03",
+				"dynasty": "N Song",
+				"inscription": "XI NING YUAN BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 6,
+				"square": "TP1",
+				"spit": "8",
+				"date": "19-04-03",
+				"dynasty": "",
+				"inscription": "ILLEGIBLE 2 COIN PANCAKE",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 7,
+				"square": "TP1",
+				"spit": "8",
+				"date": "25-04-03",
+				"dynasty": "",
+				"inscription": "HUANG SONG TONG BAO XUAN HE TONGBAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 8,
+				"square": "TP1",
+				"spit": "8",
+				"date": "19-04-03",
+				"dynasty": "N Song",
+				"inscription": "(HUANG?) SONG TONGBAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 9,
+				"square": "TP1",
+				"spit": "9",
+				"date": "20-04-03",
+				"dynasty": "S Song",
+				"inscription": "SHUN XI YUAN BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 10,
+				"square": "TP1",
+				"spit": "9",
+				"date": "29-04-03",
+				"dynasty": "",
+				"inscription": "FRAGMENT",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 11,
+				"square": "TP1",
+				"spit": "9",
+				"date": "25-04-03",
+				"dynasty": "N Song",
+				"inscription": "YUAN FENG TONG BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 12,
+				"square": "TP1",
+				"spit": "10A",
+				"date": "25-04-03",
+				"dynasty": "N Song",
+				"inscription": "YUAN FENG TONG BAO [VALUE TWO]",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 13,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "HUANG SONG TONG BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 14,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "ZHENG HE TONG BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 15,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "SHENG SONG YUAN BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 16,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "JING DE YUAN BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 17,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "XUAN HE TONG BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 18,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "XI NING YUAN BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 19,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "HUANG SONG TONG BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 20,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "SHENG SONG YUAN BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 21,
+				"square": "TP2",
+				"spit": "7",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "DA GUAN TONG BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 22,
+				"square": "TP2",
+				"spit": "10A",
+				"date": "29-04-03",
+				"dynasty": "N Song",
+				"inscription": "HUANG SONG TONG BAO “value 2” [made of iron]",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 23,
+				"square": "",
+				"spit": "COLLAPSED PROFILE",
+				"date": "27-04-03",
+				"dynasty": "N Song",
+				"inscription": "ZHI DAO YUAN BAO",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 24,
+				"square": "VARIOUS LOCATIONS",
+				"spit": "[mostly found in the upper 10 cm]",
+				"date": "",
+				"dynasty": "",
+				"inscription": "",
+				"remarks": "DISTORTED COINS: 3 INTACT"
+			},
+			{
+				"hiddenOrder": 25,
+				"square": "VARIOUS LOCATIONS",
+				"spit": "[mostly found in the upper 10 cm]",
+				"date": "",
+				"dynasty": "",
+				"inscription": "",
+				"remarks": "DISTORTED COINS: ¾ INTACT "
+			},
+			{
+				"hiddenOrder": 26,
+				"square": "VARIOUS LOCATIONS",
+				"spit": "[mostly found in the upper 10 cm]",
+				"date": "",
+				"dynasty": "",
+				"inscription": "",
+				"remarks": "DISTORTED COINS:  8 FRAGMENTS"
+			},
+			{
+				"hiddenOrder": 27,
+				"square": "TP1",
+				"spit": "5",
+				"date": "17-04-03",
+				"dynasty": "SCC COLONIAL/MODERN",
+				"inscription": "1960 QE MALAYA BRITISH BORNEO 10 Cents",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": 28,
+				"square": "TP2",
+				"spit": "5",
+				"date": "28-04-03",
+				"dynasty": "SCC COLONIAL/MODERN",
+				"inscription": "1 cent",
+				"remarks": ""
+			}
+		]
+	}
+}
