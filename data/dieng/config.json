@@ -29,10 +29,25 @@
 		}, {
 			"id": "batuhitambelitungshipwreck",
 			"name": "Dieng and the Batuhitam/Belitung Shipwreck"
-		}, {
-			"id": "acknowledgements",
-			"name": "Acknowledgements"
-		}, {
+			},{
+				"id": "appendix1",
+				"name": "Appendix 1: Glass Analysis"
+		},  {
+			"id": "appendix2",
+			"name": "Appendix 2: Radiometric Dating"
+		},  {
+			"id": "appendix3",
+			"name": "Appendix 3: Artifact Distribution by Sector, Unit, and Stratigraphic Level"
+		},  {
+			"id": "appendix4",
+			"name": "Appendix 4: Earthenware from other Central Javanese Sites"
+		},  {
+			"id": "appendix5",
+			"name": "Appendix 5: Drawings"
+			}, {
+				"id": "acknowledgements",
+				"name": "Acknowledgements"
+				}, {
 			"id": "bibliography",
 			"name": "Bibliography"
 		}]
