@@ -3,17 +3,20 @@ import styled from 'styled-components';
 
 const BilingualSectionDiv = styled.div`
 	border: 1px solid var(--borderColor);
-	padding: 0.5em 0;
+	/* padding-bottom: 0.5em; */
 	border-radius: 8px;
 	margin-bottom: 1em;
 `;
 
 const BilingualSectionTop = styled.div`
-	padding: 0 1em 0.5em 1em;
+	padding: 0.5em 1em;
 	border-bottom: 1px solid var(--borderColor);
 	margin-bottom: 0.5em;
 	display: flex;
 	justify-content: space-between;
+	background-color: var(--borderColor);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 `;
 
 const BilingualSectionBottom = styled.div`
@@ -33,6 +36,12 @@ const LangSpan = styled.span`
 
 const LangSection = styled.div`
 	display: ${props => (props.visible ? 'block' : 'none')};
+	& > h1,
+	h2,
+	h3,
+	h4 {
+		margin-top: 0 !important;
+	}
 `;
 
 class BilingualSection extends React.Component {

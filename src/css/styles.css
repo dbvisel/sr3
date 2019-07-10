@@ -64,6 +64,8 @@
 	font-family: "Padauk";
 	font-weight: normal;
 	src: url('./../fonts/Padauk-Regular.ttf') format("truetype");
+	unicode-range: U+1000-U+109F;
+	/* this declares that this is for burmese */
 }
 
 @font-face {
