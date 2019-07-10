@@ -13,6 +13,9 @@
 		}, {
 			"id": "lingga",
 			"name": "Lingga"
+		}, {
+			"id": "msatp",
+			"name": "MSATP"
 		}],
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",

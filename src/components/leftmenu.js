@@ -10,7 +10,7 @@ const MenuWrapper = styled.nav`
 	margin-right: 20px;
 	border-right: 1px solid var(--borderColor);
 	min-width: 150px;
-	overflow-x: hidden;
+	max-width: 480px;
 	& a {
 		text-decoration: none;
 		color: var(--black);
@@ -21,8 +21,11 @@ const MenuWrapper = styled.nav`
 	& ul {
 		margin: 0 0 16px 0;
 		& li {
-			margin-left: 16px;
-			white-space: nowrap;
+			margin-left: 2em;
+			text-indent: -1em;
+			font-size: 16px;
+			line-height: 22px;
+			/* white-space: nowrap; */
 			&.selected {
 				font-weight: bold;
 				color: var(--gray);
@@ -31,11 +34,13 @@ const MenuWrapper = styled.nav`
 	}
 	& h2 {
 		font-size: 16px;
+		line-height: 22px;
 		font-weight: bold;
 		margin: 0;
 	}
 	& h3 {
 		font-size: 16px;
+		line-height: 22px;
 		font-weight: bold;
 		margin-bottom: 0;
 		& + h3 {
@@ -47,6 +52,7 @@ const MenuWrapper = styled.nav`
 	}
 	& h4 {
 		font-size: 16px;
+		line-height: 22px;
 		font-weight: normal;
 		font-style: italic;
 		margin: 0;
@@ -59,6 +65,7 @@ const MenuWrapper = styled.nav`
 		margin-top: 0;
 		padding: 10px;
 		margin-bottom: 0;
+		max-width: unset;
 		& ul li {
 			white-space: unset;
 		}

@@ -60,14 +60,26 @@
 	src: url("./../fonts/SourceSansPro-BoldIt.eot?#iefix") format("embedded-opentype"), url("./../fonts/SourceSansPro-BoldIt.ttf.woff2") format("woff2"), url("./../fonts/SourceSansPro-BoldIt.otf.woff") format("woff");
 }
 
+@font-face {
+	font-family: "Padauk";
+	font-weight: normal;
+	src: url('./../fonts/Padauk-Regular.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: "Padauk";
+	font-weight: bold;
+	src: url('./../fonts/Padauk-Bold.ttf') format("truetype");
+}
+
 :root {
 	--black: #333;
 	--borderColor: #ccc;
 	--white: #ffffff;
 	--orange: rgb(242, 148, 43);
 	--gray: #666;
-	--textFont: "et-bembo", serif;
-	--headerFont: "Source Sans Pro", "Avenir", "Helvetica Neue", "Helvetica", sans-serif;
+	--textFont: "et-bembo", "Padauk", serif;
+	--headerFont: "Source Sans Pro", "Padauk", "Avenir", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
 html,

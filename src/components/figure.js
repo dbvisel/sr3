@@ -10,6 +10,7 @@ import ReportContext from './reportcontext';
 // -img: filename or array of filenames
 
 // TODO: if we're dealing with more than two figures, figure out a smart way to display them?
+// TODO: use gatsby image here. Pull in images by GraphQL
 
 const FigureDiv = styled.figure`
 	text-align: center;
