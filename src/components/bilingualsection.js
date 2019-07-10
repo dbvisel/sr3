@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const BilingualSectionDiv = styled.div`
 	border: 1px solid var(--borderColor);
-	/* padding-bottom: 0.5em; */
+	padding-bottom: 0.5em;
 	border-radius: 8px;
 	margin-bottom: 1em;
 `;
@@ -36,11 +36,14 @@ const LangSpan = styled.span`
 
 const LangSection = styled.div`
 	display: ${props => (props.visible ? 'block' : 'none')};
-	& > h1,
-	h2,
-	h3,
-	h4 {
-		margin-top: 0 !important;
+	& > h1:first-child,
+	h2:first-child,
+	h3:first-child,
+	h4:first-child {
+		margin-top: 0;
+	}
+	& > ul:last-child {
+		margin-bottom: 0;
 	}
 `;
 
