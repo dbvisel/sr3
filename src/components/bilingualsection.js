@@ -51,13 +51,16 @@ const LangSection = styled.div`
 	& > ul:last-child {
 		margin-bottom: 0;
 	}
-	& table thead th {
-		background-color: var(--borderColor);
-		font-family: var(--headerFont);
-		padding: 0.5em !important;
-	}
-	& table tbody td {
-		padding: 0.5em !important;
+	& table {
+		width: 100%;
+		& thead th {
+			background-color: var(--borderColor);
+			font-family: var(--headerFont);
+			padding: 0.5em !important;
+		}
+		& tbody td {
+			padding: 0.5em !important;
+		}
 	}
 	& ul ul,
 	& ol ul {
