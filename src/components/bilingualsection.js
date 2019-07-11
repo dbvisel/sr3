@@ -63,6 +63,11 @@ const LangSection = styled.div`
 	& ol ul {
 		margin: 0;
 	}
+	& .center {
+		display: inline-flex;
+		width: 100%;
+		justify-content: center;
+	}
 `;
 
 class BilingualSection extends React.Component {
