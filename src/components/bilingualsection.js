@@ -38,6 +38,10 @@ const LangSpan = styled.span`
 
 const LangSection = styled.div`
 	display: ${props => (props.visible ? 'block' : 'none')};
+	& img {
+		max-width: 100%;
+		height: auto;
+	}
 	& > h1:first-child,
 	h2:first-child,
 	h3:first-child,
@@ -55,7 +59,8 @@ const LangSection = styled.div`
 	& table tbody td {
 		padding: 0.5em !important;
 	}
-	& ul ul, & ol ul {
+	& ul ul,
+	& ol ul {
 		margin: 0;
 	}
 `;
