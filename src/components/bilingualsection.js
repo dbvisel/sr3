@@ -55,7 +55,7 @@ const LangSection = styled.div`
 	& table tbody td {
 		padding: 0.5em !important;
 	}
-	& ul ul {
+	& ul ul, & ol ul {
 		margin: 0;
 	}
 `;
