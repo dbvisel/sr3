@@ -8,6 +8,8 @@ const BilingualSectionDiv = styled.div`
 	margin-bottom: 1em;
 `;
 
+// TODO: make header sticky?
+
 const BilingualSectionTop = styled.div`
 	padding: 0.5em 1em;
 	border-bottom: 1px solid var(--borderColor);
@@ -44,6 +46,17 @@ const LangSection = styled.div`
 	}
 	& > ul:last-child {
 		margin-bottom: 0;
+	}
+	& table thead th {
+		background-color: var(--borderColor);
+		font-family: var(--headerFont);
+		padding: 0.5em !important;
+	}
+	& table tbody td {
+		padding: 0.5em !important;
+	}
+	& ul ul {
+		margin: 0;
 	}
 `;
 
