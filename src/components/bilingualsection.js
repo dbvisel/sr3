@@ -6,6 +6,7 @@ const BilingualSectionDiv = styled.div`
 	padding-bottom: 0.5em;
 	border-radius: 8px;
 	margin-bottom: 1em;
+	position: relative;
 `;
 
 // TODO: make header sticky?
@@ -19,6 +20,8 @@ const BilingualSectionTop = styled.div`
 	background-color: var(--borderColor);
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
+	position: sticky;
+	top: 0;
 `;
 
 const BilingualSectionBottom = styled.div`

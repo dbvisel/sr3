@@ -14,7 +14,7 @@ const Main = styled.main`
 	display: flex;
 	width: 100%;
 	max-width: 100vw;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */ /* disabling this to make sticky work! */
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
 	}
@@ -24,7 +24,8 @@ const Wrapper = styled.div`
 	padding-bottom: 32px;
 	padding-right: 10px;
 	width: 100%;
-	overflow-x: hidden;
+	max-width: 800px;
+	/* overflow-x: hidden; */ /* disabling this to make sticky work! */
 	@media screen and (max-width: 767px) {
 		padding-left: 10px;
 	}
