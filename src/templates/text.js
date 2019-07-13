@@ -44,6 +44,7 @@ class TextPage extends React.Component {
 		const pageContext = this.props.pageContext;
 		const { frontmatter, code } = data.mdx;
 		const { reportData, dataSets } = pageContext;
+		console.log(reportData);
 		return (
 			<Layout title={frontmatter.title} menu={reportData} thisPage={frontmatter.path}>
 				<HeaderSection>
@@ -59,8 +60,8 @@ class TextPage extends React.Component {
 							</>
 						) : null}
 					</h2>
-					<h3>{frontmatter.author}</h3>
-					{frontmatter.date ? <h4>{frontmatter.date}</h4> : null}
+					<h3>{frontmatter.author || reportData.author || ''}</h3>
+					{reportData.date || frontmatter.date ? <h4>{reportData.date || frontmatter.date}</h4> : null}
 				</HeaderSection>
 				<DataSetContext.Provider value={{ dataSets }}>
 					<TextWrapper>

@@ -59,10 +59,10 @@ exports.createPages = ({ actions, graphql }) => {
 					node {
 						id
 						frontmatter {
-							date
 							path
 							report
 							title
+							date
 							subtitle
 							datasets
 						}
@@ -73,6 +73,7 @@ exports.createPages = ({ actions, graphql }) => {
 				nodes {
 					report {
 						id
+						date
 						author
 						title
 						titleShort
@@ -145,6 +146,7 @@ exports.createPages = ({ actions, graphql }) => {
 							let thisPath = `./data/${node.frontmatter.report}/datasets/${node.frontmatter.datasets[i]}.json`;
 							const dataSetData = JSON.parse(fs.readFileSync(thisPath, { encoding: 'utf-8' }));
 							console.log(thisPath);
+
 							outDataSets.push({ id: node.frontmatter.datasets[i], path: thisPath, data: dataSetData.dataset });
 						}
 					}
