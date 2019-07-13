@@ -24,8 +24,10 @@ const Wrapper = styled.div`
 	padding-bottom: 32px;
 	padding-right: 10px;
 	width: 100%;
-	max-width: 800px;
+	/* max-width: 800px; */
 	/* overflow-x: hidden; */ /* disabling this to make sticky work! */
+	width: calc(100% - 220px);
+
 	@media screen and (max-width: 767px) {
 		padding-left: 10px;
 	}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Layout from '../components/layout';
+import TextWrapper from '../components/textwrapper';
 
 const IndexPage = () => (
 	<StaticQuery
@@ -15,7 +16,9 @@ const IndexPage = () => (
 			let masterText = data.markdownRemark.html || 'error!';
 			return (
 				<Layout menu={{}}>
-					<div dangerouslySetInnerHTML={{ __html: masterText }} />
+					<TextWrapper>
+						<div dangerouslySetInnerHTML={{ __html: masterText }} />
+					</TextWrapper>
 				</Layout>
 			);
 		}}

@@ -100,23 +100,23 @@ exports.createPages = ({ actions, graphql }) => {
 		let outData = result.data.textFiles.edges;
 		let reportData = result.data.reportData.nodes;
 
-		if (makeReports) {
-			reportData.forEach(node => {
-				if (node.report && node.report.dataSets) {
-					let reportID = node.report.id;
-					let reportConfig = loopTheConfigs(reportID, reportData);
-					console.log(`${reportID} datasets: ${node.report.dataSets.length}`);
-					node.report.dataSets.forEach(dataSet => {
-						let myJsonPath = `./data/${reportID}/datasets/${dataSet.id}.json`;
-						let myPath = `${reportID}/dataset/${dataSet.id}`;
-						console.log(myJsonPath, '=>', myPath);
-						const pageData = JSON.parse(fs.readFileSync(myJsonPath, { encoding: 'utf-8' }));
-						let thisFieldSet = pageData.dataset.fields;
-						createPage({
-							path: myPath,
-							component: datasetPageTemplate,
-							context: { reportData: reportConfig, data: pageData.dataset }
-						});
+		reportData.forEach(node => {
+			if (node.report && node.report.dataSets) {
+				let reportID = node.report.id;
+				let reportConfig = loopTheConfigs(reportID, reportData);
+				console.log(`${reportID} datasets: ${node.report.dataSets.length}`);
+				node.report.dataSets.forEach(dataSet => {
+					let myJsonPath = `./data/${reportID}/datasets/${dataSet.id}.json`;
+					let myPath = `${reportID}/dataset/${dataSet.id}`;
+					console.log(myJsonPath, '=>', myPath);
+					const pageData = JSON.parse(fs.readFileSync(myJsonPath, { encoding: 'utf-8' }));
+					let thisFieldSet = pageData.dataset.fields;
+					createPage({
+						path: myPath,
+						component: datasetPageTemplate,
+						context: { reportData: reportConfig, data: pageData.dataset }
+					});
+					if (makeReports) {
 						// now, go through pageData.dataset.data and make a page for each data
 						pageData.dataset.data.forEach(dataItem => {
 							if (dataItem.id) {
@@ -129,10 +129,10 @@ exports.createPages = ({ actions, graphql }) => {
 								});
 							}
 						});
-					});
-				}
-			});
-		}
+					}
+				});
+			}
+		});
 		return outData.forEach(({ node }) => {
 			let reportConfig = loopTheConfigs(node.frontmatter.report, reportData);
 			if (node.frontmatter) {

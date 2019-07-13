@@ -9,7 +9,7 @@ const MenuWrapper = styled.nav`
 	padding-right: 20px;
 	margin-right: 20px;
 	border-right: 1px solid var(--borderColor);
-	min-width: 150px;
+	min-width: 200px;
 	max-width: 480px;
 	& a {
 		text-decoration: none;

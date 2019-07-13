@@ -9,6 +9,15 @@ import styled from 'styled-components';
 // inLine: true if this is inline
 
 // style this differently if props.inLine?
+
+const TopNav = styled.nav`
+	position: sticky;
+	top: 0;
+	background-color: var(--white);
+	padding-bottom: 1em;
+	z-index: 2;
+`;
+
 const DatasetH1 = styled.h1`
 	margin: 0;
 `;
@@ -85,13 +94,16 @@ const StrongLink = styled.span`
 `;
 
 const DataTableWrapper = styled.div`
-	margin-top: 1em;
 	padding-bottom: 1em;
 	max-width: 100%;
-	overflow-x: scroll;
+	max-width: calc(100vw - 200px);
+	position: relative;
+	/* overflow-x: scroll; */
 `;
 
-const DataTable = styled.table``;
+const DataTable = styled.table`
+	position: relative;
+`;
 
 const THead = styled.thead`
 	background-color: #ddd;
@@ -102,7 +114,19 @@ const THNoWrap = styled.th`
 	font-weight: bold;
 	font-family: var(--headerFont);
 	padding: 0 4px;
+	background-color: #ddd;
 	cursor: pointer;
+	position: sticky;
+	top: ${props => (props.hideHeaders ? '3em' : '5em')};
+	&:before {
+		content: '';
+		position: absolute;
+		background-color: var(--white);
+		left: 0;
+		top: -5em;
+		width: 100%;
+		height: 5em;
+	}
 `;
 
 const TableCell = styled.td`
@@ -248,40 +272,44 @@ class Dataset extends React.Component {
 				{this.props.hideHeaders ? null : (
 					<DatasetH1 inLine={this.props.inLine}>Dataset: {this.state.reportName}</DatasetH1>
 				)}
-				<FilterP>
-					<p>
-						Showing {this.state.filteredData.length} of {this.state.outputData.length} total records in this dataset.{' '}
-						<StrongLink onClick={this.unfilterDataset}>See all.</StrongLink>
-					</p>
-					<form onSubmit={this.filterDataset}>
-						<input type="text" id="searchfield" placeholder="Filter this dataset"></input>
-						<input type="submit" value="Filter" />
-					</form>
-				</FilterP>
-				{this.state.paginate ? (
-					<PaginationP>
-						<Arrow onClick={this.prevPage} grayOut={this.state.startPoint === 0}>
-							←
-						</Arrow>
-						&nbsp;&nbsp;Page {this.state.startPoint / this.state.perPage + 1}/
-						{Math.ceil(this.state.totalLength / this.state.perPage)}&nbsp;&nbsp;
-						<Arrow
-							onClick={this.nextPage}
-							grayOut={
-								this.state.startPoint / this.state.perPage + 1 ===
-								Math.ceil(this.state.totalLength / this.state.perPage)
-							}
-						>
-							→
-						</Arrow>
-					</PaginationP>
-				) : null}
+				<TopNav>
+					<FilterP>
+						<p>
+							Showing {this.state.filteredData.length} of {this.state.outputData.length} total records in this dataset.{' '}
+							<StrongLink onClick={this.unfilterDataset}>See all.</StrongLink>
+						</p>
+						<form onSubmit={this.filterDataset}>
+							<input type="text" id="searchfield" placeholder="Filter this dataset"></input>
+							<input type="submit" value="Filter" />
+						</form>
+					</FilterP>
+					{this.state.paginate ? (
+						<PaginationP>
+							<Arrow onClick={this.prevPage} grayOut={this.state.startPoint === 0}>
+								←
+							</Arrow>
+							&nbsp;&nbsp;Page {this.state.startPoint / this.state.perPage + 1}/
+							{Math.ceil(this.state.totalLength / this.state.perPage)}&nbsp;&nbsp;
+							<Arrow
+								onClick={this.nextPage}
+								grayOut={
+									this.state.startPoint / this.state.perPage + 1 ===
+									Math.ceil(this.state.totalLength / this.state.perPage)
+								}
+							>
+								→
+							</Arrow>
+						</PaginationP>
+					) : null}
+				</TopNav>
 				<DataTableWrapper>
 					<DataTable>
 						<THead>
 							<tr>
 								{this.state.visibleFields.map((entry, key) => (
-									<THNoWrap key={key}>{entry.fieldName}</THNoWrap>
+									<THNoWrap key={key} hideHeaders={this.props.hideHeaders}>
+										{entry.fieldName}
+									</THNoWrap>
 								))}
 							</tr>
 						</THead>
