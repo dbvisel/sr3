@@ -21,6 +21,7 @@ const FigureDiv = styled.figure`
 	& div {
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-end;
 		& a {
 			width: 49%;
 			border: none;
