@@ -182,7 +182,7 @@ class Dataset extends React.Component {
 		if (this.props.perPage) {
 			perPage = this.props.perPage;
 		}
-		console.log(this.props.data.fields);
+		console.log(this.props);
 		let endPoint = this.state.startPoint + perPage;
 		let data = this.props.data;
 		let visibleFields = [];
@@ -266,7 +266,6 @@ class Dataset extends React.Component {
 		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length });
 	}
 	render() {
-		console.log(this.state);
 		return this.state.outputData ? (
 			<div>
 				{this.props.hideHeaders ? null : (

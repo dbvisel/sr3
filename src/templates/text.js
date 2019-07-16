@@ -44,7 +44,6 @@ class TextPage extends React.Component {
 		const pageContext = this.props.pageContext;
 		const { frontmatter, code } = data.mdx;
 		const { reportData, dataSets } = pageContext;
-		console.log(reportData);
 		return (
 			<Layout title={frontmatter.title} menu={reportData} thisPage={frontmatter.path}>
 				<HeaderSection>
