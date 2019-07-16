@@ -1,0 +1,65 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_1",
+		"name": "Chinese Ceramics",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "totalPieces",
+				"fieldName": "Total number of pieces",
+				"fieldNameShort": "Total no. of pieces",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "motif",
+				"fieldName": "Motif"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+			"hiddenOrder": "1",
+			"partOfVessel": "PLATE",
+			"spit": "1",
+			"totalPieces": "7",
+			"colour": "WHITE",
+			"motif": "FLORAL",
+			"weight": "213.1",
+			"notes": "MODERN; TWO PLATES"
+		}]
+
+	}
+}

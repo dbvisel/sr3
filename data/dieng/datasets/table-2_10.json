@@ -1,0 +1,149 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_10",
+		"name": "Table 2-10",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "biscuit",
+				"fieldName": "Biscuit"
+			},
+			{
+				"fieldKey": "glaze",
+				"fieldName": "Glaze"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "Bowl Body",
+				"spit": "1",
+				"colour": "Grayish green",
+				"findNumber": "1",
+				"biscuit": "gray",
+				"glaze": "present",
+				"diameter": "",
+				"thickness": "1.6-3.3",
+				"weight": "6.96",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "Jar body",
+				"spit": "2",
+				"colour": "Brownish green",
+				"findNumber": "1",
+				"biscuit": "gray",
+				"glaze": "crackled",
+				"diameter": "",
+				"thickness": "5.4",
+				"weight": "32.9",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "Dusun Jar Body",
+				"spit": "3",
+				"colour": "Moss green",
+				"findNumber": "1",
+				"biscuit": "gray",
+				"glaze": "Runny moss green",
+				"diameter": "",
+				"thickness": "7.6",
+				"weight": "129",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "Bowl Body",
+				"spit": "3",
+				"colour": "White",
+				"findNumber": "2",
+				"biscuit": "white",
+				"glaze": "present",
+				"diameter": "",
+				"thickness": "1.3-2.4",
+				"weight": "5.53",
+				"photo": "x",
+				"notes": "Porcelain"
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "Plate Lip",
+				"spit": "3",
+				"colour": "Grayish green",
+				"findNumber": "3",
+				"biscuit": "gray",
+				"glaze": "present",
+				"diameter": "10",
+				"thickness": "1.3 to 2.4",
+				"weight": "1.82",
+				"photo": "",
+				"notes": ""
+			}
+		]
+
+	}
+}

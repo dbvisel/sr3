@@ -1,0 +1,371 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_30",
+		"name": "Table 2-30",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "z",
+				"fieldName": "Z (cm)",
+				"fieldNameShort": "Z",
+				"unit": "cm"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "JAR RIM",
+				"spit": "4",
+				"z": "98",
+				"findNumber": "1",
+				"diameter": "10",
+				"thickness": "6",
+				"weight": "14",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "JAR CARINATION",
+				"spit": "4",
+				"z": "130",
+				"findNumber": "3",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "8.37",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "JAR CARINATION",
+				"spit": "5",
+				"z": "148",
+				"findNumber": "4",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "8.35",
+				"photo": "X",
+				"notes": "NOS 4,5,6 CONJOIN"
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "JAR CARINATION",
+				"spit": "5",
+				"z": "148",
+				"findNumber": "5",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "5.13",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "BODY",
+				"spit": "5",
+				"z": "185",
+				"findNumber": "6",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.92",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "PERIUK RIM",
+				"spit": "6",
+				"z": "185",
+				"findNumber": "7",
+				"diameter": "16",
+				"thickness": "3",
+				"weight": "7.67",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BODY",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "8",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "2.15",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "BOWL RIM",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "9",
+				"diameter": "14",
+				"thickness": "3",
+				"weight": "6.96",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "BOWL RIM",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "10",
+				"diameter": "12",
+				"thickness": "3",
+				"weight": "3.72",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "KUALI NECK",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "11",
+				"diameter": "12",
+				"thickness": "3",
+				"weight": "6.24",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "BODY",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "12",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "7.85",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "BOWL RIM",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "13",
+				"diameter": "16",
+				"thickness": "7-Feb",
+				"weight": "4.38",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "KUALI LIP",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "14",
+				"diameter": "",
+				"thickness": "6-Apr",
+				"weight": "3.19",
+				"photo": "",
+				"notes": "FINDS 14 TO 19 BAGGED TOGETHER"
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "BODY",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "15",
+				"diameter": "",
+				"thickness": "2",
+				"weight": "0.76",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "BODYBODY",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "16",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.93",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "BODY",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "17",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.81",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "BODY",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "18",
+				"diameter": "",
+				"thickness": "7-Feb",
+				"weight": "2.42",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "BODY",
+				"spit": "6",
+				"z": "192",
+				"findNumber": "19",
+				"diameter": "",
+				"thickness": "8-Mar",
+				"weight": "3.07",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "BODY",
+				"spit": "7",
+				"z": "192",
+				"findNumber": "20",
+				"diameter": "",
+				"thickness": "8-Mar",
+				"weight": "1.36",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "RIM",
+				"spit": "7",
+				"z": "196",
+				"findNumber": "21",
+				"diameter": "12",
+				"thickness": "7",
+				"weight": "5.6",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "21",
+				"partOfVessel": "BODY",
+				"spit": "7",
+				"z": "196",
+				"findNumber": "22",
+				"diameter": "",
+				"thickness": "7-Apr",
+				"weight": "3.74",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "22",
+				"partOfVessel": "BODY",
+				"spit": "7",
+				"z": "196",
+				"findNumber": "23",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.74",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "23",
+				"partOfVessel": "LIP",
+				"spit": "7",
+				"z": "198",
+				"findNumber": "24",
+				"diameter": "12",
+				"thickness": "7",
+				"weight": "1.89",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "24",
+				"partOfVessel": "BODY",
+				"spit": "7",
+				"z": "198",
+				"findNumber": "25",
+				"diameter": "",
+				"thickness": "7-Apr",
+				"weight": "2.96",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "25",
+				"partOfVessel": "BOWL RIM",
+				"spit": "7",
+				"z": "200",
+				"findNumber": "26",
+				"diameter": "14",
+				"thickness": "10-Apr",
+				"weight": "6.01",
+				"photo": "X",
+				"notes": ""
+			}
+		]
+
+	}
+}

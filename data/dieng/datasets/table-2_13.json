@@ -1,0 +1,526 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_13",
+		"name": "Table 2-13",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "motif",
+				"fieldName": "Motif"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "3",
+				"motif": "",
+				"diameter": "",
+				"thickness": "10",
+				"weight": "8.18",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "4",
+				"motif": "",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "3.01",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.52",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "6",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.19",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.82",
+				"notes": "BLACK"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "8",
+				"motif": "",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "2.93",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "9",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "0.8",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "10",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.91",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "BOWL LIP",
+				"spit": "2",
+				"findNumber": "2",
+				"motif": "",
+				"diameter": "12",
+				"thickness": "11",
+				"weight": "6.45",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "3",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "3.83",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "4",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "4.11",
+				"notes": "BLACK"
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "5.34",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "6",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "0.81",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "0.61",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "8",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.85",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "4",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "12.45",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "5.11",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "6",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "3.53",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.8",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "8",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "3.61",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "21",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "9",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "1.93",
+				"notes": "RED"
+			},
+			{
+				"hiddenOrder": "22",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "10",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "1.29",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "23",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "11",
+				"motif": "",
+				"diameter": "",
+				"thickness": "2",
+				"weight": "0.2",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "24",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "12",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "1.64",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "25",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "13",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "1.95",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "26",
+				"partOfVessel": "LIP",
+				"spit": "3",
+				"findNumber": "14",
+				"motif": "",
+				"diameter": "10",
+				"thickness": "4",
+				"weight": "0.7",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "27",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "15",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "0.68",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "28",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "16",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "0.55",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "29",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "17",
+				"motif": "",
+				"diameter": "",
+				"thickness": "2",
+				"weight": "0.47",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "30",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "18",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.83",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "31",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "8.98",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "32",
+				"partOfVessel": "JAR LIP",
+				"spit": "4",
+				"findNumber": "6",
+				"motif": "",
+				"diameter": "20",
+				"thickness": "8",
+				"weight": "7.38",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "33",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "4.13",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "34",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "8",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "3.61",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "35",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "9",
+				"motif": "INCISED",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.58",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "36",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "10",
+				"motif": "STAMPED",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "5.19",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "37",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "11",
+				"motif": "",
+				"diameter": "",
+				"thickness": "?",
+				"weight": "4.59",
+				"notes": "IRREGULAR"
+			},
+			{
+				"hiddenOrder": "38",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "12",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.33",
+				"notes": "BLACK"
+			},
+			{
+				"hiddenOrder": "39",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "13",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.91",
+				"notes": "BLACK"
+			},
+			{
+				"hiddenOrder": "40",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "14",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.07",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "41",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "15",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.65",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "42",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "16",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.46",
+				"notes": ""
+			}
+		]
+
+	}
+}

@@ -1,0 +1,117 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_8",
+		"name": "Table 2-8",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "motif",
+				"fieldName": "Motif"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "TILE FRAGMENT",
+				"spit": "2",
+				"findNumber": "11",
+				"motif": "",
+				"thickness": "15/`5.5",
+				"weight": "86.38",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "TILE FRAGMENT",
+				"spit": "5",
+				"findNumber": "14",
+				"motif": "",
+				"thickness": "14/15",
+				"weight": "24.45",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "TILE FRAGMENT",
+				"spit": "5",
+				"findNumber": "15",
+				"motif": "",
+				"thickness": "14.3/14.6",
+				"weight": "62.4",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "TILE FRAGMENT",
+				"spit": "6",
+				"findNumber": "19",
+				"motif": "",
+				"thickness": "143.78",
+				"weight": "143.78",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "BODY",
+				"spit": "8",
+				"findNumber": "20",
+				"motif": "INCISED",
+				"thickness": "1.45",
+				"weight": "1.45",
+				"notes": "PYRITE TEMPER"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "BODY",
+				"spit": "8",
+				"findNumber": "21",
+				"motif": "INCISED",
+				"thickness": "0.77",
+				"weight": "0.77",
+				"notes": "PYRITE TEMPER"
+			}
+		]
+
+	}
+}

@@ -1,0 +1,114 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_2",
+		"name": "Glass",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "item",
+				"fieldName": "Item"
+			},
+			{
+				"fieldKey": "unit",
+				"fieldName": "Unit"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "totalPieces",
+				"fieldName": "Total number of pieces",
+				"fieldNameShort": "Total no. of pieces",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "motifGlaze",
+				"fieldName": "Motif/Glaze"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "featureStyle",
+				"fieldName": "Feature/Style"
+			},
+			{
+				"fieldKey": "drawing",
+				"fieldName": "Drawing"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "remarks",
+				"fieldName": "Remarks"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"item": "Glass",
+				"unit": "K'f32.1 ",
+				"spit": "1",
+				"totalPieces": "6",
+				"colour": "Transparent",
+				"motifGlaze": "",
+				"weight": "126,2 7 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "Representing 5 objects "
+			},
+			{
+				"hiddenOrder": "2",
+				"item": "Flat Glass",
+				"unit": "K'f32.1 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "Transparent",
+				"motifGlaze": "",
+				"weight": "41,39 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"item": "Thin glass",
+				"unit": "K'f32.1 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "Transparent",
+				"motifGlaze": "",
+				"weight": "1,65 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "Rather curved"
+			}
+		]
+
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_29",
+		"name": "Table 2-29",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "z",
+				"fieldName": "Z (cm)",
+				"fieldNameShort": "Z",
+				"unit": "cm"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "biscuit",
+				"fieldName": "Biscuit"
+			},
+			{
+				"fieldKey": "glaze",
+				"fieldName": "Glaze"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+			"hiddenOrder": "1",
+			"partOfVessel": "PLATE RIM",
+			"z": "123",
+			"spit": "4",
+			"findNumber": "2",
+			"biscuit": "White-brown",
+			"glaze": "X",
+			"diameter": "14",
+			"thickness": "4",
+			"weight": "1.06",
+			"notes": "Changsha"
+		}]
+
+	}
+}

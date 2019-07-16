@@ -1,0 +1,510 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_28",
+		"name": "Table 2-28",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "2",
+				"diameter": "",
+				"thickness": "6.5",
+				"weight": "13.76",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "3",
+				"diameter": "",
+				"thickness": "0.5",
+				"weight": "3.44",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "BOWL LIP",
+				"spit": "2",
+				"findNumber": "4",
+				"diameter": "20",
+				"thickness": "6.8/7",
+				"weight": "7.46",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "VASE LIP",
+				"spit": "2",
+				"findNumber": "5",
+				"diameter": "16",
+				"thickness": "18",
+				"weight": "8.14",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "KUALI LIP",
+				"spit": "2",
+				"findNumber": "6",
+				"diameter": "",
+				"thickness": "77.7/8.2",
+				"weight": "18.32",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "JAR RIM",
+				"spit": "3",
+				"findNumber": "7",
+				"diameter": "",
+				"thickness": "6.3/7",
+				"weight": "9.04",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BOWL LIP",
+				"spit": "3",
+				"findNumber": "8",
+				"diameter": "",
+				"thickness": "6.4/6.9",
+				"weight": "5.02",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "KUALI LIP",
+				"spit": "3",
+				"findNumber": "9",
+				"diameter": "24",
+				"thickness": "10-Jul",
+				"weight": "7.48",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "KUALI LIP",
+				"spit": "3",
+				"findNumber": "10",
+				"diameter": "24",
+				"thickness": "6.8/8.4",
+				"weight": "5.36",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "JAR RIM",
+				"spit": "3",
+				"findNumber": "11",
+				"diameter": "",
+				"thickness": "5.1/6",
+				"weight": "7.31",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "KUALI LIP",
+				"spit": "3",
+				"findNumber": "12",
+				"diameter": "30",
+				"thickness": "11-Oct",
+				"weight": "12.14",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "PENGARON LIP",
+				"spit": "3",
+				"findNumber": "13",
+				"diameter": "28",
+				"thickness": "12/12.3",
+				"weight": "15.21",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "CARINATION",
+				"spit": "3",
+				"findNumber": "14",
+				"diameter": "",
+				"thickness": "5.4/5.6",
+				"weight": "17.32",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "BOWL FOOT",
+				"spit": "3",
+				"findNumber": "16",
+				"diameter": "",
+				"thickness": "10",
+				"weight": "3.76",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "37",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "8.59",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "38",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "8.75",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "39",
+				"diameter": "",
+				"thickness": "2.9",
+				"weight": "3.8",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "40",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "10.64",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "41",
+				"diameter": "",
+				"thickness": "4.6",
+				"weight": "5.36",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "42",
+				"diameter": "",
+				"thickness": "2",
+				"weight": "1.99",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "21",
+				"partOfVessel": "BDY",
+				"spit": "3",
+				"findNumber": "43",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "8.02",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "22",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "44",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "13.64",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "23",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "45",
+				"diameter": "",
+				"thickness": "4.5",
+				"weight": "9.95",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "24",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "46",
+				"diameter": "",
+				"thickness": "5.5",
+				"weight": "5.77",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "25",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "47",
+				"diameter": "",
+				"thickness": "6.5",
+				"weight": "7.74",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "26",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "48",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "5.39",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "27",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "49",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "8.37",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "28",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "50",
+				"diameter": "",
+				"thickness": "3.5",
+				"weight": "2.2",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "29",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "51",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "2.51",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "30",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "52",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "3.45",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "31",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "53",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "2.51",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "32",
+				"partOfVessel": "BASE",
+				"spit": "3",
+				"findNumber": "54",
+				"diameter": "",
+				"thickness": "12-Jul",
+				"weight": "14.19",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "33",
+				"partOfVessel": "KUALI BASE",
+				"spit": "3",
+				"findNumber": "15",
+				"diameter": "16",
+				"thickness": "11-May",
+				"weight": "37.83",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "34",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "55",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.97",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "35",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "56",
+				"diameter": "",
+				"thickness": "5.2",
+				"weight": "1.27",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "36",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "57",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "3.43",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "37",
+				"partOfVessel": "BOWL BASE",
+				"spit": "4",
+				"findNumber": "58",
+				"diameter": "",
+				"thickness": "2.5/7.5",
+				"weight": "10.31",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "38",
+				"partOfVessel": "KUALI LIP",
+				"spit": "4",
+				"findNumber": "59",
+				"diameter": "28",
+				"thickness": "8-May",
+				"weight": "3.59",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "39",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "60",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "4.38",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "40",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "61",
+				"diameter": "",
+				"thickness": "4.5",
+				"weight": "2.59",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "41",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "62",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "7.36",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "42",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "63",
+				"diameter": "",
+				"thickness": "3.5",
+				"weight": "2.28",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "43",
+				"partOfVessel": "BOWL LIP",
+				"spit": "5",
+				"findNumber": "71",
+				"diameter": "",
+				"thickness": "6/6.5",
+				"weight": "4.41",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "44",
+				"partOfVessel": "BODY",
+				"spit": "5",
+				"findNumber": "72",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "11.56",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "45",
+				"partOfVessel": "BODY",
+				"spit": "5",
+				"findNumber": "73",
+				"diameter": "",
+				"thickness": "5.5",
+				"weight": "2.024",
+				"notes": ""
+			}
+		]
+
+	}
+}

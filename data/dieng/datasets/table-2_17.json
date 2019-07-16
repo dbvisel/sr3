@@ -1,0 +1,290 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_17",
+		"name": "Table 2-17",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "BOWL LIP",
+				"spit": "2",
+				"findNumber": "1",
+				"diameter": "12",
+				"thickness": "6",
+				"weight": "6.28",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "2",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "5.45",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "3",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "4.25",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "4",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "2.01",
+				"notes": "PYRITE SANDY TEMPER"
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "5",
+				"diameter": "",
+				"thickness": "2",
+				"weight": "1.83",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "JAR RIM",
+				"spit": "3",
+				"findNumber": "3",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "18.71",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "4",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "12.51",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "5",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "8.51",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "6",
+				"diameter": "",
+				"thickness": "10",
+				"weight": "4.05",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "GACUK",
+				"spit": "3",
+				"findNumber": "7",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "4.05",
+				"notes": "BROKEN"
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "8",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "4.46",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "9",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "4.66",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "10",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "4.8",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "JAR RIM",
+				"spit": "3",
+				"findNumber": "11",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "9.01",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "KUALI CARINATION",
+				"spit": "3",
+				"findNumber": "12",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "4.68",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "BOWL LIP",
+				"spit": "3",
+				"findNumber": "13",
+				"diameter": "22",
+				"thickness": "7",
+				"weight": "5.29",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "JAR LIP",
+				"spit": "3",
+				"findNumber": "14",
+				"diameter": "30",
+				"thickness": "9",
+				"weight": "12.34",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "CARINATION",
+				"spit": "3",
+				"findNumber": "15",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "7.13",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "16",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.89",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "17",
+				"diameter": "",
+				"thickness": "?",
+				"weight": "3.06",
+				"notes": "IRREGULAR"
+			},
+			{
+				"hiddenOrder": "21",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "18",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "1.38",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "22",
+				"partOfVessel": "BOWL BASE",
+				"spit": "4",
+				"findNumber": "1",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.73",
+				"notes": "FOREIGN"
+			},
+			{
+				"hiddenOrder": "23",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "2",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "1.85",
+				"notes": "FOREIGN"
+			}
+		]
+
+	}
+}

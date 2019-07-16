@@ -1,0 +1,182 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_4",
+		"name": "Glass",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+
+			{
+				"fieldKey": "unit",
+				"fieldName": "Unit"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "totalPieces",
+				"fieldName": "Total number of pieces",
+				"fieldNameShort": "Total no. of pieces",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "motifGlaze",
+				"fieldName": "Motif/Glaze"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "style",
+				"fieldName": "Style"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "Tumbler Base ",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "3",
+				"colour": "2 clear, 1 black",
+				"motifGlaze": "",
+				"weight": "281,1 4 ",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "Tumber lip, base",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "Clear",
+				"motifGlaze": "",
+				"weight": "97,26 ",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "Bottle Base",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "Clear",
+				"motifGlaze": "",
+				"weight": "128.32",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "Bottle Base",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "3",
+				"colour": "Brown",
+				"motifGlaze": "",
+				"weight": "65,64 ",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "Bottle",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "Brown",
+				"motifGlaze": "",
+				"weight": "17,34 ",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "Tumbler Rim",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "8",
+				"colour": "Clear",
+				"motifGlaze": "",
+				"weight": "151,7 4 ",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "Tumbler Body",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "5",
+				"colour": "4 Clear, 1 Black",
+				"motifGlaze": "",
+				"weight": "80,07 ",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "Plate Glass",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "Bluish Transparent",
+				"motifGlaze": "",
+				"weight": "250",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "Plate Rim",
+				"unit": "K'b32.4 ",
+				"spit": "",
+				"totalPieces": "2",
+				"colour": "1 Clear, 1 Bluish Transparent",
+				"motifGlaze": "Grape motif ",
+				"weight": "90.33",
+				"style ": "modern"
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "Flat Glass",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "3",
+				"colour": "2 Clear, 1 Black",
+				"motifGlaze": "",
+				"weight": "25,63 ",
+				"style ": "modern "
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "Bowl Base",
+				"unit": "K'b32.4 ",
+				"spit": "2",
+				"totalPieces": "1",
+				"colour": "Black",
+				"motifGlaze": "Floral",
+				"weight": "100,4 9 ",
+				"style ": "modern "
+			}
+		]
+
+	}
+}

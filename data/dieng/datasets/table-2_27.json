@@ -1,0 +1,79 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_27",
+		"name": "Table 2-27",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"spit": "3",
+				"findNumber": "35",
+				"colour": "GREEN",
+				"thickness": "2.2",
+				"weight": "0.86",
+				"photo": "X",
+				"notes": "XRD"
+			},
+			{
+				"hiddenOrder": "1",
+				"spit": "3",
+				"findNumber": "36",
+				"colour": "BLUE",
+				"thickness": "1.7",
+				"weight": "0.42",
+				"photo": "X",
+				"notes": "XRD"
+			}
+		]
+
+	}
+}

@@ -1,0 +1,290 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_21",
+		"name": "Table 2-21",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "2",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "4.2",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "BODY",
+				"spit": "",
+				"findNumber": "3",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "2.76",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "4",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "3.46",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "UMBRELLA KENDI NECK",
+				"spit": "1",
+				"findNumber": "5",
+				"diameter": "",
+				"thickness": "14-Jul",
+				"weight": "7.32",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "6",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.75",
+				"notes": "STAMPED"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "7",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "3.77",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BOWL LIP",
+				"spit": "1",
+				"findNumber": "8",
+				"diameter": "14",
+				"thickness": "7",
+				"weight": "7.35",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "9",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "2.33",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "10",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "2.85",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "11",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.23",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "12",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "1.11",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "1",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "3.37",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "2",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.92",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "5",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "0.87",
+				"notes": "BLAK"
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "8",
+				"diameter": "",
+				"thickness": "2",
+				"weight": "0.82",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "KENDI RIM",
+				"spit": "3",
+				"findNumber": "4",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "11.8",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "BOWL CARINATION",
+				"spit": "3",
+				"findNumber": "5",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "10.92",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "6",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "8.24",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "7",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "3.29",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "8",
+				"diameter": "",
+				"thickness": "2",
+				"weight": "0.92",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "21",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "2",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "2.14",
+				"notes": "PYRIITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "22",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "3",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "10.33",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "23",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "4",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "4.21",
+				"notes": ""
+			}
+		]
+
+	}
+}

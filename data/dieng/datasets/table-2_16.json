@@ -1,0 +1,177 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_16",
+		"name": "Table 2-16",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "biscuit",
+				"fieldName": "Biscuit"
+			},
+			{
+				"fieldKey": "glaze",
+				"fieldName": "Glaze"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "BOWL BASE",
+				"findNumber": "1",
+				"colour": "GREENISH GRAY & IVORY YELLOW",
+				"biscuit": "GRAY",
+				"glaze": "YES",
+				"diameter": "8",
+				"thickness": "13.9",
+				"weight": "72.5",
+				"notes": "SPUR MARKED YUEH"
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "BOWL LIP",
+				"findNumber": "2",
+				"colour": "GRAYISH YELLOW",
+				"biscuit": "GRAY",
+				"glaze": "YES",
+				"diameter": "14",
+				"thickness": "4.2",
+				"weight": "4.88",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "BODY",
+				"findNumber": "19",
+				"colour": "WHITE",
+				"biscuit": "WHITE",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "0.71",
+				"notes": "PORCELAIN"
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "BODY",
+				"findNumber": "20",
+				"colour": "IVORY WHITE",
+				"biscuit": "IVORY WHITE",
+				"glaze": "CRACKLED",
+				"diameter": "",
+				"thickness": "3.4",
+				"weight": "0.64",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "JAR BODY",
+				"findNumber": "22",
+				"colour": "IVORY YELLOW",
+				"biscuit": "GRAY",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "8.25",
+				"notes": "22-23-24 FIT TOGETHER"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "JAR BODY",
+				"findNumber": "23",
+				"colour": "IVORY YELLOW",
+				"biscuit": "GRAY",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "4.16",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BOWL BODY",
+				"findNumber": "24",
+				"colour": "MOSS GREEN",
+				"biscuit": "IVORY WHITE",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "7.8",
+				"weight": "11.76",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "PLATE LIP",
+				"findNumber": "25",
+				"colour": "IVORY YELLOW",
+				"biscuit": "BROWN",
+				"glaze": "FLAKING",
+				"diameter": "16",
+				"thickness": "4",
+				"weight": "4.59",
+				"notes": "25 AND 26 FIT TOGETHER"
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "PLATE LIP",
+				"findNumber": "26",
+				"colour": "IVORY YELLOW",
+				"biscuit": "BROWN",
+				"glaze": "",
+				"diameter": "14",
+				"thickness": "4.3",
+				"weight": "2.22",
+				"notes": ""
+			}
+		]
+
+	}
+}

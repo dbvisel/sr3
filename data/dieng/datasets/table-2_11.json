@@ -1,0 +1,309 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_11",
+		"name": "Table 2-11",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "motif",
+				"fieldName": "Motif"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "Bowl lip",
+				"spit": "1",
+				"findNumber": "2",
+				"motif": "",
+				"diameter": "36",
+				"thickness": "8",
+				"weight": "10.52",
+				"photo": "x",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "Kuali lip",
+				"spit": "1",
+				"findNumber": "3",
+				"motif": "",
+				"diameter": "16",
+				"thickness": "10",
+				"weight": "6.64",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "Body",
+				"spit": "1",
+				"findNumber": "4",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.7",
+				"photo": "",
+				"notes": "black"
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "Body",
+				"spit": "1",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "3.96",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "Bowl Base",
+				"spit": "1",
+				"findNumber": "6",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "2.97",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "Body",
+				"spit": "1",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "1.29",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "Body",
+				"spit": "2",
+				"findNumber": "2",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "5.56",
+				"photo": "x",
+				"notes": "black"
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "Neck",
+				"spit": "2",
+				"findNumber": "3",
+				"motif": "Incised",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "3.01",
+				"photo": "x",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "Bowl Base",
+				"spit": "2",
+				"findNumber": "4",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "3.88",
+				"photo": "",
+				"notes": "Black with pyrite"
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "Body",
+				"spit": "2",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.1",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "Body",
+				"spit": "2",
+				"findNumber": "6",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.91",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "Body",
+				"spit": "2",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.72",
+				"photo": "x",
+				"notes": "Pyrite inclusions"
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "4",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "3.83",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "7.21",
+				"photo": "",
+				"notes": "Pyrite inclusions"
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "6",
+				"motif": "Incised",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "4.63",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "Pengaron rim",
+				"spit": "3",
+				"findNumber": "7",
+				"motif": "Incised",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "6.26",
+				"photo": "",
+				"notes": "Pyrite inclusions"
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "8",
+				"motif": "Incised",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "5.68",
+				"photo": "",
+				"notes": "Pyrite inclusions"
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "9",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "2.08",
+				"photo": "",
+				"notes": "Brown"
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "10",
+				"motif": "",
+				"diameter": "",
+				"thickness": "47",
+				"weight": "1.43",
+				"photo": "",
+				"notes": "Pyrite inclusions"
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "Kuali rim",
+				"spit": "4",
+				"findNumber": "1",
+				"motif": "",
+				"diameter": "",
+				"thickness": "",
+				"weight": "9.15",
+				"photo": "",
+				"notes": ""
+			}
+		]
+
+	}
+}

@@ -1,0 +1,295 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_33",
+		"name": "Table 2-33",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "z",
+				"fieldName": "Z (cm)",
+				"fieldNameShort": "Z",
+				"unit": "cm"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "biscuit",
+				"fieldName": "Biscuit"
+			},
+			{
+				"fieldKey": "glaze",
+				"fieldName": "Glaze"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "JAR BODY",
+				"z": "50",
+				"spit": "2",
+				"findNumber": "2",
+				"colour": "WHITE",
+				"biscuit": "WHITE",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "6-Mar",
+				"weight": "9.2",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "DUSUN JAR BODY",
+				"z": "52",
+				"spit": "2",
+				"findNumber": "2",
+				"colour": "MOSS GREEN",
+				"biscuit": "GRAYISH WHITE",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "12-Sep",
+				"weight": "37.49",
+				"photo": "X",
+				"notes": "LOOP THICK 27 MM"
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "DUSUN JAR BODY",
+				"z": "52",
+				"spit": "2",
+				"findNumber": "10",
+				"colour": "MOSS GREEN",
+				"biscuit": "GRAYISH WHITE",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "12-Jul",
+				"weight": "93",
+				"photo": "",
+				"notes": "9 AND 10 CONJOIN LOOP 22 MM THICK"
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "BOWL BASE",
+				"z": "52",
+				"spit": "2",
+				"findNumber": "11",
+				"colour": "PINK",
+				"biscuit": "PINKISH WHITE",
+				"glaze": "X",
+				"diameter": "24",
+				"thickness": "5-Apr",
+				"weight": "10.67",
+				"photo": "X",
+				"notes": "GLAZED EWARE INCISED WANG"
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "BODY",
+				"z": "57",
+				"spit": "2",
+				"findNumber": "14",
+				"colour": "Ivory yellow",
+				"biscuit": "Ivory white",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "7-Aug",
+				"weight": "5.61",
+				"photo": "",
+				"notes": "2 CON-JOINING"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "BOWL BASE",
+				"z": "67",
+				"spit": "2",
+				"findNumber": "18",
+				"colour": "PINK",
+				"biscuit": "PINKISH WHITE",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.2",
+				"photo": "",
+				"notes": "EWARE"
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "JAR BODY",
+				"z": "67",
+				"spit": "2",
+				"findNumber": "19",
+				"colour": "WHITE",
+				"biscuit": "WHITE",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "9-Mar",
+				"weight": "52.73",
+				"photo": "X",
+				"notes": "DING WHITE"
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "JAR BODY",
+				"z": "72",
+				"spit": "3",
+				"findNumber": "21",
+				"colour": "IVORY YELLOW",
+				"biscuit": "BROWN",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "9.66",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "PLATE LIP",
+				"z": "77",
+				"spit": "3",
+				"findNumber": "39",
+				"colour": "GRAYISH GREEN",
+				"biscuit": "GRAY",
+				"glaze": "X",
+				"diameter": "20",
+				"thickness": "4",
+				"weight": "2.15",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "JAR BODY",
+				"z": "91",
+				"spit": "3",
+				"findNumber": "40",
+				"colour": "GRAYISH GREEN",
+				"biscuit": "IVORY WHITE",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "39.55",
+				"photo": "X",
+				"notes": "COARSE"
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "BOWL FOOT",
+				"z": "##",
+				"spit": "4",
+				"findNumber": "49",
+				"colour": "GRAY",
+				"biscuit": "GRAY",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "13",
+				"weight": "13.45",
+				"photo": "",
+				"notes": "SPUR MARKED YUEH"
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "BOWL BODY",
+				"z": "##",
+				"spit": "4",
+				"findNumber": "51",
+				"colour": "YELLOWISH GRAY",
+				"biscuit": "GRAY",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "3.16",
+				"photo": "",
+				"notes": "GLAZED EWARE WITH WANG CHARACTER"
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "BOWL LIP",
+				"z": "##",
+				"spit": "4",
+				"findNumber": "54",
+				"colour": "WHITE",
+				"biscuit": "WHITE",
+				"glaze": "X",
+				"diameter": "8",
+				"thickness": "3",
+				"weight": "5.29",
+				"photo": "",
+				"notes": "DING"
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "BODY",
+				"z": "",
+				"spit": "4",
+				"findNumber": "56",
+				"colour": "GRAY",
+				"biscuit": "GRAY",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "11.3",
+				"photo": "",
+				"notes": "STONE WARE"
+			}
+		]
+
+	}
+}

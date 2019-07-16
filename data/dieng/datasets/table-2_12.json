@@ -1,0 +1,219 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_12",
+		"name": "Table 2-12",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "biscuit",
+				"fieldName": "Biscuit"
+			},
+			{
+				"fieldKey": "glaze",
+				"fieldName": "Glaze"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "Bottle body",
+				"spit": "1",
+				"findNumber": "1",
+				"colour": "White",
+				"biscuit": "White",
+				"glaze": "x",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "19.96",
+				"photo": "",
+				"notes": "�18 century"
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "Body",
+				"spit": "1",
+				"findNumber": "2",
+				"colour": "Grayish green",
+				"biscuit": "Gray",
+				"glaze": "x",
+				"diameter": "",
+				"thickness": "3.9",
+				"weight": "1.16",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "Jar body",
+				"spit": "2",
+				"findNumber": "1",
+				"colour": "Grayish yellow",
+				"biscuit": "Gray",
+				"glaze": "x",
+				"diameter": "",
+				"thickness": "9.5",
+				"weight": "16.2",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "Dusun Jar Body",
+				"spit": "3",
+				"findNumber": "1",
+				"colour": "Brown",
+				"biscuit": "Brown",
+				"glaze": "x",
+				"diameter": "",
+				"thickness": "15.6",
+				"weight": "27.5",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "Jar rim",
+				"spit": "3",
+				"findNumber": "2",
+				"colour": "Ivory yellow",
+				"biscuit": "Gray",
+				"glaze": "x",
+				"diameter": ">40",
+				"thickness": "10",
+				"weight": "72.67",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "Lip",
+				"spit": "4",
+				"findNumber": "1",
+				"colour": "Ivory yellow",
+				"biscuit": "Ivory yellow",
+				"glaze": "x",
+				"diameter": "30",
+				"thickness": "5.9",
+				"weight": "17",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "Dusun Jar Body",
+				"spit": "4",
+				"findNumber": "2",
+				"colour": "Yellowish green",
+				"biscuit": "Gray",
+				"glaze": "x",
+				"diameter": "",
+				"thickness": "18.5",
+				"weight": "41.89",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "Body",
+				"spit": "4",
+				"findNumber": "4",
+				"colour": "Ivory yellow",
+				"biscuit": "Gray",
+				"glaze": "x",
+				"diameter": "",
+				"thickness": "8.9",
+				"weight": "22.64",
+				"photo": "x",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "Dusun Jar Body",
+				"spit": "4",
+				"findNumber": "3",
+				"colour": "Brown",
+				"biscuit": "Gray",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "17",
+				"weight": "34.1",
+				"photo": "x",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "3",
+				"colour": "white",
+				"biscuit": "white",
+				"glaze": "x",
+				"diameter": "",
+				"thickness": "4.1",
+				"weight": "1.55",
+				"photo": "",
+				"notes": "Porcelain"
+			}
+		]
+
+	}
+}

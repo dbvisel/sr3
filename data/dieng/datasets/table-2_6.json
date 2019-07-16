@@ -1,0 +1,361 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_6",
+		"name": "Ancient Earthenware",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "motif",
+				"fieldName": "Motif"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "Body",
+				"spit": "2",
+				"findNumber": "1",
+				"motif": "",
+				"diameter": "",
+				"thickness": "S,7 ",
+				"weight": "5,9 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "6",
+				"motif": "",
+				"diameter": "",
+				"thickness": "8,8  ",
+				"weight": "11,05 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "8,1  ",
+				"weight": "16",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "8",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4,6 ",
+				"weight": "4,6 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "9",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4,8  ",
+				"weight": "4,34 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "10",
+				"motif": "Stamp",
+				"diameter": "",
+				"thickness": "5,4/6,6 ",
+				"weight": "5,09 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "11",
+				"motif": "Stamp",
+				"diameter": "",
+				"thickness": "3,2 ",
+				"weight": "0,7 ",
+				"notes": "tPYRITE SAND TEMPER "
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "12",
+				"motif": "Stamp",
+				"diameter": "",
+				"thickness": "2,8  ",
+				"weight": "0,97 ",
+				"notes": "temper pasirpirit"
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "17",
+				"motif": "Stamp",
+				"diameter": "",
+				"thickness": "8-May",
+				"weight": "12",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "18",
+				"motif": "Stamp",
+				"diameter": "",
+				"thickness": "3,3  ",
+				"weight": "1,67 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "19",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5,5/8,3 ",
+				"weight": "4,12 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "20",
+				"motif": "",
+				"diameter": "",
+				"thickness": "2,2 ",
+				"weight": "0,79 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "Body",
+				"spit": "3",
+				"findNumber": "21",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4,3  ",
+				"weight": "1,38 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "Bowl Rim",
+				"spit": "3",
+				"findNumber": "22",
+				"motif": "",
+				"diameter": "28",
+				"thickness": "5,8/6,7 ",
+				"weight": "3,37 ",
+				"notes": "temper pasirpirit"
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "Kendi carination",
+				"spit": "4",
+				"findNumber": "23",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4,7/5,9  ",
+				"weight": "6,01 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "Body",
+				"spit": "4",
+				"findNumber": "24",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4,5/6 ",
+				"weight": "4,74 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "Body",
+				"spit": "4",
+				"findNumber": "25",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3,7/5 ",
+				"weight": "12,5 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "Bowl Rim",
+				"spit": "4",
+				"findNumber": "31",
+				"motif": "",
+				"diameter": "26cm ",
+				"thickness": "5,4/6,8  ",
+				"weight": "9,32 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "Jar Lip",
+				"spit": "4",
+				"findNumber": "32",
+				"motif": "",
+				"diameter": "24cm ",
+				"thickness": "6,5  ",
+				"weight": "11,31 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "Bowl Lip",
+				"spit": "4",
+				"findNumber": "33",
+				"motif": "",
+				"diameter": "26cm ",
+				"thickness": "? ",
+				"weight": "2,53 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "21",
+				"partOfVessel": "Bowl Lip",
+				"spit": "4",
+				"findNumber": "34",
+				"motif": "",
+				"diameter": "26cm ",
+				"thickness": "4,9  ",
+				"weight": "11,63 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "22",
+				"partOfVessel": "Body",
+				"spit": "5",
+				"findNumber": "35",
+				"motif": "",
+				"diameter": "",
+				"thickness": "9,8  ",
+				"weight": "7,77 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "23",
+				"partOfVessel": "Body",
+				"spit": "5",
+				"findNumber": "36",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4,5  ",
+				"weight": "2,99 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "24",
+				"partOfVessel": "Body",
+				"spit": "5",
+				"findNumber": "37",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6,3  ",
+				"weight": "3,34 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "25",
+				"partOfVessel": "Body",
+				"spit": "5",
+				"findNumber": "38",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5,5 ",
+				"weight": "3,5 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "26",
+				"partOfVessel": "Umbrella kendi rim",
+				"spit": "",
+				"findNumber": "5",
+				"motif": "39",
+				"diameter": "",
+				"thickness": "12-Jul",
+				"weight": "13,4 ",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "27",
+				"partOfVessel": "Rim",
+				"spit": "5",
+				"findNumber": "40",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5,5/14  ",
+				"weight": "6,72 ",
+				"notes": ""
+			}
+		]
+
+	}
+}

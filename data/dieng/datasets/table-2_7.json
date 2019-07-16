@@ -1,0 +1,142 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_7",
+		"name": "Table 2-7",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "numberOfPieces",
+				"fieldName": "Number of pieces",
+				"fieldNameShort": "No. of pieces",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "BOTTLE",
+				"spit": "1",
+				"numberOfPieces": "3",
+				"colour": "WHITE-TRANSLUCENT",
+				"weight": "50.23",
+				"notes": "PROBABLY ALL FROM SAME OBJECT"
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "GLASS",
+				"spit": "1",
+				"numberOfPieces": "5",
+				"colour": "TRANSLUCENT 2, YELLOWISH TRANSLUCENT 3",
+				"weight": "28.6",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "FLAT GLASS",
+				"spit": "1",
+				"numberOfPieces": "3",
+				"colour": "TRANSLUCENT",
+				"weight": "15.87",
+				"notes": "3 TYPES OF GLASS"
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "TILE",
+				"spit": "2",
+				"numberOfPieces": "1",
+				"colour": "BRICK RED",
+				"weight": "74.49",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "GLASS",
+				"spit": "2",
+				"numberOfPieces": "1",
+				"colour": "YELLOW-TRANSLUCENT",
+				"weight": "2.11",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "TILE",
+				"spit": "5",
+				"numberOfPieces": "2",
+				"colour": "BRICK RED",
+				"weight": "83.34",
+				"notes": "FLAT"
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "REINFORCING ROD",
+				"spit": "5",
+				"numberOfPieces": "2",
+				"colour": "GRAYISH YELLOW",
+				"weight": "4.4",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "UNKNOWN",
+				"spit": "5",
+				"numberOfPieces": "1",
+				"colour": "BROWN-BLACK",
+				"weight": "8.1",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "TILE",
+				"spit": "6",
+				"numberOfPieces": "1",
+				"colour": "BRICK RED",
+				"weight": "133.03",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "EARTHENWARE BODY",
+				"spit": "8",
+				"numberOfPieces": "2",
+				"colour": "BROWN",
+				"weight": "2.18",
+				"notes": ""
+			}
+		]
+
+	}
+}

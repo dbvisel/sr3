@@ -1,0 +1,120 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_32",
+		"name": "Table 2-32",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "BODY",
+				"spit": "5",
+				"findNumber": "3",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.94",
+				"photo": "",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "KUALI NECK",
+				"spit": "6",
+				"findNumber": "5",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "13.75",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "LIP",
+				"spit": "7",
+				"findNumber": "6",
+				"diameter": "20",
+				"thickness": "17",
+				"weight": "7.45",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "BODY",
+				"spit": "7",
+				"findNumber": "7",
+				"diameter": "",
+				"thickness": "2",
+				"weight": "9.96",
+				"photo": "X",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "JAR RIM",
+				"spit": "7",
+				"findNumber": "8",
+				"diameter": "18",
+				"thickness": "17-Aug",
+				"weight": "15.86",
+				"photo": "X",
+				"notes": ""
+			}
+		]
+
+	}
+}

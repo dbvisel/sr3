@@ -1,0 +1,603 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_15",
+		"name": "Table 2-15",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "motif",
+				"fieldName": "Motif"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "LOOP",
+				"spit": "1",
+				"findNumber": "1",
+				"motif": "",
+				"diameter": "",
+				"thickness": "13",
+				"weight": "13.36",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "KUALI RIM",
+				"spit": "1",
+				"findNumber": "2",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "7.68",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "3",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "0.88",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "4",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "4.63",
+				"notes": "MOTIF ERODED"
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.8",
+				"notes": "PYRITE SANDY TEMPER"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "6",
+				"motif": "",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "1.76",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.63",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "8",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.2",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "BODY",
+				"spit": "1",
+				"findNumber": "9",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "1.88",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "BODY",
+				"spit": "2",
+				"findNumber": "1",
+				"motif": "STAMP",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "4.63",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "KUALI LIP",
+				"spit": "2",
+				"findNumber": "2",
+				"motif": "",
+				"diameter": "40",
+				"thickness": "8",
+				"weight": "9.9",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "12",
+				"motif": "",
+				"diameter": "16",
+				"thickness": "10",
+				"weight": "36.58",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "KUALI LIP",
+				"spit": "3",
+				"findNumber": "13",
+				"motif": "",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "10.48",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "14",
+				"motif": "",
+				"diameter": "24",
+				"thickness": "8",
+				"weight": "13.2",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "KUALI RIM",
+				"spit": "3",
+				"findNumber": "15",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.93",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "BOWL LIP",
+				"spit": "3",
+				"findNumber": "16",
+				"motif": "",
+				"diameter": "30",
+				"thickness": "10",
+				"weight": "26.61",
+				"notes": "PYRITE SANDY TEMPER"
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "17",
+				"motif": "",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "7.43",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "KUALI RIM",
+				"spit": "3",
+				"findNumber": "18",
+				"motif": "",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "8.64",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "BOWL LIP",
+				"spit": "3",
+				"findNumber": "19",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "4.94",
+				"notes": "WHITE"
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "20",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "5.69",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "21",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "21",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "4.94",
+				"notes": "WHITE"
+			},
+			{
+				"hiddenOrder": "22",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "22",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "2.88",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "23",
+				"partOfVessel": "JAR RIM",
+				"spit": "3",
+				"findNumber": "23",
+				"motif": "",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "5.26",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "24",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "24",
+				"motif": "",
+				"diameter": "",
+				"thickness": "10",
+				"weight": "5.11",
+				"notes": "WHITE"
+			},
+			{
+				"hiddenOrder": "25",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "25",
+				"motif": "",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "12.13",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "26",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "26",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.88",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "27",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "27",
+				"motif": "INCISED",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "4.53",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "28",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "28",
+				"motif": "",
+				"diameter": "",
+				"thickness": "8",
+				"weight": "2.23",
+				"notes": "FOREIGN EWARE WITH PYRITE"
+			},
+			{
+				"hiddenOrder": "29",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "29",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "2.24",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "30",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "30",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "3.58",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "31",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "31",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.47",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "32",
+				"partOfVessel": "BOWL BASE",
+				"spit": "3",
+				"findNumber": "32",
+				"motif": "",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "3.54",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "33",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "33",
+				"motif": "",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.17",
+				"notes": "BLACK"
+			},
+			{
+				"hiddenOrder": "34",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "34",
+				"motif": "",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "3.66",
+				"notes": "BLACK"
+			},
+			{
+				"hiddenOrder": "35",
+				"partOfVessel": "BOWL LIP",
+				"spit": "3",
+				"findNumber": "35",
+				"motif": "",
+				"diameter": "10",
+				"thickness": "6",
+				"weight": "1.51",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "36",
+				"partOfVessel": "BOWL LIP",
+				"spit": "3",
+				"findNumber": "36",
+				"motif": "",
+				"diameter": "12",
+				"thickness": "4",
+				"weight": "1.64",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "37",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "37",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "1.8",
+				"notes": "PYRITE SANDY TEMPER"
+			},
+			{
+				"hiddenOrder": "38",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "38",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "3.77",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "39",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "39",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.52",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "40",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "40",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.1",
+				"notes": "BLACK"
+			},
+			{
+				"hiddenOrder": "41",
+				"partOfVessel": "KUALI RIM",
+				"spit": "4",
+				"findNumber": "2",
+				"motif": "",
+				"diameter": "28",
+				"thickness": "7",
+				"weight": "15.2",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "42",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "3",
+				"motif": "",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "6.23",
+				"notes": "PYRITE SANDY TEMPER"
+			},
+			{
+				"hiddenOrder": "43",
+				"partOfVessel": "BOWL LIP",
+				"spit": "4",
+				"findNumber": "4",
+				"motif": "",
+				"diameter": "14",
+				"thickness": "5",
+				"weight": "4.02",
+				"notes": "PYRITE SANDY TEMPER"
+			},
+			{
+				"hiddenOrder": "44",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "5",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "4.57",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "45",
+				"partOfVessel": "KENDI BASE",
+				"spit": "4",
+				"findNumber": "6",
+				"motif": "STAMPED",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "2.82",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "46",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "7",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "2.72",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "47",
+				"partOfVessel": "CARINATION",
+				"spit": "4",
+				"findNumber": "8",
+				"motif": "",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "2.77",
+				"notes": "BLACK"
+			},
+			{
+				"hiddenOrder": "48",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "9",
+				"motif": "",
+				"diameter": "",
+				"thickness": "?",
+				"weight": "2.07",
+				"notes": "IRREGULAR"
+			},
+			{
+				"hiddenOrder": "49",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "10",
+				"motif": "",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.39",
+				"notes": ""
+			}
+		]
+
+	}
+}

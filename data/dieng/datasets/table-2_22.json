@@ -1,0 +1,280 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_22",
+		"name": "Table 2-22",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "z",
+				"fieldName": "Z (cm)",
+				"fieldNameShort": "Z",
+				"unit": "cm"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "biscuit",
+				"fieldName": "Biscuit"
+			},
+			{
+				"fieldKey": "glaze",
+				"fieldName": "Glaze"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "JAR BODY",
+				"z": "72",
+				"spit": "3",
+				"findNumber": "1",
+				"colour": "GRAYISH GREEN",
+				"biscuit": "GRAY",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "9.5",
+				"weight": "27.46",
+				"photo": "X",
+				"notes": "GUANGDONG DUSUN"
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "LARGE PLATE BASE",
+				"z": "",
+				"spit": "3",
+				"findNumber": "2",
+				"colour": "MOSS GREEN",
+				"biscuit": "IVORY YELLOW",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "7-Feb",
+				"weight": "9.09",
+				"photo": "X",
+				"notes": "CHANGSHA LATE TANG"
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "BOWL BASE",
+				"z": "75",
+				"spit": "3",
+				"findNumber": "3",
+				"colour": "CLEAR GREEN-WHITE",
+				"biscuit": "IVORY YELLOW",
+				"glaze": "YES",
+				"diameter": "12",
+				"thickness": "7",
+				"weight": "7.81",
+				"photo": "X",
+				"notes": "GREEN SPLASHED THICKNESS OF FOOT 6.9MM"
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "LIP OF SMALL BOWL",
+				"z": "",
+				"spit": "4",
+				"findNumber": "26",
+				"colour": "IVORY WHITE",
+				"biscuit": "IVORY WHITE",
+				"glaze": "",
+				"diameter": "12",
+				"thickness": "5-Apr",
+				"weight": "16-Feb",
+				"photo": "",
+				"notes": "YUEH"
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "JAR BODY",
+				"z": "117",
+				"spit": "5",
+				"findNumber": "27",
+				"colour": "IVORY WHITE",
+				"biscuit": "GRAYISH WHITE",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "8-Jul",
+				"weight": "8.36",
+				"photo": "X",
+				"notes": "TANG"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "JAR BODY",
+				"z": "120",
+				"spit": "5",
+				"findNumber": "28",
+				"colour": "GRAY GREEN",
+				"biscuit": "GRAYISH WHITE",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "12.03",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BOWL LIP",
+				"z": "125",
+				"spit": "5",
+				"findNumber": "29",
+				"colour": "GRAYISH WHITE",
+				"biscuit": "GRAY",
+				"glaze": "YES",
+				"diameter": "14",
+				"thickness": "1.8/4.3",
+				"weight": "9.47",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "BOX LIP",
+				"z": "",
+				"spit": "5",
+				"findNumber": "30",
+				"colour": "GRAYISH WHITE",
+				"biscuit": "GRAY",
+				"glaze": "LEAD GLAZE WITH BLUE SPOTS",
+				"diameter": "12",
+				"thickness": "1.4/1.9",
+				"weight": "4.24",
+				"photo": "",
+				"notes": "FUJIAN"
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "BOWL LIP",
+				"z": "",
+				"spit": "5",
+				"findNumber": "31",
+				"colour": "BROWNISH GREEN",
+				"biscuit": "GRAY",
+				"glaze": "LEAD GLAZE WITH BLUE SPOTS",
+				"diameter": "20",
+				"thickness": "1.3/1.7",
+				"weight": "6.35",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "BOWL LIP",
+				"z": "",
+				"spit": "5",
+				"findNumber": "32",
+				"colour": "BROWNISH GREEN",
+				"biscuit": "GRAY",
+				"glaze": "",
+				"diameter": "20",
+				"thickness": "1.3/2.8",
+				"weight": "5.63",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "BODY",
+				"z": "",
+				"spit": "5",
+				"findNumber": "33",
+				"colour": "WHITE",
+				"biscuit": "WHITE",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "3-Feb",
+				"weight": "2.81",
+				"photo": "",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "BODY",
+				"z": "",
+				"spit": "6",
+				"findNumber": "34",
+				"colour": "GREEN",
+				"biscuit": "GRAY",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "_",
+				"weight": "2.22",
+				"photo": "X",
+				"notes": "YUEH"
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "BODY",
+				"z": "",
+				"spit": "6",
+				"findNumber": "35",
+				"colour": "YELLOW",
+				"biscuit": "IVORY YELLOW",
+				"glaze": "YES",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "5.93",
+				"photo": "X",
+				"notes": "GUANG DONG"
+			}
+		]
+
+	}
+}

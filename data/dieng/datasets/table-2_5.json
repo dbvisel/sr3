@@ -1,0 +1,220 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_5",
+		"name": "Table 2-5",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "z",
+				"fieldName": "Z (cm)",
+				"fieldNameShort": "Z",
+				"unit": "cm"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "objectNumber",
+				"fieldName": "Object Number",
+				"fieldNameShort": "Object No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "biscuit",
+				"fieldName": "Biscuit"
+			},
+			{
+				"fieldKey": "glaze",
+				"fieldName": "Glaze"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "Glass",
+				"z": "",
+				"spit": "2",
+				"objectNumber": "2",
+				"colour": "Clear",
+				"biscuit": "",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "3/3,5 ",
+				"weight": "6,67 ",
+				"notes": "Modern "
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "Glass",
+				"z": "",
+				"spit": "2",
+				"objectNumber": "3",
+				"colour": "Clear",
+				"biscuit": "",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "3,1/4,3 ",
+				"weight": "10,4 ",
+				"notes": "Modern"
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "Glass",
+				"z": "",
+				"spit": "3",
+				"objectNumber": "4",
+				"colour": "Clear",
+				"biscuit": "",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "2,5 ",
+				"weight": "5,07 ",
+				"notes": "Modem "
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "Glass",
+				"z": "",
+				"spit": "3",
+				"objectNumber": "5",
+				"colour": "Clear",
+				"biscuit": "",
+				"glaze": "",
+				"diameter": "SIx",
+				"thickness": "1",
+				"weight": "0,78 ",
+				"notes": "Modern "
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "Body",
+				"z": "",
+				"spit": "3",
+				"objectNumber": "13",
+				"colour": "Green",
+				"biscuit": "Ivory yellow",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "2,3 ",
+				"weight": "0,57 ",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "Bottle",
+				"z": "",
+				"spit": "3",
+				"objectNumber": "15",
+				"colour": "Green",
+				"biscuit": "",
+				"glaze": "",
+				"diameter": "2cm ",
+				"thickness": "5,3  ",
+				"weight": "109",
+				"notes": "Modern "
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "Plate",
+				"z": "",
+				"spit": "3",
+				"objectNumber": "14",
+				"colour": "White",
+				"biscuit": "",
+				"glaze": "",
+				"diameter": "",
+				"thickness": "2,5/4,7 ",
+				"weight": "27,8 ",
+				"notes": "Modern "
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "Body",
+				"z": "",
+				"spit": "3",
+				"objectNumber": "16",
+				"colour": "Brown",
+				"biscuit": "Ivory yellow",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "2,7 ",
+				"weight": "0,39 ",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "Jar Body",
+				"z": "140",
+				"spit": "5",
+				"objectNumber": "41",
+				"colour": "Moss green",
+				"biscuit": "Brown",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "10",
+				"weight": "35,7 ",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "BOWL BASE",
+				"z": "150",
+				"spit": "5",
+				"objectNumber": "42",
+				"colour": "IVORY YELLOW",
+				"biscuit": "GRAY",
+				"glaze": "X",
+				"diameter": "",
+				"thickness": "8,7 ",
+				"weight": "16,4 ",
+				"notes": ""
+			}
+		]
+
+	}
+}

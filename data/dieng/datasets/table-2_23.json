@@ -1,0 +1,530 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_23",
+		"name": "Table 2-23",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "partOfVessel",
+				"fieldName": "Part of vessel",
+				"fieldValues": ["Rim", "Base", "Lid"]
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "findNumber",
+				"fieldName": "Find Number",
+				"fieldNameShort": "Find No.",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "diameter",
+				"fieldName": "Diameter (cm)",
+				"fieldNameShort": "Diameter",
+				"unit": "cm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "thickness",
+				"fieldNameShort": "Thickness",
+				"fieldName": "Thickness (mm)",
+				"unit": "mm",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "notes",
+				"fieldName": "Notes"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "4",
+				"diameter": "",
+				"thickness": "5-Apr",
+				"weight": "2.94",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "2",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "5",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "1.07",
+				"notes": "PYRITE TEMPER"
+			},
+			{
+				"hiddenOrder": "3",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "6",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "2.44",
+				"notes": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "7",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "2.76",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "5",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "8",
+				"diameter": "",
+				"thickness": "1/4.4",
+				"weight": "2.56",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "6",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "9",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "4.37",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "7",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "10",
+				"diameter": "",
+				"thickness": "2.4",
+				"weight": "1.25",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "8",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "11",
+				"diameter": "",
+				"thickness": "4.5",
+				"weight": "2.2",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "9",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "12",
+				"diameter": "",
+				"thickness": "6.5",
+				"weight": "3.29",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "10",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "13",
+				"diameter": "",
+				"thickness": "5",
+				"weight": "2.25",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "11",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "14",
+				"diameter": "",
+				"thickness": "3",
+				"weight": "2.31",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "12",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "15",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.97",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "13",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "16",
+				"diameter": "",
+				"thickness": "7",
+				"weight": "3.71",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "14",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "17",
+				"diameter": "",
+				"thickness": "4",
+				"weight": "1.78",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "15",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "18",
+				"diameter": "",
+				"thickness": "6-May",
+				"weight": "3.18",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "16",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "19",
+				"diameter": "",
+				"thickness": "3.5",
+				"weight": "2.61",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "17",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "20",
+				"diameter": "",
+				"thickness": "3.5",
+				"weight": "2.09",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "18",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "21",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "4.05",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "19",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "22",
+				"diameter": "",
+				"thickness": "9",
+				"weight": "10.01",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "20",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "23",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "4.18",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "21",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "24",
+				"diameter": "",
+				"thickness": "6",
+				"weight": "4.49",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "22",
+				"partOfVessel": "BODY",
+				"spit": "3",
+				"findNumber": "25",
+				"diameter": "",
+				"thickness": "6-Nov",
+				"weight": "13",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "23",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "56",
+				"diameter": "",
+				"thickness": "6.4/8.3",
+				"weight": "8.4",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "24",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "57",
+				"diameter": "",
+				"thickness": "6.3/7.7",
+				"weight": "16.7",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "25",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "58",
+				"diameter": "",
+				"thickness": "5.8/6",
+				"weight": "6.59",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "26",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "59",
+				"diameter": "",
+				"thickness": "6/6.1",
+				"weight": "4.92",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "27",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "60",
+				"diameter": "",
+				"thickness": "6.2/8.1",
+				"weight": "17.3",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "28",
+				"partOfVessel": "JAR LIP",
+				"spit": "4",
+				"findNumber": "46",
+				"diameter": "36",
+				"thickness": "6.6/9.7",
+				"weight": "20.35",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "29",
+				"partOfVessel": "KUALI LIP",
+				"spit": "4",
+				"findNumber": "47",
+				"diameter": "30",
+				"thickness": "5.8/7.6",
+				"weight": "14.87",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "30",
+				"partOfVessel": "BOWL LIP",
+				"spit": "4",
+				"findNumber": "48",
+				"diameter": "",
+				"thickness": "5.4/6",
+				"weight": "6.52",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "31",
+				"partOfVessel": "JAR LIP",
+				"spit": "4",
+				"findNumber": "49",
+				"diameter": "32",
+				"thickness": "6.8/8",
+				"weight": "11.67",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "32",
+				"partOfVessel": "JAR LIP",
+				"spit": "4",
+				"findNumber": "50",
+				"diameter": "20",
+				"thickness": "7/7.4",
+				"weight": "38.71",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "33",
+				"partOfVessel": "BOWL LIP",
+				"spit": "4",
+				"findNumber": "51",
+				"diameter": "",
+				"thickness": "4.5/7/.6",
+				"weight": "6.4",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "34",
+				"partOfVessel": "CUP LIP",
+				"spit": "4",
+				"findNumber": "52",
+				"diameter": "6",
+				"thickness": "5.8/6.5",
+				"weight": "3.3",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "35",
+				"partOfVessel": "JAR LIP",
+				"spit": "4",
+				"findNumber": "53",
+				"diameter": "28",
+				"thickness": "5.2/5.5",
+				"weight": "9.67",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "36",
+				"partOfVessel": "KUALI LIP",
+				"spit": "4",
+				"findNumber": "54",
+				"diameter": "",
+				"thickness": "3.6/5.5",
+				"weight": "5.46",
+				"notes": "PYRI7.89TE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "37",
+				"partOfVessel": "BOWL LIP",
+				"spit": "4",
+				"findNumber": "55",
+				"diameter": "",
+				"thickness": "6.6/9.2",
+				"weight": "7.89",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "38",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "36",
+				"diameter": "",
+				"thickness": "5.3",
+				"weight": "3.28",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "39",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "37",
+				"diameter": "",
+				"thickness": "7.8/8.4",
+				"weight": "12.57",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "40",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "38",
+				"diameter": "",
+				"thickness": "3.4",
+				"weight": "2.66",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "41",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "39",
+				"diameter": "",
+				"thickness": "4.6",
+				"weight": "3.82",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "42",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "40",
+				"diameter": "",
+				"thickness": "7.7",
+				"weight": "6.68",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "43",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "41",
+				"diameter": "",
+				"thickness": "5.4/6.7",
+				"weight": "5.55",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "44",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "42",
+				"diameter": "",
+				"thickness": "5.7/6.3",
+				"weight": "8.46",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "45",
+				"partOfVessel": "BODY",
+				"spit": "4",
+				"findNumber": "43",
+				"diameter": "",
+				"thickness": "3.9",
+				"weight": "7.26",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "46",
+				"partOfVessel": "KUALI RIM",
+				"spit": "4",
+				"findNumber": "44",
+				"diameter": "",
+				"thickness": "4.6/8.4",
+				"weight": "12.07",
+				"notes": "PYRITE SAND TEMPER"
+			},
+			{
+				"hiddenOrder": "47",
+				"partOfVessel": "KUALI CARINATION",
+				"spit": "4",
+				"findNumber": "45",
+				"diameter": "",
+				"thickness": "3.5/5.2",
+				"weight": "24.05",
+				"notes": "PYRITE SAND TEMPE4R"
+			}
+		]
+
+	}
+}

@@ -1,0 +1,310 @@
+{
+	"dataset": {
+		"reportID": "dieng",
+		"id": "table-2_3",
+		"name": "Porcelain and earthenware",
+		"dataSetGroup": "hidden",
+		"orderInGroup": 0,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "item",
+				"fieldName": "Item"
+			},
+			{
+				"fieldKey": "unit",
+				"fieldName": "Unit"
+			},
+			{
+				"fieldKey": "spit",
+				"fieldName": "Spit",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "totalPieces",
+				"fieldName": "Total number of pieces",
+				"fieldNameShort": "Total no. of pieces",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "colour",
+				"fieldName": "Colour",
+				"fieldTransform": "titleCase",
+				"fieldValues": ["Blue", "Indeterminate"]
+			},
+			{
+				"fieldKey": "decorationGlaze",
+				"fieldName": "Decoration/Glaze"
+			},
+			{
+				"fieldKey": "weight",
+				"fieldNameShort": "Weight",
+				"fieldName": "Weight (g)",
+				"unit": "grams",
+				"sortMethod": "integer"
+			},
+			{
+				"fieldKey": "featureStyle",
+				"fieldName": "Feature/Style"
+			},
+			{
+				"fieldKey": "drawing",
+				"fieldName": "Drawing"
+			},
+			{
+				"fieldKey": "photo",
+				"fieldName": "Photographed",
+				"fieldNameShort": "Photo"
+			},
+			{
+				"fieldKey": "remarks",
+				"fieldName": "Remarks"
+			}
+		],
+		"data": [{
+				"hiddenOrder": "1",
+				"item": "Rim-base of plate",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "3",
+				"colour": "White",
+				"decorationGlaze": "flower-2 ",
+				"weight": "233,8 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "2 Sango, 1 elephant motif"
+			},
+			{
+				"hiddenOrder": "2",
+				"item": "Rim-base of cup",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "Clear white",
+				"decorationGlaze": "plain",
+				"weight": "31,12 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "3",
+				"item": "Rim of plate",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "8",
+				"colour": "White",
+				"decorationGlaze": "flower-5, flower on the interior of vase-2 ",
+				"weight": "169,9 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "4",
+				"item": "Base of plate",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "2",
+				"colour": "White",
+				"decorationGlaze": "flower-1 ",
+				"weight": "58,9 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "1 Sango brand "
+			},
+			{
+				"hiddenOrder": "5",
+				"item": "Base of bowl",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "2",
+				"colour": "White",
+				"decorationGlaze": "",
+				"weight": "129,5 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "1 Lucky Fine China "
+			},
+			{
+				"hiddenOrder": "6",
+				"item": "Base of cup",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "White",
+				"decorationGlaze": "",
+				"weight": "12,58 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "China Ware "
+			},
+			{
+				"hiddenOrder": "7",
+				"item": "Base of cup (with handle)",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "White",
+				"decorationGlaze": "",
+				"weight": "26,21 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "8",
+				"item": "Body of cup (with handle)",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "White",
+				"decorationGlaze": "Green flower",
+				"weight": "8,73 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "9",
+				"item": "Earthenware",
+				"unit": "K'b32.4 ",
+				"spit": "1",
+				"totalPieces": "1",
+				"colour": "Dark chocolate",
+				"decorationGlaze": "",
+				"weight": "93,03 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "Fragment of a rim of a pot "
+			},
+			{
+				"hiddenOrder": "10",
+				"item": "Rim-base of plate",
+				"unit": "K'b32.4 ",
+				"spit": "2",
+				"totalPieces": "1",
+				"colour": "Gradation of chocolate and chocolate",
+				"decorationGlaze": "",
+				"weight": "83,6 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "11",
+				"item": "Body of plate",
+				"unit": "K'b32.4 ",
+				"spit": "2",
+				"totalPieces": "2",
+				"colour": "Light chocolate",
+				"decorationGlaze": "",
+				"weight": "17,2 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "12",
+				"item": "Rim of plate ",
+				"unit": "K'b32.4 ",
+				"spit": "2",
+				"totalPieces": "3",
+				"colour": "2 white, 1 gradation of chocolate ",
+				"decorationGlaze": "flower-l ",
+				"weight": "43,6 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "13",
+				"item": "Base of bowl ",
+				"unit": "K'b32.4 ",
+				"spit": "2",
+				"totalPieces": "3",
+				"colour": "White ",
+				"decorationGlaze": "",
+				"weight": "40,2 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "14",
+				"item": "Earthenware",
+				"unit": "K'b32.4 ",
+				"spit": "2",
+				"totalPieces": "1",
+				"colour": "Chocolate",
+				"decorationGlaze": "",
+				"weight": "97,85 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "Fragment of a rim of a mortar "
+			},
+			{
+				"hiddenOrder": "15",
+				"item": "Rim and base of a cup (without handle)",
+				"unit": "K'b32.4 ",
+				"spit": "3",
+				"totalPieces": "1",
+				"colour": "White",
+				"decorationGlaze": "",
+				"weight": "23,4 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": ""
+			},
+			{
+				"hiddenOrder": "16",
+				"item": "Earthenware ",
+				"unit": "K'b32.4 ",
+				"spit": "3",
+				"totalPieces": "1",
+				"colour": "Black",
+				"decorationGlaze": "",
+				"weight": "42,4 ",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "-",
+				"remarks": "Fragment of the body of a wok "
+			},
+			{
+				"hiddenOrder": "17",
+				"item": "Earthenware ",
+				"unit": "K'b32.4 ",
+				"spit": "3",
+				"totalPieces": "1",
+				"colour": "Black",
+				"decorationGlaze": "",
+				"weight": "119",
+				"featureStyle": "modern ",
+				"drawing": "-",
+				"photo": "v ",
+				"remarks": "Fragment of a base of a stove"
+			}
+		]
+
+	}
+}
