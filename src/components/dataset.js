@@ -114,10 +114,10 @@ const THNoWrap = styled.th`
 	font-weight: bold;
 	font-family: var(--headerFont);
 	padding: 0 4px;
-	background-color: #ddd;
+	background-color: ${props => (props.empty ? 'white' : '#ddd')};
 	cursor: pointer;
 	position: sticky;
-	top: ${props => (props.hideHeaders ? '3em' : '5em')};
+	/* top: ${props => (props.hideHeaders ? '3em' : '5em')};
 	&:before {
 		content: '';
 		position: absolute;
@@ -126,7 +126,7 @@ const THNoWrap = styled.th`
 		top: -5em;
 		width: 100%;
 		height: 5em;
-	}
+	} */
 `;
 
 const TableCell = styled.td`
@@ -166,6 +166,44 @@ const cloneObject = function(source) {
 	} else {
 		return source;
 	}
+};
+
+const getSuperheaders = function(visibleFields, allTheFields, hideHeaders) {
+	// this returns a TR with superheaders in it, if they exist
+
+	const getSuperfield = function(thisField, allFields) {
+		for (let i = 0; i < allFields.length; i++) {
+			if (thisField === allFields[i].fieldKey) {
+				return allFields[i].superField || null;
+			}
+		}
+		return null;
+	};
+
+	let headers = visibleFields.map(entry =>
+		getSuperfield(entry.fieldKey, allTheFields) ? getSuperfield(entry.fieldKey, allTheFields) : null
+	);
+	let i = 0;
+	let superFields = [];
+	while (i < headers.length) {
+		let thisHeader = headers[i];
+		let j = 1;
+		while (headers[i + 1] && thisHeader === headers[i + 1]) {
+			i++;
+			j++;
+		}
+		superFields.push({ value: headers[i], colspan: j });
+		i++;
+	}
+	return headers ? (
+		<tr>
+			{superFields.map((entry, key) => (
+				<THNoWrap colSpan={entry.colspan} key={key} empty={!entry.value} hideHeaders={hideHeaders}>
+					{entry.value}
+				</THNoWrap>
+			))}
+		</tr>
+	) : null;
 };
 
 class Dataset extends React.Component {
@@ -304,6 +342,7 @@ class Dataset extends React.Component {
 				<DataTableWrapper>
 					<DataTable>
 						<THead>
+							{getSuperheaders(this.state.visibleFields, this.props.data.fields, this.props.hideHeaders)}
 							<tr>
 								{this.state.visibleFields.map((entry, key) => (
 									<THNoWrap key={key} hideHeaders={this.props.hideHeaders}>

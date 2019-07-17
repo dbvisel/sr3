@@ -8,7 +8,6 @@ TODO:
  * datasets:
    * Maybe move to CSS grid?
    * thumbnails + image records
-	 * superfields
 	 * sorting
 	 * hiddenorder sort
 	 * dropdown types
