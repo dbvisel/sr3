@@ -1,23 +1,27 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Layout from '../components/layout';
+import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 import TextWrapper from '../components/textwrapper';
 
 const IndexPage = () => (
 	<StaticQuery
 		query={graphql`
 			query IndexQuery {
-				markdownRemark(frontmatter: { path: { eq: "masterindex" } }) {
-					html
+				mdx(frontmatter: { path: { eq: "masterindex" } }) {
+					id
+					fileAbsolutePath
+					code {
+						body
+					}
 				}
 			}
 		`}
 		render={data => {
-			let masterText = data.markdownRemark.html || 'error!';
 			return (
 				<Layout menu={{}}>
 					<TextWrapper>
-						<div dangerouslySetInnerHTML={{ __html: masterText }} />
+						<MDXRenderer>{data.mdx.code.body}</MDXRenderer>
 					</TextWrapper>
 				</Layout>
 			);
