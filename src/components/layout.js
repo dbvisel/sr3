@@ -48,7 +48,7 @@ const Layout = ({ data, children, menu, thisPage }) => {
 				<LeftMenu menuData={menu.id ? menu : masterData} thisPage={thisPage} />
 				<Wrapper>{children}</Wrapper>
 			</Main>
-			<Footer updated={menu.lastUpdated || masterData.lastUpdated} />
+			<Footer updated={menu.lastUpdated || masterData.lastUpdated} reportID={menu.id || null} />
 		</ReportContext.Provider>
 	);
 };
