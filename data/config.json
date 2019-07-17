@@ -8,9 +8,6 @@
 			"id": "dieng",
 			"name": "Dieng"
 		}, {
-			"id": "jambi",
-			"name": "Jambi"
-		}, {
 			"id": "lingga",
 			"name": "Lingga"
 		}, {
@@ -19,6 +16,6 @@
 		}],
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",
-		"lastUpdated": "6 July 2019"
+		"lastUpdated": "17 July 2019"
 	}
 }
