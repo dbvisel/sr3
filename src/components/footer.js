@@ -36,7 +36,6 @@ const FooterDiv = styled.footer`
 const getFooter = function(data, thisReport) {
 	for (let i = 0; i < data.length; i++) {
 		if (data[i].node.frontmatter.report === thisReport) {
-			console.log(data[i].node);
 			return data[i].node.code.body;
 		}
 	}
@@ -52,7 +51,6 @@ const Footer = ({ reportID }) => (
 						node {
 							frontmatter {
 								report
-								path
 							}
 							code {
 								body

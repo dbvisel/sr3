@@ -97,7 +97,6 @@ exports.createPages = ({ actions, graphql }) => {
 			return Promise.reject(result.errors);
 		}
 		// console.log(result.data);
-		// TODO: need to return datasets as well
 		let outData = result.data.textFiles.edges;
 		let reportData = result.data.reportData.nodes;
 
