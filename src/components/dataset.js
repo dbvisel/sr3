@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
@@ -117,13 +117,13 @@ const THNoWrap = styled.th`
 	background-color: ${props => (props.empty ? 'white' : '#ddd')};
 	cursor: pointer;
 	position: sticky;
-	/* top: ${props => (props.hideHeaders ? '3em' : '5em')};
+	/* top: ${props => (props.hideHeaders ? '3em' : props.doubleHeaders ? '6em' : '5em')};
 	&:before {
 		content: '';
 		position: absolute;
 		background-color: var(--white);
 		left: 0;
-		top: -5em;
+		top: ${props => (props.superHeaders ? '-5em' : '-6em')};
 		width: 100%;
 		height: 5em;
 	} */
@@ -214,8 +214,12 @@ class Dataset extends React.Component {
 		this.nextPage = this.nextPage.bind(this);
 		this.filterDataset = this.filterDataset.bind(this);
 		this.unfilterDataset = this.unfilterDataset.bind(this);
+		this.filterCategory = this.filterCategory.bind(this);
+		this.sortBy = this.sortBy.bind(this);
+		console.log(props.data.fields);
 	}
 	componentDidMount() {
+		this.setState({ superFields: this.props.data.fields.filter(key => key.superField).length > 0 });
 		let perPage = this.state.perPage;
 		if (this.props.perPage) {
 			perPage = this.props.perPage;
@@ -281,6 +285,21 @@ class Dataset extends React.Component {
 			this.setState({ startPoint: newStartPoint, shownRecords: shownRecords });
 		}
 	}
+	filterCategory(fieldName, fieldValue) {
+		let filteredData = cloneObject(this.state.outputData).filter(row => {
+			let outt = false;
+			for (let i = 0; i < row.row.length; i++) {
+				outt =
+					outt ||
+					((row.row[i].fieldKey === fieldName && row.row[i].value === fieldValue) ||
+						fieldValue === row.row[i].fieldName ||
+						fieldValue === row.row[i].fieldNameShort);
+			}
+			return outt;
+		});
+		let shownRecords = filteredData.slice(0, this.state.perPage);
+		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length });
+	}
 	filterDataset(e) {
 		e.preventDefault();
 		let filterFor = String(e.target.querySelector('#searchfield').value).toLowerCase();
@@ -300,6 +319,44 @@ class Dataset extends React.Component {
 	}
 	unfilterDataset() {
 		let filteredData = cloneObject(this.state.outputData);
+		let shownRecords = filteredData.slice(0, this.state.perPage);
+		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length });
+	}
+	sortBy(fieldName) {
+		let filteredData = cloneObject(this.state.outputData);
+		let coefficient = 1;
+		let thisSortValues = this.state.sortBy || {};
+		if (thisSortValues[fieldName] > 0) {
+			coefficient = -1;
+			thisSortValues[fieldName] = -1;
+		} else {
+			thisSortValues[fieldName] = 1;
+		}
+		this.setState({ sortBy: thisSortValues });
+		filteredData.sort((a, b) => {
+			let aValue = 0;
+			let bValue = 0;
+			for (let i = 0; i < a.row.length; i++) {
+				if (a.row[i].fieldKey === fieldName) {
+					aValue = a.row[i].value;
+				}
+			}
+			for (let i = 0; i < b.row.length; i++) {
+				if (b.row[i].fieldKey === fieldName) {
+					bValue = b.row[i].value;
+				}
+			}
+			if (aValue > bValue) {
+				return coefficient;
+			}
+			if (aValue < bValue) {
+				return -1 * coefficient;
+			}
+			if (aValue === bValue) {
+				return 0;
+			}
+		});
+
 		let shownRecords = filteredData.slice(0, this.state.perPage);
 		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length });
 	}
@@ -344,11 +401,41 @@ class Dataset extends React.Component {
 						<THead>
 							{getSuperheaders(this.state.visibleFields, this.props.data.fields, this.props.hideHeaders)}
 							<tr>
-								{this.state.visibleFields.map((entry, key) => (
-									<THNoWrap key={key} hideHeaders={this.props.hideHeaders}>
-										{entry.fieldName}
-									</THNoWrap>
-								))}
+								{this.state.visibleFields.map((entry, key) => {
+									return entry.fieldValues ? (
+										<THNoWrap key={key} hideHeaders={this.props.hideHeaders} superFields={this.state.superFields}>
+											<select
+												id={entry.fieldKey}
+												onChange={event => {
+													this.filterCategory(event.target.id, event.target.value);
+												}}
+											>
+												<option defaultValue>{entry.fieldNameShort || entry.fieldName}</option>
+												{entry.fieldValues.map((value, key2) => (
+													<option key={key2} value={value}>
+														{value}
+													</option>
+												))}
+											</select>
+										</THNoWrap>
+									) : (
+										<THNoWrap
+											key={key}
+											hideHeaders={this.props.hideHeaders}
+											superFields={this.state.superFields}
+											onClick={() => this.sortBy(entry.fieldKey)}
+										>
+											{entry.fieldNameShort || entry.fieldName}
+											{this.state.sortBy
+												? this.state.sortBy[entry.fieldKey]
+													? this.state.sortBy[entry.fieldKey] > 0
+														? ' ↑'
+														: ' ↓'
+													: null
+												: null}
+										</THNoWrap>
+									);
+								})}
 							</tr>
 						</THead>
 						{this.state.shownRecords.length > 0 ? (
