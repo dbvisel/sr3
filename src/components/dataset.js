@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
@@ -333,7 +333,7 @@ class Dataset extends React.Component {
 			thisSortValues[fieldName] = 1;
 		}
 		this.setState({ sortBy: thisSortValues });
-		filteredData.sort((a, b) => {
+		filteredData.sort(function(a, b) {
 			let aValue = 0;
 			let bValue = 0;
 			for (let i = 0; i < a.row.length; i++) {
@@ -352,9 +352,7 @@ class Dataset extends React.Component {
 			if (aValue < bValue) {
 				return -1 * coefficient;
 			}
-			if (aValue === bValue) {
-				return 0;
-			}
+			return 0;
 		});
 
 		let shownRecords = filteredData.slice(0, this.state.perPage);
