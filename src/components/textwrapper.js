@@ -11,9 +11,14 @@ const TextWrapperDiv = styled.article`
 		padding-right: 10px;
 	}
 	& p {
+		font-size: 14px;
+		line-height: 24px;
 		margin: 0;
+		& strong {
+			font-size: 16px;
+		}
 		& + p {
-			text-indent: 1em;
+			text-indent: 24px;
 		}
 		&.unindent {
 			text-indent: 0;
@@ -58,13 +63,18 @@ const TextWrapperDiv = styled.article`
 		font-weight: normal;
 	}
 	& ul {
-		margin: 16px 0;
-		padding-inline-start: 16px;
+		font-size: 14px;
+		line-height: 24px;
+		margin: 24px 0;
+		padding-inline-start: 24px;
 	}
 	& li {
 		margin: 0;
+		& strong {
+			font-size: 16px;
+		}
 		& ul {
-			margin-left: 1em;
+			margin-left: 24px;
 			margin-left: 1rem;
 			margin: 0;
 		}

@@ -133,9 +133,9 @@ const TableCell = styled.td`
 	white-space: nowrap;
 	overflow-x: hidden;
 	text-align: center;
+	font-family: var(--headerFont);
 	& a {
 		color: var(--orange);
-		font-family: var(--headerFont);
 		text-decoration: none;
 		&:hover {
 			border-bottom: 1px solid var(--orange);

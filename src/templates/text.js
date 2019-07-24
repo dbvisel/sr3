@@ -29,6 +29,7 @@ const HeaderSection = styled.div`
 	& h3,
 	& h4 {
 		font-family: var(--textFamily);
+		font-size: 14px;
 		font-style: italic;
 	}
 `;

@@ -11,7 +11,7 @@ TODO:
 	 * links to object pages (more of them)
  * object pages
 	 * multiple images?
-	 * linked records: http://localhost:8000/scc/dataset/eware/id/eware_3902
+	 * multiple linked records: http://localhost:8000/scc/dataset/eware/id/eware_3902
  * navigation:
 	 * 404 menu? Should this be smart or not?
  * text:
