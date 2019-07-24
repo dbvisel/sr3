@@ -18,8 +18,12 @@ const TopNav = styled.nav`
 	z-index: 2;
 `;
 
-const DatasetH1 = styled.h1`
-	margin: 0;
+const DatasetHeader = styled.caption`
+	display: block;
+	text-align: left;
+	& h1 {
+		margin: 0;
+	}
 `;
 
 const FilterP = styled.nav`
@@ -110,6 +114,7 @@ const THead = styled.thead`
 `;
 
 const THNoWrap = styled.th`
+/* Does this need hideHeaders as a prop? Fix this mess! */
 	white-space: nowrap;
 	font-weight: bold;
 	font-family: var(--headerFont);
@@ -117,6 +122,7 @@ const THNoWrap = styled.th`
 	background-color: ${props => (props.empty ? 'white' : '#ddd')};
 	cursor: pointer;
 	position: sticky;
+	user-select: none;
 	/* top: ${props => (props.hideHeaders ? '3em' : props.doubleHeaders ? '6em' : '5em')};
 	&:before {
 		content: '';
@@ -127,6 +133,29 @@ const THNoWrap = styled.th`
 		width: 100%;
 		height: 5em;
 	} */
+`;
+
+const SortBy = styled.span`
+	margin-left: 0.25em;
+	margin-right: 0.5em;
+	display: inline-flex;
+	height: 100%;
+	align-content: center;
+	user-select: none;
+`;
+
+const TableSelect = styled.select`
+	border: none;
+	background: none;
+	height: 100%;
+	font-family: var(--headerFont);
+	font-weight: bold;
+	font-size: 16px;
+	outline: none;
+	appearance: none;
+	& option {
+		font-weight: normal;
+	}
 `;
 
 const TableCell = styled.td`
@@ -198,7 +227,7 @@ const getSuperheaders = function(visibleFields, allTheFields, hideHeaders) {
 	return headers ? (
 		<tr>
 			{superFields.map((entry, key) => (
-				<THNoWrap colSpan={entry.colspan} key={key} empty={!entry.value} hideHeaders={hideHeaders}>
+				<THNoWrap scope="col" colSpan={entry.colspan} key={key} empty={!entry.value} hideHeaders={hideHeaders}>
 					{entry.value}
 				</THNoWrap>
 			))}
@@ -224,7 +253,7 @@ class Dataset extends React.Component {
 		if (this.props.perPage) {
 			perPage = this.props.perPage;
 		}
-		console.log(this.props);
+		// console.log(this.props);
 		let endPoint = this.state.startPoint + perPage;
 		let data = this.props.data;
 		let visibleFields = [];
@@ -362,7 +391,9 @@ class Dataset extends React.Component {
 		return this.state.outputData ? (
 			<div>
 				{this.props.hideHeaders ? null : (
-					<DatasetH1 inLine={this.props.inLine}>Dataset: {this.state.reportName}</DatasetH1>
+					<DatasetHeader>
+						<h1 inLine={this.props.inLine}>Dataset: {this.state.reportName}</h1>
+					</DatasetHeader>
 				)}
 				<TopNav>
 					<FilterP>
@@ -402,7 +433,7 @@ class Dataset extends React.Component {
 								{this.state.visibleFields.map((entry, key) => {
 									return entry.fieldValues ? (
 										<THNoWrap key={key} hideHeaders={this.props.hideHeaders} superFields={this.state.superFields}>
-											<select
+											<TableSelect
 												id={entry.fieldKey}
 												onChange={event => {
 													this.filterCategory(event.target.id, event.target.value);
@@ -414,7 +445,7 @@ class Dataset extends React.Component {
 														{value}
 													</option>
 												))}
-											</select>
+											</TableSelect>
 										</THNoWrap>
 									) : (
 										<THNoWrap
@@ -424,13 +455,19 @@ class Dataset extends React.Component {
 											onClick={() => this.sortBy(entry.fieldKey)}
 										>
 											{entry.fieldNameShort || entry.fieldName}
-											{this.state.sortBy
-												? this.state.sortBy[entry.fieldKey]
-													? this.state.sortBy[entry.fieldKey] > 0
-														? ' ↑'
-														: ' ↓'
-													: null
-												: null}
+											{this.state.sortBy ? (
+												this.state.sortBy[entry.fieldKey] ? (
+													this.state.sortBy[entry.fieldKey] > 0 ? (
+														<SortBy>↑</SortBy>
+													) : (
+														<SortBy>↓</SortBy>
+													)
+												) : (
+													<SortBy>↕</SortBy>
+												)
+											) : (
+												<SortBy>↕</SortBy>
+											)}
 										</THNoWrap>
 									);
 								})}
