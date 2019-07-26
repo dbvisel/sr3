@@ -110,7 +110,12 @@ const DataTableWrapper = styled.div`
 //const DataTable = styled.table`
 const DataTable = styled.div`
 	position: relative;
-	display: grid;
+`;
+
+const DataTableHead = styled.div`
+	/* position: sticky;
+	top: 0;
+	z-index: 3; */
 `;
 
 //const THNoWrap = styled.th`
@@ -221,6 +226,7 @@ class Dataset extends React.Component {
 		this.getSuperheaders = this.getSuperheaders.bind(this);
 		this.sortBy = this.sortBy.bind(this);
 		this.tableRef = React.createRef();
+		this.tableHeadRef = React.createRef();
 	}
 	componentDidMount() {
 		this.setState({ superFields: this.props.data.fields.filter(key => key.superField).length > 0 });
@@ -260,6 +266,7 @@ class Dataset extends React.Component {
 			outputData.push({ id: data.data[j].id || null, row: row });
 		}
 		let filteredData = cloneObject(outputData);
+		let headerRows = visibleFields.reduce((acc, x) => acc + (x.superField ? 1 : 0), 0) > 0 ? 2 : 1;
 		let shownRecords = filteredData.slice(this.state.startPoint, this.state.startPoint + this.state.perPage);
 		this.setState(
 			{
@@ -273,7 +280,8 @@ class Dataset extends React.Component {
 				reportID: data.reportID,
 				datasetID: data.id,
 				endPoint: endPoint,
-				paginate: outputData.length > perPage
+				paginate: outputData.length > perPage,
+				headerRows: headerRows
 			},
 			() => this.figureOutTheWidths()
 		);
@@ -402,6 +410,7 @@ class Dataset extends React.Component {
 			superFields.push({ value: headers[i], colspan: j });
 			i++;
 		}
+
 		return headers ? (
 			<TableRow columns={this.state.visibleFields.length} columnWidths={this.state.columnWidths}>
 				{superFields.map((entry, key) => (
@@ -421,24 +430,29 @@ class Dataset extends React.Component {
 	figureOutTheWidths = key => {
 		let columnMaxWidths = new Array(this.state.visibleFields.length).fill(0);
 		if (this.tableRef.current) {
-			console.log('really figuring out the widths!');
-			let rows = this.tableRef.current.childNodes;
-			for (let i = 0; i < rows.length; i++) {
-				let innerSpans = rows[i].querySelectorAll('span .innertd');
+			let headerRows = this.tableHeadRef.current.childNodes;
+			for (let i = 0; i < headerRows.length; i++) {
+				let innerSpans = headerRows[i].querySelectorAll('span .innertd');
 				if (innerSpans && innerSpans.length === this.state.visibleFields.length) {
+					// this doesn't work for superfields currently, though that's probably okay?
 					for (let j = 0; j < innerSpans.length; j++) {
 						columnMaxWidths[j] = Math.max(columnMaxWidths[j], innerSpans[j].offsetWidth);
 					}
-				} else {
-					// this is firing for header rows right now
-					console.log(`Mismatch: ${innerSpans.length}, ${this.state.visibleFields.length}`);
+				}
+			}
+			let rows = this.tableRef.current.childNodes;
+			for (let i = 1; i < rows.length; i++) {
+				let innerSpans = rows[i].querySelectorAll('span .innertd');
+				if (innerSpans && innerSpans.length === this.state.visibleFields.length) {
+					// this doesn't work for superfields currently, though that's probably okay?
+					for (let j = 0; j < innerSpans.length; j++) {
+						columnMaxWidths[j] = Math.max(columnMaxWidths[j], innerSpans[j].offsetWidth);
+					}
 				}
 			}
 		}
 		// the 10 is the padding!
-		this.setState({ columnWidths: columnMaxWidths.map(x => x + 10).join('px ') + 'px' }, () => {
-			console.log(this.state);
-		});
+		this.setState({ columnWidths: columnMaxWidths.map(x => x + 10).join('px ') + 'px' });
 	};
 	render() {
 		return this.state.outputData ? (
@@ -480,54 +494,56 @@ class Dataset extends React.Component {
 				</TopNav>
 				<DataTableWrapper>
 					<DataTable ref={this.tableRef}>
-						{this.getSuperheaders()}
-						<TableRow columns={this.state.visibleFields.length} columnWidths={this.state.columnWidths}>
-							{this.state.visibleFields.map((entry, key) => {
-								return entry.fieldValues ? (
-									<THNoWrap key={key} hideHeaders={this.props.hideHeaders} superFields={this.state.superFields}>
-										<span className="innertd">
-											<TableSelect
-												id={entry.fieldKey}
-												onChange={event => {
-													this.filterCategory(event.target.id, event.target.value);
-												}}
-											>
-												<option defaultValue>{entry.fieldNameShort || entry.fieldName}</option>
-												{entry.fieldValues.map((value, key2) => (
-													<option key={key2} value={value}>
-														{value}
-													</option>
-												))}
-											</TableSelect>
-										</span>
-									</THNoWrap>
-								) : (
-									<THNoWrap
-										key={key}
-										hideHeaders={this.props.hideHeaders}
-										superFields={this.state.superFields}
-										onClick={() => this.sortBy(entry.fieldKey)}
-									>
-										<span className="innertd">
-											{entry.fieldNameShort || entry.fieldName}
-											{this.state.sortBy ? (
-												this.state.sortBy[entry.fieldKey] ? (
-													this.state.sortBy[entry.fieldKey] > 0 ? (
-														<SortBy>↑</SortBy>
+						<DataTableHead ref={this.tableHeadRef}>
+							{this.getSuperheaders()}
+							<TableRow columns={this.state.visibleFields.length} columnWidths={this.state.columnWidths}>
+								{this.state.visibleFields.map((entry, key) => {
+									return entry.fieldValues ? (
+										<THNoWrap key={key} hideHeaders={this.props.hideHeaders} superFields={this.state.superFields}>
+											<span className="innertd">
+												<TableSelect
+													id={entry.fieldKey}
+													onChange={event => {
+														this.filterCategory(event.target.id, event.target.value);
+													}}
+												>
+													<option defaultValue>{entry.fieldNameShort || entry.fieldName}</option>
+													{entry.fieldValues.map((value, key2) => (
+														<option key={key2} value={value}>
+															{value}
+														</option>
+													))}
+												</TableSelect>
+											</span>
+										</THNoWrap>
+									) : (
+										<THNoWrap
+											key={key}
+											hideHeaders={this.props.hideHeaders}
+											superFields={this.state.superFields}
+											onClick={() => this.sortBy(entry.fieldKey)}
+										>
+											<span className="innertd">
+												{entry.fieldNameShort || entry.fieldName}
+												{this.state.sortBy ? (
+													this.state.sortBy[entry.fieldKey] ? (
+														this.state.sortBy[entry.fieldKey] > 0 ? (
+															<SortBy>↑</SortBy>
+														) : (
+															<SortBy>↓</SortBy>
+														)
 													) : (
-														<SortBy>↓</SortBy>
+														<SortBy>↕</SortBy>
 													)
 												) : (
 													<SortBy>↕</SortBy>
-												)
-											) : (
-												<SortBy>↕</SortBy>
-											)}
-										</span>
-									</THNoWrap>
-								);
-							})}
-						</TableRow>
+												)}
+											</span>
+										</THNoWrap>
+									);
+								})}
+							</TableRow>
+						</DataTableHead>
 						{this.state.shownRecords.length > 0 ? (
 							<>
 								{this.state.shownRecords.map((row, key) => (
