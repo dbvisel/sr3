@@ -1,6 +1,8 @@
 const path = require(`path`);
 const fs = require('fs');
 
+const makeReports = true; // set this to false for dev, it's a lot faster!
+
 // from https://www.gatsbyjs.org/docs/schema-customization/
 
 // exports.createSchemaCustomization = ({ actions }) => {
@@ -43,8 +45,6 @@ const loopTheConfigs = function(reportID, configData) {
 	}
 	return null;
 };
-
-const makeReports = true; // set this to false for dev, it's a lot faster!
 
 exports.createPages = ({ actions, graphql }) => {
 	const { createPage } = actions;

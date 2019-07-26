@@ -18,12 +18,14 @@ const TopNav = styled.nav`
 	z-index: 2;
 `;
 
-const DatasetHeader = styled.caption`
+const DatasetHeader = styled.div`
 	display: block;
 	text-align: left;
-	& h1 {
-		margin: 0;
-	}
+`;
+
+const DataSetH1 = styled.h1`
+	/* why are we passing this isInline? */
+	margin: 0;
 `;
 
 const FilterP = styled.nav`
@@ -102,18 +104,17 @@ const DataTableWrapper = styled.div`
 	max-width: 100%;
 	max-width: calc(100vw - 200px);
 	position: relative;
-	/* overflow-x: scroll; */
+	overflow-x: scroll;
 `;
 
-const DataTable = styled.table`
+//const DataTable = styled.table`
+const DataTable = styled.div`
 	position: relative;
+	display: grid;
 `;
 
-const THead = styled.thead`
-	background-color: #ddd;
-`;
-
-const THNoWrap = styled.th`
+//const THNoWrap = styled.th`
+const THNoWrap = styled.span`
 /* Does this need hideHeaders as a prop? Fix this mess! */
 	white-space: nowrap;
 	font-weight: bold;
@@ -123,6 +124,8 @@ const THNoWrap = styled.th`
 	cursor: pointer;
 	position: sticky;
 	user-select: none;
+	grid-column: span ${props => props.columnSpan || 1};
+	text-align: center;
 	/* top: ${props => (props.hideHeaders ? '3em' : props.doubleHeaders ? '6em' : '5em')};
 	&:before {
 		content: '';
@@ -158,7 +161,14 @@ const TableSelect = styled.select`
 	}
 `;
 
-const TableCell = styled.td`
+const TableRow = styled.div`
+	display: grid;
+	grid-template-columns: ${props =>
+		props.columnWidths ? props.columnWidths : `repeat(${props.columns}, minmax(100px, 1fr))`};
+`;
+
+//const TableCell = styled.td`
+const TableCell = styled.span`
 	white-space: nowrap;
 	overflow-x: hidden;
 	text-align: center;
@@ -172,9 +182,11 @@ const TableCell = styled.td`
 	}
 `;
 
-const TdError = styled.td`
+//const TdError = styled.td`
+const TdError = styled.span`
 	padding-top: 1em;
 	padding-bottom: 1em;
+	grid-column: 1 / ${props => props.colSpan};
 `;
 
 const cloneObject = function(source) {
@@ -197,44 +209,6 @@ const cloneObject = function(source) {
 	}
 };
 
-const getSuperheaders = function(visibleFields, allTheFields, hideHeaders) {
-	// this returns a TR with superheaders in it, if they exist
-
-	const getSuperfield = function(thisField, allFields) {
-		for (let i = 0; i < allFields.length; i++) {
-			if (thisField === allFields[i].fieldKey) {
-				return allFields[i].superField || null;
-			}
-		}
-		return null;
-	};
-
-	let headers = visibleFields.map(entry =>
-		getSuperfield(entry.fieldKey, allTheFields) ? getSuperfield(entry.fieldKey, allTheFields) : null
-	);
-	let i = 0;
-	let superFields = [];
-	while (i < headers.length) {
-		let thisHeader = headers[i];
-		let j = 1;
-		while (headers[i + 1] && thisHeader === headers[i + 1]) {
-			i++;
-			j++;
-		}
-		superFields.push({ value: headers[i], colspan: j });
-		i++;
-	}
-	return headers ? (
-		<tr>
-			{superFields.map((entry, key) => (
-				<THNoWrap scope="col" colSpan={entry.colspan} key={key} empty={!entry.value} hideHeaders={hideHeaders}>
-					{entry.value}
-				</THNoWrap>
-			))}
-		</tr>
-	) : null;
-};
-
 class Dataset extends React.Component {
 	constructor(props) {
 		super(props);
@@ -244,8 +218,9 @@ class Dataset extends React.Component {
 		this.filterDataset = this.filterDataset.bind(this);
 		this.unfilterDataset = this.unfilterDataset.bind(this);
 		this.filterCategory = this.filterCategory.bind(this);
+		this.getSuperheaders = this.getSuperheaders.bind(this);
 		this.sortBy = this.sortBy.bind(this);
-		console.log(props.data.fields);
+		this.tableRef = React.createRef();
 	}
 	componentDidMount() {
 		this.setState({ superFields: this.props.data.fields.filter(key => key.superField).length > 0 });
@@ -286,32 +261,35 @@ class Dataset extends React.Component {
 		}
 		let filteredData = cloneObject(outputData);
 		let shownRecords = filteredData.slice(this.state.startPoint, this.state.startPoint + this.state.perPage);
-		this.setState({
-			perPage: perPage,
-			visibleFields: visibleFields,
-			outputData: outputData,
-			filteredData: filteredData,
-			totalLength: filteredData.length,
-			shownRecords: shownRecords,
-			reportName: data.name,
-			reportID: data.reportID,
-			datasetID: data.id,
-			endPoint: endPoint,
-			paginate: outputData.length > perPage
-		});
+		this.setState(
+			{
+				perPage: perPage,
+				visibleFields: visibleFields,
+				outputData: outputData,
+				filteredData: filteredData,
+				totalLength: filteredData.length,
+				shownRecords: shownRecords,
+				reportName: data.name,
+				reportID: data.reportID,
+				datasetID: data.id,
+				endPoint: endPoint,
+				paginate: outputData.length > perPage
+			},
+			() => this.figureOutTheWidths()
+		);
 	}
 	prevPage() {
 		if (this.state.startPoint > 0) {
 			const newStartPoint = this.state.startPoint - this.state.perPage;
 			let shownRecords = this.state.outputData.slice(newStartPoint, newStartPoint + this.state.perPage);
-			this.setState({ startPoint: newStartPoint, shownRecords: shownRecords });
+			this.setState({ startPoint: newStartPoint, shownRecords: shownRecords }, () => this.figureOutTheWidths());
 		}
 	}
 	nextPage() {
 		if (this.state.startPoint + this.state.perPage <= this.state.totalLength) {
 			const newStartPoint = this.state.startPoint + this.state.perPage;
 			let shownRecords = this.state.outputData.slice(newStartPoint, newStartPoint + this.state.perPage);
-			this.setState({ startPoint: newStartPoint, shownRecords: shownRecords });
+			this.setState({ startPoint: newStartPoint, shownRecords: shownRecords }, () => this.figureOutTheWidths());
 		}
 	}
 	filterCategory(fieldName, fieldValue) {
@@ -327,7 +305,9 @@ class Dataset extends React.Component {
 			return outt;
 		});
 		let shownRecords = filteredData.slice(0, this.state.perPage);
-		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length });
+		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length }, () =>
+			this.figureOutTheWidths()
+		);
 	}
 	filterDataset(e) {
 		e.preventDefault();
@@ -344,12 +324,16 @@ class Dataset extends React.Component {
 			return output.length;
 		});
 		let shownRecords = filteredData.slice(0, this.state.perPage);
-		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length });
+		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length }, () =>
+			this.figureOutTheWidths()
+		);
 	}
 	unfilterDataset() {
 		let filteredData = cloneObject(this.state.outputData);
 		let shownRecords = filteredData.slice(0, this.state.perPage);
-		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length });
+		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length }, () =>
+			this.figureOutTheWidths()
+		);
 	}
 	sortBy(fieldName) {
 		let filteredData = cloneObject(this.state.outputData);
@@ -385,14 +369,83 @@ class Dataset extends React.Component {
 		});
 
 		let shownRecords = filteredData.slice(0, this.state.perPage);
-		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length });
+		this.setState({ filteredData: filteredData, shownRecords: shownRecords, totalLength: filteredData.length }, () =>
+			this.figureOutTheWidths()
+		);
 	}
+	getSuperheaders() {
+		// this returns a TR with superheaders in it, if they exist
+
+		const getSuperfield = function(thisField, allFields) {
+			for (let i = 0; i < allFields.length; i++) {
+				if (thisField === allFields[i].fieldKey) {
+					return allFields[i].superField || null;
+				}
+			}
+			return null;
+		};
+
+		let headers = this.state.visibleFields.map(entry =>
+			getSuperfield(entry.fieldKey, this.props.data.fields)
+				? getSuperfield(entry.fieldKey, this.props.data.fields)
+				: null
+		);
+		let i = 0;
+		let superFields = [];
+		while (i < headers.length) {
+			let thisHeader = headers[i];
+			let j = 1;
+			while (headers[i + 1] && thisHeader === headers[i + 1]) {
+				i++;
+				j++;
+			}
+			superFields.push({ value: headers[i], colspan: j });
+			i++;
+		}
+		return headers ? (
+			<TableRow columns={this.state.visibleFields.length} columnWidths={this.state.columnWidths}>
+				{superFields.map((entry, key) => (
+					<THNoWrap
+						scope="col"
+						columnSpan={entry.colspan}
+						key={key}
+						empty={!entry.value}
+						hideHeaders={this.props.hideHeaders}
+					>
+						<span className="innertd">{entry.value}</span>
+					</THNoWrap>
+				))}
+			</TableRow>
+		) : null;
+	}
+	figureOutTheWidths = key => {
+		let columnMaxWidths = new Array(this.state.visibleFields.length).fill(0);
+		if (this.tableRef.current) {
+			console.log('really figuring out the widths!');
+			let rows = this.tableRef.current.childNodes;
+			for (let i = 0; i < rows.length; i++) {
+				let innerSpans = rows[i].querySelectorAll('span .innertd');
+				if (innerSpans && innerSpans.length === this.state.visibleFields.length) {
+					for (let j = 0; j < innerSpans.length; j++) {
+						columnMaxWidths[j] = Math.max(columnMaxWidths[j], innerSpans[j].offsetWidth);
+					}
+				} else {
+					// this is firing for header rows right now
+					console.log(`Mismatch: ${innerSpans.length}, ${this.state.visibleFields.length}`);
+				}
+			}
+		}
+		// the 10 is the padding!
+		this.setState({ columnWidths: columnMaxWidths.map(x => x + 10).join('px ') + 'px' }, () => {
+			console.log(this.state);
+		});
+	};
 	render() {
 		return this.state.outputData ? (
 			<div>
 				{this.props.hideHeaders ? null : (
 					<DatasetHeader>
-						<h1 inLine={this.props.inLine}>Dataset: {this.state.reportName}</h1>
+						<DataSetH1 isInLine={this.props.inLine}>Dataset: {this.state.reportName}</DataSetH1>
 					</DatasetHeader>
 				)}
 				<TopNav>
@@ -426,13 +479,13 @@ class Dataset extends React.Component {
 					) : null}
 				</TopNav>
 				<DataTableWrapper>
-					<DataTable>
-						<THead>
-							{getSuperheaders(this.state.visibleFields, this.props.data.fields, this.props.hideHeaders)}
-							<tr>
-								{this.state.visibleFields.map((entry, key) => {
-									return entry.fieldValues ? (
-										<THNoWrap key={key} hideHeaders={this.props.hideHeaders} superFields={this.state.superFields}>
+					<DataTable ref={this.tableRef}>
+						{this.getSuperheaders()}
+						<TableRow columns={this.state.visibleFields.length} columnWidths={this.state.columnWidths}>
+							{this.state.visibleFields.map((entry, key) => {
+								return entry.fieldValues ? (
+									<THNoWrap key={key} hideHeaders={this.props.hideHeaders} superFields={this.state.superFields}>
+										<span className="innertd">
 											<TableSelect
 												id={entry.fieldKey}
 												onChange={event => {
@@ -446,14 +499,16 @@ class Dataset extends React.Component {
 													</option>
 												))}
 											</TableSelect>
-										</THNoWrap>
-									) : (
-										<THNoWrap
-											key={key}
-											hideHeaders={this.props.hideHeaders}
-											superFields={this.state.superFields}
-											onClick={() => this.sortBy(entry.fieldKey)}
-										>
+										</span>
+									</THNoWrap>
+								) : (
+									<THNoWrap
+										key={key}
+										hideHeaders={this.props.hideHeaders}
+										superFields={this.state.superFields}
+										onClick={() => this.sortBy(entry.fieldKey)}
+									>
+										<span className="innertd">
 											{entry.fieldNameShort || entry.fieldName}
 											{this.state.sortBy ? (
 												this.state.sortBy[entry.fieldKey] ? (
@@ -468,37 +523,41 @@ class Dataset extends React.Component {
 											) : (
 												<SortBy>↕</SortBy>
 											)}
-										</THNoWrap>
-									);
-								})}
-							</tr>
-						</THead>
+										</span>
+									</THNoWrap>
+								);
+							})}
+						</TableRow>
 						{this.state.shownRecords.length > 0 ? (
-							<tbody>
+							<>
 								{this.state.shownRecords.map((row, key) => (
-									<tr key={key}>
+									<TableRow key={key} columns={this.state.visibleFields.length} columnWidths={this.state.columnWidths}>
 										{row.row.map((column, key) => {
 											return column.fieldType && (column.fieldType === 'link' || column.fieldType === 'imagelink') ? (
 												<TableCell key={key}>
-													<Link to={`/${this.state.reportID}/dataset/${this.state.datasetID}/id/${row.id}`}>
-														{column.value}
-													</Link>
+													<span className="innertd">
+														<Link to={`/${this.state.reportID}/dataset/${this.state.datasetID}/id/${row.id}`}>
+															{column.value}
+														</Link>
+													</span>
 												</TableCell>
 											) : (
-												<TableCell key={key}>{column.value}</TableCell>
+												<TableCell key={key}>
+													<span className="innertd">{column.value}</span>
+												</TableCell>
 											);
 										})}
-									</tr>
+									</TableRow>
 								))}
-							</tbody>
+							</>
 						) : (
-							<tbody>
-								<tr>
+							<>
+								<TableRow columns={this.state.visibleFields.length} columnWidths={this.state.columnWidths}>
 									<TdError colSpan={this.state.visibleFields.length}>
-										Oh no! no records to show! <StrongLink onClick={this.unfilterDataset}>Start over?</StrongLink>
+										Oh no! No records to show! <StrongLink onClick={this.unfilterDataset}>Start over?</StrongLink>
 									</TdError>
-								</tr>
-							</tbody>
+								</TableRow>
+							</>
 						)}
 					</DataTable>
 				</DataTableWrapper>
