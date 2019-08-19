@@ -22,3 +22,10 @@ TODO:
 	 * do I actually need to generate so many object pages?
  * data
 	 * jambi? probably doesn't exist
+
+# Table header remember:
+
+ * https://css-tricks.com/position-sticky-and-table-headers/
+ * https://github.com/thebuilder/react-intersection-observer#readme
+ 
+Maybe use <datalist> rather than <select> in table headers? Does that make sense? We could use that for filtering.
