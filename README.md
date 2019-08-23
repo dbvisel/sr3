@@ -29,3 +29,8 @@ TODO:
  * https://github.com/thebuilder/react-intersection-observer#readme
  
 Maybe use <datalist> rather than <select> in table headers? Does that make sense? We could use that for filtering.
+
+## REMEMBER
+
+ * This is using Git/Netlify LFS, as described here: https://css-tricks.com/getting-netlify-large-media-going/
+   If there's trouble, try source /Users/dan/.netlify/helper/path.bash.inc
