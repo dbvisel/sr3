@@ -34,3 +34,4 @@ Maybe use <datalist> rather than <select> in table headers? Does that make sense
 
  * This is using Git/Netlify LFS, as described here: https://css-tricks.com/getting-netlify-large-media-going/
    If there's trouble, try source /Users/dan/.netlify/helper/path.bash.inc
+	 (does this break everything?)
