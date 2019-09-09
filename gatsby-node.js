@@ -1,7 +1,7 @@
 const path = require(`path`);
 const fs = require('fs');
 
-const makeReports = true; // set this to false for dev, it's a lot faster!
+const makeReports = false; // set this to false for dev, it's a lot faster!
 
 // from https://www.gatsbyjs.org/docs/schema-customization/
 
