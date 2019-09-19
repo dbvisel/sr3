@@ -92,7 +92,7 @@ exports.createPages = ({ actions, graphql }) => {
 				}
 			}
 		}
-	`).then(result => {
+	`).then((result) => {
 		if (result.errors) {
 			return Promise.reject(result.errors);
 		}
@@ -100,12 +100,12 @@ exports.createPages = ({ actions, graphql }) => {
 		let outData = result.data.textFiles.edges;
 		let reportData = result.data.reportData.nodes;
 
-		reportData.forEach(node => {
+		reportData.forEach((node) => {
 			if (node.report && node.report.dataSets) {
 				let reportID = node.report.id;
 				let reportConfig = loopTheConfigs(reportID, reportData);
 				console.log(`${reportID} datasets: ${node.report.dataSets.length}`);
-				node.report.dataSets.forEach(dataSet => {
+				node.report.dataSets.forEach((dataSet) => {
 					let myJsonPath = `./data/${reportID}/datasets/${dataSet.id}.json`;
 					let myPath = `${reportID}/dataset/${dataSet.id}`;
 					console.log(myJsonPath, '=>', myPath);
@@ -118,14 +118,19 @@ exports.createPages = ({ actions, graphql }) => {
 					});
 					if (makeReports) {
 						// now, go through pageData.dataset.data and make a page for each data
-						pageData.dataset.data.forEach(dataItem => {
+						pageData.dataset.data.forEach((dataItem) => {
 							if (dataItem.id) {
 								let myNewPath = `/${reportID}/dataset/${dataSet.id}/id/${dataItem.id}`;
 								console.log(`Creating data object page at ${myNewPath}`);
 								createPage({
 									path: myNewPath,
 									component: datasetItemPageTemplate,
-									context: { dataSet: dataSet.id, reportData: reportConfig, data: dataItem, fieldData: thisFieldSet }
+									context: {
+										dataSet: dataSet.id,
+										reportData: reportConfig,
+										data: dataItem,
+										fieldData: thisFieldSet
+									}
 								});
 							}
 						});
@@ -146,7 +151,11 @@ exports.createPages = ({ actions, graphql }) => {
 							const dataSetData = JSON.parse(fs.readFileSync(thisPath, { encoding: 'utf-8' }));
 							console.log(thisPath);
 
-							outDataSets.push({ id: node.frontmatter.datasets[i], path: thisPath, data: dataSetData.dataset });
+							outDataSets.push({
+								id: node.frontmatter.datasets[i],
+								path: thisPath,
+								data: dataSetData.dataset
+							});
 						}
 					}
 					createPage({
