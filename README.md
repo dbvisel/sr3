@@ -23,6 +23,8 @@ TODO:
  * data
 	 * jambi? probably doesn't exist
 
+Could use ThemeProvider for a light/dark theme switcher: https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/
+
 # Table header remember:
 
  * https://css-tricks.com/position-sticky-and-table-headers/

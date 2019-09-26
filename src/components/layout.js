@@ -2,6 +2,9 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
+// import { ThemeProvider } from 'styled-components';
+//import { lightTheme, darkTheme } from '../styledcomponents/theme';
+import { GlobalStyles } from '../styledcomponents/global';
 
 import Header from './header';
 import LeftMenu from './../components/leftmenu';
@@ -36,10 +39,10 @@ const Wrapper = styled.div`
 
 const Layout = ({ data, children, menu, thisPage }) => {
 	let masterData = data.allTheJson.master;
-	// console.log(menu);
-	// console.log(masterData);
 	return (
 		<ReportContext.Provider value={menu.id || null}>
+			<GlobalStyles />
+
 			<Header
 				siteTitle={masterData.projectTitle}
 				reportTitle={menu.title || masterData.projectAuthor}
@@ -54,7 +57,7 @@ const Layout = ({ data, children, menu, thisPage }) => {
 	);
 };
 
-export default props => (
+export default (props) => (
 	<StaticQuery
 		query={graphql`
 			query MasterQuery {
@@ -72,6 +75,6 @@ export default props => (
 				}
 			}
 		`}
-		render={data => <Layout data={data} {...props} />}
+		render={(data) => <Layout data={data} {...props} />}
 	/>
 );

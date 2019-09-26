@@ -17,7 +17,7 @@ const IndexPage = () => (
 				}
 			}
 		`}
-		render={data => {
+		render={(data) => {
 			return (
 				<Layout menu={{}}>
 					<TextWrapper>
