@@ -38,7 +38,7 @@
 	},
 	"license": "MIT",
 	"scripts": {
-		"build": "gatsby build",
+		"build": "rm -r .cache/ && rm -r public/ && gatsby build --prefix-paths",
 		"dev": "gatsby develop",
 		"develop": "gatsby develop",
 		"format": "prettier --write src/**/*.{js,jsx}",

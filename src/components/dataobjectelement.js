@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import {pathPrefix} from './../../gatsby-config';
 
 const SuperfieldDiv = styled.div`
 	& h3 {
@@ -67,8 +68,8 @@ const makeDataView = function(inputData, report) {
 									</DataP>
 
 									{value.fieldType === 'filename' ? (
-										<a href={`/${report}/images/${value.value}`} target="__blank">
-											<FieldImage src={`/${report}/images/${value.value}`} alt={value.value} />
+										<a href={`${pathPrefix}/${report}/images/${value.value}`} target="__blank">
+											<FieldImage src={`${pathPrefix}/${report}/images/${value.value}`} alt={value.value} />
 										</a>
 									) : null}
 								</div>

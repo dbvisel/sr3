@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ReportContext from './reportcontext';
+import {pathPrefix} from './../../gatsby-config';
 
 // this should have report ID in scope
 
@@ -65,14 +66,14 @@ const Figure = props => {
 							{typeof props.img === 'object' ? (
 								<div>
 									{props.img.map((thisImg, index) => (
-										<a key={index} href={`/${currentDataSetID}/images/${thisImg}`} target="__blank">
-											<img src={`/${currentDataSetID}/images/${thisImg}`} alt={props.caption || ''} />
+										<a key={index} href={`${pathPrefix}/${currentDataSetID}/images/${thisImg}`} target="__blank">
+											<img src={`${pathPrefix}/${currentDataSetID}/images/${thisImg}`} alt={props.caption || ''} />
 										</a>
 									))}
 								</div>
 							) : (
-								<a href={`/${currentDataSetID}/images/${props.img}`} target="__blank">
-									<img src={props.img ? `/${currentDataSetID}/images/${props.img}` : null} alt={props.caption} />
+								<a href={`${pathPrefix}/${currentDataSetID}/images/${props.img}`} target="__blank">
+									<img src={props.img ? `${pathPrefix}/${currentDataSetID}/images/${props.img}` : null} alt={props.caption} />
 								</a>
 							)}
 							<>{props.caption ? <figcaption dangerouslySetInnerHTML={{ __html: caption }} /> : null}</>

@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: `/sitereports`,
 	siteMetadata: {
 		title: `sr3`,
-		description: `NUS Press site reporter redone in Gatsby.`,
+		description: `NUS Press Site Reports`,
 		author: `Dan Visel <dbvisel@gmail.com>`
 	},
 	plugins: [
@@ -44,9 +45,9 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Site Reporter 3`,
+				name: `NUS Site Reports`,
 				short_name: `sr3`,
-				start_url: `/`,
+				start_url: `/sitereports/`,
 				background_color: `#663399`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
@@ -55,6 +56,6 @@ module.exports = {
 		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
-		`gatsby-plugin-offline`
+		//`gatsby-plugin-offline`
 	]
 };
