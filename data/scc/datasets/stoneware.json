@@ -119,7 +119,7 @@
 				"fieldKey": "imageLink",
 				"fieldName": "Image records",
 				"fieldNameShort": "Image",
-				"fieldType": "imagelink",
+				"fieldType": "imageLink",
 				"canBeArray": true,
 				"linkExists": "imageMatched",
 				"linkToDataSet": "imageSet",
