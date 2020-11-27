@@ -1,0 +1,26 @@
+{
+	"report": {
+		"id": "colombo",
+		"title": "The Colombo Court Site Report",
+		"author": "Goh Geok Yian, Nanyang Technological University Singapore, and John Miksic, National University of Singapore",
+		"date":"20 October 2020",
+		"titleShort": "Colombo Court",
+		"projectTitle": "Southeast Asian Archaeological Site Reports",
+		"texts": [{
+			"id": "description",
+			"name": "Description of the Site and Excavation Procedure"
+		},{"id": "excavationunits",
+			"name": "The Excavation Units"
+			},
+		{"id": "statisticalanalysisunits",
+			"name": "Statistical Analysis of the Artefacts By Excavation Units"
+			},
+			{"id": "statisticalanalysiscct",
+			"name": "Statistical Analysis of the Artifacts in the CCT Assemblage"
+			},
+			{"id": "uniqueartifacts", "name": "Unique Artifacts in the CCT Assemblage"
+			},
+			{"id": "conclusion", "name": "Conclusion"
+				}]
+	}
+}
