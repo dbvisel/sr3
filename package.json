@@ -39,12 +39,12 @@
 	},
 	"license": "MIT",
 	"scripts": {
-		"build": "rm -r .cache/ && rm -r public/ && gatsby build --prefix-paths",
+		"build": "gatsby clean && gatsby build --prefix-paths",
 		"dev": "gatsby develop",
 		"develop": "gatsby develop",
 		"format": "prettier --write src/**/*.{js,jsx}",
 		"start": "npm run develop",
-		"serve": "gatsby serve",
+		"serve": "gatsby serve --prefix-paths",
 		"deploy": "gatsby build && netlify deploy --dir=public --prod"
 	},
 	"repository": {

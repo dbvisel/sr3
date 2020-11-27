@@ -128,8 +128,8 @@ const makeOutputData = (report, fieldData, objectData) => {
 const DataObjectElement = ({ report, fieldData, objectData }) => {
   const [ready, setReady] = React.useState(false);
   React.useEffect(() => {
-    console.log("FieldData changed!");
-    console.log(fieldData[18]);
+    // console.log("FieldData changed!");
+    // console.log(fieldData[18]);
     setReady(true);
   }, [fieldData]);
   const outputData = makeOutputData(report, fieldData, objectData);
