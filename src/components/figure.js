@@ -51,7 +51,6 @@ const FigureDiv = styled.figure`
 // img: either a string or an array of strings, the filename for the image
 
 const Figure = (props) => {
-  console.log(withPrefix("/"));
   let caption = "";
   if (props.number) {
     caption = `Figure ${props.number}: `;
