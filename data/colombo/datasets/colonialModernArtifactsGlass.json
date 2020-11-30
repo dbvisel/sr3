@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID": "colombo",
+		"id": "colonialModernArtifactsGlass",
+		"name": "Colonial & Modern Artifacts: Glass",
+		"shortName": "Glass",
+		"source": "Colonial_Modern Artifacts - Other Materials final for database.xlsx",
+		"editedDate": "20 October 2020",
+		"dataSetGroup": "Colonial & modern artifacts",
+		"orderInGroup": 4,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			}
+		],
+		"data": []}}

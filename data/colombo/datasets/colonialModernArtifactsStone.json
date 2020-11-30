@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID": "colombo",
+		"id": "colonialModernArtifactsStone",
+		"name": "Colonial & Modern Artifacts: Stone",
+		"shortName": "Stone",
+		"source": "Colonial_Modern Artifacts - Other Materials final for database.xlsx",
+		"editedDate": "20 October 2020",
+		"dataSetGroup": "Colonial & modern artifacts",
+		"orderInGroup": 3,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			}
+		],
+		"data": []}}

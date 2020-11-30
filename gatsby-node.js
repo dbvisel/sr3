@@ -154,8 +154,7 @@ exports.createPages = ({ actions, graphql }) => {
               const dataSetData = JSON.parse(
                 fs.readFileSync(thisPath, { encoding: "utf-8" })
               );
-              console.log(thisPath);
-
+              console.log("dataset location: ", thisPath);
               outDataSets.push({
                 id: node.frontmatter.datasets[i],
                 path: thisPath,

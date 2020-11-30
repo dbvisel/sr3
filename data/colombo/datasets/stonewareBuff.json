@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID": "colombo",
+		"id": "stonewareBuff",
+		"name": "Buff Stoneware",
+		"shortName": "Buff",
+		"source": "Stoneware final for database.xlsx",
+		"editedDate": "20 October 2020",
+		"dataSetGroup": "Stoneware",
+		"orderInGroup": 3,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			}
+		],
+		"data": []}}

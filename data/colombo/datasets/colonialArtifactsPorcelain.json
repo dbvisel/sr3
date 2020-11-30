@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID": "colombo",
+		"id": "colonialArtifactsPorcelain",
+		"name": "Porcelain Colonial Artifacts",
+		"shortName": "Porcelain",
+		"source": "Colonial Artifacts final for database.xlsx",
+		"editedDate": "20 October 2020",
+		"dataSetGroup": "Colonial artifacts",
+		"orderInGroup": 1,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			}
+		],
+		"data": []}}

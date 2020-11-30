@@ -21,6 +21,67 @@
 			{"id": "uniqueartifacts", "name": "Unique Artifacts in the CCT Assemblage"
 			},
 			{"id": "conclusion", "name": "Conclusion"
-				}]
+				}],		"dataSets": [{
+					"id": "earthenwareFinePaste",
+					"name": "Fine paste earthenware",
+					"grouping": "Earthenware"
+				},{
+					"id": "earthenwareTempered",
+					"name": "Tempered earthenware",
+					"grouping": "Earthenware"
+				},{
+					"id": "porcelainGreenware",
+					"name": "Greenware",
+					"grouping": "Porcelain"
+				},{
+					"id": "porcelainWhiteware",
+					"name": "Whiteware",
+					"grouping": "Porcelain"
+				},{
+					"id": "porcelainBWware",
+					"name": "Blue & white ware",
+					"grouping": "Porcelain"
+				},{
+					"id": "stonewareMercuryJar",
+					"name": "Mercury jar",
+					"grouping": "Stoneware"
+				},{
+					"id": "stonewareBrittle",
+					"name": "Brittle",
+					"grouping": "Stoneware"
+				},{
+					"id": "stonewareBuff",
+					"name": "Buff",
+					"grouping": "Stoneware"
+				},{
+					"id": "colonialArtifactsPorcelain",
+					"name": "Porcelain",
+					"grouping": "Colonial artifacts"
+				},{
+					"id": "colonialArtifactsStoneware",
+					"name": "Stoneware",
+					"grouping": "Colonial artifacts"
+				},{
+					"id": "colonialArtifactsEarthenware",
+					"name": "Earthenware",
+					"grouping": "Colonial artifacts"
+				},{		
+					"id": "colonialModernArtifactsMetal",
+					"name": "Metal", 
+					"grouping": "Colonial & modern artifacts: other materials"
+				},{		
+					"id": "colonialModernArtifactsOrganic",
+					"name": "Organic", 
+					"grouping": "Colonial & modern artifacts: other materials"
+				},{		
+					"id": "colonialModernArtifactsStone",
+					"name": "Stone", 
+					"grouping": "Colonial & modern artifacts: other materials"
+				},{		
+					"id": "colonialModernArtifactsGlass",
+					"name": "Glass", 
+					"grouping": "Colonial & modern artifacts: other materials"
+				}
+			]	
 	}
 }

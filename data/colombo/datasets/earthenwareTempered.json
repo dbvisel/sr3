@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID": "colombo",
+		"id": "earthenwareTempered",
+		"name": "Tempered Earthenware",
+		"shortName": "Tempered Earthenware",
+		"source": "Earthenware final for database.xlsx",
+		"editedDate": "20 October 2020",
+		"dataSetGroup": "Earthenware",
+		"orderInGroup": 2,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			}
+		],
+		"data": []}}

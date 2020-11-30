@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID": "colombo",
+		"id": "earthenwareFinePaste",
+		"name": "Fine Paste Earthenware",
+		"shortName": "Fine Paste Earthenware",
+		"source": "Earthenware final for database.xlsx",
+		"editedDate": "20 October 2020",
+		"dataSetGroup": "Earthenware",
+		"orderInGroup": 1,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			}
+		],
+		"data": []}}

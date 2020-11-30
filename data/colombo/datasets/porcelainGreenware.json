@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID": "colombo",
+		"id": "porcelainGreenware",
+		"name": "Greenware",
+		"shortName": "Greenware",
+		"source": "Porcelain final for database.xlsx",
+		"editedDate": "20 October 2020",
+		"dataSetGroup": "Porcelain",
+		"orderInGroup": 1,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			}
+		],
+		"data": []}}

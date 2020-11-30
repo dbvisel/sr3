@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID": "colombo",
+		"id": "porcelainBWware",
+		"name": "Blue & White Ware",
+		"shortName": "Blue & white ware",
+		"source": "Porcelain final for database.xlsx",
+		"editedDate": "20 October 2020",
+		"dataSetGroup": "Porcelain",
+		"orderInGroup": 3,
+		"defaultSort": "hiddenOrder",
+		"fields": [{
+				"fieldKey": "hiddenOrder",
+				"fieldName": "Default Order",
+				"fieldHidden": true,
+				"sortMethod": "integer"
+			}
+		],
+		"data": []}}
