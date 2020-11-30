@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ReportContext from "./reportcontext";
-// import { pathPrefix } from "./../../gatsby-config";
 import { withPrefix } from "gatsby";
 
 // this should have report ID in scope

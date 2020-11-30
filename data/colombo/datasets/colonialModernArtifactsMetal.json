@@ -8,19 +8,15 @@
 		"editedDate": "20 October 2020",
 		"dataSetGroup": "Colonial & modern artifacts",
 		"orderInGroup": 1,
-		"defaultSort": "hiddenOrder",
+		"defaultSort": "id",
 		"fields": [{
-			"fieldKey": "hiddenOrder",
+			"fieldKey": "id",
 			"fieldName": "Default Order",
-			"fieldHidden": true,
-			"sortMethod": "integer"
-		},{
-			"fieldKey": "hiddenOrder",
-			"fieldName": "Default Order",
-			"fieldHidden": true,
-			"sortMethod": "integer"
-		},{
-			"fieldKey":"artefactNumber","fieldName":"Artefact Number"
+			"fieldHidden": true
+			},{
+			"fieldKey":"artefactNumber",
+			"fieldName":"Artefact Number",
+			"fieldLink": true
 		},{"fieldKey":"unit", "fieldName":"Unit"},
 		{"fieldKey": "weight","fieldName":"Weight (g)",	"superField": "Quantities in weight"},
 		{"fieldKey": "totalWeight","fieldName":"Total Weight (g)", "superField": "Quantities in weight"},
@@ -40,31 +36,31 @@
 		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
 				],
 		"data": [
-			{"hiddenOrder":"1","artefactNumber":"CCTM0001","unit":"I E2","weight":"10","totalWeight":"3069","numberOfPieces":"1","totalNumberOfPieces":"279","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"02/12/00","remarks":"corroded metal"},
-			{"hiddenOrder":"2","artefactNumber":"CCTM0002","unit":"SQ I E1","weight":"15","totalWeight":"","numberOfPieces":"5","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"12 Oct 2001","remarks":"corroded metal"},
-			{"hiddenOrder":"3","artefactNumber":"CCTM0003","unit":"SQ II-1 L1","weight":"13","totalWeight":"","numberOfPieces":"4","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"12 Feb 2000","remarks":""},
-			{"hiddenOrder":"4","artefactNumber":"CCTM0004","unit":"SQ II L1","weight":"183","totalWeight":"","numberOfPieces":"5","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"November 2000","remarks":""},
-			{"hiddenOrder":"5","artefactNumber":"CCTM0005","unit":"SQ I","weight":"68","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"surface","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
-			{"hiddenOrder":"6","artefactNumber":"CCTM0006","unit":"I F10","weight":"76","totalWeight":"","numberOfPieces":"6","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
-			{"hiddenOrder":"7","artefactNumber":"CCTM0007","unit":"F1","weight":"21","totalWeight":"","numberOfPieces":"6","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
-			{"hiddenOrder":"8","artefactNumber":"CCTM0008","unit":"SQ I E1","weight":"303","totalWeight":"","numberOfPieces":"16","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"10/12/00","remarks":""},
-			{"hiddenOrder":"9","artefactNumber":"CCTM0009","unit":"SQ I E3","weight":"308","totalWeight":"","numberOfPieces":"36","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"14/11/00","remarks":""},
-			{"hiddenOrder":"10","artefactNumber":"CCTM0010","unit":"F1","weight":"65","totalWeight":"","numberOfPieces":"19","totalNumberOfPieces":"","spit":"10 and 11","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":"brown layer"},
-			{"hiddenOrder":"11","artefactNumber":"CCTM0011","unit":"I E1","weight":"410","totalWeight":"","numberOfPieces":"11","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"10/12/00","remarks":""},
-			{"hiddenOrder":"12","artefactNumber":"CCTM0012","unit":"I 2M","weight":"169","totalWeight":"","numberOfPieces":"17","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"18/07/00","remarks":"test trench 1"},
-			{"hiddenOrder":"13","artefactNumber":"CCTM0013","unit":"SQ II-1 L2","weight":"112","totalWeight":"","numberOfPieces":"10","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"14, 16, 18 Nov 2000","remarks":""},
-			{"hiddenOrder":"14","artefactNumber":"CCTM0014","unit":"E1","weight":"262","totalWeight":"","numberOfPieces":"19","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":"brown colonial soil"},
-			{"hiddenOrder":"15","artefactNumber":"CCTM0015","unit":"SQ I E3","weight":"70","totalWeight":"","numberOfPieces":"13","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"02/12/00","remarks":""},
-			{"hiddenOrder":"16","artefactNumber":"CCTM0016","unit":"SQ I F1","weight":"166","totalWeight":"","numberOfPieces":"15","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"10/12/00","remarks":""},
-			{"hiddenOrder":"17","artefactNumber":"CCTM0017","unit":"SQ I F3","weight":"99","totalWeight":"","numberOfPieces":"19","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"21/11/00","remarks":""},
-			{"hiddenOrder":"18","artefactNumber":"CCTM0018","unit":"SQ II-1 L1","weight":"40","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"7","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
-			{"hiddenOrder":"19","artefactNumber":"CCTM0019","unit":"SQ I D2","weight":"67","totalWeight":"","numberOfPieces":"6","totalNumberOfPieces":"","spit":"10-11","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"23/12/00","remarks":""},
-			{"hiddenOrder":"20","artefactNumber":"CCTM0020","unit":"K3","weight":"31","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
-			{"hiddenOrder":"21","artefactNumber":"CCTM0021","unit":"SQ I D1","weight":"197","totalWeight":"","numberOfPieces":"25","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"07/12/00","remarks":"brown"},
-			{"hiddenOrder":"22","artefactNumber":"CCTM0022","unit":"SQ I E1","weight":"159","totalWeight":"","numberOfPieces":"21","totalNumberOfPieces":"","spit":"8","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"03/12/00","remarks":""},
-			{"hiddenOrder":"23","artefactNumber":"CCTM0023","unit":"SQ I K2","weight":"54","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"Nov 2000","remarks":""},
-			{"hiddenOrder":"24","artefactNumber":"CCTM0024","unit":"SQ I K2","weight":"42","totalWeight":"","numberOfPieces":"7","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"Nov 2000","remarks":""},
-			{"hiddenOrder":"25","artefactNumber":"CCTM0025","unit":"Salvage","weight":"129","totalWeight":"","numberOfPieces":"13","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""}
+			{"id":"1","artefactNumber":"CCTM0001","unit":"I E2","weight":"10","totalWeight":"3069","numberOfPieces":"1","totalNumberOfPieces":"279","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"02/12/00","remarks":"corroded metal"},
+			{"id":"2","artefactNumber":"CCTM0002","unit":"SQ I E1","weight":"15","totalWeight":"","numberOfPieces":"5","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"12 Oct 2001","remarks":"corroded metal"},
+			{"id":"3","artefactNumber":"CCTM0003","unit":"SQ II-1 L1","weight":"13","totalWeight":"","numberOfPieces":"4","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"12 Feb 2000","remarks":""},
+			{"id":"4","artefactNumber":"CCTM0004","unit":"SQ II L1","weight":"183","totalWeight":"","numberOfPieces":"5","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"November 2000","remarks":""},
+			{"id":"5","artefactNumber":"CCTM0005","unit":"SQ I","weight":"68","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"surface","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
+			{"id":"6","artefactNumber":"CCTM0006","unit":"I F10","weight":"76","totalWeight":"","numberOfPieces":"6","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
+			{"id":"7","artefactNumber":"CCTM0007","unit":"F1","weight":"21","totalWeight":"","numberOfPieces":"6","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
+			{"id":"8","artefactNumber":"CCTM0008","unit":"SQ I E1","weight":"303","totalWeight":"","numberOfPieces":"16","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"10/12/00","remarks":""},
+			{"id":"9","artefactNumber":"CCTM0009","unit":"SQ I E3","weight":"308","totalWeight":"","numberOfPieces":"36","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"14/11/00","remarks":""},
+			{"id":"10","artefactNumber":"CCTM0010","unit":"F1","weight":"65","totalWeight":"","numberOfPieces":"19","totalNumberOfPieces":"","spit":"10 and 11","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":"brown layer"},
+			{"id":"11","artefactNumber":"CCTM0011","unit":"I E1","weight":"410","totalWeight":"","numberOfPieces":"11","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"10/12/00","remarks":""},
+			{"id":"12","artefactNumber":"CCTM0012","unit":"I 2M","weight":"169","totalWeight":"","numberOfPieces":"17","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"18/07/00","remarks":"test trench 1"},
+			{"id":"13","artefactNumber":"CCTM0013","unit":"SQ II-1 L2","weight":"112","totalWeight":"","numberOfPieces":"10","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"14, 16, 18 Nov 2000","remarks":""},
+			{"id":"14","artefactNumber":"CCTM0014","unit":"E1","weight":"262","totalWeight":"","numberOfPieces":"19","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":"brown colonial soil"},
+			{"id":"15","artefactNumber":"CCTM0015","unit":"SQ I E3","weight":"70","totalWeight":"","numberOfPieces":"13","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"02/12/00","remarks":""},
+			{"id":"16","artefactNumber":"CCTM0016","unit":"SQ I F1","weight":"166","totalWeight":"","numberOfPieces":"15","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"10/12/00","remarks":""},
+			{"id":"17","artefactNumber":"CCTM0017","unit":"SQ I F3","weight":"99","totalWeight":"","numberOfPieces":"19","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"21/11/00","remarks":""},
+			{"id":"18","artefactNumber":"CCTM0018","unit":"SQ II-1 L1","weight":"40","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"7","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
+			{"id":"19","artefactNumber":"CCTM0019","unit":"SQ I D2","weight":"67","totalWeight":"","numberOfPieces":"6","totalNumberOfPieces":"","spit":"10-11","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"23/12/00","remarks":""},
+			{"id":"20","artefactNumber":"CCTM0020","unit":"K3","weight":"31","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""},
+			{"id":"21","artefactNumber":"CCTM0021","unit":"SQ I D1","weight":"197","totalWeight":"","numberOfPieces":"25","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"07/12/00","remarks":"brown"},
+			{"id":"22","artefactNumber":"CCTM0022","unit":"SQ I E1","weight":"159","totalWeight":"","numberOfPieces":"21","totalNumberOfPieces":"","spit":"8","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"03/12/00","remarks":""},
+			{"id":"23","artefactNumber":"CCTM0023","unit":"SQ I K2","weight":"54","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"Nov 2000","remarks":""},
+			{"id":"24","artefactNumber":"CCTM0024","unit":"SQ I K2","weight":"42","totalWeight":"","numberOfPieces":"7","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"Nov 2000","remarks":""},
+			{"id":"25","artefactNumber":"CCTM0025","unit":"Salvage","weight":"129","totalWeight":"","numberOfPieces":"13","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"","remarks":""}
 			]
 			}
 	}

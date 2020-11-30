@@ -1,4 +1,5 @@
 {
+	"id": "master",
 	"master": {
 		"id": "master",
 		"possibleReports": [{
@@ -14,8 +15,11 @@
 			"id": "msatp",
 			"name": "MSATP"
 		},{"id":"colombo", "name":"Colombo Court"}],
+		"excluded": ["zzz"],
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",
-		"lastUpdated": "27 November 2021"
+		"lastUpdated": "27 November 2021",
+		"makeReports": true,
+		"notes": "Make sure makeReports is set to true for production. Any report ID in excluded won't appear."
 	}
 }

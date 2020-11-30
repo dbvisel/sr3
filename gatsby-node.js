@@ -1,38 +1,9 @@
 const path = require(`path`);
 const fs = require("fs");
 
-//const makeReports = true; // set this to false for dev, it's a lot faster!
-const makeReports = false;
+// REMEMBER:
 
-// from https://www.gatsbyjs.org/docs/schema-customization/
-
-// exports.createSchemaCustomization = ({ actions }) => {
-//   const { createTypes } = actions
-//   const typeDefs = `
-//     type allTheJson implements Node @dontInfer {
-// 			nodes {
-// 				report {
-// 					id: String!
-// 					author: String!
-// 					title: String!
-// 					titleShort: String!
-// 					projectTitle: String!
-// 					lastUpdated: String
-// 					dataSets {
-// 						id: String!
-// 						name: String!
-// 						grouping: String
-// 					}
-// 					texts {
-// 						id: String!
-// 						name: String!
-// 					}
-// 				}
-// 			}
-// 		}
-//   `
-//   createTypes(typeDefs)
-// }
+// in master config.js, set "makeReport" to true to make pages
 
 const loopTheConfigs = function(reportID, configData) {
   if (reportID) {
@@ -55,6 +26,16 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
+      master: allTheJson(master: { id: { eq: "master" } }) {
+        master {
+          excluded
+          possibleReports {
+            id
+          }
+          makeReports
+        }
+      }
+
       textFiles: allMdx {
         edges {
           node {
@@ -98,11 +79,21 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
     // console.log(result.data);
-    let outData = result.data.textFiles.edges;
-    let reportData = result.data.reportData.nodes;
+    const masterData = result.data.master.master;
+    let textFiles = result.data.textFiles.edges;
+    let reportData = result.data.reportData.nodes.filter(
+      (x) => x.report !== null
+    );
+
+    // First, deal with all the datasets
+    // If a report's ID is in "excluded" in "config.json", pages are NOT made.
 
     reportData.forEach((node) => {
-      if (node.report && node.report.dataSets) {
+      if (
+        node.report &&
+        node.report.dataSets &&
+        masterData.excluded.indexOf(node.report.id) < 0
+      ) {
         let reportID = node.report.id;
         let reportConfig = loopTheConfigs(reportID, reportData);
         console.log(`${reportID} datasets: ${node.report.dataSets.length}`);
@@ -119,7 +110,7 @@ exports.createPages = ({ actions, graphql }) => {
             component: datasetPageTemplate,
             context: { reportData: reportConfig, data: pageData.dataset },
           });
-          if (makeReports) {
+          if (masterData.makeReports) {
             // now, go through pageData.dataset.data and make a page for each data
             pageData.dataset.data.forEach((dataItem) => {
               if (dataItem.id) {
@@ -141,9 +132,17 @@ exports.createPages = ({ actions, graphql }) => {
         });
       }
     });
-    return outData.forEach(({ node }) => {
-      let reportConfig = loopTheConfigs(node.frontmatter.report, reportData);
-      if (node.frontmatter) {
+
+    // next, deal with text files
+
+    return textFiles.forEach(({ node }) => {
+      // check and see if it's in the excluded list; if it is, don't make pages
+      if (
+        node.frontmatter &&
+        node.frontmatter.report &&
+        masterData.excluded.indexOf(node.frontmatter.report) < 0
+      ) {
+        let reportConfig = loopTheConfigs(node.frontmatter.report, reportData);
         if (node.frontmatter.path && node.frontmatter.report) {
           let outDataSets = [];
           if (node.frontmatter.datasets) {
@@ -154,7 +153,7 @@ exports.createPages = ({ actions, graphql }) => {
               const dataSetData = JSON.parse(
                 fs.readFileSync(thisPath, { encoding: "utf-8" })
               );
-              console.log("dataset location: ", thisPath);
+              console.log("Dataset without page: ", thisPath);
               outDataSets.push({
                 id: node.frontmatter.datasets[i],
                 path: thisPath,
