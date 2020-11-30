@@ -23,11 +23,11 @@
 			{"id": "conclusion", "name": "Conclusion"
 				}],		"dataSets": [{
 					"id": "earthenwareFinePaste",
-					"name": "Fine paste earthenware",
+					"name": "Fine paste",
 					"grouping": "Earthenware"
 				},{
 					"id": "earthenwareTempered",
-					"name": "Tempered earthenware",
+					"name": "Tempered",
 					"grouping": "Earthenware"
 				},{
 					"id": "porcelainGreenware",
