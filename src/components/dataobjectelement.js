@@ -19,6 +19,7 @@ const DataP = styled.p`
   margin: 0;
   margin-bottom: 1em;
   text-indent: 0;
+  display: flex;
 `;
 
 const FieldName = styled.span`
@@ -31,6 +32,7 @@ const FieldName = styled.span`
 `;
 
 const FieldValue = styled.span`
+  flex: 1;
   & a {
     color: var(--orange);
     text-decoration: none;

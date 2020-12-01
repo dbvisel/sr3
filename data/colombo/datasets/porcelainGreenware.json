@@ -16,7 +16,13 @@
 			},{
 			"fieldKey":"artefactNumber",
 			"fieldName":"Artefact Number",
-			"fieldLink": true
+			"fieldLink": true,
+			"fieldType": "link",
+			"canBeArray": true,
+			"linkExists": "artefactDataMatched",
+			"linkToDataSet": "artefactDataSet",
+			"linksToKey": "artefactNumber"
+
 		},{
 			"fieldKey":"artefactNumber","fieldName":"Artefact Number"
 		},{"fieldKey":"unit", "fieldName":"Unit"},
@@ -37,7 +43,22 @@
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"},
+		{"fieldKey": "image","fieldName": "Image", "fieldType": "link",
+			"canBeArray": true,
+			"linkExists": "artefactDataMatched",
+			"linkToDataSet": "artefactDataSet",
+			"linksToKey": "artefactNumber"
+},		{
+	"fieldKey": "filename",
+	"fieldName": "Image Record",
+	"fieldNameShown": "image",
+	"fieldType": "filename",
+	"sortMethod": "alphabetical"
+},
+{"fieldKey":"artefactDataSet", "fieldHidden": true},
+{"fieldKey":"artefactDataMatched", "fieltType": "binary", "fieldHidden": true}
+
 		] ,
 		"data": [
 			{"id":"1","artefactNumber":"CCTGW0001","unit":"I E3","weight":"12","totalWeight":"4673.9","numberOfPieces":"4","totalNumberOfPieces":"349","spit":"10","lot":"","typeOfMaterial":"Porcelain","typeOfWare":"","partOfTheVessel":"Body","typeOfVessel":"Bowl","length":"","breadthWidgth":"","thickness":"","heightOfFoot":"","diameter":"","mnv":"","dateOfExcavation":"02/12/2000","remarks":""},
@@ -180,7 +201,7 @@
 			{"id":"138","artefactNumber":"CCTGW0138","unit":"I E3","weight":"11","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim","typeOfVessel":"Bowl","length":"5.8","breadthWidgth":"4","thickness":"0.4","heightOfFoot":"","diameter":"16","mnv":"12.00%","dateOfExcavation":"-","remarks":"everted rim, foliated rim, incised horizontal lines on exterior, incised crows' feet on exterior, molded floral designs on interio "},
 			{"id":"139","artefactNumber":"CCTGW0139","unit":"I E3","weight":"44","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim","typeOfVessel":"Basin","length":"6.9","breadthWidgth":"5.5","thickness":"0.8","heightOfFoot":"","diameter":"27","mnv":"4.00%","dateOfExcavation":"-","remarks":"everted flat upturned rim, molded vertical flutes, "},
 			{"id":"140","artefactNumber":"CCTGW0140","unit":"I E3","weight":"13","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim","typeOfVessel":"Bowl","length":"4.7","breadthWidgth":"3.2","thickness":"0.6","heightOfFoot":"","diameter":"16","mnv":"3.00%","dateOfExcavation":"-","remarks":"inverted rim, incised horizontal lines on exterior, incised crows' feet on exterior, "},
-			{"id":"141","artefactNumber":"CCTGW0141","unit":"I E3","weight":"16","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Lid","typeOfVessel":"Jarlet","length":"4.6","breadthWidgth":"4.2","thickness":"0.6","heightOfFoot":"","diameter":"12","mnv":"12.00%","dateOfExcavation":"-","remarks":"straight rim, lid for a jarlet; incised vertical lines on exterior, unglazed ring on interior near lip, unglazed lip"},
+			{"id":"141","artefactNumber":"CCTGW0141","unit":"I E3","weight":"16","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Lid","typeOfVessel":"Jarlet","length":"4.6","breadthWidgth":"4.2","thickness":"0.6","heightOfFoot":"","diameter":"12","mnv":"12.00%","dateOfExcavation":"-","remarks":"straight rim, lid for a jarlet; incised vertical lines on exterior, unglazed ring on interior near lip, unglazed lip", "filename": ["CCTGW0141-Interior.jpg","CCTGW0141.jpg"], "artefactDataSt": "porcelainGreenware", "artefactDataMatched":true},
 			{"id":"142","artefactNumber":"CCTGW0142","unit":"I E3","weight":"27","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim","typeOfVessel":"Bowl","length":"7.2","breadthWidgth":"4.3","thickness":"0.4","heightOfFoot":"","diameter":"18","mnv":"13.00%","dateOfExcavation":"-","remarks":"straight rim, shiny glaze, pinholes, made by potters' wheel, uneven clay body"},
 			{"id":"143","artefactNumber":"CCTGW0143","unit":"I E3","weight":"16","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim","typeOfVessel":"Basin","length":"5.2","breadthWidgth":"3.9","thickness":"0.6","heightOfFoot":"","diameter":"-","mnv":"-%","dateOfExcavation":"-","remarks":"everted flat upturned rim, flaking glaze, thick glaze, crackling, "},
 			{"id":"144","artefactNumber":"CCTGW0144","unit":"I E3","weight":"21","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim","typeOfVessel":"Bowl","length":"5.4","breadthWidgth":"5.3","thickness":"0.3","heightOfFoot":"","diameter":"18","mnv":"5.00%","dateOfExcavation":"-","remarks":"straight rim, shiny glaze, pinholes, unglazed ring on interior, sloped interior"},
@@ -241,7 +262,7 @@
 			{"id":"199","artefactNumber":"CCTGW0199","unit":"II G2","weight":"3","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Lid","typeOfVessel":"Covered Box","length":"2.3","breadthWidgth":"1.8","thickness":"0.4","heightOfFoot":"","diameter":"11","mnv":"6.00%","dateOfExcavation":"","remarks":"unglazed bottom (reddish orange), crackling"},
 			{"id":"200","artefactNumber":"CCTGW0200","unit":"  I F1","weight":"27","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Lid","typeOfVessel":"Covered Box","length":"5.7","breadthWidgth":"4.2","thickness":"0.5","heightOfFoot":"","diameter":"5.5","mnv":"75.00%","dateOfExcavation":"12/10/00","remarks":"unglazed bottom"},
 			{"id":"201","artefactNumber":"CCTGW0201","unit":"  I F1","weight":"11","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim","typeOfVessel":"Basin","length":"3.6","breadthWidgth":"2.9","thickness":"0.5","heightOfFoot":"","diameter":"14","mnv":"7","dateOfExcavation":"12/10/00","remarks":"might be flat part of everted flat rim, with upturned lip, pinholes, crackling "},
-			{"id":"202","artefactNumber":"CCTGW0202","unit":"II","weight":"56","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim and Base (Complete Profile)","typeOfVessel":"Shallow bowl","length":"9.5","breadthWidgth":"4.8","thickness":"0.5","heightOfFoot":"0.7","diameter":"6.5","mnv":"40.00%","dateOfExcavation":"","remarks":"footed base, unglazed base on exterior, glazed foot, reddish orange unglazed portion, molded vertical flutes (bamboo molding) on interior, incised circle on interior, with incised floral designs within it, incised vertical lines on exterior, raised horizontal line on exterior"},
+			{"id":"202","artefactNumber":"CCTGW0202","unit":"II","weight":"56","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Rim and Base (Complete Profile)","typeOfVessel":"Shallow bowl","length":"9.5","breadthWidgth":"4.8","thickness":"0.5","heightOfFoot":"0.7","diameter":"6.5","mnv":"40.00%","dateOfExcavation":"","remarks":"footed base, unglazed base on exterior, glazed foot, reddish orange unglazed portion, molded vertical flutes (bamboo molding) on interior, incised circle on interior, with incised floral designs within it, incised vertical lines on exterior, raised horizontal line on exterior", "filename": "CCTGW0202.jpg", "artefactDataSt": "porcelainGreenware", "artefactDataMatched":true},
 			{"id":"203","artefactNumber":"CCTGW0203","unit":"   I D2","weight":"47","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10-11","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Base","typeOfVessel":"Bowl","length":"7.9","breadthWidgth":"7","thickness":"0.6","heightOfFoot":"0.8","diameter":"6.5","mnv":"17.00%","dateOfExcavation":"18/11/2000","remarks":"footed base, glazed foot"},
 			{"id":"204","artefactNumber":"CCTGW0204","unit":"  I D2","weight":"20","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10-11","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Base","typeOfVessel":"Bowl","length":"4.8","breadthWidgth":"2.9","thickness":"0.7","heightOfFoot":"1","diameter":"5","mnv":"12.00%","dateOfExcavation":"18/11/2000","remarks":"footed base, unglaxed foot, glazed base on exterior"},
 			{"id":"205","artefactNumber":"CCTGW0205","unit":"   I D2","weight":"179","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10-11","lot":"","typeOfMaterial":"","typeOfWare":"Greenware - Others","partOfTheVessel":"Base","typeOfVessel":"Bowl","length":"11.7","breadthWidgth":"8.4","thickness":"0.8","heightOfFoot":"0.6","diameter":"6.5","mnv":"100.00%","dateOfExcavation":"18/11/2000","remarks":"footed base, unglazed foot and base on exterior, dimple, dripping glaze, pinholes, flaking glaze, crackling"},
