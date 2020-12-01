@@ -33,7 +33,7 @@
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
 				],
 		"data": [
 			{"id":"1","artefactNumber":"CCTM0001","unit":"I E2","weight":"10","totalWeight":"3069","numberOfPieces":"1","totalNumberOfPieces":"279","spit":"10","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"02/12/00","remarks":"corroded metal"},

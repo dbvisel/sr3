@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, withPrefix } from "gatsby";
 import Layout from "./../components/layout";
 import DataObjectElement from "./../components/dataobjectelement";
 
@@ -10,9 +11,9 @@ const getDataSetName = function(dataSets, thisID) {
   }
 };
 
-// TODO: This should make the dataset name in H1 a link!
+// TODO: Why is this getting the short name of the dataset?
 
-export default function DataObjectPage({ pageContext }) {
+const DataObjectPage = ({ pageContext }) => {
   const { reportData, dataSet, data } = pageContext;
   const { dataSetName, dataSetID } = getDataSetName(
     reportData.dataSets,
@@ -25,7 +26,12 @@ export default function DataObjectPage({ pageContext }) {
       thisPage={`/${reportData.id}/dataset/${dataSetID}`}
     >
       <article>
-        <h1>Dataset: {dataSetName}</h1>
+        <h1>
+          Dataset:{" "}
+          <Link to={withPrefix(`/${reportData.id}/dataset/${dataSetID}`)}>
+            {dataSetName}
+          </Link>
+        </h1>
         <DataObjectElement
           objectData={data}
           fieldData={pageContext.fieldData}
@@ -35,4 +41,6 @@ export default function DataObjectPage({ pageContext }) {
       </article>
     </Layout>
   );
-}
+};
+
+export default DataObjectPage;

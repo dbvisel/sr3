@@ -633,7 +633,7 @@ class Dataset extends React.Component {
               </TableRow>
             </DataTableHead>
             {this.state.shownRecords.length > 0 ? (
-              <>
+              <React.Fragment>
                 {this.state.shownRecords.map((row, key) => (
                   <TableRow
                     key={key}
@@ -655,15 +655,19 @@ class Dataset extends React.Component {
                         </TableCell>
                       ) : (
                         <TableCell key={key}>
-                          <span className="innertd">{column.value}</span>
+                          <span className="innertd">
+                            {typeof column.value === "object"
+                              ? column.value.join(", ")
+                              : column.value}
+                          </span>
                         </TableCell>
                       );
                     })}
                   </TableRow>
                 ))}
-              </>
+              </React.Fragment>
             ) : (
-              <>
+              <React.Fragment>
                 <TableRow
                   columns={this.state.visibleFields.length}
                   columnWidths={this.state.columnWidths}
@@ -675,7 +679,7 @@ class Dataset extends React.Component {
                     </StrongLink>
                   </TdError>
                 </TableRow>
-              </>
+              </React.Fragment>
             )}
           </DataTable>
         </DataTableWrapper>

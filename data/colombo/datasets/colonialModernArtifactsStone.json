@@ -36,16 +36,16 @@
 		{"fieldKey": "thickness", "fieldName": "Thickness (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
-		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"},
-		{"fieldKey": "image","fieldName": "Photographs", "fieldType": "link",
+		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation","fieldNameShort":"Date"},
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"},
+		{"fieldKey": "image","fieldName": "Image", "fieldType": "link",
 			"canBeArray": true,
 			"linkExists": "artefactDataMatched",
 			"linkToDataSet": "artefactDataSet",
 			"linksToKey": "artefactNumber"
 },		{
 	"fieldKey": "filename",
-	"fieldName": "Photograph",
+	"fieldName": "Image Record",
 	"fieldNameShown": "image",
 	"fieldType": "filename",
 	"sortMethod": "alphabetical"
@@ -58,7 +58,7 @@
 			{"id":"1","artefactNumber":"CCTS001","unit":"SQ I D2","weight":"6","totalWeight":"2678","numberOfPieces":"1","totalNumberOfPieces":"6","spit":"10-11","lot":"","typeOfWare":"Rock","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"11/18/00","remarks":""},
 			{"id":"2","artefactNumber":"CCTS002","unit":"SQ I F3","weight":"10","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Pebble","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"21/11/00","remarks":""},
 			{"id":"3","artefactNumber":"CCTS003","unit":"SQ I F1","weight":"5","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Stone","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"12/10/00","remarks":""},
-			{"id":"4","artefactNumber":"CCTS004","unit":"SALVAGE","weight":"2657","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"Stone","partOfTheVessel":"","typeOfVessel":"","length":"16","breadthWidgth":"7.7","thickness":"9.8","diameter":"","mnv":"","dateOfExcavation":"nil","remarks":"", "imageLink": "CCTS0004",  "filename": "CCTS0004.jpg", "artefactDataSt": "colonialModernArtifactsStone", "artefactDataMatched":true}
+			{"id":"4","artefactNumber":"CCTS004","unit":"SALVAGE","weight":"2657","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"Stone","partOfTheVessel":"","typeOfVessel":"","length":"16","breadthWidgth":"7.7","thickness":"9.8","diameter":"","mnv":"","dateOfExcavation":"nil","remarks":"", "filename": "CCTS0004.jpg", "artefactDataSt": "colonialModernArtifactsStone", "artefactDataMatched":true}
 		]
 	}
 }

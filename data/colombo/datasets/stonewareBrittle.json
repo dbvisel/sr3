@@ -16,7 +16,11 @@
 			},{
 			"fieldKey":"artefactNumber",
 			"fieldName":"Artefact Number",
-			"fieldLink": true
+			"fieldType": "link",
+			"canBeArray": true,
+			"linkExists": "artefactDataMatched",
+			"linkToDataSet": "artefactDataSet",
+			"linksToKey": "artefactNumber"
 		},{"fieldKey":"unit", "fieldName":"Unit"},
 		{"fieldKey": "weight","fieldName":"Weight (g)",	"superField": "Quantities in weight"},
 		{"fieldKey": "totalWeight","fieldName":"Total Weight (g)", "superField": "Quantities in weight"},
@@ -33,7 +37,21 @@
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"},
+		{"fieldKey": "image","fieldName": "Image", "fieldType": "link",
+			"canBeArray": true,
+			"linkExists": "artefactDataMatched",
+			"linkToDataSet": "artefactDataSet",
+			"linksToKey": "artefactNumber"
+},		{
+	"fieldKey": "filename",
+	"fieldName": "Image Record",
+	"fieldNameShown": "image",
+	"fieldType": "filename",
+	"sortMethod": "alphabetical"
+},
+{"fieldKey":"artefactDataSet", "fieldHidden": true},
+{"fieldKey":"artefactDataMatched", "fieltType": "binary", "fieldHidden": true}
 	],
 		"data": [
 			{"id":"1","artefactNumber":"CCTBR001","unit":"II","weight":"18.3","totalWeight":"6223.15","numberOfPieces":"1","totalNumberOfPieces":"390","spit":"3","lot":"0","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"Nov 2000","remarks":""},
@@ -44,7 +62,7 @@
 			{"id":"6","artefactNumber":"CCTBR006","unit":" II-1 L1","weight":"39","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Base","typeOfVessel":"","length":"5.9","breadthWidgth":"5.1","thickness":"1.1","diameter":"11","mnv":"11.00%","dateOfExcavation":"14 Nov 2000","remarks":""},
 			{"id":"7","artefactNumber":"CCTBR007","unit":" II-1 L1","weight":"13.8","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"14 Nov 2000","remarks":""},
 			{"id":"8","artefactNumber":"CCTBR008","unit":"I F1-10","weight":"289.38","totalWeight":"","numberOfPieces":"15","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"10 Dec 2000","remarks":""},
-			{"id":"9","artefactNumber":"CCTBR009","unit":"I F1-10","weight":"77.93","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Lug","typeOfVessel":"","length":"10.1","breadthWidgth":"9.5","thickness":"0.4","diameter":"","mnv":"","dateOfExcavation":"10 Dec 2000","remarks":""},
+			{"id":"9","artefactNumber":"CCTBR009","unit":"I F1-10","weight":"77.93","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Lug","typeOfVessel":"","length":"10.1","breadthWidgth":"9.5","thickness":"0.4","diameter":"","mnv":"","dateOfExcavation":"10 Dec 2000","remarks":"", "filename": "CCTBR009.jpg", "artefactDataSt": "stonewareBrittle", "artefactDataMatched":true},
 			{"id":"10","artefactNumber":"CCTBR010","unit":" II-1 M 2","weight":"6.38","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"16/11/00","remarks":""},
 			{"id":"11","artefactNumber":"CCTBR011","unit":" II-1 M1","weight":"3.48","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
 			{"id":"12","artefactNumber":"CCTBR012","unit":" II-3","weight":"2.44","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
@@ -67,7 +85,7 @@
 			{"id":"29","artefactNumber":"CCTBR029","unit":" I F1","weight":"14.51","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Rim","typeOfVessel":"","length":"7.1","breadthWidgth":"2.8","thickness":"0.5","diameter":"9","mnv":"27.00%","dateOfExcavation":"10/12/2000","remarks":"everted rim, slip on exterior"},
 			{"id":"30","artefactNumber":"CCTBR030","unit":" I F1","weight":"15.63","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Rim","typeOfVessel":"","length":"6.5","breadthWidgth":"4","thickness":"0.7","diameter":"17","mnv":"16.00%","dateOfExcavation":"10/12/2000","remarks":"everted rim, greenish glaze on exterior "},
 			{"id":"31","artefactNumber":"CCTBR031","unit":" I F1","weight":"34.54","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Lug","typeOfVessel":"","length":"8.1","breadthWidgth":"5.2","thickness":"0.6","diameter":"","mnv":"","dateOfExcavation":"10/12/2000","remarks":"top part of lug broke off "},
-			{"id":"32","artefactNumber":"CCTBR032","unit":" I F1","weight":"35.05","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Lug","typeOfVessel":"","length":"8.2","breadthWidgth":"6.1","thickness":"0.7","diameter":"","mnv":"","dateOfExcavation":"10/12/2000","remarks":"brownish green glaze on exterior "},
+			{"id":"32","artefactNumber":"CCTBR032","unit":" I F1","weight":"35.05","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Lug","typeOfVessel":"","length":"8.2","breadthWidgth":"6.1","thickness":"0.7","diameter":"","mnv":"","dateOfExcavation":"10/12/2000","remarks":"brownish green glaze on exterior ", "filename": "CCTBR032.jpg", "artefactDataSt": "stonewareBrittle", "artefactDataMatched":true},
 			{"id":"33","artefactNumber":"CCTBR033","unit":" I F3","weight":"40.61","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"Brown","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"12/9/00","remarks":""},
 			{"id":"34","artefactNumber":"CCTBR034","unit":" I F1","weight":"26.54","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"09/12/2000","remarks":""},
 			{"id":"35","artefactNumber":"CCTBR035","unit":" I M2","weight":"67.72","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"18/11/2000","remarks":""},
@@ -90,7 +108,7 @@
 			{"id":"52","artefactNumber":"CCTBR052","unit":"II-1","weight":"563.5","totalWeight":"","numberOfPieces":"28","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"16/11/2000","remarks":""},
 			{"id":"53","artefactNumber":"CCTBR053","unit":"I D2","weight":"24.1","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10-11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Rim","typeOfVessel":"","length":"5.5","breadthWidgth":"5.1","thickness":"0.4","diameter":"20","mnv":"8.00%","dateOfExcavation":"18/11/2000","remarks":"flanged rim"},
 			{"id":"54","artefactNumber":"CCTBR054","unit":"I D2","weight":"43.7","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10-11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Base","typeOfVessel":"","length":"4.9","breadthWidgth":"4.8","thickness":"1.4","diameter":"24","mnv":"6.50%","dateOfExcavation":"18/11/2000","remarks":"bottomless base"},
-			{"id":"55","artefactNumber":"CCTBR055","unit":" II-1 M3","weight":"28.73","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Lug","typeOfVessel":"","length":"6.3","breadthWidgth":"5.4","thickness":"0.6","diameter":"","mnv":"","dateOfExcavation":"24/12/2000","remarks":""},
+			{"id":"55","artefactNumber":"CCTBR055","unit":" II-1 M3","weight":"28.73","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Lug","typeOfVessel":"","length":"6.3","breadthWidgth":"5.4","thickness":"0.6","diameter":"","mnv":"","dateOfExcavation":"24/12/2000","remarks":"", "filename": "CCTBR055.jpg", "artefactDataSt": "stonewareBrittle", "artefactDataMatched":true},
 			{"id":"56","artefactNumber":"CCTBR056","unit":" II-1 M3","weight":"100.5","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Base","typeOfVessel":"","length":"7.9","breadthWidgth":"8.6","thickness":"0.7","diameter":"16.5","mnv":"12.00%","dateOfExcavation":"24/12/2000","remarks":""},
 			{"id":"57","artefactNumber":"CCTBR057","unit":" II-1-M3","weight":"32.83","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Lug","typeOfVessel":"","length":"10.4","breadthWidgth":"4.7","thickness":"0.5","diameter":"","mnv":"","dateOfExcavation":"24/12/2000","remarks":"self glaze on exterior"},
 			{"id":"58","artefactNumber":"CCTBR058","unit":" I F1","weight":"38.85","totalWeight":"","numberOfPieces":"3","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"-","remarks":""},
@@ -167,8 +185,8 @@
 			{"id":"129","artefactNumber":"CCTBR129","unit":"II-1 M3","weight":"13","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"30/11/2000","remarks":""},
 			{"id":"130","artefactNumber":"CCTBR130","unit":"II-1 K2","weight":"4","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
 			{"id":"131","artefactNumber":"CCTBR131","unit":"II-1 K2","weight":"14","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
-			{"id":"132","artefactNumber":"CCTBR132","unit":"II-1 K2","weight":"43","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"8","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Rim and Lug","typeOfVessel":"Jar","length":"9.1","breadthWidgth":"6.4","thickness":"0.9","diameter":"12","mnv":"9.00%","dateOfExcavation":"Nov' 2000","remarks":""},
-			{"id":"133","artefactNumber":"CCTBR133","unit":"II-1 M1","weight":"34","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10/11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Base","typeOfVessel":"Jar","length":"5.1","breadthWidgth":"4.5","thickness":"0.6","diameter":"6","mnv":"23.00%","dateOfExcavation":"","remarks":""},
+			{"id":"132","artefactNumber":"CCTBR132","unit":"II-1 K2","weight":"43","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"8","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Rim and Lug","typeOfVessel":"Jar","length":"9.1","breadthWidgth":"6.4","thickness":"0.9","diameter":"12","mnv":"9.00%","dateOfExcavation":"November 2000","remarks":"", "filename": "CCTBR132.jpg", "artefactDataSt": "stonewareBrittle", "artefactDataMatched":true},
+			{"id":"133","artefactNumber":"CCTBR133","unit":"II-1 M1","weight":"34","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10/11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Base","typeOfVessel":"Jar","length":"5.1","breadthWidgth":"4.5","thickness":"0.6","diameter":"6","mnv":"23.00%","dateOfExcavation":"","remarks":"", "filename": "CCTBR133.jpg", "artefactDataSt": "stonewareBrittle", "artefactDataMatched":true},
 			{"id":"134","artefactNumber":"CCTBR134","unit":"II-1 M1","weight":"82","totalWeight":"","numberOfPieces":"10","totalNumberOfPieces":"","spit":"10/11","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
 			{"id":"135","artefactNumber":"CCTBR135","unit":"I D1","weight":"20.1","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Rim","typeOfVessel":"Jar","length":"6.2","breadthWidgth":"2.1","thickness":"0.8","diameter":"37","mnv":"5.00%","dateOfExcavation":"12/7/00","remarks":"Everted rim \r\nCrackle green glaze on both sides\r\n"},
 			{"id":"136","artefactNumber":"CCTBR136","unit":"I D2","weight":"2","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"Brittle Stoneware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""}

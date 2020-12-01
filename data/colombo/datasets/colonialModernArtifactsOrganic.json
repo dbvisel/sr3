@@ -33,7 +33,7 @@
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
 		],
 		"data": [
 			{"id":"1","artefactNumber":"CCTORG001","unit":"SQ I E3","weight":"85","totalWeight":"1194","numberOfPieces":"3","totalNumberOfPieces":"200","spit":"7","lot":"","typeOfWare":"Coral","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","dateOfExcavation":"21 Nov 2000"},

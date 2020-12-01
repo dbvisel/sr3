@@ -37,7 +37,7 @@
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
 		] ,
 		"data": [
 			{"id":"1","artefactNumber":"CCTGW0001","unit":"I E3","weight":"12","totalWeight":"4673.9","numberOfPieces":"4","totalNumberOfPieces":"349","spit":"10","lot":"","typeOfMaterial":"Porcelain","typeOfWare":"","partOfTheVessel":"Body","typeOfVessel":"Bowl","length":"","breadthWidgth":"","thickness":"","heightOfFoot":"","diameter":"","mnv":"","dateOfExcavation":"02/12/2000","remarks":""},

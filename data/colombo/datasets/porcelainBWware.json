@@ -35,7 +35,7 @@
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
 		],
 		"data": [
 			{"id":"1","artefactNumber":"CCTBW001","unit":"II L1","weight":"21","totalWeight":"260","numberOfPieces":"1","totalNumberOfPieces":"30","spit":"9","lot":"","typeOfMaterial":"Porcelain","typeOfWare":"Blue & White - Jingdezhen","partOfTheVessel":"Mouth and Shoulder","typeOfVessel":"Jarlet","length":"6.7","breadthWidgth":"5.3","thickness":"0.4","heightOfFoot":"","diameter":"5","mnv":"13.00%","dateOfExcavation":"","remarks":"Jarlet with vertical profile tapering to an end. Yuan blue and white. Good quality qingbai jarlet. From mouth down the shoulder and body of the jarlet: two parallel bands around the carination between the mouth and shoulder of the jarlet, below the lines are motifs of a chrysanthemum flower and blackberry vines, and underneath this panel of motifs are two parallel lines. Below these two lines are inverted lotus petals with a triplet of cloud swirls.Two pieces glued together. Yuan"},

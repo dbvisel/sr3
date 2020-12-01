@@ -35,7 +35,7 @@
 		{"fieldKey": "height", "fieldName": "Height (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
 		],
 		"data": [
 			{"id":"1","artefactNumber":"CCTWW001","unit":"II-1 K2","weight":"3","totalWeight":"2206.1","numberOfPieces":"1","totalNumberOfPieces":"159","spit":"9","lot":"","typeOfMaterial":"Porcelain","typeOfWare":"White - others","partOfTheVessel":"Body","typeOfVessel":"Bowl","length":"2.1","breadthWidgth":"1.6","thickness":"0.4","diameter":"","height":"","mnv":"","dateOfExcavation":"23/12/00","remarks":"Low molding and poor quality glaze, possibly Southern Chinese made"},

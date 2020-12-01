@@ -30,6 +30,16 @@ const Wrapper = styled.div`
   /* max-width: 800px; */
   /* overflow-x: hidden; */ /* disabling this to make sticky work! */
   width: calc(100% - 220px);
+  & article h1 a {
+    color: var(--black);
+    text-decoration: none;
+    transition: 0.25s;
+    &:hover {
+      color: var(--orange);
+      text-decoration: underline;
+      transition: 0.25s;
+    }
+  }
 
   @media screen and (max-width: 767px) {
     width: 100%;

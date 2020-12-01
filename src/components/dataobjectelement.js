@@ -64,29 +64,49 @@ const makeDataView = (inputData, report) => {
           <SuperfieldDiv indent={vvalue.superField} key={iindex}>
             {vvalue.superField ? <h3>{vvalue.superField}</h3> : null}
             {vvalue.data.map((value, index) =>
-              value.fieldName ? (
+              value.fieldName && value.value ? (
                 <div key={index}>
                   <DataP>
                     <FieldName>{value.fieldName}</FieldName>
                     <FieldValue>
                       {value.link ? (
                         <Link to={value.link}>{value.value}</Link>
+                      ) : typeof value.value === "object" ? (
+                        value.value.join(", ")
                       ) : (
                         value.value
                       )}
                     </FieldValue>
                   </DataP>
 
-                  {value.fieldType === "filename" ? (
-                    <a
-                      href={withPrefix(`/${report}/images/${value.value}`)}
-                      target="__blank"
-                    >
-                      <FieldImage
-                        src={withPrefix(`/${report}/images/${value.value}`)}
-                        alt={value.value}
-                      />
-                    </a>
+                  {value.fieldType === "filename" && value.value ? (
+                    typeof value.value !== "object" ? (
+                      <a
+                        href={withPrefix(`/${report}/images/${value.value}`)}
+                        target="__blank"
+                      >
+                        <FieldImage
+                          src={withPrefix(`/${report}/images/${value.value}`)}
+                          alt={value.value}
+                        />
+                      </a>
+                    ) : (
+                      <div>
+                        {value.value.map((image, imageIndex) => (
+                          <a
+                            href={withPrefix(`/${report}/images/${image}`)}
+                            target="__blank"
+                            key={imageIndex}
+                            style={{ marginBottom: 16, display: "block" }}
+                          >
+                            <FieldImage
+                              src={withPrefix(`/${report}/images/${image}`)}
+                              alt={image}
+                            />
+                          </a>
+                        ))}
+                      </div>
+                    )
                   ) : null}
                 </div>
               ) : null

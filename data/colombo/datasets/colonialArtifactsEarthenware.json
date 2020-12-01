@@ -16,7 +16,11 @@
 			},{
 			"fieldKey":"artefactNumber",
 			"fieldName":"Artefact Number",
-			"fieldLink": true
+			"fieldType": "link",
+			"canBeArray": true,
+			"linkExists": "artefactDataMatched",
+			"linkToDataSet": "artefactDataSet",
+			"linksToKey": "artefactNumber"
 		},{"fieldKey":"unit", "fieldName":"Unit"},
 			{"fieldKey": "weight","fieldName":"Weight (g)",	"superField": "Quantities in weight"},
 			{"fieldKey": "totalWeight","fieldName":"Total Weight (g)", "superField": "Quantities in weight"},
@@ -33,7 +37,21 @@
 			{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 			{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 			{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-			{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+			{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"},
+			{"fieldKey": "image","fieldName": "Image", "fieldType": "link",
+				"canBeArray": true,
+				"linkExists": "artefactDataMatched",
+				"linkToDataSet": "artefactDataSet",
+				"linksToKey": "artefactNumber"
+	},		{
+		"fieldKey": "filename",
+		"fieldName": "Image Record",
+		"fieldNameShown": "image",
+		"fieldType": "filename",
+		"sortMethod": "alphabetical"
+	},
+	{"fieldKey":"artefactDataSet", "fieldHidden": true},
+	{"fieldKey":"artefactDataMatched", "fieltType": "binary", "fieldHidden": true}
 		],
 		"data": [
 			{"id":"1","artefactNumber":"CCTCOLE0001","unit":"II-3","weight":"64.96","totalWeight":"3657.86","numberOfPieces":"1","totalNumberOfPieces":"129","spit":"","lot":"","typeOfWare":"19th-20th c Earthenware - others","partOfTheVessel":"Rim","typeOfVessel":"Flower pot","length":"7.2","breadthWidth":"5.3","thickness":"0.8","diameter":"","mnv":"","dateOfExcavation":"","remarks":"most likely everted flat top rim, but the lip broke off, unable to measure diameter"},
@@ -90,11 +108,11 @@
 			{"id":"52","artefactNumber":"CCTCOLE0052","unit":"II G2","weight":"69","totalWeight":"","numberOfPieces":"7","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Chinese earthenware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":"high fired "},
 			{"id":"53","artefactNumber":"CCTCOLE0053","unit":"II G2","weight":"24","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Chinese earthenware","partOfTheVessel":"Rim","typeOfVessel":"Jar","length":"8.6","breadthWidth":"3","thickness":"1.2","diameter":"28","mnv":"9.00%","dateOfExcavation":"","remarks":"inverted, incised horizontal line around vessel on exterior, high fired"},
 			{"id":"54","artefactNumber":"CCTCOLE0054","unit":"II F2","weight":"9","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"P2","typeOfWare":"19th-20th c Chinese earthenware","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"18/11/00","remarks":"high fired "},
-			{"id":"55","artefactNumber":"CCTCOLE0055","unit":"II G2","weight":"13","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Yixing teapot","partOfTheVessel":"Body (deco)","typeOfVessel":"Teapot","length":"6.2","breadthWidth":"2.6","thickness":"0.4","diameter":"","mnv":"","dateOfExcavation":"","remarks":"Tao Tie, Chinese characters on the exterior"},
+			{"id":"55","artefactNumber":"CCTCOLE0055","unit":"II G2","weight":"13","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Yixing teapot","partOfTheVessel":"Body (deco)","typeOfVessel":"Teapot","length":"6.2","breadthWidth":"2.6","thickness":"0.4","diameter":"","mnv":"","dateOfExcavation":"","remarks":"Tao Tie, Chinese characters on the exterior", "filename": "CCTCOLE0055.jpg", "artefactDataSt": "colonialArtifactsEarthenware", "artefactDataMatched":true},
 			{"id":"56","artefactNumber":"CCTCOLE0056","unit":"II G2","weight":"1","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Yixing teapot","partOfTheVessel":"Body (deco)","typeOfVessel":"Teapot","length":"2.8","breadthWidth":"1.5","thickness":"0.3","diameter":"","mnv":"","dateOfExcavation":"","remarks":"Broken off Chinese characters on the exterior"},
 			{"id":"57","artefactNumber":"CCTCOLE0057","unit":"II G2","weight":"6","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Yixing teapot","partOfTheVessel":"Base","typeOfVessel":"Teapot","length":"3.9","breadthWidth":"2","thickness":"0.5","diameter":"10","mnv":"8.00%","dateOfExcavation":"","remarks":""},
 			{"id":"58","artefactNumber":"CCTCOLE0058","unit":"II G2","weight":"21","totalWeight":"","numberOfPieces":"3","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Yixing teapot","partOfTheVessel":"Body","typeOfVessel":"Teapot","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
-			{"id":"59","artefactNumber":"CCTCOLE0059","unit":"II G2","weight":"32","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Yixing teapot","partOfTheVessel":"Base","typeOfVessel":"Teapot","length":"7.6","breadthWidth":"5.6","thickness":"0.3","diameter":"7","mnv":"31.00%","dateOfExcavation":"nil","remarks":"Footlless base, with a broken spout"},
+			{"id":"59","artefactNumber":"CCTCOLE0059","unit":"II G2","weight":"32","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"19th-20th c Yixing teapot","partOfTheVessel":"Base","typeOfVessel":"Teapot","length":"7.6","breadthWidth":"5.6","thickness":"0.3","diameter":"7","mnv":"31.00%","dateOfExcavation":"nil","remarks":"Footlless base, with a broken spout", "filename": "CCTCOLE0059.jpg", "artefactDataSt": "colonialArtifactsEarthenware", "artefactDataMatched":true},
 			{"id":"60","artefactNumber":"CCTCOLE0060","unit":"II-1 L1","weight":"3","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10-Nov","lot":"","typeOfWare":"19th-20th c Earthenware - others","partOfTheVessel":"Body","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
 			{"id":"61","artefactNumber":"CCTCOLE0061","unit":"II-1 L1","weight":"4","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"19th-20th c Chinese earthenware","partOfTheVessel":"Body","typeOfVessel":"","length":"2.3","breadthWidth":"2","thickness":"0.6","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
 			{"id":"62","artefactNumber":"CCTCOLE0062","unit":"II E1","weight":"1","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"19th-20th c Chinese earthenware","partOfTheVessel":"Body","typeOfVessel":"","length":"1.6","breadthWidth":"1.4","thickness":"0.5","diameter":"","mnv":"","dateOfExcavation":"10/12/00","remarks":""},

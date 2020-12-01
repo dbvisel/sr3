@@ -33,7 +33,7 @@
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
 		],
 		"data": [
 			{"id":"1","artefactNumber":"CCTGL001","unit":"SQ II-2 ","weight":"5","totalWeight":"137","numberOfPieces":"1","totalNumberOfPieces":"23","spit":"","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"12/24/00","remarks":""},

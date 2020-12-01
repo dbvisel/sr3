@@ -112,10 +112,12 @@ exports.createPages = ({ actions, graphql }) => {
           });
           if (masterData.makeReports) {
             // now, go through pageData.dataset.data and make a page for each data
+            let outputText = `Created data object pages for /${reportID}/dataset/${dataSet.id}/id/`;
             pageData.dataset.data.forEach((dataItem) => {
               if (dataItem.id) {
                 let myNewPath = `/${reportID}/dataset/${dataSet.id}/id/${dataItem.id}`;
-                console.log(`Creating data object page at ${myNewPath}`);
+                outputText += `${dataItem.id}, `;
+                // console.log(`Creating data object page at ${myNewPath}`);
                 createPage({
                   path: myNewPath,
                   component: datasetItemPageTemplate,
@@ -128,6 +130,7 @@ exports.createPages = ({ actions, graphql }) => {
                 });
               }
             });
+            console.log(outputText);
           }
         });
       }

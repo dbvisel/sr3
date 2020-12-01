@@ -16,8 +16,13 @@
 			},{
 			"fieldKey":"artefactNumber",
 			"fieldName":"Artefact Number",
-			"fieldLink": true
-		},{"fieldKey":"unit", "fieldName":"Unit"},
+			"fieldLink": true,
+			"fieldType": "link",
+			"canBeArray": true,
+			"linkExists": "artefactDataMatched",
+			"linkToDataSet": "artefactDataSet",
+			"linksToKey": "artefactNumber"},
+		{"fieldKey":"unit", "fieldName":"Unit"},
 		{"fieldKey": "weight","fieldName":"Weight (g)",	"superField": "Quantities in weight"},
 		{"fieldKey": "totalWeight","fieldName":"Total Weight (g)", "superField": "Quantities in weight"},
 		{"fieldKey": "numberOfPieces","fieldName":"Number of pieces", "superField": "Quantities in number of sherds"},
@@ -33,7 +38,21 @@
 		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
-		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"}
+		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)"},
+		{"fieldKey": "image","fieldName": "Image", "fieldType": "link",
+			"canBeArray": true,
+			"linkExists": "artefactDataMatched",
+			"linkToDataSet": "artefactDataSet",
+			"linksToKey": "artefactNumber"
+},		{
+	"fieldKey": "filename",
+	"fieldName": "Image Record",
+	"fieldNameShown": "image",
+	"fieldType": "filename",
+	"sortMethod": "alphabetical"
+},
+{"fieldKey":"artefactDataSet", "fieldHidden": true},
+{"fieldKey":"artefactDataMatched", "fieltType": "binary", "fieldHidden": true}
 	],
 		"data": [
 			{"id":"1","artefactNumber":"CCTMJ0001","unit":"II","weight":"31.2","totalWeight":"5263.5","numberOfPieces":"3","totalNumberOfPieces":"373","spit":"3","lot":"0","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"Nov 2000","remarks":""},
@@ -46,7 +65,7 @@
 			{"id":"8","artefactNumber":"CCTMJ0008","unit":"  II-1 L1","weight":"34.64","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Mouth","typeOfVessel":"Jar","length":"8.7","breadthWidgth":"6.3","thickness":"0.5","diameter":"2.5","mnv":"10.00%","dateOfExcavation":"14 Nov 2000","remarks":""},
 			{"id":"9","artefactNumber":"CCTMJ0009","unit":"  II-1","weight":"186.9","totalWeight":"","numberOfPieces":"10","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"28 Nov 2000","remarks":""},
 			{"id":"10","artefactNumber":"CCTMJ0010","unit":"  II-21","weight":"1.21","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Mercury Jar","partOfTheVessel":"Mouth","typeOfVessel":"Jar","length":"2","breadthWidgth":"1.8","thickness":"0.4","diameter":"2","mnv":"14.00%","dateOfExcavation":"28 Nov 2000","remarks":""},
-			{"id":"11","artefactNumber":"CCTMJ0011","unit":"  II-1","weight":"25.96","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Mercury Jar","partOfTheVessel":"Mouth","typeOfVessel":"Jar","length":"3.1","breadthWidgth":"2.4","thickness":"0.4","diameter":"1.5","mnv":"100.00%","dateOfExcavation":"28 Nov 2000","remarks":""},
+			{"id":"11","artefactNumber":"CCTMJ0011","unit":"  II-1","weight":"25.96","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Mercury Jar","partOfTheVessel":"Mouth","typeOfVessel":"Jar","length":"3.1","breadthWidgth":"2.4","thickness":"0.4","diameter":"1.5","mnv":"100.00%","dateOfExcavation":"28 Nov 2000","remarks":"", "filename": "CCTMJ0011.jpg", "artefactDataSt": "stonewareMercuryJar", "artefactDataMatched":true},
 			{"id":"12","artefactNumber":"CCTMJ0012","unit":"  II-1","weight":"4.67","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Mercury Jar","partOfTheVessel":"Mouth","typeOfVessel":"Jar","length":"9.6","breadthWidgth":"5.1","thickness":"0.4","diameter":"2.5","mnv":"10.00%","dateOfExcavation":"28 Nov 2000","remarks":""},
 			{"id":"13","artefactNumber":"CCTMJ0013","unit":"  II-1","weight":"11.75","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Mercury Jar","partOfTheVessel":"Base","typeOfVessel":"Jar","length":"4","breadthWidgth":"3.5","thickness":"0.6","diameter":"4","mnv":"21.00%","dateOfExcavation":"28 Nov 2000","remarks":""},
 			{"id":"14","artefactNumber":"CCTMJ0014","unit":"I F1-10","weight":"38.53","totalWeight":"","numberOfPieces":"6","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"10 Dec 2000","remarks":""},
@@ -79,8 +98,8 @@
 			{"id":"41","artefactNumber":"CCTMJ0041","unit":"I E 1","weight":"77.3","totalWeight":"","numberOfPieces":"7","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"10/12/2000","remarks":""},
 			{"id":"42","artefactNumber":"CCTMJ0042","unit":"II-1 K2 ","weight":"33.58","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"21/12/2000","remarks":""},
 			{"id":"43","artefactNumber":"CCTMJ0043","unit":"CCT Salvage","weight":"261.51","totalWeight":"","numberOfPieces":"18","totalNumberOfPieces":"","spit":"0","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
-			{"id":"44","artefactNumber":"CCTMJ0044","unit":"CCT Salvage","weight":"44.74","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"0","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Mouth and Shoulder","typeOfVessel":"Jar","length":"9.7","breadthWidgth":"6.8","thickness":"0.4","diameter":"","mnv":"","dateOfExcavation":"-","remarks":""},
-			{"id":"45","artefactNumber":"CCTMJ0045","unit":"CCT Salvage","weight":"160.87","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"0","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Base","typeOfVessel":"Jar","length":"7.6","breadthWidgth":"5.7","thickness":"1","diameter":"4.3","mnv":"100.00%","dateOfExcavation":"-","remarks":""},
+			{"id":"44","artefactNumber":"CCTMJ0044","unit":"CCT Salvage","weight":"44.74","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"0","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Mouth and Shoulder","typeOfVessel":"Jar","length":"9.7","breadthWidgth":"6.8","thickness":"0.4","diameter":"","mnv":"","dateOfExcavation":"-","remarks":"", "filename": "CCTMJ0044.jpg", "artefactDataSt": "stonewareMercuryJar", "artefactDataMatched":true},
+			{"id":"45","artefactNumber":"CCTMJ0045","unit":"CCT Salvage","weight":"160.87","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"0","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Base","typeOfVessel":"Jar","length":"7.6","breadthWidgth":"5.7","thickness":"1","diameter":"4.3","mnv":"100.00%","dateOfExcavation":"-","remarks":"", "filename": ["CCTMJ0045-bottom-view.jpg","CCTMJ0045-interior.jpg","CCTMJ0045-side-view.jpg"], "artefactDataSt": "stonewareMercuryJar", "artefactDataMatched":true},
 			{"id":"46","artefactNumber":"CCTMJ0046","unit":"II-1-M3","weight":"55.73","totalWeight":"","numberOfPieces":"3","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"24/12/2000","remarks":""},
 			{"id":"47","artefactNumber":"CCTMJ0047","unit":"","weight":"","totalWeight":"","numberOfPieces":"","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":""},
 			{"id":"48","artefactNumber":"CCTMJ0048","unit":"II-1-M3","weight":"83.5","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Base","typeOfVessel":"Jar","length":"13.2","breadthWidgth":"5.4","thickness":"0.4","diameter":"4","mnv":"25.00%","dateOfExcavation":"24/12/2000","remarks":"footless base"},
@@ -92,7 +111,7 @@
 			{"id":"54","artefactNumber":"CCTMJ0054","unit":"I E1","weight":"51.9","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"12/10/00","remarks":""},
 			{"id":"55","artefactNumber":"CCTMJ0055","unit":"I E3","weight":"16.5","totalWeight":"","numberOfPieces":"3","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"Nov'2000","remarks":""},
 			{"id":"56","artefactNumber":"CCTMJ0056","unit":"I D2","weight":"40.1","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"10-11","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"18/11/2000","remarks":""},
-			{"id":"57","artefactNumber":"CCTMJ0057","unit":"II 21","weight":"84.16","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Mercury Jar","partOfTheVessel":"Base","typeOfVessel":"Jar","length":"6.7","breadthWidgth":"6.7","thickness":"1","diameter":"6.5","mnv":"100.00%","dateOfExcavation":"28/11/00","remarks":"footless base"},
+			{"id":"57","artefactNumber":"CCTMJ0057","unit":"II 21","weight":"84.16","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"1","typeOfWare":"Mercury Jar","partOfTheVessel":"Base","typeOfVessel":"Jar","length":"6.7","breadthWidgth":"6.7","thickness":"1","diameter":"6.5","mnv":"100.00%","dateOfExcavation":"28/11/00","remarks":"footless base", "filename": "CCTMJ0057.jpg", "artefactDataSt": "stonewareMercuryJar", "artefactDataMatched":true},
 			{"id":"58","artefactNumber":"CCTMJ0058","unit":"I E 3","weight":"55.4","totalWeight":"","numberOfPieces":"8","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"nov'2000","remarks":""},
 			{"id":"59","artefactNumber":"CCTMJ0059","unit":"II-1 K2 ","weight":"33.5","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Body","typeOfVessel":"Jar","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"23/12/00","remarks":"metal concretion on inside "},
 			{"id":"60","artefactNumber":"CCTMJ0060","unit":"I F 2","weight":"9.3","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Mercury Jar","partOfTheVessel":"Mouth","typeOfVessel":"Jar","length":"5.5","breadthWidgth":"3.2","thickness":"0.4","diameter":"2","mnv":"50.00%","dateOfExcavation":"1/6/01","remarks":""},
