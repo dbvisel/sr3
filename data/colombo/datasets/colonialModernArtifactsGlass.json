@@ -24,9 +24,9 @@
 		{"fieldKey": "totalNumberOfPieces","fieldName":"Total no. of pieces", "superField": "Quantities in number of sherds"},
 		{"fieldKey": "spit", "fieldName": "Spit","superField": "Stratigraphy"},
 		{"fieldKey": "lot", "fieldName": "Lot","superField": "Stratigraphy"},
-		{"fieldKey": "typeOfWare","fieldName":"Type of Ware"},
-		{"fieldKey": "partOfTheVessel","fieldName":"Part of the vessel"},
-		{"fieldKey": "typeOfVessel","fieldName":"Type of Vessel"},
+		{"fieldKey": "typeOfWare","fieldName":"Type of Ware","fieldValues":["19th-20th c Chinese Porcelain","19th-20th c Japanese Porcelain","19th-20th c European Porcelain","19th-20th c Chinese Stoneware","19th-20th c European Stoneware","19th-20th c Yixing teapot","19th-20th c Chinese eathenware","19th-20th c Earthenware - others","Organic","Glass","Metal"]},
+		{"fieldKey": "partOfTheVessel","fieldName":"Part of the vessel","fieldValues":["Base","Carination","Handle","Lid","Lug","Mouth","Neck","Rim","Shoulder","Spout","Rim and Base (Complete Profile)","Mouth and Lug","Mouth and Shoulder","Foot Rim","Body"]},
+		{"fieldKey": "typeOfVessel","fieldName":"Type of Vessel","fieldValues":["Basin","Bowl","Cooking Pot","Covered Box","Cup","Ewer","Goblet","Jar","Jarlet","Kendi","Pillow","Vase","Bangle","Bead","Pot","Brick","Eaveboard","Shallow bowl"]},
 		{"fieldKey": "length", "fieldName": "Length (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "breadthWidth", "fieldName": "Breadth/Width (cm)","superField": "Dimensions of sherd"},
 		{"fieldKey": "thickness", "fieldName": "Thickness (cm)","superField": "Dimensions of sherd"},
@@ -36,13 +36,13 @@
 		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
 		],
 		"data": [
-			{"id":"1","artefactNumber":"CCTGL001","unit":"SQ II-2 ","weight":"5","totalWeight":"137","numberOfPieces":"1","totalNumberOfPieces":"23","spit":"","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"12/24/00","remarks":""},
-			{"id":"2","artefactNumber":"CCTGL002","unit":"II F2","weight":"16","totalWeight":"","numberOfPieces":"6","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"11/18/00","remarks":""},
-			{"id":"3","artefactNumber":"CCTGL003","unit":"II E2","weight":"2","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"10-15","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"11/28/00","remarks":"test trench "},
-			{"id":"4","artefactNumber":"CCTGL004","unit":"I D1","weight":"56","totalWeight":"","numberOfPieces":"7","totalNumberOfPieces":"","spit":"10","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"07/12/00","remarks":"there is a base of a bottle (beer), there is also a glass stopper"},
-			{"id":"5","artefactNumber":"CCTGL005","unit":"SQ I E1","weight":"17","totalWeight":"","numberOfPieces":"5","totalNumberOfPieces":"","spit":"8","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"03/12/00","remarks":""},
-			{"id":"6","artefactNumber":"CCTGL006","unit":"II F2","weight":"26","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"7","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"11/14/00","remarks":"base of a glass bottle"},
-			{"id":"7","artefactNumber":"CCTGL007","unit":"SQ II M1","weight":"11","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"8/9","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":"glass bottle mouth"},
-			{"id":"8","artefactNumber":"CCTGL008","unit":"SQ II-1 II L - II M","weight":"4","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"Glass","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"","remarks":"glass bottle stopper"}
+			{"id":"1","artefactNumber":"CCTGL001","unit":"SQ II-2 ","weight":"5","totalWeight":"137","numberOfPieces":"1","totalNumberOfPieces":"23","typeOfWare":"Glass","dateOfExcavation":"12/24/00"},
+			{"id":"2","artefactNumber":"CCTGL002","unit":"II F2","weight":"16","numberOfPieces":"6","spit":"9","typeOfWare":"Glass","dateOfExcavation":"11/18/00"},
+			{"id":"3","artefactNumber":"CCTGL003","unit":"II E2","weight":"2","numberOfPieces":"1","spit":"10-15","typeOfWare":"Glass","dateOfExcavation":"11/28/00","remarks":"test trench "},
+			{"id":"4","artefactNumber":"CCTGL004","unit":"I D1","weight":"56","numberOfPieces":"7","spit":"10","typeOfWare":"Glass","dateOfExcavation":"07/12/00","remarks":"there is a base of a bottle (beer), there is also a glass stopper"},
+			{"id":"5","artefactNumber":"CCTGL005","unit":"SQ I E1","weight":"17","numberOfPieces":"5","spit":"8","typeOfWare":"Glass","dateOfExcavation":"03/12/00"},
+			{"id":"6","artefactNumber":"CCTGL006","unit":"II F2","weight":"26","numberOfPieces":"1","spit":"7","typeOfWare":"Glass","dateOfExcavation":"11/14/00","remarks":"base of a glass bottle"},
+			{"id":"7","artefactNumber":"CCTGL007","unit":"SQ II M1","weight":"11","numberOfPieces":"1","spit":"8/9","typeOfWare":"Glass","remarks":"glass bottle mouth"},
+			{"id":"8","artefactNumber":"CCTGL008","unit":"SQ II-1 II L - II M","weight":"4","numberOfPieces":"1","typeOfWare":"Glass","remarks":"glass bottle stopper"}
 			]
 			}}
