@@ -55,10 +55,10 @@
 	],		
 	"data": 
 		[
-			{"id":"1","artefactNumber":"CCTS001","unit":"SQ I D2","weight":"6","totalWeight":"2678","numberOfPieces":"1","totalNumberOfPieces":"6","spit":"10-11","lot":"","typeOfWare":"Rock","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"11/18/00","remarks":""},
-			{"id":"2","artefactNumber":"CCTS002","unit":"SQ I F3","weight":"10","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Pebble","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"21/11/00","remarks":""},
-			{"id":"3","artefactNumber":"CCTS003","unit":"SQ I F1","weight":"5","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Stone","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidgth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"12/10/00","remarks":""},
-			{"id":"4","artefactNumber":"CCTS004","unit":"SALVAGE","weight":"2657","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"Stone","partOfTheVessel":"","typeOfVessel":"","length":"16","breadthWidgth":"7.7","thickness":"9.8","diameter":"","mnv":"","dateOfExcavation":"nil","remarks":"", "filename": "CCTS0004.jpg", "artefactDataSt": "colonialModernArtifactsStone", "artefactDataMatched":true}
+			{"id":"1","artefactNumber":"CCTS001","unit":"SQ I D2","weight":"6","totalWeight":"2678","numberOfPieces":"1","totalNumberOfPieces":"6","spit":"10-11","lot":"","typeOfWare":"Rock","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"11/18/00","remarks":""},
+			{"id":"2","artefactNumber":"CCTS002","unit":"SQ I F3","weight":"10","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"9","lot":"","typeOfWare":"Pebble","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"21/11/00","remarks":""},
+			{"id":"3","artefactNumber":"CCTS003","unit":"SQ I F1","weight":"5","totalWeight":"","numberOfPieces":"2","totalNumberOfPieces":"","spit":"11","lot":"","typeOfWare":"Stone","partOfTheVessel":"","typeOfVessel":"","length":"","breadthWidth":"","thickness":"","diameter":"","mnv":"","dateOfExcavation":"12/10/00","remarks":""},
+			{"id":"4","artefactNumber":"CCTS004","unit":"SALVAGE","weight":"2657","totalWeight":"","numberOfPieces":"1","totalNumberOfPieces":"","spit":"","lot":"","typeOfWare":"Stone","partOfTheVessel":"","typeOfVessel":"","length":"16","breadthWidth":"7.7","thickness":"9.8","diameter":"","mnv":"","dateOfExcavation":"nil","remarks":"", "filename": "CCTS0004.jpg", "artefactDataSt": "colonialModernArtifactsStone", "artefactDataMatched":true}
 		]
 	}
 }
