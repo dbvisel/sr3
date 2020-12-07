@@ -14,11 +14,14 @@ export default function DataSetPage({ pageContext }) {
       <article>
         <Dataset data={data} />
         <p>
-          <a
-            style={{ textDecoration: "none", color: "var(--orange)" }}
-            href={`/#`}
-            onClick={(e) => {
-              e.preventDefault();
+          <button
+            style={{
+              backgroundColor: "var(--orange)",
+              borderRadius: "8px",
+              borderColor: "transparent",
+              cursor: "pointer",
+            }}
+            onClick={() => {
               downloadCSV(
                 data.fields,
                 data.data,
@@ -26,8 +29,8 @@ export default function DataSetPage({ pageContext }) {
               );
             }}
           >
-            <strong>Download CSV</strong>
-          </a>
+            Download CSV
+          </button>
         </p>
       </article>
     </Layout>

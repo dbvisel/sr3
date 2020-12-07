@@ -49,7 +49,10 @@ const downloadCSV = (headersIn, datasetIn, reportTitle) => {
   const headers = {};
   for (let i = 0; i < headersIn.length; i++) {
     if (headersIn[i].fieldName) {
-      headers[headersIn[i].fieldKey] = headersIn[i].fieldName.replace(/,/g, "");
+      headers[headersIn[i].fieldKey] = String(headersIn[i].fieldName).replace(
+        /,/g,
+        ""
+      );
     }
   }
 
@@ -58,7 +61,7 @@ const downloadCSV = (headersIn, datasetIn, reportTitle) => {
     const cleanedRecord = {};
     for (const [key] of Object.entries(headers)) {
       cleanedRecord[key] = datasetIn[i][key]
-        ? datasetIn[i][key].replace(/,/g, "")
+        ? String(datasetIn[i][key]).replace(/,/g, "")
         : "";
     }
     dataset.push(cleanedRecord);
