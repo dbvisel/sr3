@@ -1,54 +1,17 @@
 import React from "react";
 // import PropTypes from 'prop-types';
 import { graphql, StaticQuery } from "gatsby";
-import styled from "styled-components";
-// import { ThemeProvider } from 'styled-components';
-//import { lightTheme, darkTheme } from '../styledcomponents/theme';
-import { GlobalStyles } from "../styledcomponents/global";
-
-import Header from "./header";
-import LeftMenu from "./../components/leftmenu";
-import Footer from "./footer";
-import ReportContext from "./reportcontext";
+import Header from "./../Header/";
+import LeftMenu from "./../LeftMenu/";
+import Footer from "./../Footer/";
+import { ReportContext } from "./../Context/";
+import { Main, Wrapper } from "./elements";
+import { GlobalStyles } from "./globalStyles.js";
 
 // TODO: this needs to provide report ID to everything in it
 
-const Main = styled.main`
-  display: flex;
-  width: 100%;
-  max-width: 100vw;
-  /* overflow-x: hidden; */ /* disabling this to make sticky work! */
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-  }
-`;
-
-const Wrapper = styled.div`
-  padding-bottom: 32px;
-  padding-right: 10px;
-  width: 100%;
-  /* max-width: 800px; */
-  /* overflow-x: hidden; */ /* disabling this to make sticky work! */
-  width: calc(100% - 220px);
-  & article h1 a {
-    color: var(--black);
-    text-decoration: none;
-    transition: 0.25s;
-    &:hover {
-      color: var(--orange);
-      text-decoration: underline;
-      transition: 0.25s;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    padding-left: 10px;
-  }
-`;
-
 const Layout = ({ data, children, menu, thisPage }) => {
-  let masterData = data.allTheJson.master;
+  const masterData = data.allTheJson.master;
   return (
     <ReportContext.Provider value={menu.id || null}>
       <GlobalStyles />
@@ -73,7 +36,7 @@ const Layout = ({ data, children, menu, thisPage }) => {
 export default (props) => (
   <StaticQuery
     query={graphql`
-      query MasterQuery {
+      query LayoutQuery {
         allTheJson(master: { id: { eq: "master" } }) {
           master {
             id

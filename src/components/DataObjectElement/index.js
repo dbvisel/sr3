@@ -1,47 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from "styled-components";
 import { withPrefix } from "gatsby";
-
-const SuperfieldDiv = styled.div`
-  & h3 {
-    font-style: italic;
-    font-weight: normal;
-    font-size: 1em;
-    margin-bottom: 0.5em;
-  }
-  & p span:first-of-type {
-    padding-left: ${(props) => (props.indent ? "2em" : "0")};
-  }
-`;
-
-const DataP = styled.p`
-  margin: 0;
-  margin-bottom: 1em;
-  text-indent: 0;
-  display: flex;
-`;
-
-const FieldName = styled.span`
-  font-family: var(--headerFont);
-  font-weight: normal;
-  display: inline-block;
-  width: 300px;
-  margin-right: 16px;
-  box-sizing: border-box;
-`;
-
-const FieldValue = styled.span`
-  flex: 1;
-  & a {
-    color: var(--orange);
-    text-decoration: none;
-  }
-`;
-
-const FieldImage = styled.img`
-  max-width: 100%;
-`;
+import {
+  SuperfieldDiv,
+  DataP,
+  FieldName,
+  FieldValue,
+  FieldImage,
+} from "./elements";
 
 const makeDataView = (inputData, report) => {
   let outputData = [];

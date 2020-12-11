@@ -1,6 +1,24 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from "styled-components";
+import cloneObject from "./../../modules/cloneObject";
+import {
+  TopNav,
+  DatasetHeader,
+  DataSetH1,
+  FilterP,
+  PaginationP,
+  Arrow,
+  StrongLink,
+  DataTableWrapper,
+  DataTable,
+  DataTableHead,
+  THNoWrap,
+  SortBy,
+  TableSelect,
+  TableRow,
+  TableCell,
+  TdError,
+} from "./elements";
 
 // props:
 // data: the data
@@ -10,215 +28,10 @@ import styled from "styled-components";
 
 // style this differently if props.inLine?
 
-const TopNav = styled.nav`
-  position: sticky;
-  top: 0;
-  background-color: var(--white);
-  padding-bottom: 1em;
-  z-index: 2;
-`;
+// TODO: make tables more responsive: https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html
+// TODO: CLEAN THIS UP!
 
-const DatasetHeader = styled.div`
-  display: block;
-  text-align: left;
-`;
-
-const DataSetH1 = styled.h1`
-  /* why are we passing this isInline? */
-  margin: 0;
-`;
-
-const FilterP = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  align-items: center;
-  margin-top: 1em;
-  & p {
-    margin: 0;
-    user-select: none;
-    & a {
-      text-decoration: none;
-      font-weight: bold;
-      color: var(--black);
-    }
-  }
-  & form {
-    font-family: var(--headerFont);
-    & input[type="text"] {
-      border: 1px solid var(--borderColor);
-      font-family: var(--headerFont);
-      font-size: 1em;
-      padding: 1px 3px;
-    }
-    & input[type="submit"] {
-      cursor: pointer;
-      margin-left: 8px;
-      font-size: 1em;
-      color: var(--black);
-      font-weight: bold;
-      background-color: var(--orange);
-      border-radius: 6px;
-      border: none;
-      outline: none;
-      padding: 3px 8px;
-      &:hover {
-        color: var(--borderColor);
-      }
-    }
-  }
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: flex-start;
-    & p {
-      margin-bottom: 1em;
-    }
-  }
-`;
-
-const PaginationP = styled.nav`
-  margin-top: 1em;
-  user-select: none;
-`;
-
-const Arrow = styled.span`
-  cursor: ${(props) => (props.grayOut ? "default" : "pointer")};
-  user-select: none;
-  color: ${(props) => (props.grayOut ? "var(--borderColor)" : "var(--black)")};
-  &:hover {
-    color: ${(props) =>
-      props.grayOut ? "var(--borderColor)" : "var(--orange)"};
-  }
-`;
-
-const StrongLink = styled.span`
-  font-family: var(--headerFont);
-  font-weight: bold;
-  cursor: pointer;
-  &:hover {
-    color: var(--orange);
-  }
-`;
-
-const DataTableWrapper = styled.div`
-  padding-bottom: 1em;
-  max-width: 100%;
-  max-width: calc(100vw - 200px);
-  position: relative;
-  overflow-x: scroll;
-`;
-
-//const DataTable = styled.table`
-const DataTable = styled.div`
-  position: relative;
-`;
-
-const DataTableHead = styled.div`
-  /* position: sticky;
-	top: 0;
-	z-index: 3; */
-`;
-
-//const THNoWrap = styled.th`
-const THNoWrap = styled.span`
-/* Does this need hideHeaders as a prop? Fix this mess! */
-	white-space: nowrap;
-	font-weight: bold;
-	font-family: var(--headerFont);
-	padding: 0 4px;
-	background-color: ${(props) => (props.empty ? "white" : "#ddd")};
-	cursor: pointer;
-	position: sticky;
-	user-select: none;
-	grid-column: span ${(props) => props.columnSpan || 1};
-	text-align: center;
-	/* top: ${(props) =>
-    props.hideHeaders ? "3em" : props.doubleHeaders ? "6em" : "5em"};
-	&:before {
-		content: '';
-		position: absolute;
-		background-color: var(--white);
-		left: 0;
-		top: ${(props) => (props.superHeaders ? "-5em" : "-6em")};
-		width: 100%;
-		height: 5em;
-	} */
-`;
-
-const SortBy = styled.span`
-  margin-left: 0.25em;
-  margin-right: 0.5em;
-  display: inline-flex;
-  height: 100%;
-  align-content: center;
-  user-select: none;
-`;
-
-const TableSelect = styled.select`
-  border: none;
-  background: none;
-  height: 100%;
-  font-family: var(--headerFont);
-  font-weight: bold;
-  font-size: 16px;
-  outline: none;
-  appearance: none;
-  & option {
-    font-weight: normal;
-  }
-`;
-
-const TableRow = styled.div`
-  display: grid;
-  grid-template-columns: ${(props) =>
-    props.columnWidths
-      ? props.columnWidths
-      : `repeat(${props.columns}, minmax(100px, 1fr))`};
-`;
-
-//const TableCell = styled.td`
-const TableCell = styled.span`
-  white-space: nowrap;
-  overflow-x: hidden;
-  text-align: center;
-  font-family: var(--headerFont);
-  & a {
-    color: var(--orange);
-    text-decoration: none;
-    &:hover {
-      border-bottom: 1px solid var(--orange);
-    }
-  }
-`;
-
-//const TdError = styled.td`
-const TdError = styled.span`
-  padding-top: 1em;
-  padding-bottom: 1em;
-  grid-column: 1 / ${(props) => props.colSpan};
-`;
-
-const cloneObject = function(source) {
-  if (Object.prototype.toString.call(source) === "[object Array]") {
-    let clone = [];
-    for (var i = 0; i < source.length; i++) {
-      clone[i] = cloneObject(source[i]);
-    }
-    return clone;
-  } else if (typeof source == "object") {
-    let clone = {};
-    for (var prop in source) {
-      if (source.hasOwnProperty(prop)) {
-        clone[prop] = cloneObject(source[prop]);
-      }
-    }
-    return clone;
-  } else {
-    return source;
-  }
-};
-
-class Dataset extends React.Component {
+class DataSet extends React.Component {
   constructor(props) {
     super(props);
     this.state = { startPoint: 0, perPage: 50 };
@@ -688,4 +501,4 @@ class Dataset extends React.Component {
   }
 }
 
-export default Dataset;
+export default DataSet;

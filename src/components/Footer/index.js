@@ -1,34 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import styled from "styled-components";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
-
-const FooterDiv = styled.footer`
-  margin-top: 0;
-  border-top: 1px solid var(--borderColor);
-  padding: 1em 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  & a {
-    color: black;
-    text-decoration: none;
-    border-bottom: 2px solid var(--orange);
-    &:hover {
-      text-decoration: none;
-      color: var(--orange);
-    }
-  }
-  & p {
-    text-align: center;
-    max-width: 1024px;
-    margin: 0;
-
-    & + p {
-      margin-top: 8px;
-    }
-  }
-`;
+import { FooterDiv } from "./elements";
 
 //TODO: put in a static query to get footers on a per-site basis (or feed this through layout)
 //TODO: figure out how to make React live with "xmlns:cc"

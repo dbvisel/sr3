@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, withPrefix } from "gatsby";
-import Layout from "./../components/layout";
-import DataObjectElement from "./../components/dataobjectelement";
+import Layout from "./../components/Layout/";
+import DataObjectElement from "./../components/DataObjectElement/";
 
 const getDataSetName = function(dataSets, thisID) {
   for (let i = 0; i < dataSets.length; i++) {

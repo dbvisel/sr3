@@ -6,65 +6,238 @@ author: "Goh Geok Yian & John N. Miksic"
 title: "Myanmar-Singapore Archaeology Training Project (MSATP)"
 ---
 
-import BilingualSection from '../../src/components/bilingualsection';
-
+import BilingualSection from "../../src/components/BilingualSection/index.js";
 
 <BilingualSection languages={["English","Burmese"]} data={[
-	`<h2>Introduction</h2>
-<p>The Myanmar-Singapore Archaeology Training-Research Project (MSATP) is a research and training project with the objective of gathering data on life in the ancient royal palace of Bagan. In this project, we have introduced new analytical techniques relevant to the archaeology and early history of Myanmar to Myanmarese scholars and students. This project was conducted in collaboration with the Directorates of Historical Research and Archaeology of the Ministry of Culture of the Union of Myanmar, and the Department of Archaeology, University of Yangon.</p>`,
-`<h2>နိဒါန်း</h2>
-<p>ဤ မြန်မာ-စင်ကာပူနိုင်ငံ ၡေးဟောင်းသုတေသန လေ့ကျင့်မှု ပြုလုပ်ခြင်း စီမံကိန်း (MSATP) လည်း သုတေသန လေ့ကျင့်မှု လုပ်ငန်း တစ်ခု၊ စီမံကိန်း၏ ရည်မှန်းချက်မှာ ပုဂံနန်းတော်တွင် လူကြီးလူငယ် ချမ်းသားဆင်းရဲသား ၏ဘဝ နေ့စဉ့် ဖြစ်ရိုးဖြစ်စဉ် အကြောင်း နှင့်် သူတို့ သုံးသည့် ပစ္စည်; အရာကို စီစစ်သည် သိတတ်သည်။ ဒီစီမံကိန်းတွင် မြန်မာပညာၡင်နှင့် ကျောင်းသူကျောင်းသားများ ကို မြန်မာ၏ ရှေးဟောင်း သုတေသနနှင့် သမိုင်း ပညာနှင့်အရည်အသွေး၌ ပိုင်းခြားစိတ်ြဖာသောနည်းပညာအသစ် ကို မိတ်ဆက်ပေးသည် ။
-ဤစီမံကိန်းလည်း မြန်မာနိုင်ငံ သာသနရေး နှင့် ယဥ်ကျေးမှု၀န်ကြီးဌာန ရှေးဟောင်း  သုတေသနနှင့် အမျိုးသားပြတိုက် ဦးစီးဌန, သမိုင်းသုတေသန နှင့် အမျိုးသားစာကြည့်တိုက် ဦးစီးဌန, ရန်ကုန်တက္ကသိုလ်၏ ရှေးဟောင်း သုတေသန ဦးစီးဌန စုစည်းစည်းလုံးသည့် ဦးစီးဦးရွက်ပြုသည်။</p>`
+`
+<h2>Introduction</h2>
+<p>
+  The Myanmar-Singapore Archaeology Training-Research Project (MSATP) is a
+  research and training project with the objective of gathering data on life in
+  the ancient royal palace of Bagan. In this project, we have introduced new
+  analytical techniques relevant to the archaeology and early history of Myanmar
+  to Myanmarese scholars and students. This project was conducted in
+  collaboration with the Directorates of Historical Research and Archaeology of
+  the Ministry of Culture of the Union of Myanmar, and the Department of
+  Archaeology, University of Yangon.
+</p>`,
+`
+<h2>နိဒါန်း</h2>
+<p>
+  ဤ မြန်မာ-စင်ကာပူနိုင်ငံ ၡေးဟောင်းသုတေသန လေ့ကျင့်မှု ပြုလုပ်ခြင်း စီမံကိန်း
+  (MSATP) လည်း သုတေသန လေ့ကျင့်မှု လုပ်ငန်း တစ်ခု၊ စီမံကိန်း၏ ရည်မှန်းချက်မှာ
+  ပုဂံနန်းတော်တွင် လူကြီးလူငယ် ချမ်းသားဆင်းရဲသား ၏ဘဝ နေ့စဉ့် ဖြစ်ရိုးဖြစ်စဉ်
+  အကြောင်း နှင့်် သူတို့ သုံးသည့် ပစ္စည်; အရာကို စီစစ်သည် သိတတ်သည်။
+  ဒီစီမံကိန်းတွင် မြန်မာပညာၡင်နှင့် ကျောင်းသူကျောင်းသားများ ကို မြန်မာ၏
+  ရှေးဟောင်း သုတေသနနှင့် သမိုင်း ပညာနှင့်အရည်အသွေး၌
+  ပိုင်းခြားစိတ်ြဖာသောနည်းပညာအသစ် ကို မိတ်ဆက်ပေးသည် ။ ဤစီမံကိန်းလည်း
+  မြန်မာနိုင်ငံ သာသနရေး နှင့် ယဥ်ကျေးမှု၀န်ကြီးဌာန ရှေးဟောင်း သုတေသနနှင့်
+  အမျိုးသားပြတိုက် ဦးစီးဌန, သမိုင်းသုတေသန နှင့် အမျိုးသားစာကြည့်တိုက် ဦးစီးဌန,
+  ရန်ကုန်တက္ကသိုလ်၏ ရှေးဟောင်း သုတေသန ဦးစီးဌန စုစည်းစည်းလုံးသည့်
+  ဦးစီးဦးရွက်ပြုသည်။
+</p>`
 ]} />
 
 <BilingualSection languages={["English","Burmese"]} data={[
-	`<h2>Aims and Goals</h2>
+`
+<h2>Aims and Goals</h2>
 <ol style="list-style-type:lower-alpha;">
-<li>to carry out a joint research project in history and archaeology between Myanmar and Singapore,</li>
-<li>to train Myanmar archaeologists and historians, including research specialists and teachers, in undertaking joint research projects,</li>
-<li>to disseminate information on Myanmar history and archaeology through publications, conferences, and symposia,</li>
-<li>to build the capacity of Myanmar institutions and individuals to conduct research, create publications, and lead research projects comprising both local and foreign participants.</li>
+  <li>
+    to carry out a joint research project in history and archaeology between
+    Myanmar and Singapore,
+  </li>
+  <li>
+    to train Myanmar archaeologists and historians, including research
+    specialists and teachers, in undertaking joint research projects,
+  </li>
+  <li>
+    to disseminate information on Myanmar history and archaeology through
+    publications, conferences, and symposia,
+  </li>
+  <li>
+    to build the capacity of Myanmar institutions and individuals to conduct
+    research, create publications, and lead research projects comprising both
+    local and foreign participants.
+  </li>
 </ol>`,
-`<h2>ရည်ရွယ်ချက် နှင့်ရည်မှန်းချက်များ</h2>
+`
+<h2>ရည်ရွယ်ချက် နှင့်ရည်မှန်းချက်များ</h2>
 <ol style="list-style-type:lower-alpha;">
-<li>မြန်မာနှင့်စင်ကာပူနိုင်ငံဆုံးဖြတ်သည့် သမိုင်းနှင့်ရှေးဟောင်း သုတေသနလို့ကို ပူးပေါင်းသောစီမံကိန်းသို့ လက်ခံဆောင်ရွက်သည်,</li>
-<li>သမိုင်းနှင့်ရှေးဟောင်း သုတေသနလို့ကို ပူးပေါင်းသောစီမံကိန်းများကို ဘယ်လိုတာ၀န်ယူသည် မြန်မာရှေးဟောင်းသုတေသနပညာရှင်နှင့် သမိုင်းပညာရှင်များ၊ ပါရဂူနှင့် ကျောင်းဆရားကျောင်းဆရာမပါးရှိသည်တို့ အားလုံးသို့ လေ့ကျင့်သည်ကွှမ်းကျင်သည် ပေးသည်,</li>
-<li>မြန်မာသမိုင်းနှင့် ရှေးဟောင်းသုတေသနအချက်အလက်အကြောင်းသို့ စာအုပ်စာနယ်ဇင်းများ ညီလာခံများ စာတမ်းဖတ်ပွဲများ ပြုစုပြီး အသိကို ဖြန်ချိသည်,</li>
-<li>မြန်မာတက္ကသုလ် စသော လုပ်ငန်းကိစ္စတစ်ရပ်အတွက် တည်ထောင်ထားသော အဖွဲ့အစည်းများ နှင့် ပုဂ္ဂုလ်လူတွေများ သို့ လုပ်နိုင်စွမ်းကို ကြီးထွားသည် ပြီး သုတေသနကိုလုပ်နိုင်, စာအုပ်စာနယ်ဇင်းများကိုပြုစုနိုင်, နှင့် ဒေသခံနှင့်နိုင်ငံခြားဖြစ်သောပါ၀င်သူများရှိသောစီမံကိန်းမျာကို ဦးဆောင်နိုင်ဖြစ်သည်။</li>
+  <li>
+    မြန်မာနှင့်စင်ကာပူနိုင်ငံဆုံးဖြတ်သည့် သမိုင်းနှင့်ရှေးဟောင်း သုတေသနလို့ကို
+    ပူးပေါင်းသောစီမံကိန်းသို့ လက်ခံဆောင်ရွက်သည်,
+  </li>
+  <li>
+    သမိုင်းနှင့်ရှေးဟောင်း သုတေသနလို့ကို ပူးပေါင်းသောစီမံကိန်းများကို
+    ဘယ်လိုတာ၀န်ယူသည် မြန်မာရှေးဟောင်းသုတေသနပညာရှင်နှင့် သမိုင်းပညာရှင်များ၊
+    ပါရဂူနှင့် ကျောင်းဆရားကျောင်းဆရာမပါးရှိသည်တို့ အားလုံးသို့
+    လေ့ကျင့်သည်ကွှမ်းကျင်သည် ပေးသည်,
+  </li>
+  <li>
+    မြန်မာသမိုင်းနှင့် ရှေးဟောင်းသုတေသနအချက်အလက်အကြောင်းသို့ စာအုပ်စာနယ်ဇင်းများ
+    ညီလာခံများ စာတမ်းဖတ်ပွဲများ ပြုစုပြီး အသိကို ဖြန်ချိသည်,
+  </li>
+  <li>
+    မြန်မာတက္ကသုလ် စသော လုပ်ငန်းကိစ္စတစ်ရပ်အတွက် တည်ထောင်ထားသော အဖွဲ့အစည်းများ
+    နှင့် ပုဂ္ဂုလ်လူတွေများ သို့ လုပ်နိုင်စွမ်းကို ကြီးထွားသည် ပြီး
+    သုတေသနကိုလုပ်နိုင်, စာအုပ်စာနယ်ဇင်းများကိုပြုစုနိုင်, နှင့်
+    ဒေသခံနှင့်နိုင်ငံခြားဖြစ်သောပါ၀င်သူများရှိသောစီမံကိန်းမျာကို
+    ဦးဆောင်နိုင်ဖြစ်သည်။
+  </li>
 </ol>`
 ]} />
 
-<BilingualSection languages={["English","Burmese"]} data={[`<h2>The MSATP Schedule</h2>
-<table><tbody>
-<tr><td><strong>MSATP I</strong></td><td>Dec 2013–Jan 2014</td><td>965 sherds</td><td>45,788g</td></tr>
-<tr><td><strong>MSATP II</strong></td><td>Dec 2015–Jan 2016</td><td>2,066 sherds</td><td>77,624.1g</td></tr>
-<tr><td><strong>MSATP III</strong></td><td>May 19–31, 2016</td><td>13,397 sherds</td><td>510,568.12g</td></tr>
-<tr><td><strong>MSATP IV</strong></td><td>Nov 12–26, 2016</td><td>7,882 sherds</td><td>460,210g</td></tr>
-<tr><td><strong>MSATP V</strong></td><td>Dec 17–24, 2016</td><td>2,045 sherds</td><td>80,589.5 g</td></tr>
-<tr><td><strong>MSATP VI</strong></td><td>Feb 23–March 3, 2017</td></tr>
-<tr><td><strong>MSATP VII</strong></td><td>September 1–7, 2017</td></tr>
-<tr><td><strong>MSATP VIII</strong></td><td>January 2–11, 2019</td></tr>
-<tr><td><strong>* MSATP IX</strong></td><td>January 2–14, 2020</td></tr>
-</tbody></table>
-`,`<h2>ဤMSATPလုပ်ငန်းစဥ်</h2>
-<table><tbody>
-<tr><td><strong>MSATP ၁</strong></td><td>ဒီဇင်ဘာလ ၂၀၁၃–ဇန်န၀ါရီလ ၂၀၁၄</td><td>၉၆၅ အိုးခြမ်းကွဲများ</td><td>၄၅,၇၈၈ ဂရမ်</td></tr>
-<tr><td><strong>MSATP ၂</strong></td><td>ဒီဇင်ဘာလ ၂၀၁၅–ဇန်န၀ါရီလ ၂၀၁၆</td><td>၂,၀၆၆ အိုးခြမ်းကွဲများ</td><td>၇၇,၆၂၄ ဂရမ်</td></tr>
-<tr><td><strong>MSATP ၃</strong></td><td>မေလ ၁၉–၃၁,၂၀၁၆</td><td>၁၃,၃၉၇ အိုးခြမ်းကွဲများ</td><td>၅၁၀,၅၆၈ ဂရမ်</td></tr>
-<tr><td><strong>MSATP ၄</strong></td><td>နို၀င်ဘာလ ၁၂–၂၆,၂၀၁၆</td><td>၇,၈၈၂ အိုးခြမ်းကွဲများ</td><td>၄၆၀,၂၁၀ ဂရမ်</td></tr>
-<tr><td><strong>MSATP ၅</strong></td><td>ဒီဇင်ဘာလ ၁၇–၂၄,၂၀၁၆</td><td>၂,၀၄၅ အိုးခြမ်းကွဲများ</td><td>၈၀,၅၈၉.၅ ဂရမ်</td></tr>
-<tr><td><strong>MSATP ၆</strong></td><td>ဖေဖော်၀ါရီလ ၂၃–မတ်လ ၃,၂၀၁၇</td></tr>
-<tr><td><strong>MSATP ၇</strong></td><td>စက်တင်ဘာလ ၁– ၇,၂၀၁၇</td></tr>
-<tr><td><strong>MSATP ၈</strong></td><td>ဇန်န၀ါရီလ ၂–၁၁,၂၀၁၉</td></tr>
-<tr><td><strong>* MSATP ၉</strong></td><td>ဇန်န၀ါရီလ ၂–၁၄,၂၀၂၀</td></tr>
-</tbody></table>`]} />
+<BilingualSection languages={["English","Burmese"]} data={[`
+<h2>The MSATP Schedule</h2>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <strong>MSATP I</strong>
+      </td>
+      <td>Dec 2013–Jan 2014</td>
+      <td>965 sherds</td>
+      <td>45,788g</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP II</strong>
+      </td>
+      <td>Dec 2015–Jan 2016</td>
+      <td>2,066 sherds</td>
+      <td>77,624.1g</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP III</strong>
+      </td>
+      <td>May 19–31, 2016</td>
+      <td>13,397 sherds</td>
+      <td>510,568.12g</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP IV</strong>
+      </td>
+      <td>Nov 12–26, 2016</td>
+      <td>7,882 sherds</td>
+      <td>460,210g</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP V</strong>
+      </td>
+      <td>Dec 17–24, 2016</td>
+      <td>2,045 sherds</td>
+      <td>80,589.5 g</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP VI</strong>
+      </td>
+      <td>Feb 23–March 3, 2017</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP VII</strong>
+      </td>
+      <td>September 1–7, 2017</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP VIII</strong>
+      </td>
+      <td>January 2–11, 2019</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>* MSATP IX</strong>
+      </td>
+      <td>January 2–14, 2020</td>
+    </tr>
+  </tbody>
+</table>
+`,`
+<h2>ဤMSATPလုပ်ငန်းစဥ်</h2>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <strong>MSATP ၁</strong>
+      </td>
+      <td>ဒီဇင်ဘာလ ၂၀၁၃–ဇန်န၀ါရီလ ၂၀၁၄</td>
+      <td>၉၆၅ အိုးခြမ်းကွဲများ</td>
+      <td>၄၅,၇၈၈ ဂရမ်</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP ၂</strong>
+      </td>
+      <td>ဒီဇင်ဘာလ ၂၀၁၅–ဇန်န၀ါရီလ ၂၀၁၆</td>
+      <td>၂,၀၆၆ အိုးခြမ်းကွဲများ</td>
+      <td>၇၇,၆၂၄ ဂရမ်</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP ၃</strong>
+      </td>
+      <td>မေလ ၁၉–၃၁,၂၀၁၆</td>
+      <td>၁၃,၃၉၇ အိုးခြမ်းကွဲများ</td>
+      <td>၅၁၀,၅၆၈ ဂရမ်</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP ၄</strong>
+      </td>
+      <td>နို၀င်ဘာလ ၁၂–၂၆,၂၀၁၆</td>
+      <td>၇,၈၈၂ အိုးခြမ်းကွဲများ</td>
+      <td>၄၆၀,၂၁၀ ဂရမ်</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP ၅</strong>
+      </td>
+      <td>ဒီဇင်ဘာလ ၁၇–၂၄,၂၀၁၆</td>
+      <td>၂,၀၄၅ အိုးခြမ်းကွဲများ</td>
+      <td>၈၀,၅၈၉.၅ ဂရမ်</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP ၆</strong>
+      </td>
+      <td>ဖေဖော်၀ါရီလ ၂၃–မတ်လ ၃,၂၀၁၇</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP ၇</strong>
+      </td>
+      <td>စက်တင်ဘာလ ၁– ၇,၂၀၁၇</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>MSATP ၈</strong>
+      </td>
+      <td>ဇန်န၀ါရီလ ၂–၁၁,၂၀၁၉</td>
+    </tr>
+    <tr>
+      <td>
+        <strong>* MSATP ၉</strong>
+      </td>
+      <td>ဇန်န၀ါရီလ ၂–၁၄,၂၀၂၀</td>
+    </tr>
+  </tbody>
+</table>`]} />
 
 ## Produced by:
 
 ### Goh Geok Yian
-Nanyang Technological University Singapore
-### John Miksic
-National University of Singapore
-### PI and Co-PI 
-Myanmar-Singapore Archaeology Training Project (MSATP)
 
+Nanyang Technological University Singapore
+
+### John Miksic
+
+National University of Singapore
+
+### PI and Co-PI
+
+Myanmar-Singapore Archaeology Training Project (MSATP)

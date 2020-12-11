@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "./../components/layout";
-import Dataset from "./../components/dataset";
+import Layout from "./../components/Layout/";
+import DataSet from "./../components/Dataset/";
 import downloadCSV from "./../modules/downloadCSV";
 
 // TODO: do we set dataset anything else?
@@ -12,7 +12,7 @@ export default function DataSetPage({ pageContext }) {
   return (
     <Layout title={data.name} menu={reportData} thisPage={thisPath}>
       <article>
-        <Dataset data={data} />
+        <DataSet data={data} />
         <p>
           <button
             style={{

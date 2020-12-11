@@ -1,70 +1,27 @@
 import React from "react";
-import styled from "styled-components";
 import { graphql } from "gatsby";
-import Layout from "./../components/layout";
-import DataSetContext from "./../components/datasetcontext";
-import TextWrapper from "./../components/textwrapper";
+import Layout from "./../components/Layout/";
+import { DataSetContext } from "./../components/Context/";
+import TextWrapper from "./../components/TextWrapper/";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
-// import FoonoteCallout from '../../../src/styledcomponents/footnotecallout';
-// import Footnote from '../../../src/styledcomponents/footnote';
+import ReportHeader from "./../components/ReportHeader";
 
-const HeaderSection = styled.div`
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--borderColor);
-  margin-bottom: 16px;
-  padding-right: 20px;
-  max-width: 800px;
-  @media screen and (max-width: 767px) {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  & h1,
-  & h2,
-  & h3,
-  & h4 {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0;
-  }
-  & h3,
-  & h4 {
-    font-family: var(--textFamily);
-    font-size: 14px;
-    font-style: italic;
-  }
-`;
-
-// const renderAst = new rehypeReact({
-// 	createElement: React.createElement,
-// 	components: { 'inline-data-set': InlineDataSetWrapper }
-// }).Compiler;
 const TextPage = ({ data, pageContext }) => {
   const { frontmatter, code } = data.mdx;
   const { reportData, dataSets } = pageContext;
+  const { title, subtitle } = frontmatter;
   return (
     <Layout
       title={frontmatter.title}
       menu={reportData}
       thisPage={frontmatter.path}
     >
-      <HeaderSection>
-        {/*<h1>
-					{reportData.projectTitle}–{reportData.title}
-				</h1>*/}
-        <h2>
-          {frontmatter.title}
-          {frontmatter.subtitle ? (
-            <React.Fragment>
-              <br />
-              {frontmatter.subtitle}
-            </React.Fragment>
-          ) : null}
-        </h2>
-        <h3>{frontmatter.author || reportData.author || ""}</h3>
-        {reportData.date || frontmatter.date ? (
-          <h4>{reportData.date || frontmatter.date}</h4>
-        ) : null}
-      </HeaderSection>
+      <ReportHeader
+        title={title}
+        subtitle={subtitle}
+        author={frontmatter.author || reportData.author || ""}
+        date={reportData.date || frontmatter.date || ""}
+      />
       <DataSetContext.Provider value={{ dataSets }}>
         <TextWrapper>
           <MDXRenderer>{code.body}</MDXRenderer>

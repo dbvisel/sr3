@@ -45,6 +45,9 @@ function exportCSVFile(headers, items, fileTitle) {
   }
 }
 
+// TODO: Better escape commas and quoes:
+// maybe this: https://stackoverflow.com/questions/44111580/how-to-deal-with-commas-in-csv-using-javascript
+
 const downloadCSV = (headersIn, datasetIn, reportTitle) => {
   const headers = {};
   for (let i = 0; i < headersIn.length; i++) {
