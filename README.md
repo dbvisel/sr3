@@ -32,22 +32,11 @@ _/daa/footer.mdx_ is the footer for the front page of the site and any report th
 
 Each report has its own _config.json_ and _index.mdx_ and can have its own _footer.mdx_. They can also have datasets in _/[report_id]/datasets_ and texts in _/[report_id]/texts_. 
 
-# Bugs:
-
-  * http://localhost:8000/scc/dataset/eware/id/eware_006XX/
-
-Image link is poorly formed. Fix this.
-
 # Improvements:
 
 ##  Datasets:
-  * Maybe move to CSS grid?
-  * thumbnails + image records 
+  * thumbnails + image records (put these back in)
   * links to object pages (more of them)
-
-##  Object pages
-
- * multiple linked records: http://localhost:8000/scc/dataset/eware/id/eware_3902
 
 ## Text pages:
 
@@ -68,6 +57,7 @@ Image link is poorly formed. Fix this.
  * Improve the table headers:
    * https://css-tricks.com/position-sticky-and-table-headers/
    * https://github.com/thebuilder/react-intersection-observer#readme
+   * https://webup.org/blog/sticky-header-table-with-react-hooks/
 
 Maybe use <datalist> rather than <select> in table headers? Does that make sense? We could use that for filtering.
 

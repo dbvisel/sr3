@@ -164,6 +164,9 @@ export const TableRow = styled.div`
     props.columnWidths
       ? props.columnWidths
       : `repeat(${props.columns}, minmax(100px, 1fr))`};
+  &.initializing {
+    display: none;
+  }
 `;
 
 //export const TableCell = styled.td`

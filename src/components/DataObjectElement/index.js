@@ -10,7 +10,7 @@ import {
 } from "./elements";
 
 const makeDataView = (inputData, report) => {
-  let outputData = [];
+  const outputData = [];
   let i = 0;
   while (i < inputData.length) {
     let pushArray = [];
@@ -25,6 +25,7 @@ const makeDataView = (inputData, report) => {
     );
     outputData.push({ superField: superField, data: pushArray });
   }
+  console.log(outputData);
   return (
     <div>
       {outputData.map((vvalue, iindex) => {
@@ -38,7 +39,18 @@ const makeDataView = (inputData, report) => {
                     <FieldName>{value.fieldName}</FieldName>
                     <FieldValue>
                       {value.link ? (
-                        <Link to={value.link}>{value.value}</Link>
+                        typeof value.link === "object" ? (
+                          value.link.map((thisLink, index) => (
+                            <React.Fragment>
+                              <Link to={thisLink} key={index}>
+                                {value.value[index]}
+                              </Link>
+                              {index < value.link.length ? ", " : ""}
+                            </React.Fragment>
+                          ))
+                        ) : (
+                          <Link to={value.link}>{value.value}</Link>
+                        )
                       ) : typeof value.value === "object" ? (
                         value.value.join(", ")
                       ) : (
@@ -96,7 +108,15 @@ const makeOutputData = (report, fieldData, objectData) => {
       let thisImageSetField = fieldData[i].linkToDataSet;
       for (let j = 0; j < fieldData.length; j++) {
         if (fieldData[j].fieldKey === thisImageSetField) {
-          thisLink = `/${report}/dataset/${fieldData[j].value}/id/${linkId}`;
+          if (typeof fieldData[j].value === "object") {
+            console.log(fieldData[j].value, linkId);
+            thisLink = fieldData[j].value.map(
+              (thisValue, index) =>
+                `/${report}/dataset/${thisValue}/id/${linkId[index]}`
+            );
+          } else {
+            thisLink = `/${report}/dataset/${fieldData[j].value}/id/${linkId}`;
+          }
         }
       }
     }
