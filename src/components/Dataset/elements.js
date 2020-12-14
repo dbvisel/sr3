@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+// TODO: Do we need a fallback for when Grid doesn't work?
+
 export const TopNav = styled.nav`
   position: sticky;
   top: 0;
@@ -111,7 +113,6 @@ export const DataTableHead = styled.div`
 
 //export const THNoWrap = styled.th`
 export const THNoWrap = styled.span`
-/* Does this need hideHeaders as a prop? Fix this mess! */
 	white-space: nowrap;
 	font-weight: bold;
 	font-family: var(--headerFont);

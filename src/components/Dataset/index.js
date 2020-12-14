@@ -23,7 +23,7 @@ import {
 
 // props:
 // data: the data
-// hideHeader: if true, hide headers
+// hideHeader: if true, hide the big header at the top of the page. Used by inline data sets
 // perPage: number of rows to show perpage
 // inLine: true if this is inline
 

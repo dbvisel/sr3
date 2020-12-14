@@ -10,6 +10,6 @@ export const Footnote = ({ id, children }) => {
   );
 };
 
-export const FootnoteCallout = (props) => (
-  <FootnoteCalloutSpan>{props.id}</FootnoteCalloutSpan>
+export const FootnoteCallout = ({ id }) => (
+  <FootnoteCalloutSpan>{id}</FootnoteCalloutSpan>
 );

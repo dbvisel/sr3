@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
   BilingualSectionDiv,
   BilingualSectionTop,
@@ -6,24 +7,6 @@ import {
   LangSection,
   BilingualSectionBottom,
 } from "./elements";
-
-// class BilingualSection extends React.Component {
-// 	constructor(props) {
-// 		super(props);
-// 		this.state = { currentSelection: 0, both: false };
-// 		this.setLanguage = this.setLanguage.bind(this);
-// 		this.toggleBoth = this.toggleBoth.bind(this);
-// 	}
-// 	toggleBoth() {
-// 		const newBoth = !this.state.both;
-// 		this.setState({ both: newBoth });
-// 	}
-// 	setLanguage(e) {
-// 		this.setState({ both: false, currentSelection: parseInt(e.target.id.substring(8), 10) });
-// 	}
-// 	render()
-
-// }
 
 const BilingualSection = ({ languages, data }) => {
   const [currentSelection, setCurrentSelection] = React.useState(0);
@@ -72,3 +55,8 @@ const BilingualSection = ({ languages, data }) => {
 };
 
 export default BilingualSection;
+
+BilingualSection.propTypes = {
+  data: PropTypes.object,
+  languages: PropTypes.array,
+};

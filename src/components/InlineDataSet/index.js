@@ -10,24 +10,22 @@ const getMyDataSet = function(dataSets, id) {
   }
 };
 
-const InlineDataSet = (props) => {
-  return (
-    <DataSetContext.Consumer>
-      {(dataSets) => {
-        let myDataSet = getMyDataSet(dataSets.dataSets, props.id);
-        return (
-          <div>
-            <DataSet
-              data={myDataSet}
-              hideHeaders={props.hideheaders}
-              perPage={props.perPage}
-              inLine={true}
-            />
-          </div>
-        );
-      }}
-    </DataSetContext.Consumer>
-  );
-};
+const InlineDataSet = ({ id, perPage, hideHeaders }) => (
+  <DataSetContext.Consumer>
+    {(dataSets) => {
+      let myDataSet = getMyDataSet(dataSets.dataSets, id);
+      return (
+        <div>
+          <DataSet
+            data={myDataSet}
+            hideHeaders={Boolean(hideHeaders)}
+            perPage={parseInt(perPage, 10)}
+            inLine={true}
+          />
+        </div>
+      );
+    }}
+  </DataSetContext.Consumer>
+);
 
 export default InlineDataSet;

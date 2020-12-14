@@ -1,6 +1,6 @@
 import React from "react";
 // import PropTypes from 'prop-types';
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Header from "./../Header/";
 import LeftMenu from "./../LeftMenu/";
 import Footer from "./../Footer/";
@@ -10,8 +10,24 @@ import { GlobalStyles } from "./globalStyles.js";
 
 // TODO: this needs to provide report ID to everything in it
 
-const Layout = ({ data, children, menu, thisPage }) => {
-  const masterData = data.allTheJson.master;
+const Layout = ({ children, menu, thisPage }) => {
+  const masterData = useStaticQuery(graphql`
+    query LayoutQuery {
+      allTheJson(master: { id: { eq: "master" } }) {
+        master {
+          id
+          lastUpdated
+          projectTitle
+          projectAuthor
+          excluded
+          possibleReports {
+            name
+            id
+          }
+        }
+      }
+    }
+  `).allTheJson.master;
   return (
     <ReportContext.Provider value={menu.id || null}>
       <GlobalStyles />
@@ -33,25 +49,4 @@ const Layout = ({ data, children, menu, thisPage }) => {
   );
 };
 
-export default (props) => (
-  <StaticQuery
-    query={graphql`
-      query LayoutQuery {
-        allTheJson(master: { id: { eq: "master" } }) {
-          master {
-            id
-            lastUpdated
-            projectTitle
-            projectAuthor
-            excluded
-            possibleReports {
-              name
-              id
-            }
-          }
-        }
-      }
-    `}
-    render={(data) => <Layout data={data} {...props} />}
-  />
-);
+export default Layout;
