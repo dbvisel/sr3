@@ -34,13 +34,19 @@ Each report has its own _config.json_ and _index.mdx_ and can have its own _foot
 
 # Improvements:
 
+## Methodology
+
+ * Move all of this to TypeScript, especially DataSet and DataObjectElement are a mess.
+
 ##  Datasets:
+
   * thumbnails + image records (put these back in)
   * links to object pages (more of them)
 
 ## Text pages:
 
  * React doesn't like the weird namespace thing in the footer
+ * Searching text files
  * MDX is terrible! 
  * A better way of dealing with bibliographies?
 
