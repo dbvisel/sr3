@@ -7,6 +7,7 @@ import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import ReportHeader from "./../components/ReportHeader";
 
 const TextPage = ({ data, pageContext }) => {
+  console.log(data, pageContext);
   const { frontmatter, code } = data.mdx;
   const { reportData, dataSets } = pageContext;
   const { title, subtitle } = frontmatter;

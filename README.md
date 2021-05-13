@@ -67,6 +67,12 @@ Each report has its own _config.json_ and _index.mdx_ and can have its own _foot
 
 Maybe use <datalist> rather than <select> in table headers? Does that make sense? We could use that for filtering.
 
+## FIXES/IMPROVEMENTS:
+
+ * Slashes at the ends of paths. Would be good to implement gatsby-plugin-force-trailing-slashes, though this breaks the build and will take some time to get right.
+ * Should add a site map
+ * Probably upgrade to Gatsby 3?
+
 ## REMEMBER
 
  * Environment variables: none at the moment!

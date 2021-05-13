@@ -25,7 +25,7 @@ const LeftMenu = ({ menuData, thisPage }) => {
           <h2>Reports:</h2>
           {possibleReports.map((x, index) => (
             <h4 key={index}>
-              <Link to={`/${x.id}`}>{x.name}</Link>
+              <Link to={`/${x.id}/`}>{x.name}</Link>
             </h4>
           ))}
         </React.Fragment>
@@ -45,7 +45,7 @@ const LeftMenu = ({ menuData, thisPage }) => {
                       `/${id}/text/${x.id}` === thisPage ? "selected" : null
                     }
                   >
-                    <Link to={`/${id}/text/${x.id}`}>{x.name}</Link>
+                    <Link to={`/${id}/text/${x.id}/`}>{x.name}</Link>
                   </li>
                 ))}
               </ul>
@@ -68,7 +68,7 @@ const LeftMenu = ({ menuData, thisPage }) => {
                               : null
                           }
                         >
-                          <Link to={`/${id}/dataset/${y.id}`}>{y.name}</Link>
+                          <Link to={`/${id}/dataset/${y.id}/`}>{y.name}</Link>
                         </li>
                       ) : null;
                     })}

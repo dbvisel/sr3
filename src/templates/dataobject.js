@@ -28,7 +28,7 @@ const DataObjectPage = ({ pageContext }) => {
       <article>
         <h1>
           Dataset:{" "}
-          <Link to={withPrefix(`/${reportData.id}/dataset/${dataSetID}`)}>
+          <Link to={withPrefix(`/${reportData.id}/dataset/${dataSetID}/`)}>
             {dataSetName}
           </Link>
         </h1>

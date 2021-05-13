@@ -16,7 +16,7 @@ const Header = ({ siteTitle, reportTitle, reportID }) => (
       </h1>
       {reportID ? (
         <h2>
-          <Link to={`/${reportID}`}>{reportTitle}</Link>
+          <Link to={`/${reportID}/`}>{reportTitle}</Link>
         </h2>
       ) : null}
     </div>

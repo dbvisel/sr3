@@ -14,12 +14,12 @@
 		}, {
 			"id": "msatp",
 			"name": "MSATP"
-		},{"id":"colombo", "name":"Colombo Court"}],
+		},{"id":"colombo", "name":"Colombo Court"},{"id":"fortcanning", "name":"Fort Canning"}],
 		"excluded": ["zzz"],
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",
 		"lastUpdated": "27 November 2021",
-		"makeReports": true,
+		"makeReports": false,
 		"notes": "Make sure makeReports is set to true for production. Any report ID in excluded won't appear."
 	}
 }
