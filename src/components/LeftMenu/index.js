@@ -2,11 +2,13 @@ import React from "react";
 import { Link } from "gatsby";
 import { MenuWrapper } from "./elements";
 
+// TODO: This doesn't actually take account of excluded reports, does it?
+
 const LeftMenu = ({ menuData, thisPage }) => {
   const { id, texts, dataSets, possibleReports } = menuData;
-  // console.log(possibleReports, excluded);
-  // const includedReports = excluded.length
-  //   ? possibleReports.filter((x) => excluded.indexOf(x.id) < 0)
+  // console.log(possibleReports, excludedReports);
+  // const includedReports = excludedReports.length
+  //   ? possibleReports.filter((x) => excludedReports.indexOf(x.id) < 0)
   //   : possibleReports;
   let categories = [null];
   if (dataSets) {
@@ -20,7 +22,7 @@ const LeftMenu = ({ menuData, thisPage }) => {
   }
   return (
     <MenuWrapper>
-      {id === "master" ? (
+      {id === "project" ? (
         <React.Fragment>
           <h2>Reports:</h2>
           {possibleReports.map((x, index) => (

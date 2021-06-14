@@ -1,10 +1,8 @@
 {
 	"report": {
 		"id": "scc",
-		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"title": "Singapore No 1: The Singapore Cricket Club Excavation",
 		"author": "John N. Miksic, Department of Southeast Asian Studies, National University of Singapore, and Goh Geok Yian, History Programme, School of Humanities, Nanyang Technological University.",
-		"titleShort": "SCC",
 		"lastUpdated": "4 July 2019",
 		"texts": [{
 				"id": "general_background",

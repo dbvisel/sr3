@@ -12,9 +12,9 @@ const getFooter = function(data, thisReport) {
       return data[i].code.body;
     }
   }
-  // if no footer file, return the master footer
+  // if no footer file, return the project footer
   for (let i = 0; i < data.length; i++) {
-    if (data[i].frontmatter.report === "masterfooter") {
+    if (data[i].frontmatter.report === "project") {
       return data[i].code.body;
     }
   }
@@ -38,7 +38,7 @@ const Footer = ({ reportID }) => {
       }
     }
   `).allMdx.edges.map((x) => x.node);
-  const myFooter = getFooter(footerQuery, reportID || "masterfooter");
+  const myFooter = getFooter(footerQuery, reportID || "project");
   return (
     <FooterDiv>
       {myFooter ? <MDXRenderer>{myFooter}</MDXRenderer> : "No footer!"}

@@ -96,7 +96,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const filterDataset = (e) => {
     e.preventDefault();
     const filterFor = String(
-      e.target.querySelector("#searchfield").value
+      e.target.querySelector(`#searchfield_${data.id}`).value
     ).toLowerCase();
     const newFilteredData = cloneObject(outputData).filter((row) => {
       let output = row.row.filter((column) => {
@@ -315,7 +315,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
           <form onSubmit={filterDataset}>
             <input
               type="text"
-              id="searchfield"
+              id={`searchfield_${data.id}`}
               placeholder="Filter this dataset"
             ></input>
             <input type="submit" value="Filter" />

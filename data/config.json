@@ -1,25 +1,36 @@
 {
-	"id": "master",
-	"master": {
-		"id": "master",
-		"possibleReports": [{
-			"id": "scc",
-			"name": "SCC"
-		}, {
-			"id": "dieng",
-			"name": "Dieng Plateau"
-		}, {
-			"id": "lingga",
-			"name": "The Lingga Wreck"
-		}, {
-			"id": "msatp",
-			"name": "MSATP"
-		},{"id":"colombo", "name":"Colombo Court"},{"id":"fortcanning", "name":"Fort Canning"}],
-		"excluded": ["zzz"],
+	"id": "project",
+	"project": {
+		"id": "project",
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",
 		"lastUpdated": "27 November 2021",
-		"makeReports": false,
-		"notes": "Make sure makeReports is set to true for production. Any report ID in excluded won't appear."
+		"makeObjectPages": false,
+		"notes": "Make sure makeObjectReports is set to true for production. Any report ID in excluded won't appear.",
+		"possibleReports": [
+			{
+				"id": "scc",
+				"name": "SCC"
+			}, 
+			{
+				"id": "dieng",
+				"name": "Dieng Plateau"
+			}, {
+				"id": "lingga",
+				"name": "The Lingga Wreck"
+			}, {
+				"id": "msatp",
+				"name": "MSATP"
+			},
+			{
+				"id":"colombo", 
+				"name":"Colombo Court"
+			},
+			{
+				"id":"fortcanning", 
+				"name":"Fort Canning"
+				}
+			],
+		"excludedReports": ["zzz"]
 	}
 }

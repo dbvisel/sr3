@@ -8,7 +8,7 @@ const IndexPage = () => (
   <StaticQuery
     query={graphql`
       query IndexQuery {
-        mdx(frontmatter: { path: { eq: "masterindex" } }) {
+        mdx(frontmatter: { path: { eq: "project" } }) {
           id
           fileAbsolutePath
           code {

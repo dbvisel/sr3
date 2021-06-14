@@ -11,15 +11,14 @@ import { GlobalStyles } from "./globalStyles.js";
 // TODO: this needs to provide report ID to everything in it
 
 const Layout = ({ children, menu, thisPage }) => {
-  const masterData = useStaticQuery(graphql`
+  const projectData = useStaticQuery(graphql`
     query LayoutQuery {
-      allTheJson(master: { id: { eq: "master" } }) {
-        master {
+      allTheJson(project: { id: { eq: "project" } }) {
+        project {
           id
           lastUpdated
           projectTitle
           projectAuthor
-          excluded
           possibleReports {
             name
             id
@@ -27,22 +26,23 @@ const Layout = ({ children, menu, thisPage }) => {
         }
       }
     }
-  `).allTheJson.master;
+  `).allTheJson.project;
+  // console.log(menu);
   return (
     <ReportContext.Provider value={menu.id || null}>
       <GlobalStyles />
 
       <Header
-        siteTitle={masterData.projectTitle}
-        reportTitle={menu.title || masterData.projectAuthor}
+        siteTitle={projectData.projectTitle}
+        reportTitle={menu.title || projectData.projectAuthor}
         reportID={menu.id || null}
       />
       <Main>
-        <LeftMenu menuData={menu.id ? menu : masterData} thisPage={thisPage} />
+        <LeftMenu menuData={menu.id ? menu : projectData} thisPage={thisPage} />
         <Wrapper>{children}</Wrapper>
       </Main>
       <Footer
-        updated={menu.lastUpdated || masterData.lastUpdated}
+        updated={menu.lastUpdated || projectData.lastUpdated}
         reportID={menu.id || null}
       />
     </ReportContext.Provider>

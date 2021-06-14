@@ -7,10 +7,11 @@ import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import ReportHeader from "./../components/ReportHeader";
 
 const TextPage = ({ data, pageContext }) => {
-  console.log(data, pageContext);
+  // console.log(data, pageContext);
   const { frontmatter, code } = data.mdx;
   const { reportData, dataSets } = pageContext;
   const { title, subtitle } = frontmatter;
+  // console.log(reportData);
   return (
     <Layout
       title={frontmatter.title}
@@ -21,7 +22,7 @@ const TextPage = ({ data, pageContext }) => {
         title={title}
         subtitle={subtitle}
         author={frontmatter.author || reportData.author || ""}
-        date={reportData.date || frontmatter.date || ""}
+        date={frontmatter.date || reportData.lastUpdated || ""}
       />
       <DataSetContext.Provider value={{ dataSets }}>
         <TextWrapper>

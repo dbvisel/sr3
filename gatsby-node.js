@@ -5,6 +5,8 @@ const fs = require("fs");
 
 // in master config.js, set "makeReport" to true to make pages
 
+// TODO: figure out how to make this work with Airtable
+
 const loopTheConfigs = function(reportID, configData) {
   if (reportID) {
     for (let i = 0; i < configData.length; i++) {
@@ -15,6 +17,7 @@ const loopTheConfigs = function(reportID, configData) {
       }
     }
   }
+  // console.log("no config found!", reportID);
   return null;
 };
 
@@ -26,13 +29,13 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      master: allTheJson(master: { id: { eq: "master" } }) {
-        master {
-          excluded
+      project: allTheJson(project: { id: { eq: "project" } }) {
+        project {
+          excludedReports
           possibleReports {
             id
           }
-          makeReports
+          makeObjectPages
         }
       }
 
@@ -55,12 +58,9 @@ exports.createPages = ({ actions, graphql }) => {
         nodes {
           report {
             id
-            date
+            lastUpdated
             author
             title
-            titleShort
-            projectTitle
-            lastUpdated
             dataSets {
               id
               name
@@ -79,7 +79,7 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
     // console.log(result.data);
-    const masterData = result.data.master.master;
+    const masterData = result.data.project.project;
     let textFiles = result.data.textFiles.edges;
     let reportData = result.data.reportData.nodes.filter(
       (x) => x.report !== null
@@ -92,10 +92,11 @@ exports.createPages = ({ actions, graphql }) => {
       if (
         node.report &&
         node.report.dataSets &&
-        masterData.excluded.indexOf(node.report.id) < 0
+        masterData.excludedReports.indexOf(node.report.id) < 0
       ) {
         let reportID = node.report.id;
         let reportConfig = loopTheConfigs(reportID, reportData);
+
         console.log(`${reportID} datasets: ${node.report.dataSets.length}`);
         node.report.dataSets.forEach((dataSet) => {
           let myJsonPath = `./data/${reportID}/datasets/${dataSet.id}.json`;
@@ -110,7 +111,7 @@ exports.createPages = ({ actions, graphql }) => {
             component: datasetPageTemplate,
             context: { reportData: reportConfig, data: pageData.dataset },
           });
-          if (masterData.makeReports) {
+          if (masterData.makeObjectPages) {
             // now, go through pageData.dataset.data and make a page for each data
             let outputText = `Created data object pages for /${reportID}/dataset/${dataSet.id}/id/`;
             pageData.dataset.data.forEach((dataItem) => {
@@ -143,7 +144,7 @@ exports.createPages = ({ actions, graphql }) => {
       if (
         node.frontmatter &&
         node.frontmatter.report &&
-        masterData.excluded.indexOf(node.frontmatter.report) < 0
+        masterData.excludedReports.indexOf(node.frontmatter.report) < 0
       ) {
         let reportConfig = loopTheConfigs(node.frontmatter.report, reportData);
         if (node.frontmatter.path && node.frontmatter.report) {
