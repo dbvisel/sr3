@@ -139,7 +139,7 @@ There are also optional values, some of which are more important than others:
  - `fieldLink`: boolean. If this is true, the field becomes a link to the data object page.
  - `fieldNameShown`: string, the name of a field: for links, this was the name of the field that should be shown instead of whatever the fieldName was. 
 
-Some aren't really implemented in this version, but should be ASAP:
+Some aren't really implemented in this version, but should be soon:
 
  - `fieldTransform`: string, the name of a function to transform a string – values being used are "toLowerCase", "titleCase". If this was set to "titleCase", for example, all data values of that field would be transformed to title case.
 

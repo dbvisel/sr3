@@ -9,9 +9,6 @@ import {
   FieldImage,
 } from "./elements";
 
-// TODO: links back from this page: http://localhost:8000/scc/dataset/drawings/id/drawings_30
-// same problem on protogrphs pages
-
 const makeDataView = (inputData, report) => {
   const outputData = [];
   let i = 0;
@@ -32,7 +29,7 @@ const makeDataView = (inputData, report) => {
   return (
     <div>
       {outputData.map((vvalue, iindex) => {
-        // console.log(vvalue);
+        // console.log(vvalue, inputData);
         return (
           <SuperfieldDiv indent={vvalue.superField} key={iindex}>
             {vvalue.superField ? <h3>{vvalue.superField}</h3> : null}
@@ -107,7 +104,10 @@ const makeOutputData = (report, fieldData, objectData) => {
   for (let i = 0; i < fieldData.length; i++) {
     let valuePair = fieldData[i];
     let thisLink = null;
-    if (fieldData[i].fieldType === "imageLink") {
+    if (
+      fieldData[i].fieldType === "imageLink" ||
+      fieldData[i].fieldType === "link"
+    ) {
       let linkId = fieldData[i].value;
       let thisImageSetField = fieldData[i].linkToDataSet;
       for (let j = 0; j < fieldData.length; j++) {
@@ -138,6 +138,7 @@ const makeOutputData = (report, fieldData, objectData) => {
 };
 
 const DataObjectElement = ({ report, fieldData, objectData }) => {
+  // console.log(objectData, fieldData);
   const [ready, setReady] = React.useState(false);
   React.useEffect(() => {
     // console.log("FieldData changed!");
