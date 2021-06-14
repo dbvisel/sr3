@@ -19,8 +19,17 @@
 			"linkToDataSet": "artefactDataSet",
 			"linksToKey": "artefactNumber"
 		},{"fieldKey":"unit", "fieldName":"Unit"},
-		{"fieldKey": "weight","fieldName":"Weight (g)",	"superField": "Quantities in weight"},
-		{"fieldKey": "totalWeight","fieldName":"Total Weight (g)", "superField": "Quantities in weight"},
+		{"fieldKey": "weight",
+			"fieldName":"Weight",
+			"fieldUnit": "g",
+			"superField":
+			"Quantities in weight"
+		},
+		{"fieldKey": "totalWeight",
+			"fieldName":"Total Weight",
+			"fieldUnit": "g",
+			"superField": "Quantities in weight"
+		},
 		{"fieldKey": "numberOfPieces","fieldName":"Number of pieces", "superField": "Quantities in number of sherds"},
 		{"fieldKey": "totalNumberOfPieces","fieldName":"Total no. of pieces", "superField": "Quantities in number of sherds"},
 		{"fieldKey": "spit", "fieldName": "Spit","superField": "Stratigraphy"},
@@ -28,15 +37,39 @@
 		{"fieldKey": "typeOfWare","fieldName":"Type of Ware","fieldValues":["Greenware - Longquan","Greenware - Xicun","Greenware - Others","White - Dehua","White - Ding","White - Others","Blue & White - Jingdezhen","Blue & White - Swatow","Blue & White - Others","Blue & White - Vietnamese","Iron-spotted Qingbai","Copper-red qingbai","Buff Stoneware","Brittle Stoneware","Mercury Jar","Stoneware - Myanmar","Stoneware - Sukhothai/Sawankhalok","Stoneware - others"]},
 		{"fieldKey": "partOfTheVessel","fieldName":"Part of the vessel","fieldValues":["Base","Carination","Handle","Lid","Lug","Mouth","Neck","Rim","Shoulder","Spout","Rim and Base (Complete Profile)","Mouth and Lug","Mouth and Shoulder","Foot Rim","Body","Body (deco)","Other"]},
 		{"fieldKey": "typeOfVessel","fieldName":"Type of Vessel","fieldValues":["Basin","Bowl","Cooking Pot","Covered Box","Cup","Ewer","Goblet","Jar","Jarlet","Kendi","Pillow","Vase","Bangle","Bead","Pot","Brick","Eaveboard","Shallow bowl","Shoulder"]},
-		{"fieldKey": "length", "fieldName": "Length (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "breadthWidth", "fieldName": "Breadth/Width (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "thickness", "fieldName": "Thickness (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
+		{
+			"fieldKey": "length",
+			"fieldName": "Length",
+							"fieldUnit": "cm",
+"superField": "Dimensions of sherd"
+},
+		{
+			"fieldKey": "breadthWidth",
+			"fieldName": "Breadth/Width",
+							"fieldUnit": "cm",
+"superField": "Dimensions of sherd"
+},
+		{
+			"fieldKey": "thickness",
+			"fieldName": "Thickness",
+							"fieldUnit": "cm",
+"superField": "Dimensions of sherd"
+},
+		{
+			"fieldKey": "diameter",
+			"fieldName": "Diameter",
+							"fieldUnit": "cm",
+"superField": "Dimensions of sherd"
+},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
 		{"fieldKey": "munsellColour","fieldName":"Munsell colour"},
 		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"},
-		{"fieldKey": "notes","fieldName":"Notes"},{"fieldKey": "image","fieldName": "Image", "fieldType": "link",
+		{"fieldKey": "notes","fieldName":"Notes"},
+		{
+			"fieldKey": "image",
+			"fieldName": "Image", 
+			"fieldType": "link",
 			"canBeArray": true,
 			"linkExists": "artefactDataMatched",
 			"linkToDataSet": "artefactDataSet",
@@ -49,7 +82,7 @@
 	"sortMethod": "alphabetical"
 },
 {"fieldKey":"artefactDataSet", "fieldHidden": true},
-{"fieldKey":"artefactDataMatched", "fieltType": "binary", "fieldHidden": true}
+{"fieldKey":"artefactDataMatched", "fieldType": "binary", "fieldHidden": true}
 		],
 		"data": [
 			{"id":"1","artefactNumber":"CCTTE0001","unit":"II L1","weight":"55","totalWeight":"8148","numberOfPieces":"1","totalNumberOfPieces":"809","spit":"10","typeOfWare":"Tempered","partOfTheVessel":"Rim","typeOfVessel":"Jar","length":"9.5","breadthWidth":"3.5","thickness":"1.4","diameter":"25","mnv":"12.00%","munsellColour":"2.5YR 5/6","remarks":"Everted rim: Grooves on interior and exterior of rim\nRed clay body","notes":"Similar to CCTTE0002"},

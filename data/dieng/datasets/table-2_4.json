@@ -44,8 +44,8 @@
 			{
 				"fieldKey": "weight",
 				"fieldNameShort": "Weight",
-				"fieldName": "Weight (g)",
-				"unit": "grams",
+				"fieldName": "Weight",
+				"fieldUnit": "g",
 				"sortMethod": "integer"
 			},
 			{

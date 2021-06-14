@@ -2,9 +2,9 @@
 
 Public version: http://epress.nus.edu.sg/sitereports/
 
-Working version: https://sitereports.netlify.app
+Working dev version: https://sitereports.netlify.app
 
-To install: 
+To install (note that this repository is very large because of all the images in _/static_): 
 
 ```npm install```
 
@@ -119,6 +119,33 @@ Note that not all datasets get their own pages: only a dataset that appears in a
 
 The fields array describes all the fields that will be used. Each field entry consists of a couple of mandatory items:
 
+ - `fieldKey`: string, the ID for the field. Required. This is used internally to refer to the field (in _data_, for example).
+ - `fieldName`: string, the name of the field. Required. This is what's shown at the top of the table.
+
+There are also optional values, some of which are more important:
+
+ - `fieldHidden`: boolean, default false. If this is true, this field is not shown on the table (but it may be used internally). A common use of this is to have a field which just numbers the objects; the number is not shown.
+ - `fieldType`: can be "link" or "filename".
+ - `fieldNameShort`: string, an optional short name for the field. 
+ - `fieldUnit`: string, a name for the units of a number field – e.g. "g" for weight in grams.  Instead of having _fieldName_ as "Weight in grams", _fieldName_ should be "Weight" and _unit_ should be "g", with the result being "Weight (g)".
+
+Some aren't really implemented but could be cleaned up:
+
+
+- canBeArray
+- fieldLink
+- fieldNameShown:
+- fieldTransform:
+- fieldValues:
+- linkExists
+- linkToDataSet
+- linksoKey
+- relatedKey
+- relatedName
+- sortMethod
+- superField
+
+
 ### Data
 
 # Improvements:
@@ -126,6 +153,7 @@ The fields array describes all the fields that will be used. Each field entry co
 ## Methodology
 
  * Move all of this to TypeScript, especially DataSet and DataObjectElement are a mess.
+   * first step: get all this using prop-types
 
 ##  Datasets:
 

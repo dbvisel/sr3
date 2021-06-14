@@ -43,15 +43,15 @@
 			{
 				"fieldKey": "thickness",
 				"fieldNameShort": "Thickness",
-				"fieldName": "Thickness (mm)",
-				"unit": "mm",
+				"fieldName": "Thickness",
+				"fieldUnit": "mm",
 				"sortMethod": "integer"
 			},
 			{
 				"fieldKey": "weight",
 				"fieldNameShort": "Weight",
-				"fieldName": "Weight (g)",
-				"unit": "grams",
+				"fieldName": "Weight",
+				"fieldUnit": "g",
 				"sortMethod": "integer"
 			},
 			{

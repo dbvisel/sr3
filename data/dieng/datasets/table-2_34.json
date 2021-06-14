@@ -22,9 +22,9 @@
 			},
 			{
 				"fieldKey": "z",
-				"fieldName": "Z (cm)",
+				"fieldName": "Z",
 				"fieldNameShort": "Z",
-				"unit": "cm"
+				"fieldUnit": "cm"
 			},
 			{
 				"fieldKey": "findNumber",
@@ -34,23 +34,23 @@
 			},
 			{
 				"fieldKey": "diameter",
-				"fieldName": "Diameter (cm)",
+				"fieldName": "Diameter",
 				"fieldNameShort": "Diameter",
-				"unit": "cm",
+				"fieldUnit": "cm",
 				"sortMethod": "integer"
 			},
 			{
 				"fieldKey": "thickness",
 				"fieldNameShort": "Thickness",
-				"fieldName": "Thickness (mm)",
-				"unit": "mm",
+				"fieldName": "Thickness",
+				"fieldUnit": "mm",
 				"sortMethod": "integer"
 			},
 			{
 				"fieldKey": "weight",
 				"fieldNameShort": "Weight",
-				"fieldName": "Weight (g)",
-				"unit": "grams",
+				"fieldName": "Weight",
+				"fieldUnit": "g",
 				"sortMethod": "integer"
 			},
 			{

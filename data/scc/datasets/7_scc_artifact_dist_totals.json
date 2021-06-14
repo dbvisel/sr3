@@ -29,7 +29,8 @@
 		},
 		{
 			"fieldKey": "totalWeight",
-			"fieldName": "Total Weight (g)",
+			"fieldName": "Total Weight",
+			"fieldUnit": "g",
 			"sortMethod": "integer"
 		},
 		{

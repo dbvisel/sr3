@@ -20,9 +20,22 @@
 			"linksToKey": "artefactNumber"
 		},{
 			"fieldKey":"artefactNumber","fieldName":"Artefact Number"
-		},{"fieldKey":"unit", "fieldName":"Unit"},
-		{"fieldKey": "weight","fieldName":"Weight (g)",	"superField": "Quantities in weight"},
-		{"fieldKey": "totalWeight","fieldName":"Total Weight (g)", "superField": "Quantities in weight"},
+		},
+		{
+			"fieldKey":"unit",
+			"fieldName":"Unit"},
+		{
+			"fieldKey": "weight",
+			"fieldName":"Weight",
+			"fieldUnit": "g",
+			"superField": "Quantities in weight"
+		},
+		{
+			"fieldKey": "totalWeight",
+			"fieldName":"Total Weight",
+			"fieldUnit": "g",
+			"superField": "Quantities in weight"
+		},
 		{"fieldKey": "numberOfPieces","fieldName":"Number of pieces", "superField": "Quantities in number of sherds"},
 		{"fieldKey": "totalNumberOfPieces","fieldName":"Total no. of pieces", "fieldNameShort":"Pieces","superField": "Quantities in number of sherds"},
 		{"fieldKey": "spit", "fieldName": "Spit","superField": "Stratigraphy"},
@@ -30,15 +43,37 @@
 		{"fieldKey": "typeOfWare","fieldName":"Type of Ware","fieldValues":["Greenware - Longquan","Greenware - Xicun","Greenware - Others","White - Dehua","White - Ding","White - Others","Blue & White - Jingdezhen","Blue & White - Swatow","Blue & White - Others","Blue & White - Vietnamese","Iron-spotted Qingbai","Copper-red qingbai","Buff Stoneware","Brittle Stoneware","Mercury Jar","Stoneware - Myanmar","Stoneware - Sukhothai/Sawankhalok","Stoneware - others","Fine Paste","Tempered","Eaveboard Tile","Brick (14th century)","Chinese lead-glazed earthenware","19th-20th c Chinese Porcelain","19th-20th c Japanese Porcelain","19th-20th c European Porcelain","19th-20th c Chinese Stoneware","19th-20th c European Stoneware","19th-20th c Yixing teapot","19th-20th c Chinese earthenware","19th-20th c Earthenware - others"]},
 		{"fieldKey": "partOfTheVessel","fieldName":"Part of the vessel","fieldValues":["Base","Carination","Handle","Lid","Lug","Mouth","Neck","Rim","Shoulder","Spout","Rim and Base (Complete Profile)","Mouth and Lug","Mouth and Shoulder","Foot Rim","Body","Body (deco)"]},
 		{"fieldKey": "typeOfVessel","fieldName":"Type of Vessel", "fieldValues":["Basin","Bowl","Cooking Pot","Covered Box","Cup","Ewer","Goblet","Jar","Jarlet","Kendi","Pillow","Vase","Bangle","Bead","Pot","Brick","Eaveboard","Shallow bowl"]},
-		{"fieldKey": "length", "fieldName": "Length (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "breadthWidth", "fieldName": "Breadth/Width (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "thickness", "fieldName": "Thickness (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
+		{
+			"fieldKey": "length",
+			"fieldName": "Length",
+			"fieldUnit": "cm",
+			"superField": "Dimensions of sherd"
+		},
+		{
+			"fieldKey": "breadthWidth",
+			"fieldName": "Breadth/Width",
+			"fieldUnit": "cm",
+			"superField": "Dimensions of sherd"
+		},
+		{
+			"fieldKey": "thickness",
+			"fieldName": "Thickness",
+			"fieldUnit": "cm",
+			"superField": "Dimensions of sherd"
+		},
+		{
+			"fieldKey": "diameter",
+			"fieldName": "Diameter",
+			"fieldUnit": "cm",
+			"superField": "Dimensions of sherd"
+		},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
 		{"fieldKey": "munsellColour","fieldName":"Munsell colour"},
 		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"},
-		{"fieldKey": "image","fieldName": "Image", "fieldType": "link",
+		{"fieldKey": "image",
+			"fieldName": "Image", 
+			"fieldType": "link",
 			"canBeArray": true,
 			"linkExists": "artefactDataMatched",
 			"linkToDataSet": "artefactDataSet",
@@ -51,7 +86,7 @@
 	"sortMethod": "alphabetical"
 },
 {"fieldKey":"artefactDataSet", "fieldHidden": true},
-{"fieldKey":"artefactDataMatched", "fieltType": "binary", "fieldHidden": true}		],
+{"fieldKey":"artefactDataMatched", "fieldType": "binary", "fieldHidden": true}		],
 		"data": [
 			{"id":"1","artefactNumber":"CCTFPE0001","unit":"I F1","weight":"2.3","totalWeight":"575.7","numberOfPieces":"1","totalNumberOfPieces":"168","spit":"10","typeOfWare":"Fine Paste","partOfTheVessel":"Body (deco)","typeOfVessel":"Jar","length":"3.1","breadthWidth":"2.5","thickness":"0.3","munsellColour":"10YR 8/3","remarks":"Raised band \nVery pale brown clay body"},
 			{"id":"2","artefactNumber":"CCTFPE0002","unit":"I F1","weight":"3.7","numberOfPieces":"1","spit":"10","typeOfWare":"Fine Paste","partOfTheVessel":"Rim","typeOfVessel":"Jar","length":"4.1","breadthWidth":"1.7","thickness":"0.5","diameter":"11","mnv":"12","munsellColour":"7.5YR 8/2","remarks":"Everted rim: flat top\nPinkish-white clay body\nTraces of reddish-yellow slip on exterior (7.5YR 7/6)"},

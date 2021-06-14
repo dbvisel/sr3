@@ -28,23 +28,23 @@
 			},
 			{
 				"fieldKey": "diameterMm",
-				"fieldName": "Diameter (mm)",
+				"fieldName": "Diameter",
 				"fieldNameShort": "Diameter",
-				"unit": "mm",
+				"fieldUnit": "mm",
 				"sortMethod": "integer"
 			},
 			{
 				"fieldKey": "thickness",
 				"fieldNameShort": "Thickness",
-				"fieldName": "Thickness (mm)",
-				"unit": "mm",
+				"fieldName": "Thickness",
+				"fieldUnit": "mm",
 				"sortMethod": "integer"
 			},
 			{
 				"fieldKey": "weight",
 				"fieldNameShort": "Weight",
-				"fieldName": "Weight (g)",
-				"unit": "grams",
+				"fieldName": "Weight",
+				"fieldUnit": "g",
 				"sortMethod": "integer"
 			},
 			{

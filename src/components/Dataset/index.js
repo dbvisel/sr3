@@ -365,7 +365,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                         }}
                       >
                         <option defaultValue>
-                          {entry.fieldNameShort || entry.fieldName}
+                          {entry.fieldNameShort || entry.fieldUnit
+                            ? `${entry.fieldName} (${entry.fieldUnit})`
+                            : entry.fieldName}
                         </option>
                         {entry.fieldValues.map((value, key2) => (
                           <option key={key2} value={value}>
@@ -383,7 +385,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                     onClick={() => changeSortBy(entry.fieldKey)}
                   >
                     <span className="innertd">
-                      {entry.fieldNameShort || entry.fieldName}
+                      {entry.fieldNameShort || entry.fieldUnit
+                        ? `${entry.fieldName} (${entry.fieldUnit})`
+                        : entry.fieldName}
                       {sortBy ? (
                         sortBy[entry.fieldKey] ? (
                           sortBy[entry.fieldKey] > 0 ? (

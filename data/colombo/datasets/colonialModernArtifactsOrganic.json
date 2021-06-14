@@ -15,8 +15,18 @@
 			"fieldName":"Artefact Number",
 			"fieldLink": true
 		},{"fieldKey":"unit", "fieldName":"Unit"},
-		{"fieldKey": "weight","fieldName":"Weight (g)",	"superField": "Quantities in weight"},
-		{"fieldKey": "totalWeight","fieldName":"Total Weight (g)", "superField": "Quantities in weight"},
+		{
+			"fieldKey": "weight",
+			"fieldName":"Weight",
+			"fieldUnit": "g",
+			"superField": "Quantities in weight"
+		},
+		{
+			"fieldKey": "totalWeight",
+			"fieldName":"Total Weight",
+			"fieldUnit": "g",
+			"superField": "Quantities in weight"
+		},
 		{"fieldKey": "numberOfPieces","fieldName":"Number of pieces", "superField": "Quantities in number of sherds"},
 		{"fieldKey": "totalNumberOfPieces","fieldName":"Total no. of pieces", "superField": "Quantities in number of sherds"},
 		{"fieldKey": "spit", "fieldName": "Spit","superField": "Stratigraphy"},
@@ -24,10 +34,30 @@
 		{"fieldKey": "typeOfWare","fieldName":"Type of Ware","fieldValues":["Shell","Coral","Bone","Charcoal","Wood","Teeth","19th-20th c Chinese eathenware","19th-20th c Earthenware - others","Organic","Glass","Metal"]},
 		{"fieldKey": "partOfTheVessel","fieldName":"Part of the vessel","fieldValues":["Base","Carination","Handle","Lid","Lug","Mouth","Neck","Rim","Shoulder","Spout","Rim and Base (Complete Profile)","Mouth and Lug","Mouth and Shoulder","Foot Rim","Body"]},
 		{"fieldKey": "typeOfVessel","fieldName":"Type of Vessel","fieldValues":["Basin","Bowl","Cooking Pot","Covered Box","Cup","Ewer","Goblet","Jar","Jarlet","Kendi","Pillow","Vase","Bangle","Bead","Pot","Brick","Eaveboard","Shallow bowl"]},
-		{"fieldKey": "length", "fieldName": "Length (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "breadthWidth", "fieldName": "Breadth/Width (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "thickness", "fieldName": "Thickness (cm)","superField": "Dimensions of sherd"},
-		{"fieldKey": "diameter", "fieldName": "Diameter (cm)","superField": "Dimensions of sherd"},
+		{
+			"fieldKey": "length",
+			"fieldName": "Length",
+			"fieldUnit": "cm",
+			"superField": "Dimensions of sherd"
+		},
+		{
+			"fieldKey": "breadthWidth",
+			"fieldName": "Breadth/Width",
+			"fieldUnit": "cm",
+			"superField": "Dimensions of sherd"
+		},
+		{
+			"fieldKey": "thickness",
+			"fieldName": "Thickness",
+			"fieldUnit": "cm",
+			"superField": "Dimensions of sherd"
+		},
+		{
+			"fieldKey": "diameter",
+			"fieldName": "Diameter",
+			"fieldUnit": "cm",
+			"superField": "Dimensions of sherd"
+		},
 		{"fieldKey": "mnv","fieldName":"% of vessel (MNV)"},
 		{"fieldKey": "dateOfExcavation","fieldName":"Date of excavation"},
 		{"fieldKey": "remarks","fieldName":"Remarks (motifs and decorations)","fieldNameShort": "Remarks"}
