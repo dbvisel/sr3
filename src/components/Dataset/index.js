@@ -266,8 +266,6 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
 
   const LinkCell = ({ column, rowId }) => {
     // This is for cells that link to other data objects
-    // TODO: right now this in photographs, this links to artifact numbers rather than to IDs. We're not making artifact number pages for photographs. How to deal with this?
-    // We don't have any access to the linked dataset so we can't get ID out for artifact number
     const myRow = data.data.filter((x) => x.id === rowId)[0];
     const isArray = column.canBeArray && typeof column.value === "object";
     const linkDataSet = myRow[column.linkToDataSet];

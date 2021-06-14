@@ -9,6 +9,9 @@ import {
   FieldImage,
 } from "./elements";
 
+// TODO: links back from this page: http://localhost:8000/scc/dataset/drawings/id/drawings_30
+// same problem on protogrphs pages
+
 const makeDataView = (inputData, report) => {
   const outputData = [];
   let i = 0;
@@ -42,10 +45,8 @@ const makeDataView = (inputData, report) => {
                       {value.link ? (
                         typeof value.link === "object" ? (
                           value.link.map((thisLink, index) => (
-                            <React.Fragment>
-                              <Link to={thisLink} key={index}>
-                                {value.value[index]}
-                              </Link>
+                            <React.Fragment key={index}>
+                              <Link to={thisLink}>{value.value[index]}</Link>
                               {index < value.link.length ? ", " : ""}
                             </React.Fragment>
                           ))
@@ -112,7 +113,7 @@ const makeOutputData = (report, fieldData, objectData) => {
       for (let j = 0; j < fieldData.length; j++) {
         if (fieldData[j].fieldKey === thisImageSetField) {
           if (typeof fieldData[j].value === "object") {
-            console.log(fieldData[j].value, linkId);
+            // console.log(fieldData[j].value, linkId);
             thisLink = fieldData[j].value.map(
               (thisValue, index) =>
                 `/${report}/dataset/${thisValue}/id/${linkId[index]}`
