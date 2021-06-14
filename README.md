@@ -131,21 +131,30 @@ There are also optional values, some of which are more important than others:
  - `superField`: string, a name for a superfield that this field should be listed under. All fields that have the same superfield are shown together in the order in which they appear in the fields list.
  - `fieldValues`: array, values that the field can hold. This is not strictly enforced! But you'll get a drop-down selector at the top of a field with _fieldValues_ set. A sample: _["Rim", "Base", "Lid"]_ would give you three values. Values should be strings and in the order in which you want them to appear.
  - `sortMethod`: string, can be "alphabetical" or "integer"; if left blank, defaults to "alphabetical". This isn't actually implemented at the moment, and so sorting is by Javascript alphabetical sorting: so 42 comes before 5 because it's being treated as a string. Maybe we should also add in "number" which treats things as floating point?
+ - `linkToDataSet`: (TODO: how does this work?)
+
+Some aren't really implemented in this version, but should be ASAP:
+
+ - `fieldTransform`: string, the name of a function to transform a string – values being used are "toLowerCase", "titleCase". If this was set to "titleCase", for example, all data values of that field would be transformed to title case.
+ - `relatedKey`: (This was used for grouped records, in porcelain.json)
+ - `relatedName`: (This was used for grouped records, in porcelain.json)
 
 Some aren't really implemented in this version but could probably be cleaned up:
 
- - `fieldTransform`: string, the name of a function to transform a string – values being used are "toLowerCase", "titleCase". If this was set to "titleCase", for example, all data values of that field would be transformed to title case.
  - `fieldNameShown`: string, the name of a field: for links, this was the name of the field that should be shown instead of whatever the fieldName was. 
-
-- canBeArray
-- fieldLink
-- linkExists
-- linkToDataSet
-- linksoKey
-- relatedKey
-- relatedName
+ - `linksToKey`: (TODO: what did this do?) 
+ - `linkExists`: (TODO: what did this do?)
+ - `fieldLink`: (TODO: what did this do?)
+ - `canBeArray`: (TODO: what did this do?)
 
 ### Data
+
+Data is an array of objects; each object should have a key that's been defined as a `fieldKey` in the _fields_ section. This is then transformed into a row of data.
+
+It should be noted that this is all very loosely typed – we're working on the assumption that we have very messy data sets, and consequently very messy data. There isn't a huge amount of error-checking!
+
+It should be noted that a lot of the datasets started their life as a spreadsheet of some kind; I went through and added metadata and a _fields_ section; set the header row to the `fieldKey`s; and then ran a CSV2JSON (there are command-line versions of these as well as online versions; almost anything will be fine for our purposes) and put the resulting JSON as the `data` object.
+
 
 # Improvements:
 
