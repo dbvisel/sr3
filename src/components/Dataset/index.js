@@ -365,7 +365,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                         }}
                       >
                         <option defaultValue>
-                          {entry.fieldNameShort || entry.fieldUnit
+                          {entry.fieldNameShort
+                            ? entry.fieldNameShort
+                            : typeof entry.fieldUnit === "string"
                             ? `${entry.fieldName} (${entry.fieldUnit})`
                             : entry.fieldName}
                         </option>
@@ -385,7 +387,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                     onClick={() => changeSortBy(entry.fieldKey)}
                   >
                     <span className="innertd">
-                      {entry.fieldNameShort || entry.fieldUnit
+                      {entry.fieldNameShort
+                        ? entry.fieldNameShort
+                        : typeof entry.fieldUnit === "string"
                         ? `${entry.fieldName} (${entry.fieldUnit})`
                         : entry.fieldName}
                       {sortBy ? (

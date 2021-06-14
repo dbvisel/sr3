@@ -124,10 +124,12 @@ The fields array describes all the fields that will be used. Each field entry co
 
 There are also optional values, some of which are more important:
 
- - `fieldHidden`: boolean, default false. If this is true, this field is not shown on the table (but it may be used internally). A common use of this is to have a field which just numbers the objects; the number is not shown.
+ - `fieldHidden`: boolean, default `false`. If this is true, this field is not shown on the table (but it may be used internally). A common use of this is to have a field which just numbers the objects; the number is not shown.
  - `fieldType`: can be "link" or "filename".
  - `fieldNameShort`: string, an optional short name for the field. 
  - `fieldUnit`: string, a name for the units of a number field – e.g. "g" for weight in grams.  Instead of having _fieldName_ as "Weight in grams", _fieldName_ should be "Weight" and _unit_ should be "g", with the result being "Weight (g)".
+ - `superField`: string, a name for a superfield that this field should be listed under. All fields that have the same superfield are shown together in the order in which they appear in the fields list.
+ - `fieldValues`: array, values that the field can hold. This is not strictly enforced! But you'll get a drop-down selector at the top of a field with _fieldValues_ set. A sample: _["Rim", "Base", "Lid"]_ would give you three values. Values should be strings and in the order in which you want them to appear.
 
 Some aren't really implemented but could be cleaned up:
 
@@ -143,7 +145,7 @@ Some aren't really implemented but could be cleaned up:
 - relatedKey
 - relatedName
 - sortMethod
-- superField
+- 
 
 
 ### Data
