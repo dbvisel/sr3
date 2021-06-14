@@ -26,6 +26,8 @@ To build for deployment:
 
 This turns text files and datasets into a static site. It's build in React, using Gatsby, though it's not tightly particularly tied to that framework. Datasets are internally JSON, though you could pull them in from elsewhere – in the past we've used Google Docs. Text files are handled in MDX, which is Markdown flavored with React; MDX is used to handle footnotes, links, multilingual sections, and table inclusions that straight Markdown can't handle. Styling is handled with styled-components.
 
+Because the result of this is a static site, it can be hosted anywhere. 
+
 # How it works
 
 ## Content overview
@@ -92,7 +94,7 @@ You can also set:
  - `author`: a page's author; if this is not set, it will fall back on the report's author.
  - `date`: a page's date; if this is not set, it will fall back on the report's _lastUpdated_.
 
-Because textfiles are MDX, they can use React components, though it's a bit of a pain. Use <Figure /> for figures, <BaseLink /> for links inside the site (so that the browser doesn't reload everything), and <FootnoteCallout> and <Footnote /> for footnotes. There's also <BilingualSection /> for multilingual sections as used in MSATP.
+Because textfiles are MDX, they can use React components, though it's a bit of a pain. Use &lt;Figure /> for figures, &lt;BaseLink /> for links inside the site (so that the browser doesn't reload everything), and &lt;FootnoteCallout> and &lt;Footnote /> for footnotes. There's also &lt;BilingualSection /> for multilingual sections as used in MSATP.
 
 ## Data sets
 
@@ -152,18 +154,18 @@ The fields array describes all the fields that will be used. Each field entry co
    * https://github.com/thebuilder/react-intersection-observer#readme
    * https://webup.org/blog/sticky-header-table-with-react-hooks/
 
-Maybe use <datalist> rather than <select> in table headers? Does that make sense? We could use that for filtering.
+Maybe use &lt;datalist> rather than &lt;select> in table headers? Does that make sense? We could use that for filtering.
 
 ## FIXES/IMPROVEMENTS:
 
- * Slashes at the ends of paths. Would be good to implement gatsby-plugin-force-trailing-slashes, though this breaks the build and will take some time to get right.
- * Should add a site map
- * Probably upgrade to Gatsby 3?
+ - Slashes at the ends of paths. Would be good to implement gatsby-plugin-force-trailing-slashes, though this breaks the build and will take some time to get right.
+ - Should add a site map
+ - Probably upgrade to Gatsby 3?
 
 ## REMEMBER
 
- * Environment variables: none at the moment!
- * This is using Git/Netlify LFS, as described here: https://css-tricks.com/getting-netlify-large-media-going/
+ - Environment variables: none at the moment!
+ - This is using Git/Netlify LFS, as described here: https://css-tricks.com/getting-netlify-large-media-going/
   If there's trouble, try source /Users/dan/.netlify/helper/path.bash.inc
   (does this break everything?)
- * Keep the _.prettierignore_ in there, otherwise MDX files can get screwed up on save. 
+ - Keep the _.prettierignore_ in there, otherwise MDX files can get screwed up on save. 
