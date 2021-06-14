@@ -124,6 +124,11 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   };
 
   const changeSortBy = (fieldName) => {
+    // this needs to check if fields.sortMethod is set to "integer" and if so, compare as numbers rather than comparing by string (= "alphabetical", what it's doing now.)
+    const thisField = data.fields.filter((x) => x.fieldKey === fieldName)[0];
+    const thisSortMethod = thisField.sortMethod || "alphabetical";
+
+    // console.log(thisField, thisSortMethod);
     const newFilteredData = cloneObject(outputData);
     let coefficient = 1;
     let thisSortValues = sortBy || {};
@@ -147,10 +152,18 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
           bValue = b.row[i].value;
         }
       }
-      if (aValue > bValue) {
+      if (
+        thisSortMethod === "integer"
+          ? parseInt(aValue, 10) > parseInt(bValue, 10)
+          : aValue > bValue
+      ) {
         return coefficient;
       }
-      if (aValue < bValue) {
+      if (
+        thisSortMethod === "integer"
+          ? parseInt(aValue, 10) < parseInt(bValue, 10)
+          : aValue < bValue
+      ) {
         return -1 * coefficient;
       }
       return 0;
@@ -366,7 +379,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                       >
                         <option defaultValue>
                           {entry.fieldNameShort
-                            ? entry.fieldNameShort
+                            ? typeof entry.fieldUnit === "string"
+                              ? `${entry.fieldNameShort} (${entry.fieldUnit})`
+                              : entry.fieldNameShort
                             : typeof entry.fieldUnit === "string"
                             ? `${entry.fieldName} (${entry.fieldUnit})`
                             : entry.fieldName}
@@ -388,7 +403,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                   >
                     <span className="innertd">
                       {entry.fieldNameShort
-                        ? entry.fieldNameShort
+                        ? typeof entry.fieldUnit === "string"
+                          ? `${entry.fieldNameShort} (${entry.fieldUnit})`
+                          : entry.fieldNameShort
                         : typeof entry.fieldUnit === "string"
                         ? `${entry.fieldName} (${entry.fieldUnit})`
                         : entry.fieldName}

@@ -122,7 +122,7 @@ The fields array describes all the fields that will be used. Each field entry co
  - `fieldKey`: string, the ID for the field. Required. This is used internally to refer to the field (in _data_, for example).
  - `fieldName`: string, the name of the field. Required. This is what's shown at the top of the table.
 
-There are also optional values, some of which are more important:
+There are also optional values, some of which are more important than others:
 
  - `fieldHidden`: boolean, default `false`. If this is true, this field is not shown on the table (but it may be used internally). A common use of this is to have a field which just numbers the objects; the number is not shown.
  - `fieldType`: can be "link" or "filename".
@@ -130,23 +130,20 @@ There are also optional values, some of which are more important:
  - `fieldUnit`: string, a name for the units of a number field – e.g. "g" for weight in grams.  Instead of having _fieldName_ as "Weight in grams", _fieldName_ should be "Weight" and _unit_ should be "g", with the result being "Weight (g)".
  - `superField`: string, a name for a superfield that this field should be listed under. All fields that have the same superfield are shown together in the order in which they appear in the fields list.
  - `fieldValues`: array, values that the field can hold. This is not strictly enforced! But you'll get a drop-down selector at the top of a field with _fieldValues_ set. A sample: _["Rim", "Base", "Lid"]_ would give you three values. Values should be strings and in the order in which you want them to appear.
+ - `sortMethod`: string, can be "alphabetical" or "integer"; if left blank, defaults to "alphabetical". This isn't actually implemented at the moment, and so sorting is by Javascript alphabetical sorting: so 42 comes before 5 because it's being treated as a string. Maybe we should also add in "number" which treats things as floating point?
 
-Some aren't really implemented but could be cleaned up:
+Some aren't really implemented in this version but could probably be cleaned up:
 
+ - `fieldTransform`: string, the name of a function to transform a string – values being used are "toLowerCase", "titleCase". If this was set to "titleCase", for example, all data values of that field would be transformed to title case.
+ - `fieldNameShown`: string, the name of a field: for links, this was the name of the field that should be shown instead of whatever the fieldName was. 
 
 - canBeArray
 - fieldLink
-- fieldNameShown:
-- fieldTransform:
-- fieldValues:
 - linkExists
 - linkToDataSet
 - linksoKey
 - relatedKey
 - relatedName
-- sortMethod
-- 
-
 
 ### Data
 

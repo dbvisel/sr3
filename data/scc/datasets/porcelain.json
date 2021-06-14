@@ -37,8 +37,13 @@
         "fieldNameShort": "Unit",
         "sortMethod": "integer"
       },
-      { "fieldKey": "depth", "fieldName": "Spit", "sortMethod": "integer" },
-      { "fieldKey": "material", "fieldName": "Material" },
+      { "fieldKey": "depth", 
+				"fieldName": "Spit", 
+				"sortMethod": "integer" 
+			},
+      { "fieldKey": "material", 
+				"fieldName": "Material" 
+			},
       {
         "fieldKey": "weight",
         "fieldName": "Weight",
