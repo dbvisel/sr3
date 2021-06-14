@@ -3,11 +3,8 @@
 		"reportID": "colombo",
 		"id": "colonialModernArtifactsMetal",
 		"name": "Colonial & Modern Artifacts: Metal",
-		"shortName": "Metal",
 		"source": "Colonial_Modern Artifacts - Other Materials final for database.xlsx",
 		"editedDate": "20 October 2020",
-		"dataSetGroup": "Colonial & modern artifacts",
-		"orderInGroup": 1,
 		"defaultSort": "id",
 		"fields": [{
 			"fieldKey": "id",

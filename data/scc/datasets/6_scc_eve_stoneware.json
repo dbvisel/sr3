@@ -3,13 +3,8 @@
 		"reportID": "scc",
 		"id": "6_scc_eve_stoneware",
 		"name": "Estimated Vessel Equivalents Stoneware",
-		"shortName": "Est. Vessel Equivalents Stoneware",
 		"source": "Dec 19 2017/SCC ESTIMATED VESSEL EQUIVALENTS STONEWARE.xlsx",
 		"editedDate": "10 January 2018",
-		"googleURL": "1LLiSxK9HnypjddQlPyf5hOJXYGFQGN6g-3khT46tnks",
-		"lastSynched": "18 January 2018",
-		"dataSetGroup": "Summary data",
-		"orderInGroup": 1,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

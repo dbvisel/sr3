@@ -3,8 +3,6 @@
 		"reportID": "dieng",
 		"id": "table-2_24",
 		"name": "Chinese (Ancient)",
-		"dataSetGroup": "hidden",
-		"orderInGroup": 0,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

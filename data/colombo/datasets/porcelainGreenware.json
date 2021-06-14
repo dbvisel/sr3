@@ -3,11 +3,8 @@
 		"reportID": "colombo",
 		"id": "porcelainGreenware",
 		"name": "Greenware",
-		"shortName": "Greenware",
 		"source": "Porcelain final for database.xlsx",
 		"editedDate": "20 October 2020",
-		"dataSetGroup": "Porcelain",
-		"orderInGroup": 1,
 		"defaultSort": "id",
 		"fields": [{
 			"fieldKey": "id",

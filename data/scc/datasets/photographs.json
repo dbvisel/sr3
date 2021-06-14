@@ -3,15 +3,8 @@
 	"id": "photographs",
 	"source": "Dec 19 2017 files",
 	"name": "Photographs",
-	"shortName": "Photographs",
-	"googleURL": "1bLoGCKNy8m4F-SNXlvw1PmcAyF-_4LViChO0RFBMpC4",
-	"lastSynched": "18 January 2018",
-	"dataSetGroup": "Images",
-	"orderInGroup": 1,
-	"notes": "",
 	"editedDate": "10 January 2018",
 	"defaultSort": "artifactNumber",
-	"hideThumbnails": false,
 	"fields": [
 		{
 			"fieldKey": "hiddenOrder",

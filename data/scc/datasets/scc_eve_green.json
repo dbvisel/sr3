@@ -3,13 +3,8 @@
 		"reportID": "scc",
 		"id": "scc_eve_green",
 		"name": "Estimated Vessel Equivalents Green",
-		"shortName": "Est. Vessel Equivalents Green",
 		"source": "SCC estimated vessel equivalents GREEN.xlsx",
 		"editedDate": "5 February 2018",
-		"googleURL": "",
-		"lastSynched": "(never)",
-		"dataSetGroup": "Summary data",
-		"orderInGroup": 3,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

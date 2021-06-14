@@ -3,11 +3,8 @@
 		"reportID": "colombo",
 		"id": "colonialArtifactsStoneware",
 		"name": "Stoneware Colonial Artifacts",
-		"shortName": "Stoneware",
 		"source": "Colonial Artifacts final for database.xlsx",
 		"editedDate": "20 October 2020",
-		"dataSetGroup": "Colonial artifacts",
-		"orderInGroup": 2,
 		"defaultSort": "id",
 		"fields": [{
 			"fieldKey": "id",

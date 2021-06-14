@@ -3,13 +3,7 @@
 		"reportID": "scc",
 		"id": "drawings",
 		"name": "List of Drawings",
-		"shortName": "Drawings",
-		"googleURL": "1GlisnMtsWPEW1US4OngbL8D8TPJ_p_1IG2nx6v0vtOw",
-		"lastSynched": "18 January 2018",
-		"dataSetGroup": "Images",
-		"orderInGroup": 2,
 		"defaultSort": "artifactNumber",
-		"hideThumbnails": false,
 		"fields": [{
 				"fieldKey": "hiddenOrder",
 				"fieldName": "Hidden Order",

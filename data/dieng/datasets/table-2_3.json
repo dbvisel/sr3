@@ -3,8 +3,6 @@
 		"reportID": "dieng",
 		"id": "table-2_3",
 		"name": "Porcelain and earthenware",
-		"dataSetGroup": "hidden",
-		"orderInGroup": 0,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

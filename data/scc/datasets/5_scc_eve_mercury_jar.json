@@ -3,13 +3,8 @@
 		"reportID": "scc",
 		"id": "5_scc_eve_mercury_jar",
 		"name": "Estimated Vessel Equivalents Mercury Jar",
-		"shortName": "Est. Vessel Equivalents Mercury Jar",
 		"source": "Dec 19 2017/SCC EVE MERCURY JAR.xlsx",
 		"editedDate": "10 January 2018",
-		"googleURL": "1veP0XYD_qZxu_n0NrFf4mtq-CRaMD2H64g08_sO7LMU",
-		"lastSynched": "18 January 2018",
-		"dataSetGroup": "Summary data",
-		"orderInGroup": 2,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

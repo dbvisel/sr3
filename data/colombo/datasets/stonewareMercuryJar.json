@@ -3,11 +3,8 @@
 		"reportID": "colombo",
 		"id": "stonewareMercuryJar",
 		"name": "Mercury Jar Stoneware",
-		"shortName": "Mercury Jar",
 		"source": "Stoneware final for database.xlsx",
 		"editedDate": "20 October 2020",
-		"dataSetGroup": "Stoneware",
-		"orderInGroup": 2,
 		"defaultSort": "id",
 		"fields": [{
 			"fieldKey": "id",

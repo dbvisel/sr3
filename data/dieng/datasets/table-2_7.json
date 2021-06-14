@@ -3,8 +3,6 @@
 		"reportID": "dieng",
 		"id": "table-2_7",
 		"name": "Modern",
-		"dataSetGroup": "hidden",
-		"orderInGroup": 0,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

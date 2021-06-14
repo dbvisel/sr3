@@ -3,11 +3,8 @@
 		"reportID": "colombo",
 		"id": "colonialArtifactsPorcelain",
 		"name": "Porcelain Colonial Artifacts",
-		"shortName": "Porcelain",
 		"source": "Colonial Artifacts final for database.xlsx",
 		"editedDate": "20 October 2020",
-		"dataSetGroup": "Colonial artifacts",
-		"orderInGroup": 1,
 		"defaultSort": "id",
 		"fields": [{
 			"fieldKey": "id",

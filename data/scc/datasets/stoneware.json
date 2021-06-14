@@ -3,13 +3,8 @@
 		"reportID": "scc",
 		"id": "stoneware",
 		"name": "Stoneware",
-		"shortName": "Stoneware",
 		"source": "StonewareJH 18 02 04.xlsx",
 		"editedDate": "1 March 2018",
-		"googleURL": "1yEY8G9WVDSW-ToAkE30kSZ7tQaUqPE95kW8YuFVV3zc",
-		"lastSynched": "",
-		"dataSetGroup": "Artifact data",
-		"orderInGroup": 2,
 		"defaultSort": "artifactNumber",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

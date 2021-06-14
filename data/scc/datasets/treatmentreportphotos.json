@@ -4,12 +4,8 @@
 		"id": "treatmentreportphotos",
 		"source": "Dropbox files from Alvin",
 		"name": "Treatment Report photos",
-		"googleURL": "",
-		"lastSynched": "",
 		"notes": "photos from Treatment Report",
 		"editedDate": "10 January 2018",
-		"dataSetGroup": "hidden",
-		"orderInGroup": 0,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

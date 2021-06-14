@@ -4,12 +4,6 @@
 	"name": "SCC Artifact Distribution Totaled by Square",
 	"source": "Dec 19 2017/SCC ARTIFACT DISTRIBUTION BY SQUARE AND SPIT.docx",
 	"editedDate": "10 January 2018",
-	"googleURL": "",
-	"lastSynched": "",
-	"dataSetGroup": "hidden",
-	"orderInGroup": 5,
-	"header": "SCC ARTIFACT DISTRIBUTION BY SQUARE AND SPIT (totals)",
-	"subheader": "DATA FROM A COWAN PDF 2003 2004",
 	"defaultSort": "hiddenOrder",
 	"fields": [{
 			"fieldKey": "hiddenOrder",

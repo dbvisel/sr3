@@ -3,8 +3,6 @@
 		"reportID": "dieng",
 		"id": "table-2_5",
 		"name": "Table 2-5",
-		"dataSetGroup": "hidden",
-		"orderInGroup": 0,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

@@ -22,7 +22,13 @@ To build for deployment:
 
 (Prefix path is set by pathPrefix in _gatsby-config.js_)
 
-# Content
+# Technical overview
+
+This turns text files and datasets into a static site. It's build in React, using Gatsby, though it's not tightly particularly tied to that framework. Datasets are internally JSON, though you could pull them in from elsewhere – in the past we've used Google Docs. Text files are handled in MDX, which is Markdown flavored with React; MDX is used to handle footnotes, links, multilingual sections, and table inclusions that straight Markdown can't handle. Styling is handled with styled-components.
+
+# How it works
+
+## Content overview
 
 Content goes in _/data/[report_id]_. Images go in _/static/[report_id]/images_. Yes, it would be more logical to have images in /data/, but then they'd have to be moved on build, which already takes forever.
 
@@ -32,7 +38,7 @@ _/data/footer.mdx_ is the footer for the front page of the site and any report t
 
 Each report has its own _config.json_ and _index.mdx_ and can have its own _footer.mdx_. They can also have datasets in _/[report_id]/datasets_ and texts in _/[report_id]/texts_. 
 
-# Project-level configuration
+## Project-level configuration
 
 `/data/config.json` is key to the whole project. This contains:
 
@@ -50,7 +56,7 @@ Each report has its own _config.json_ and _index.mdx_ and can have its own _foot
 
 There are two other required files for the project, `/data/index.mdx` and `/data/footer.mdx`. These are MDX files. _index.mdx_ needs to have _path_ set to "project"; _footer.mdx_ needs to have _report_ set to "project". _index.mdx_ is what's shown on the front page of the site. _footer.mdx_ is the default footer for the site (which can be overwritten by individual report's footers, if they have one).
 
-# Report-level configuration
+## Report-level configuration
 
 You can theoretically have as many reports as you like. By convention, each report should live in its own directory inside of _data_ with the same filename as the ID listed in _possibleReports_ in the project _config.json_. So the Singapore Cricket Club is given the ID _scc_ in the main _config.json_, the directory should be _/data/scc_. It's worth noting that this doesn't actually impact function, but it helps keep things organized; it is needed for static files in, for example, _/static/scc_ – if "scc" is changed there, the images won't be found.
 
@@ -64,11 +70,54 @@ Here's what's in an individual report's _config.json_:
    - `id`: string. A unique ID for the text, used to identify it later. This is also used as the page's slug.
    - `name`: string. The name for the text. This value is used in the TOC on the left, so it can be the short name.
  - `datasets`: array of objects. These are the datasets, in the order that you want them to appear. Each one consists of:
-   - `id`: string. A unique ID for the dataset, used to identify it later. This is also used as the page's slug.
+   - `id`: string. A unique ID for the dataset, used to identify it later. This should match what's given as the page's slug when you make the text file's front matter; if it doesn't, the link in the TOC won't work. 
    - `name`: string. The name for the dataset. This value is used in the TOC on the left, so it can be the short name.
    - `grouping`: string. In some cases, you want datasets to have a grouping – e.g. in SCC, they're sorted into "Artifact data", "Summary data", and "Images" and indented under those headers. If you include this, datasets will be put in the grouping that's used here; groupings appear in the order that you put them in. This isn't very robust.
 
+And each report should have an _index.mdx_ and a _footer.mdx_, though the latter is optional (the project footer will be used). For your _footer.mdx_, set `report` equal to the _id_ in the report's _config.json_ (as you should for every text file). Set `title` to "footer". You don't need to include a path or a date. For your _index.mdx_, set `report` to the report ID, and `path` to _/report_ where "report" is your report ID. Nothing will break if you don't have an _index.mdx_ with the path set to _/report_, but when you go to that URL you'll get a 404 page; subpages will still work, but you won't have a way to get to them.  
 
+## Text files
+
+Text files are currently done in MDX. They generally live in a report directory, in _/report/texts/_ where "report" is the report ID, though it doesn't actually matter where you put them, that's just convention. Note that just because you have a text file doesn't mean that a text file will automatically appear in a reports TOC – that's intentional. For a text file to appear in a TOC, it needs to appear in the report's _config.json_ in the _texts_ array.
+
+In the MDX frontmatter, you should set:
+
+ - `report`: which should be the report ID. 
+ - `slug`: which is what the path of the text file should be from the site root. E.g.: "/scc/text/statistics". This could be dynamically generated if we gave each text file an ID, but we didn't; this means you can stick the files anywhere.
+ - `title`: string, the title of the page. If this isn't set, the page won't have a title, but that's probably okay.
+
+You can also set:
+
+ - `subtitle`: a page's subtitle, if it needs one.
+ - `author`: a page's author; if this is not set, it will fall back on the report's author.
+ - `date`: a page's date; if this is not set, it will fall back on the report's _lastUpdated_.
+
+Because textfiles are MDX, they can use React components, though it's a bit of a pain. Use <Figure /> for figures, <BaseLink /> for links inside the site (so that the browser doesn't reload everything), and <FootnoteCallout> and <Footnote /> for footnotes. There's also <BilingualSection /> for multilingual sections as used in MSATP.
+
+## Data sets
+
+These are very complicated! These are JSON files. They consist of:
+
+ - `reportID`: string, the ID for the report that the dataset is part of. Required.
+ - `id`: string, a unique ID for this particular dataset. This is used for the slug, among other things. Required.
+ - `name`: string, the name for the dataset. This is not the name that appears in the TOC; that's set in the report's _config.json_.
+ - `defaultSort`: the ID of a field defined in fields. This is the field that will be used to sort the data by default. What happens if this is not set?
+ - `fields`: an array of objects. This describes the shape of the data that's in `data`. More later.
+ - `data`: an array of objects, in this case the actual data. More later.
+
+Optional fields:
+
+ - `source`: string. This is used editorially – the filename that this data came from, e.g. "Stoneware final for database.xlsx". Not actually used on the code. 
+ - `editedDate`: string. This could be used editorially – the date that the data was last edited. Not actually used in the code.
+ - `notes`: string. This could be used editorially for notes. Not used in the code.
+
+Note that not all datasets get their own pages: only a dataset that appears in a report's `datasets` list appears in the TOC for the report and gets its own page. This is very much intentional: datasets can also be used for tables that appear inside a text document.
+
+### Fields
+
+The fields array describes all the fields that will be used. Each field entry consists of a couple of mandatory items:
+
+### Data
 
 # Improvements:
 

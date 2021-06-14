@@ -3,11 +3,8 @@
 		"reportID": "colombo",
 		"id": "colonialModernArtifactsOrganic",
 		"name": "Colonial & Modern Artifacts: Organic",
-		"shortName": "Organic",
 		"source": "Colonial_Modern Artifacts - Other Materials final for database.xlsx",
 		"editedDate": "20 October 2020",
-		"dataSetGroup": "Colonial & modern artifacts",
-		"orderInGroup": 2,
 		"defaultSort": "id",
 		"fields": [{
 			"fieldKey": "id",

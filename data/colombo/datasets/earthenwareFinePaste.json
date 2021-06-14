@@ -3,11 +3,8 @@
 		"reportID": "colombo",
 		"id": "earthenwareFinePaste",
 		"name": "Fine Paste Earthenware",
-		"shortName": "Fine Paste Earthenware",
 		"source": "Earthenware final for database.xlsx",
 		"editedDate": "20 October 2020",
-		"dataSetGroup": "Earthenware",
-		"orderInGroup": 1,
 		"defaultSort": "id",
 		"fields": [{
 			"fieldKey": "id",

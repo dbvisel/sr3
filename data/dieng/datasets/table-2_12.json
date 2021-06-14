@@ -3,8 +3,6 @@
 		"reportID": "dieng",
 		"id": "table-2_12",
 		"name": "Chinese Wares",
-		"dataSetGroup": "hidden",
-		"orderInGroup": 0,
 		"defaultSort": "hiddenOrder",
 		"fields": [{
 				"fieldKey": "hiddenOrder",

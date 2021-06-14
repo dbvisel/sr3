@@ -3,11 +3,8 @@
 		"reportID": "colombo",
 		"id": "stonewareBrittle",
 		"name": "Brittle Stoneware",
-		"shortName": "Brittle",
 		"source": "Stoneware final for database.xlsx",
 		"editedDate": "20 October 2020",
-		"dataSetGroup": "Stoneware",
-		"orderInGroup": 2,
 		"defaultSort": "id",
 		"fields": [{
 			"fieldKey": "id",
