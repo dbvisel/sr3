@@ -15,7 +15,8 @@
       {
         "fieldKey": "artifactNumber",
         "fieldName": "Artifact Number",
-        "fieldNameShort": "Artifact No."
+        "fieldNameShort": "Artifact No.",
+        "fieldLink": true
       },
       {
         "fieldKey": "id",

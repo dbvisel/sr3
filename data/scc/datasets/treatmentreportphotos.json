@@ -32,13 +32,6 @@
 				"fieldKey": "artifactSet",
 				"fieldName": "Artifact Set",
 				"fieldHidden": true
-			},
-			{
-				"fieldKey": "relatedSet",
-				"fieldName": "Related Images",
-				"fieldType": "relatedRecords",
-				"relatedKey": "artifactSet",
-				"relatedName": "filename"
 			}
 		],
 		"data": [{

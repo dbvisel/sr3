@@ -37,7 +37,7 @@
 				"fieldNameShort": "Weight",
 				"fieldName": "Weight",
 				"fieldUnit": "g",
-				"sortMethod": "integer"
+				"sortMethod": "number"
 			},
 			{
 				"fieldKey": "notes",

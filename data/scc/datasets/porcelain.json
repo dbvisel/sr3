@@ -146,13 +146,6 @@
         "fieldHidden": true
       },
       {
-        "fieldKey": "groupedPieces",
-        "fieldName": "Grouped Pieces",
-        "fieldType": "relatedRecords",
-        "relatedKey": "group",
-        "relatedName": "artifactNumber"
-      },
-      {
         "fieldKey": "imageLink",
         "fieldName": "Image records",
         "fieldNameShort": "Image",

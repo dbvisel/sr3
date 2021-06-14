@@ -25,10 +25,11 @@ const makeDataView = (inputData, report) => {
     );
     outputData.push({ superField: superField, data: pushArray });
   }
-  console.log(outputData);
+  // console.log(outputData);
   return (
     <div>
       {outputData.map((vvalue, iindex) => {
+        // console.log(vvalue);
         return (
           <SuperfieldDiv indent={vvalue.superField} key={iindex}>
             {vvalue.superField ? <h3>{vvalue.superField}</h3> : null}
@@ -54,7 +55,9 @@ const makeDataView = (inputData, report) => {
                       ) : typeof value.value === "object" ? (
                         value.value.join(", ")
                       ) : (
-                        value.value
+                        <React.Fragment>
+                          {value.value} {value.fieldUnit ? value.fieldUnit : ""}
+                        </React.Fragment>
                       )}
                     </FieldValue>
                   </DataP>

@@ -155,6 +155,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
       if (
         thisSortMethod === "integer"
           ? parseInt(aValue, 10) > parseInt(bValue, 10)
+          : thisSortMethod === "number"
+          ? parseFloat(aValue) > parseFloat(bValue)
           : aValue > bValue
       ) {
         return coefficient;
@@ -162,6 +164,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
       if (
         thisSortMethod === "integer"
           ? parseInt(aValue, 10) < parseInt(bValue, 10)
+          : thisSortMethod === "number"
+          ? parseFloat(aValue) < parseFloat(bValue)
           : aValue < bValue
       ) {
         return -1 * coefficient;
@@ -222,6 +226,85 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
         ))}
       </TableRow>
     ) : null;
+  };
+
+  const FilenameCell = ({ column, rowId }) => {
+    // TODO: maybe this should link to an object page?
+    const myRow = data.data.filter((x) => x.id === rowId)[0];
+    const myValue =
+      column.fieldNameShown && myRow[column.fieldNameShown]
+        ? myRow[column.fieldNameShown]
+        : column.value;
+    // const myImageUrl = `/${data.reportID}/images/${column.value}`;
+    // use this if we wanted to make thumbnails
+    const myPageUrl = `/${data.reportID}/dataset/${data.id}/id/${rowId}`;
+    // console.log(myImageUrl, myPageUrl);
+    return (
+      <TableCell>
+        <span className="innertd">
+          {/* <img src={myImageUrl} height={"auto"} width={200} alt={myValue} />*/}
+          <Link to={myPageUrl}>{myValue}</Link>
+        </span>
+      </TableCell>
+    );
+  };
+
+  const LinkingCell = ({ column, rowId }) => {
+    const myPageUrl = `/${data.reportID}/dataset/${data.id}/id/${rowId}`;
+    return (
+      <TableCell>
+        <span className="innertd">
+          {typeof column.value === "object" ? (
+            column.value.join(", ")
+          ) : (
+            <Link to={myPageUrl}>{column.value}</Link>
+          )}
+        </span>
+      </TableCell>
+    );
+  };
+
+  const LinkCell = ({ column, rowId }) => {
+    // This is for cells that link to other data objects
+    // TODO: right now this in photographs, this links to artifact numbers rather than to IDs. We're not making artifact number pages for photographs. How to deal with this?
+    // We don't have any access to the linked dataset so we can't get ID out for artifact number
+    const myRow = data.data.filter((x) => x.id === rowId)[0];
+    const isArray = column.canBeArray && typeof column.value === "object";
+    const linkDataSet = myRow[column.linkToDataSet];
+    const isThereASingleDataSet =
+      typeof linkDataSet === "string" && myRow[column.linkExists];
+    return (
+      <TableCell>
+        <span className="innertd">
+          {isArray ? (
+            <React.Fragment>
+              {column.value.map((x, index) => (
+                <React.Fragment key={index}>
+                  {myRow[column.linkExists][index] ? (
+                    <Link
+                      to={`/${data.reportID}/dataset/${linkDataSet[index]}/id/${x}`}
+                    >
+                      {x}
+                    </Link>
+                  ) : (
+                    x
+                  )}
+                  {index + 1 < column.value.length ? ", " : ""}
+                </React.Fragment>
+              ))}
+            </React.Fragment>
+          ) : isThereASingleDataSet ? (
+            <Link
+              to={`/${data.reportID}/dataset/${linkDataSet}/id/${column.value}`}
+            >
+              {column.value}
+            </Link>
+          ) : (
+            column.value
+          )}
+        </span>
+      </TableCell>
+    );
   };
 
   // START OLD COMPONENT DID MOUNT
@@ -430,29 +513,32 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
           </DataTableHead>
           {shownRecords.length > 0 ? (
             <React.Fragment>
-              {shownRecords.map((row, key) => (
+              {shownRecords.map((row, index) => (
                 <TableRow
-                  key={key}
+                  key={`row_${index}`}
                   columns={visibleFields.length}
                   columnWidths={columnWidths}
                 >
-                  {row.row.map((column, key) => {
+                  {row.row.map((column, indexx) => {
+                    // console.log(column);
                     return column.fieldType &&
                       (column.fieldType === "link" ||
                         column.fieldType === "imageLink") ? (
-                      <TableCell key={key}>
-                        <span className="innertd">
-                          <Link
-                            to={`/${data.reportID}/dataset/${data.id}/id/${row.id}`}
-                          >
-                            {typeof column.value === "object"
-                              ? column.value.join(", ")
-                              : column.value}
-                          </Link>
-                        </span>
-                      </TableCell>
+                      <LinkCell key={indexx} rowId={row.id} column={column} />
+                    ) : column.fieldType === "filename" ? (
+                      <FilenameCell
+                        key={indexx}
+                        column={column}
+                        rowId={row.id}
+                      />
+                    ) : column.fieldLink ? (
+                      <LinkingCell
+                        key={indexx}
+                        column={column}
+                        rowId={row.id}
+                      />
                     ) : (
-                      <TableCell key={key}>
+                      <TableCell key={indexx}>
                         <span className="innertd">
                           {typeof column.value === "object"
                             ? column.value.join(", ")
