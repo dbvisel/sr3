@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 // TODO: Do we need a fallback for when Grid doesn't work?
 
-export const TopNav = styled.nav`
-  position: sticky;
-  top: 0;
+export const TableNav = styled.nav`
+  position: ${(props) => (props.bottom ? "initial" : "sticky")};
+  top: ${(props) => (props.bottom ? "intitial" : 0)};
   background-color: var(--white);
   padding-bottom: 1em;
   z-index: 2;

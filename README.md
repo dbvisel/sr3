@@ -138,9 +138,6 @@ There are also optional values, some of which are more important than others:
  - `canBeArray`: Boolean, default false. If this is true, the values for this field can be an array. Used for links.
  - `fieldLink`: boolean. If this is true, the field becomes a link to the data object page.
  - `fieldNameShown`: string, the name of a field: for links, this was the name of the field that should be shown instead of whatever the fieldName was. 
-
-Some aren't really implemented in this version, but should be soon:
-
  - `fieldTransform`: string, the name of a function to transform a string – values being used are "toLowerCase", "titleCase". If this was set to "titleCase", for example, all data values of that field would be transformed to title case.
 
 
@@ -152,18 +149,12 @@ It should be noted that this is all very loosely typed – we're working on the 
 
 It should be noted that a lot of the datasets started their life as a spreadsheet of some kind; I went through and added metadata and a _fields_ section; set the header row to the `fieldKey`s; and then ran a CSV2JSON (there are command-line versions of these as well as online versions; almost anything will be fine for our purposes) and put the resulting JSON as the `data` object.
 
-
 # Improvements:
 
 ## Methodology
 
  * Move all of this to TypeScript, especially DataSet and DataObjectElement are a mess.
    * first step: get all this using prop-types
-
-##  Datasets:
-
-  * thumbnails + image records (put these back in)
-  * links to object pages (more of them)
 
 ## Text pages:
 

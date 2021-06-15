@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import cloneObject from "./../../modules/cloneObject";
 import {
-  TopNav,
+  TableNav,
   DatasetHeader,
   DataSetH1,
   FilterP,
@@ -21,17 +21,22 @@ import {
   TdError,
 } from "./elements";
 
-// props:
-// data: the data
-// hideHeader: if true, hide the big header at the top of the page. Used by inline data sets
-// perPage: number of rows to show perpage
-// inLine: true if this is inline
-
-// style this differently if props.inLine?
+/** props:
+ * data: the data
+ * hideHeader: if true, hide the big header at the top of the page. Used by inline data sets
+ * perPage: number of rows to show perpage
+ * inLine: true if this is inline
+ * */
 
 // TODO: make tables more responsive: https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html
 // https://webup.org/blog/sticky-header-table-with-react-hooks/
+// TODO: split this up into smaller components – this is a mess!
 
+const toTitleCase = (text) =>
+  text.replace(
+    /\w\S*/g,
+    (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
+  );
 const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const [startPoint, setStartPoint] = React.useState(0);
   const rowsPerPage = perPage || 50;
@@ -178,6 +183,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
     setShownRecords(newShownRecords);
     setTotalLength(newFilteredData.length);
   };
+
   const getSuperheaders = () => {
     // this returns a TR with superheaders in it, if they exist
 
@@ -249,6 +255,11 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
     );
   };
 
+  FilenameCell.propTypes = {
+    column: PropTypes.object,
+    rowId: PropTypes.string,
+  };
+
   const LinkingCell = ({ column, rowId }) => {
     const myPageUrl = `/${data.reportID}/dataset/${data.id}/id/${rowId}`;
     return (
@@ -262,6 +273,11 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
         </span>
       </TableCell>
     );
+  };
+
+  LinkingCell.propTypes = {
+    column: PropTypes.object,
+    rowId: PropTypes.string,
   };
 
   const LinkCell = ({ column, rowId }) => {
@@ -303,6 +319,11 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
         </span>
       </TableCell>
     );
+  };
+
+  LinkCell.propTypes = {
+    column: PropTypes.object,
+    rowId: PropTypes.string,
   };
 
   // START OLD COMPONENT DID MOUNT
@@ -399,7 +420,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
           <DataSetH1 isInLine={inLine}>Dataset: {data.name}</DataSetH1>
         </DatasetHeader>
       )}
-      <TopNav>
+      <TableNav>
         <FilterP>
           <p>
             Showing {filteredData.length} of {outputData.length} total records
@@ -434,7 +455,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
             </Arrow>
           </PaginationP>
         ) : null}
-      </TopNav>
+      </TableNav>
       <DataTableWrapper>
         <DataTable ref={tableRef}>
           <DataTableHead ref={tableHeadRef}>
@@ -519,6 +540,16 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                 >
                   {row.row.map((column, indexx) => {
                     // console.log(column);
+                    const cleanedValue =
+                      typeof column.value === "object"
+                        ? column.value
+                        : column.fieldTransform
+                        ? column.fieldTransform === "toLowerCase"
+                          ? String(column.value).toLowerCase()
+                          : column.fieldTransform === "titleCase"
+                          ? toTitleCase(String(column.value))
+                          : column.value
+                        : column.value;
                     return column.fieldType &&
                       (column.fieldType === "link" ||
                         column.fieldType === "imageLink") ? (
@@ -538,9 +569,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                     ) : (
                       <TableCell key={indexx}>
                         <span className="innertd">
-                          {typeof column.value === "object"
-                            ? column.value.join(", ")
-                            : column.value}
+                          {typeof cleanedValue === "object"
+                            ? cleanedValue.join(", ")
+                            : cleanedValue}
                         </span>
                       </TableCell>
                     );
@@ -561,8 +592,120 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
               </TableRow>
             </React.Fragment>
           )}
+          {inLine ? null : (
+            <DataTableHead ref={tableHeadRef}>
+              {getSuperheaders()}
+              <TableRow
+                columns={visibleFields.length}
+                columnWidths={columnWidths}
+                className={initialized ? "" : "initializing"}
+              >
+                {visibleFields.map((entry, key) => {
+                  return entry.fieldValues ? (
+                    <THNoWrap
+                      key={key}
+                      hideHeaders={hideHeaders}
+                      superFields={superFields}
+                    >
+                      <span className="innertd">
+                        <TableSelect
+                          id={entry.fieldKey}
+                          onChange={(event) => {
+                            filterCategory(event.target.id, event.target.value);
+                          }}
+                        >
+                          <option defaultValue>
+                            {entry.fieldNameShort
+                              ? typeof entry.fieldUnit === "string"
+                                ? `${entry.fieldNameShort} (${entry.fieldUnit})`
+                                : entry.fieldNameShort
+                              : typeof entry.fieldUnit === "string"
+                              ? `${entry.fieldName} (${entry.fieldUnit})`
+                              : entry.fieldName}
+                          </option>
+                          {entry.fieldValues.map((value, key2) => (
+                            <option key={key2} value={value}>
+                              {value}
+                            </option>
+                          ))}
+                        </TableSelect>
+                      </span>
+                    </THNoWrap>
+                  ) : (
+                    <THNoWrap
+                      key={`bottom_${key}`}
+                      hideHeaders={hideHeaders}
+                      superFields={superFields}
+                      onClick={() => changeSortBy(entry.fieldKey)}
+                    >
+                      <span className="innertd">
+                        {entry.fieldNameShort
+                          ? typeof entry.fieldUnit === "string"
+                            ? `${entry.fieldNameShort} (${entry.fieldUnit})`
+                            : entry.fieldNameShort
+                          : typeof entry.fieldUnit === "string"
+                          ? `${entry.fieldName} (${entry.fieldUnit})`
+                          : entry.fieldName}
+                        {sortBy ? (
+                          sortBy[entry.fieldKey] ? (
+                            sortBy[entry.fieldKey] > 0 ? (
+                              <SortBy>↑</SortBy>
+                            ) : (
+                              <SortBy>↓</SortBy>
+                            )
+                          ) : (
+                            <SortBy>↕</SortBy>
+                          )
+                        ) : (
+                          <SortBy>↕</SortBy>
+                        )}
+                      </span>
+                    </THNoWrap>
+                  );
+                })}
+              </TableRow>
+            </DataTableHead>
+          )}
         </DataTable>
       </DataTableWrapper>
+      {inLine ? null : (
+        <TableNav bottom>
+          <FilterP>
+            <p>
+              Showing {filteredData.length} of {outputData.length} total records
+              in this dataset.{" "}
+              <StrongLink onClick={unfilterDataset}>See all.</StrongLink>
+            </p>
+            <form onSubmit={filterDataset}>
+              <input
+                type="text"
+                id={`bottomsearchfield_${data.id}`}
+                placeholder="Filter this dataset"
+              ></input>
+              <input type="submit" value="Filter" />
+            </form>
+          </FilterP>
+          {paginate ? (
+            <PaginationP>
+              <Arrow onClick={prevPage} grayOut={startPoint === 0}>
+                ←
+              </Arrow>
+              &nbsp;&nbsp;Page {startPoint / rowsPerPage + 1}/
+              {Math.ceil(totalLength / rowsPerPage)}
+              &nbsp;&nbsp;
+              <Arrow
+                onClick={nextPage}
+                grayOut={
+                  startPoint / rowsPerPage + 1 ===
+                  Math.ceil(totalLength / rowsPerPage)
+                }
+              >
+                →
+              </Arrow>
+            </PaginationP>
+          ) : null}
+        </TableNav>
+      )}
     </div>
   ) : null;
 };

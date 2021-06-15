@@ -25,7 +25,6 @@ const makeDataView = (inputData, report) => {
     );
     outputData.push({ superField: superField, data: pushArray });
   }
-  // console.log(outputData);
   return (
     <div>
       {outputData.map((vvalue, iindex) => {
@@ -47,6 +46,8 @@ const makeDataView = (inputData, report) => {
                               {index < value.link.length ? ", " : ""}
                             </React.Fragment>
                           ))
+                        ) : value.fieldKey === "imageLink" && value.link ? ( //NOTE: we can't actually get the image URL from the link data
+                          <Link to={value.link}>{value.value}</Link>
                         ) : (
                           <Link to={value.link}>{value.value}</Link>
                         )
@@ -103,29 +104,29 @@ const makeOutputData = (report, fieldData, objectData) => {
   const outputData = [];
   for (let i = 0; i < fieldData.length; i++) {
     let valuePair = fieldData[i];
-    let thisLink = null;
-    if (
-      fieldData[i].fieldType === "imageLink" ||
-      fieldData[i].fieldType === "link"
-    ) {
-      let linkId = fieldData[i].value;
-      let thisImageSetField = fieldData[i].linkToDataSet;
-      for (let j = 0; j < fieldData.length; j++) {
-        if (fieldData[j].fieldKey === thisImageSetField) {
-          if (typeof fieldData[j].value === "object") {
-            // console.log(fieldData[j].value, linkId);
-            thisLink = fieldData[j].value.map(
-              (thisValue, index) =>
-                `/${report}/dataset/${thisValue}/id/${linkId[index]}`
-            );
-          } else {
-            thisLink = `/${report}/dataset/${fieldData[j].value}/id/${linkId}`;
+    if (objectData[valuePair.fieldKey]) {
+      valuePair.value = objectData[valuePair.fieldKey];
+      let thisLink = null;
+      if (
+        fieldData[i].fieldType === "link" ||
+        fieldData[i].fieldType === "imageLink"
+      ) {
+        let linkId = fieldData[i].value;
+        const thisImageSetField = fieldData[i].linkToDataSet;
+        for (let j = 0; j < fieldData.length; j++) {
+          if (fieldData[j].fieldKey === thisImageSetField) {
+            if (typeof fieldData[j].value === "object") {
+              // console.log(fieldData[j].value, linkId);
+              thisLink = fieldData[j].value.map(
+                (thisValue, index) =>
+                  `/${report}/dataset/${thisValue}/id/${linkId[index]}`
+              );
+            } else {
+              thisLink = `/${report}/dataset/${fieldData[j].value}/id/${linkId}`;
+            }
           }
         }
       }
-    }
-    if (objectData[valuePair.fieldKey]) {
-      valuePair.value = objectData[valuePair.fieldKey];
       if (thisLink) {
         valuePair.link = thisLink;
       }
