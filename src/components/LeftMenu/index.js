@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { MenuWrapper } from "./elements";
 
@@ -86,3 +87,8 @@ const LeftMenu = ({ menuData, thisPage }) => {
 };
 
 export default LeftMenu;
+
+LeftMenu.propTypes = {
+  menuData: PropTypes.object.isRequired,
+  thisPage: PropTypes.string,
+};

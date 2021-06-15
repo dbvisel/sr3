@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import logo from "./logo.png";
 import { HeaderDiv, LogoBlock } from "./elements";
@@ -24,3 +25,9 @@ const Header = ({ siteTitle, reportTitle, reportID }) => (
 );
 
 export default Header;
+
+Header.propTypes = {
+  siteTitle: PropTypes.string.isRequired,
+  reportTitle: PropTypes.string.isRequired,
+  repordID: PropTypes.string,
+};

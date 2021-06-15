@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { HeaderSection } from "./elements";
 
-const ReportHeader = ({ project, title, subtitle, author, date }) => (
+const ReportHeader = ({ title, subtitle, author, date }) => (
   <HeaderSection>
     {/*<h1>
       {project}–{title}
@@ -21,3 +22,10 @@ const ReportHeader = ({ project, title, subtitle, author, date }) => (
 );
 
 export default ReportHeader;
+
+ReportHeader.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  author: PropTypes.string,
+  date: PropTypes.string,
+};

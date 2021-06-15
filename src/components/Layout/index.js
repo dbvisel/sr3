@@ -1,5 +1,5 @@
 import React from "react";
-// import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
 import Header from "./../Header/";
 import LeftMenu from "./../LeftMenu/";
@@ -50,3 +50,12 @@ const Layout = ({ children, menu, thisPage }) => {
 };
 
 export default Layout;
+
+Layout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+  menu: PropTypes.object.isRequired,
+  thisPage: PropTypes.string,
+};

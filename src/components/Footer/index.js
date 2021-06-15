@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
 import MDXRenderer from "gatsby-mdx/mdx-renderer";
 import { FooterDiv } from "./elements";
@@ -47,3 +48,7 @@ const Footer = ({ reportID }) => {
 };
 
 export default Footer;
+
+Footer.propTypes = {
+  reportID: PropTypes.string,
+};

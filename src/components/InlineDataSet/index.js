@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import DataSet from "./../Dataset/";
 import { DataSetContext } from "./../Context/";
 
@@ -19,7 +20,7 @@ const InlineDataSet = ({ id, perPage, hideHeaders }) => (
           <DataSet
             data={myDataSet}
             hideHeaders={Boolean(hideHeaders)}
-            perPage={parseInt(perPage, 10)}
+            perPage={parseInt(perPage, 10) || 50}
             inLine={true}
           />
         </div>
@@ -29,3 +30,9 @@ const InlineDataSet = ({ id, perPage, hideHeaders }) => (
 );
 
 export default InlineDataSet;
+
+InlineDataSet.propTypes = {
+  id: PropTypes.string.isRequired,
+  perPage: PropTypes.number,
+  hideHeaders: PropTypes.bool,
+};

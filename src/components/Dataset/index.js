@@ -256,8 +256,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   };
 
   FilenameCell.propTypes = {
-    column: PropTypes.object,
-    rowId: PropTypes.string,
+    column: PropTypes.object.isRequired,
+    rowId: PropTypes.string.isRequired,
   };
 
   const LinkingCell = ({ column, rowId }) => {
@@ -276,8 +276,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   };
 
   LinkingCell.propTypes = {
-    column: PropTypes.object,
-    rowId: PropTypes.string,
+    column: PropTypes.object.isRequired,
+    rowId: PropTypes.string.isRequired,
   };
 
   const LinkCell = ({ column, rowId }) => {
@@ -322,8 +322,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   };
 
   LinkCell.propTypes = {
-    column: PropTypes.object,
-    rowId: PropTypes.string,
+    column: PropTypes.object.isRequired,
+    rowId: PropTypes.string.isRequired,
   };
 
   // START OLD COMPONENT DID MOUNT
@@ -713,7 +713,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
 export default DataSet;
 
 DataSet.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.object.isRequired,
   perPage: PropTypes.number,
   inline: PropTypes.bool,
   hideHeaders: PropTypes.bool,

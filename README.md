@@ -154,7 +154,6 @@ It should be noted that a lot of the datasets started their life as a spreadshee
 ## Methodology
 
  * Move all of this to TypeScript, especially DataSet and DataObjectElement are a mess.
-   * first step: get all this using prop-types
 
 ## Text pages:
 

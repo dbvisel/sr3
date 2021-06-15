@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { withPrefix } from "gatsby";
 import { ReportContext } from "./../Context/";
 import { FigureDiv } from "./elements";
@@ -87,3 +88,13 @@ const Figure = ({ number, caption, credit, img }) => {
 };
 
 export default Figure;
+
+Figure.propTypes = {
+  number: PropTypes.string,
+  caption: PropTypes.string,
+  credit: PropTypes.string,
+  img: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]),
+};

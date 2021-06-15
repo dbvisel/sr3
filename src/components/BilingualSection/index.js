@@ -57,6 +57,6 @@ const BilingualSection = ({ languages, data }) => {
 export default BilingualSection;
 
 BilingualSection.propTypes = {
-  data: PropTypes.object,
-  languages: PropTypes.array,
+  data: PropTypes.arrayOf(PropTypes.string),
+  languages: PropTypes.arrayOf(PropTypes.string),
 };

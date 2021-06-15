@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { withPrefix } from "gatsby";
 import {
@@ -139,7 +140,7 @@ const makeOutputData = (report, fieldData, objectData) => {
 };
 
 const DataObjectElement = ({ report, fieldData, objectData }) => {
-  // console.log(objectData, fieldData);
+  // console.log(report, objectData, fieldData);
   const [ready, setReady] = React.useState(false);
   React.useEffect(() => {
     // console.log("FieldData changed!");
@@ -150,3 +151,9 @@ const DataObjectElement = ({ report, fieldData, objectData }) => {
   return ready ? makeDataView(outputData, report) : null;
 };
 export default DataObjectElement;
+
+DataObjectElement.propTypes = {
+  report: PropTypes.string.isRequired,
+  objectData: PropTypes.object,
+  fieldData: PropTypes.arrayOf(PropTypes.object),
+};
