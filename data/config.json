@@ -5,7 +5,7 @@
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",
 		"lastUpdated": "27 November 2021",
-		"makeObjectPages": true,
+		"makeObjectPages": false,
 		"notes": "Make sure makeObjectReports is set to true for production. Any report ID in excluded won't appear.",
 		"possibleReports": [
 			{
@@ -15,10 +15,12 @@
 			{
 				"id": "dieng",
 				"name": "Dieng Plateau"
-			}, {
+			}, 
+			{
 				"id": "lingga",
 				"name": "The Lingga Wreck"
-			}, {
+			}, 
+			{
 				"id": "msatp",
 				"name": "MSATP"
 			},
@@ -28,9 +30,85 @@
 			},
 			{
 				"id":"fortcanning", 
-				"name":"Fort Canning"
-				}
-			],
+				"name":"Fort Canning",
+				"airtableDatasets":[
+					{
+						"baseId": "apphXa3ppciAux1Wi",
+						"tableName": "Artefacts"
+					},
+					{
+						"baseId": "apphXa3ppciAux1Wi",
+						"tableName": "Salvage Data by Square"
+					},
+					{
+						"baseId": "apphXa3ppciAux1Wi",
+						"tableName": "Salvage Data totals"
+					}
+				]
+			},
+			{
+				"id":"spicegarden", 
+				"name":"Spice Garden",
+				"airtableDatasets":[
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "Tempered Earthenware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "Fine Paste Earthenware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "Mercury Jar"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "Buff Stoneware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "Greenware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "Blue and White"
+					},
+					{
+						"baseId":"app8fcxCwWgy3nhPg", 
+						"tableName":"14th century small finds"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "19th-20th C Porcelain"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "19th-20th C Stoneware"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "19th-20th C Glass"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "Construction Materials"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "Organic"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "Metal"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "Stone"
+					}
+				]
+			}
+		],
 		"excludedReports": ["zzz"]
 	}
 }

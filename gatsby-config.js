@@ -1,3 +1,25 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}` || `.env.development`,
+});
+
+const datasetConfig = require("./data/config.json");
+
+const getTheAirtableData = (data) => {
+  // This loops through the main config and gets all the airtable data out.
+  // Note that this assumes that all Airtable bases are using the same API key.
+  let outList = [];
+  for (let i = 0; i < data.possibleReports.length; i++) {
+    if (data.possibleReports[i].airtableDatasets) {
+      // check to make sure that this ID is not in the list of excluded reports:
+      if (data.excludedReports.indexOf(data.possibleReports[i].id) < 0) {
+        // add these airtable table datasets to the list
+        outList = outList.concat(data.possibleReports[i].airtableDatasets);
+      }
+    }
+  }
+  return outList;
+};
+
 module.exports = {
   pathPrefix: `/sitereports`,
   siteMetadata: {
@@ -9,17 +31,22 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     // `gatsby-plugin-force-trailing-slashes`,
     {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        concurrency: 5,
+        tables: getTheAirtableData(datasetConfig.project),
+      },
+    },
+    {
       resolve: `gatsby-plugin-notifications`,
       options: { sound: "Glass", toast: true },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // The property ID; the tracking code won't be generated without it
         trackingId: "UA-35006494-3",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
-        // Setting this parameter is optional
       },
     },
     {

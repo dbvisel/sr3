@@ -1,0 +1,38 @@
+{
+	"report": {
+		"id": "spicegarden",
+		"title": "The Fort Canning Spice Garden Site Report",
+		"author": "Goh Geok Yian (Nanyang Technological University Singapore) & John Miksic (National University of Singapore & Nanyang Technological University Singapore)",
+		"lastUpdated":"21 June 2020",
+		"texts": 
+		[
+			{
+				"id": "description",
+				"name": "Description"
+			},
+			{
+				"id": "excavation",
+				"name": "Excavation Log"
+			},
+			{
+				"id": "summary",
+				"name": "Summary"
+			},
+			{
+				"id":"statisticalanalysisbyunit", 
+				"name":"Statistical Analysis by Units"
+			},
+			{
+				"id":"statisticalanalysisartifacts",
+				"name":"Statistical Analysis of the Artifacts"
+			},
+			{"id":"uniqueartifacts", "name": "Unique Artifacts"},
+			{"id":"conclusion", "name": "Conclusion"},
+			{"id":"specialacknowledgements","name":"Special Acknowledgements"}
+		],
+		"dataSets": 
+		[
+
+		]	
+	}
+}

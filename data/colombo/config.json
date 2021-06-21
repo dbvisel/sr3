@@ -34,7 +34,8 @@
 			{
 				"id": "earthenwareFinePaste",
 				"name": "Fine paste",
-				"grouping": "Earthenware"
+				"grouping": "Earthenware",
+				"isAirtable": false
 			},
 			{
 				"id": "earthenwareTempered",

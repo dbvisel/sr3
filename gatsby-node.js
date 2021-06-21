@@ -7,6 +7,31 @@ const fs = require("fs");
 
 // TODO: figure out how to make this work with Airtable
 
+/* query we need is something like this:
+
+allAirtable {
+	group(field: table) {
+		fieldValue
+		nodes {
+			data {
+
+which pulls in:
+
+data { dallAirtable { group {
+	fieldValue: "Fine Past Earthenware"
+	nodes: [
+		{
+			data: {
+				...
+			}
+		}
+	]
+}}}
+
+which could be separated out by tablename which is goign to fieldValue.
+
+*/
+
 const loopTheConfigs = function(reportID, configData) {
   if (reportID) {
     for (let i = 0; i < configData.length; i++) {
@@ -64,6 +89,7 @@ exports.createPages = ({ actions, graphql }) => {
             dataSets {
               id
               name
+              isAirtable
               grouping
             }
             texts {
@@ -102,9 +128,16 @@ exports.createPages = ({ actions, graphql }) => {
           let myJsonPath = `./data/${reportID}/datasets/${dataSet.id}.json`;
           let myPath = `${reportID}/dataset/${dataSet.id}`;
           console.log(myJsonPath, "=>", myPath);
-          const pageData = JSON.parse(
-            fs.readFileSync(myJsonPath, { encoding: "utf-8" })
-          );
+          let pageData;
+          // check if the report is local
+          if (!node.report.dataSets.isAirtable) {
+            pageData = JSON.parse(
+              fs.readFileSync(myJsonPath, { encoding: "utf-8" })
+            );
+          } else {
+            // TODO: if we are here, the data is coming from Airtable.
+            // assemble it from the GraphQL and the stub.
+          }
           let thisFieldSet = pageData.dataset.fields;
           createPage({
             path: myPath,

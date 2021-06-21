@@ -58,6 +58,8 @@ Each report has its own _config.json_ and _index.mdx_ and can have its own _foot
 
 There are two other required files for the project, `/data/index.mdx` and `/data/footer.mdx`. These are MDX files. _index.mdx_ needs to have _path_ set to "project"; _footer.mdx_ needs to have _report_ set to "project". _index.mdx_ is what's shown on the front page of the site. _footer.mdx_ is the default footer for the site (which can be overwritten by individual report's footers, if they have one).
 
+[TODO: explain how Airtable datasets work with this. And maybe Google Docs?]
+
 ## Report-level configuration
 
 You can theoretically have as many reports as you like. By convention, each report should live in its own directory inside of _data_ with the same filename as the ID listed in _possibleReports_ in the project _config.json_. So the Singapore Cricket Club is given the ID _scc_ in the main _config.json_, the directory should be _/data/scc_. It's worth noting that this doesn't actually impact function, but it helps keep things organized; it is needed for static files in, for example, _/static/scc_ – if "scc" is changed there, the images won't be found.
@@ -187,8 +189,9 @@ Maybe use &lt;datalist> rather than &lt;select> in table headers? Does that make
 
 ## REMEMBER
 
- - Environment variables: none at the moment!
+ - Environment variables: just the Airtable API key (AIRTABLE_API_KEY)
  - This is using Git/Netlify LFS, as described here: https://css-tricks.com/getting-netlify-large-media-going/
   If there's trouble, try source /Users/dan/.netlify/helper/path.bash.inc
   (does this break everything?)
  - Keep the _.prettierignore_ in there, otherwise MDX files can get screwed up on save. 
+ - Google Docs: https://github.com/cedricdelpoux/gatsby-source-google-docs

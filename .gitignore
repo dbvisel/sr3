@@ -92,3 +92,6 @@ public/
 
 .netlify
 .vscode
+
+.env.development
+.env.production
