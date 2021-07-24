@@ -19,6 +19,7 @@ const Layout = ({ children, menu, thisPage }) => {
           lastUpdated
           projectTitle
           projectAuthor
+          excludedReports
           possibleReports {
             name
             id

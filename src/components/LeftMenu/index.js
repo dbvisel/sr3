@@ -6,11 +6,12 @@ import { MenuWrapper } from "./elements";
 // TODO: This doesn't actually take account of excluded reports, does it?
 
 const LeftMenu = ({ menuData, thisPage }) => {
-  const { id, texts, dataSets, possibleReports } = menuData;
+  const { id, texts, dataSets, possibleReports, excludedReports } = menuData;
   // console.log(possibleReports, excludedReports);
-  // const includedReports = excludedReports.length
-  //   ? possibleReports.filter((x) => excludedReports.indexOf(x.id) < 0)
-  //   : possibleReports;
+  const includedReports =
+    excludedReports && excludedReports.length
+      ? possibleReports.filter((x) => excludedReports.indexOf(x.id) < 0)
+      : possibleReports;
   let categories = [null];
   if (dataSets) {
     for (let i = 0; i < dataSets.length; i++) {
@@ -26,7 +27,7 @@ const LeftMenu = ({ menuData, thisPage }) => {
       {id === "project" ? (
         <React.Fragment>
           <h2>Reports:</h2>
-          {possibleReports.map((x, index) => (
+          {includedReports.map((x, index) => (
             <h4 key={index}>
               <Link to={`/${x.id}/`}>{x.name}</Link>
             </h4>

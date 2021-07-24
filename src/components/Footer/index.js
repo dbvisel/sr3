@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql, useStaticQuery } from "gatsby";
-import MDXRenderer from "gatsby-mdx/mdx-renderer";
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import { FooterDiv } from "./elements";
 
 //TODO: put in a static query to get footers on a per-site basis (or feed this through layout)
@@ -10,13 +10,13 @@ import { FooterDiv } from "./elements";
 const getFooter = function(data, thisReport) {
   for (let i = 0; i < data.length; i++) {
     if (data[i].frontmatter.report === thisReport) {
-      return data[i].code.body;
+      return data[i].body;
     }
   }
   // if no footer file, return the project footer
   for (let i = 0; i < data.length; i++) {
     if (data[i].frontmatter.report === "project") {
-      return data[i].code.body;
+      return data[i].body;
     }
   }
   return null;
@@ -31,9 +31,7 @@ const Footer = ({ reportID }) => {
             frontmatter {
               report
             }
-            code {
-              body
-            }
+          	body
           }
         }
       }

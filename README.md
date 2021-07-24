@@ -185,7 +185,6 @@ Maybe use &lt;datalist> rather than &lt;select> in table headers? Does that make
 
  - Slashes at the ends of paths. Would be good to implement gatsby-plugin-force-trailing-slashes, though this breaks the build and will take some time to get right.
  - Should add a site map
- - Probably upgrade to Gatsby 3?
 
 ## REMEMBER
 

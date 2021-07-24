@@ -3,12 +3,12 @@ import { graphql } from "gatsby";
 import Layout from "./../components/Layout/";
 import { DataSetContext } from "./../components/Context/";
 import TextWrapper from "./../components/TextWrapper/";
-import MDXRenderer from "gatsby-mdx/mdx-renderer";
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import ReportHeader from "./../components/ReportHeader";
 
 const TextPage = ({ data, pageContext }) => {
   // console.log(data, pageContext);
-  const { frontmatter, code } = data.mdx;
+  const { frontmatter, body } = data.mdx;
   const { reportData, dataSets } = pageContext;
   const { title, subtitle } = frontmatter;
   // console.log(reportData);
@@ -26,7 +26,7 @@ const TextPage = ({ data, pageContext }) => {
       />
       <DataSetContext.Provider value={{ dataSets }}>
         <TextWrapper>
-          <MDXRenderer>{code.body}</MDXRenderer>
+          <MDXRenderer>{body}</MDXRenderer>
         </TextWrapper>
       </DataSetContext.Provider>
     </Layout>
@@ -44,9 +44,7 @@ export const pageQuery = graphql`
         author
         date
       }
-      code {
-        body
-      }
+			body
     }
   }
 `;

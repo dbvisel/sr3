@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import Layout from "../components/Layout/";
-import MDXRenderer from "gatsby-mdx/mdx-renderer";
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import TextWrapper from "../components/TextWrapper/";
 
 const IndexPage = () => (
@@ -11,9 +11,7 @@ const IndexPage = () => (
         mdx(frontmatter: { path: { eq: "project" } }) {
           id
           fileAbsolutePath
-          code {
-            body
-          }
+          body
         }
       }
     `}
@@ -21,7 +19,7 @@ const IndexPage = () => (
       return (
         <Layout menu={{}}>
           <TextWrapper>
-            <MDXRenderer>{data.mdx.code.body}</MDXRenderer>
+            <MDXRenderer>{data.mdx.body}</MDXRenderer>
           </TextWrapper>
         </Layout>
       );
