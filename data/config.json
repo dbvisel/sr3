@@ -109,6 +109,6 @@
 				]
 			}
 		],
-		"excludedReports": ["spicegarden","fortcanning"]
+		"excludedReports": ["dummy"		]
 	}
 }
