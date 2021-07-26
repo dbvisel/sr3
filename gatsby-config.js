@@ -21,12 +21,15 @@ const getTheAirtableData = (data) => {
 };
 
 module.exports = {
-  pathPrefix: `/sitereports`,
+  pathPrefix: process.env.NODE_ENV === "production" ? `/sitereports` : "",
   siteMetadata: {
     title: `NUS Press Site Reports`,
     description: `NUS Press Site Reports`,
     author: `Dan Visel <dbvisel@gmail.com>`,
-		siteUrl: process.env.NODE_ENV === "production" ? `http://epress.nus.edu.sg/sitereports` : "https://sitereports.netlify.app"
+    siteUrl:
+      process.env.NODE_ENV === "production"
+        ? `http://epress.nus.edu.sg/sitereports`
+        : "https://sitereports.netlify.app",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -59,7 +62,7 @@ module.exports = {
         // ],
       },
     },
-		`gatsby-plugin-sitemap`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-transformer-json`,
       options: {
@@ -82,8 +85,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
- `gatsby-plugin-styled-components`,
-		`gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
