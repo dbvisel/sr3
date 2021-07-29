@@ -5,34 +5,9 @@ const fs = require("fs");
 
 // in master config.js, set "makeReport" to true to make pages
 
-// TODO: figure out how to make this work with Airtable
+// const deNull = (x, changeTo = false) => (x === null ? changeTo : x);
 
-/* query we need is something like this:
-
-allAirtable {
-	group(field: table) {
-		fieldValue
-		nodes {
-			data {
-
-which pulls in:
-
-data { dallAirtable { group {
-	fieldValue: "Fine Past Earthenware"
-	nodes: [
-		{
-			data: {
-				...
-			}
-		}
-	]
-}}}
-
-which could be separated out by tablename which is goign to fieldValue.
-
-*/
-
-const loopTheConfigs = function(reportID, configData) {
+const loopTheConfigs = function (reportID, configData) {
   if (reportID) {
     for (let i = 0; i < configData.length; i++) {
       if (configData[i].report !== null) {
@@ -44,6 +19,57 @@ const loopTheConfigs = function(reportID, configData) {
   }
   // console.log("no config found!", reportID);
   return null;
+};
+
+const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
+  console.log("Making airtable dataset");
+  // 1. get field data from data
+  const myName = data.airtableName || data.name;
+  // 2. select relevant part of allAirtableData
+  let myAirtableData;
+  for (let i = 0; i < allAirtableData.length; i++) {
+    if (allAirtableData[i].fieldValue === myName) {
+      myAirtableData = allAirtableData[i];
+    }
+  }
+  const myFields = data.fields
+    .filter((x) => x.fieldKey && x.fieldName)
+    .map((x) => {
+      return {
+        fieldKey: x.fieldKey,
+        fieldName: x.fieldName,
+        fieldHidden: Boolean(x.fieldHidden), // This is because this was coming in as null
+      };
+    });
+  const myRawData = myAirtableData.nodes.map((x) => x.data);
+  // 3. build data from field data looping through selected allAirtableData
+  let outputData = [];
+  for (let i = 0; i < myRawData.length; i++) {
+    let thisRecord = {};
+    for (let j = 0; j < myFields.length; j++) {
+      thisRecord[myFields[j].fieldKey] =
+        myRawData[i][myFields[j].fieldKey] || "";
+    }
+    outputData[outputData.length] = thisRecord;
+  }
+  const mySort =
+    data.defaultSort || myFields.length ? myFields[0].fieldKey : "";
+  return {
+    reportID: reportID,
+    defaultSort: mySort,
+    name: data.name,
+    id: data.id,
+    data: outputData.sort((a, b) => {
+      if (a[mySort] > b[mySort]) {
+        return 1;
+      }
+      if (a[mySort] < b[mySort]) {
+        return -1;
+      }
+      return 0;
+    }),
+    fields: myFields,
+  };
 };
 
 exports.createPages = ({ actions, graphql }) => {
@@ -89,12 +115,77 @@ exports.createPages = ({ actions, graphql }) => {
             dataSets {
               id
               name
+              airtableName
               isAirtable
               grouping
+              defaultSort
+              fields {
+                fieldKey
+                fieldName
+                fieldHidden
+              }
             }
             texts {
               id
               name
+            }
+          }
+        }
+      }
+      allAirtableData: allAirtable {
+        group(field: table) {
+          fieldValue
+          nodes {
+            data {
+              Hidden_order
+              Type
+              Total_pieces
+              Total_weight
+              FTC_Salvage__2018_2019__pieces
+              FTCSG_Pandan_Bed_pieces
+              No_
+              Date_Recorded
+              Image_Taken_
+              Image_File_Name
+              Remarks
+              Site
+              Lot
+              Depth
+              Quantities_in_Weight
+              Quantities_in_number_of_sherds
+              Vessel_Information
+              Type_of_Material
+              Period
+              Dimensions_of_sherd__in_cm__1
+              Dimensions_of_sherd__in_cm__2
+              Dimensions_of_sherd__in_cm__3
+              Dimensions_of_sherd__in_cm__4
+              Dimensions_of_sherd__in_cm__5
+              Artefact_Number
+              Site
+              Square_Unit
+              Lot
+              Depth
+              Distance_from_North_South
+              Distance_from_East_West
+              Date_Excavated
+              Type_of_Material
+              Type_of_Ware
+              Length
+              Width
+              Thickness
+              Diameter
+              Diameter__Ext_
+              Foot_Height_Thickness
+              Number_of_Pieces
+              Weight
+              Vessel_Type
+              Vessel_Part
+              Decoration
+              Color__Munsell_Chart_
+              Period
+              Provenance
+              Date_Recorded
             }
           }
         }
@@ -107,6 +198,7 @@ exports.createPages = ({ actions, graphql }) => {
     // console.log(result.data);
     const masterData = result.data.project.project;
     let textFiles = result.data.textFiles.edges;
+    const allAirtableData = result.data.allAirtableData.group;
     let reportData = result.data.reportData.nodes.filter(
       (x) => x.report !== null
     );
@@ -130,13 +222,21 @@ exports.createPages = ({ actions, graphql }) => {
           console.log(myJsonPath, "=>", myPath);
           let pageData;
           // check if the report is local
-          if (!node.report.dataSets.isAirtable) {
+          if (!dataSet.isAirtable) {
             pageData = JSON.parse(
               fs.readFileSync(myJsonPath, { encoding: "utf-8" })
             );
           } else {
+            console.log("Airtable dataset!");
             // TODO: if we are here, the data is coming from Airtable.
             // assemble it from the GraphQL and the stub.
+            pageData = {
+              dataset: makeDatasetFromAirtable(
+                dataSet,
+                allAirtableData,
+                reportID
+              ),
+            };
           }
           let thisFieldSet = pageData.dataset.fields;
           createPage({

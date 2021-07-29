@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
+// TODO: THIS IS REALLY BAD! GET SOMETHING BETTER TO DO THIS!
 import cloneObject from "./../../modules/cloneObject";
 import {
   TableNav,
@@ -30,7 +31,7 @@ import {
 
 // TODO: make tables more responsive: https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html
 // https://webup.org/blog/sticky-header-table-with-react-hooks/
-// TODO: split this up into smaller components – this is a mess!
+// TODO: split this up into smaller components – this is a mess!
 
 const toTitleCase = (text) =>
   text.replace(
@@ -107,9 +108,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
       let output = row.row.filter((column) => {
         return (
           column.value &&
-          String(column.value)
-            .toLowerCase()
-            .indexOf(filterFor) > -1
+          String(column.value).toLowerCase().indexOf(filterFor) > -1
         );
       });
       return output.length;
@@ -144,7 +143,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
       thisSortValues[fieldName] = 1;
     }
     setSortBy(thisSortValues);
-    newFilteredData.sort(function(a, b) {
+    newFilteredData.sort(function (a, b) {
       let aValue = 0;
       let bValue = 0;
       for (let i = 0; i < a.row.length; i++) {
@@ -187,7 +186,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const getSuperheaders = () => {
     // this returns a TR with superheaders in it, if they exist
 
-    const getSuperfield = function(thisField, allFields) {
+    const getSuperfield = function (thisField, allFields) {
       for (let i = 0; i < allFields.length; i++) {
         if (thisField === allFields[i].fieldKey) {
           return allFields[i].superField || null;
@@ -379,9 +378,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
       if (tableRef.current) {
         const currentHeaderRows = tableHeadRef.current.childNodes;
         for (let i = 0; i < currentHeaderRows.length; i++) {
-          let innerSpans = currentHeaderRows[i].querySelectorAll(
-            "span .innertd"
-          );
+          let innerSpans =
+            currentHeaderRows[i].querySelectorAll("span .innertd");
           if (innerSpans && innerSpans.length === visibleFields.length) {
             // this doesn't work for superfields currently, though that's probably okay?
             for (let j = 0; j < innerSpans.length; j++) {

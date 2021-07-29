@@ -30,9 +30,7 @@
 			{"id":"conclusion", "name": "Conclusion"},
 			{"id":"specialacknowledgements","name":"Special Acknowledgements"}
 		],
-		"dataSets": 
-		[
-
-		]	
+		"airtableDataSets":["Tempered", "Fine Paste"],
+		"airtableMetadaa": [{"name": "Tempered", "id": "spicegardentempered"},{"name": "Fine Paste", "id": "spicegardenfinepaste"}]
 	}
 }

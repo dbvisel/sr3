@@ -1,4 +1,6 @@
-const cloneObject = function(source) {
+// TODO: THIS DOES NOT WORK WITH null values! It turns them into empty objects.
+
+const cloneObject = function (source) {
   if (Object.prototype.toString.call(source) === "[object Array]") {
     let clone = [];
     for (var i = 0; i < source.length; i++) {

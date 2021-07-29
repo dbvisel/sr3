@@ -34,15 +34,15 @@
 				"airtableDatasets":[
 					{
 						"baseId": "apphXa3ppciAux1Wi",
-						"tableName": "Artefacts"
+						"tableName": "Fort Canning Artefacts"
 					},
 					{
 						"baseId": "apphXa3ppciAux1Wi",
-						"tableName": "Salvage Data by Square"
+						"tableName": "Fort Canning Salvage Data by Square"
 					},
 					{
 						"baseId": "apphXa3ppciAux1Wi",
-						"tableName": "Salvage Data totals"
+						"tableName": "Fort Canning Salvage Data totals"
 					}
 				]
 			},
@@ -109,6 +109,6 @@
 				]
 			}
 		],
-		"excludedReports": ["dummy"		]
+		"excludedReports": ["dummy"]
 	}
 }

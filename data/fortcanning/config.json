@@ -4,9 +4,106 @@
 		"title": "Site Report on the Fort Canning Dig 2018 (September 2–November 4) and Two Subsequent Visits",
 		"author": "Goh Geok Yian, Nanyang Technological University Singapore, and John N. Miksic, National University of Singapore",
 		"lastUpdated":"13 May 2021",
-		"texts": [{
-			"id": "synopsis",
-			"name": "Synopsis"
-		},{"id":"excavation", "name":"Excavation"},{"id":"analysis", "name":"Analysis"},{"id":"conclusion", "name":"Conclusion"}],"dataSets": []	
+		"texts": 
+			[
+				{
+					"id": "synopsis",
+					"name": "Synopsis"
+				},
+				{
+					"id":"excavation", 
+					"name":"Excavation"
+				},
+				{
+					"id":"analysis",
+					"name":"Analysis"
+				},
+				{
+					"id":"conclusion",
+					"name":"Conclusion"
+				}
+			],
+		"dataSets": 
+		[
+			{
+				"id": "artefacts",
+				"name": "Artefacts",
+				"airtableName": "Fort Canning Artefacts",
+				"isAirtable": true,
+				"fields":[
+					{"fieldName":"Site","fieldKey":"Site"},
+					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+					{"fieldName":"Square Unit","fieldKey":"Square_Unit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Depth","fieldKey":"Depth"},
+					{"fieldName":"Distance from North/South","fieldKey":"Distance_from_North_South"},
+					{"fieldName":"Distance from East/West","fieldKey":"Distance_from_East_West"},
+					{"fieldName":"Date Excavated","fieldKey":"Date_Excavated"},
+					{"fieldName":"Type of Material","fieldKey":"Type_of_Material"},
+					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
+					{"fieldName":"Length","fieldKey":"Length"},
+					{"fieldName":"Width","fieldKey":"Width"},
+					{"fieldName":"Thickness","fieldKey":"Thickness"},
+					{"fieldName":"Diameter","fieldKey":"Diameter"},
+					{"fieldName":"Diameter (Ext)","fieldKey":"Diameter__Ext_"},
+					{"fieldName":"Foot Height/Thickness","fieldKey":"Foot_Height_Thickness"},
+					{"fieldName":"Number of Pieces","fieldKey":"Number_of_Pieces"},
+					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+					{"fieldName":"Decoration","fieldKey":"Decoration"},
+					{"fieldName":"Color (Munsell Chart)","fieldKey":"Color__Munsell_Chart_"},
+					{"fieldName":"Period","fieldKey":"Period"},
+					{"fieldName":"Provenance","fieldKey":"Provenance"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"},
+					{"fieldName":"Date Recorded","fieldKey":"Date_Recorded"}]
+			},
+			{
+				"id":"salvagedatabysquare",
+				"name":"Salvage Data by Square",
+				"airtableName":"Fort Canning Salvage Data by Square",
+				"isAirtable":true,
+				"defaultSort":"No_",
+				"fields":[
+					{"fieldName":"No.","fieldKey":"No_"},
+					{"fieldName":"Site","fieldKey":"Site"},
+					{"fieldName":"Archaeological Unit","fieldKey":"Archaeological_Unit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Depth","fieldKey":"Depth"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Quantities in Weight","fieldKey":"Quantities_in_Weight"},
+					{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+					{"fieldName":"Stratigraphy","fieldKey":""},
+					{"fieldName":"Vessel Information","fieldKey":"Vessel_Information"},
+					{"fieldName":"Type of Material","fieldKey":"Type_of_Material"},
+					{"fieldName":"Type of Vessel","fieldKey":"Vessel_Type"},
+					{"fieldName":"Part of Vessel","fieldKey":"Vessel_Part"},
+					{"fieldName":"Dimensions of sherd 1","fieldKey":"Dimensions_of_sherd__in_cm__1", "unit":"cm"},
+					{"fieldName":"Dimensions of sherd 2","fieldKey":"Dimensions_of_sherd__in_cm__2", "unit": "cm"},
+					{"fieldName":"Dimensions of sherd 3","fieldKey":"Dimensions_of_sherd__in_cm__3", "unit":"cm"},
+					{"fieldName":"Dimensions of sherd 4","fieldKey":"Dimensions_of_sherd__in_cm__4", "unit":"cm"},
+					{"fieldName":"Dimensions of sherd 5","fieldKey":"Dimensions_of_sherd__in_cm__5",	"unit":"cm"},
+					{"fieldName":"Period","fieldKey":"Period"},
+					{"fieldName":"Date Recorded","fieldKey":"Date_Recorded"},
+					{"fieldName":"Image Taken?","fieldKey":"Image_Taken_"},
+					{"fieldName":"Image File Name","fieldKey":"Image_File_Name"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"}]
+			},
+			{
+				"id":"salvagedatatotals",
+				"name":"Salvage Data totals",
+				"airtableName":"Fort Canning Salvage Data totals",
+				"isAirtable":true,
+				"defaultSort":"Hidden_order",
+				"fields":[
+					{"fieldKey":"Hidden_order", "fieldName":"Hidden order","fieldHidden": true},
+					{"fieldKey":"Type", "fieldName":"Type"},
+					{"fieldKey":"FTC_Salvage__2018_2019__pieces","fieldName": "FTC Salvage (2018/2019) pieces"},
+					{"fieldKey":"FTCSG_Pandan_Bed_pieces","fieldName":"FTCSG Pandan Bed pieces"},
+					{"fieldKey":"Total_pieces","fieldName":"Total pieces"},
+					{"fieldKey":"Total_weight","fieldName":"Total weight", "unit":"g"}
+				]
+			}
+		]	
 	}
 }
