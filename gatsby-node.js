@@ -137,32 +137,6 @@ exports.createPages = ({ actions, graphql }) => {
           fieldValue
           nodes {
             data {
-              Hidden_order
-              Type
-              Total_pieces
-              Total_weight
-              FTC_Salvage__2018_2019__pieces
-              FTCSG_Pandan_Bed_pieces
-              No_
-              Date_Recorded
-              Image_Taken_
-              Image_File_Name
-              Remarks
-              Site
-              Lot
-              Depth
-              Quantities_in_Weight
-              Quantities_in_number_of_sherds
-              Vessel_Information
-              Type_of_Material
-              Period
-              Dimensions_of_sherd__in_cm__1
-              Dimensions_of_sherd__in_cm__2
-              Dimensions_of_sherd__in_cm__3
-              Dimensions_of_sherd__in_cm__4
-              Dimensions_of_sherd__in_cm__5
-              Artefact_Number
-              Site
               Square_Unit
               Lot
               Depth
@@ -174,11 +148,7 @@ exports.createPages = ({ actions, graphql }) => {
               Length
               Width
               Thickness
-              Diameter
-              Diameter__Ext_
-              Foot_Height_Thickness
               Number_of_Pieces
-              Weight
               Vessel_Type
               Vessel_Part
               Decoration
@@ -186,6 +156,50 @@ exports.createPages = ({ actions, graphql }) => {
               Period
               Provenance
               Date_Recorded
+              Site
+              Remarks
+              Unit
+              Stratigraphy_Spit
+              Breadth_Width
+              Diameter__lip_base_
+              Percentage_of_lip_base
+              Colour__body_
+              Colour__exterior_
+              Diameter_of_lip_base_measured_
+              Percentage_of_lip_base_measured_
+              Diameter__throat_
+              Percentage_of_throat
+              Excavation_Date
+              Diameter_measured_
+              Percentage_of_throat_measured_
+              Quantities_in_number_of_sherds
+              Diameter__lip_top_lip_of_knob_
+              Percentage_of_rim_or_base
+              Diameter__orifice_
+              Colour__slip_
+              Type
+              Total_pieces
+              Total_weight
+              Hidden_order
+              FTC_Salvage__2018_2019__pieces
+              FTCSG_Pandan_Bed_pieces
+              No_
+              Archaeological_Unit
+              Vessel_Information
+              Dimensions_of_sherd__in_cm__1
+              Dimensions_of_sherd__in_cm__2
+              Dimensions_of_sherd__in_cm__3
+              Dimensions_of_sherd__in_cm__4
+              Diameter__lip_base_
+              Image_Taken_
+              Image_File_Name
+              Dimensions_of_sherd__in_cm__5
+              Diameter
+              Diameter__Ext_
+              Foot_Height_Thickness
+              Quantities_in_Weight
+              Weight
+              Artefact_Number
             }
           }
         }

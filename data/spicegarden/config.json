@@ -39,10 +39,24 @@
 				"isAirtable": true,
 				"fields":[
 					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+					{"fieldName":"Unit","fieldKey":"Unit"},
+					{"fieldName":"Stratigraphy—Spit","fieldKey":"Stratigraphy_Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Quantities in Weight","fieldKey":"Quantities_in_Weight", "units":"g"},
+					{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
 					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
-					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"}
-				],
-				"rawFields":"Artefact Number,Unit,Stratigraphy—Spit,Lot,Quantities in Weight,Quantities in number of sherds,Vessel Part,Vessel Type,Length,Breadth/Width,Thickness,Diameter (orifice),Diameter (lip/top lip of knob),Percentage of rim or base,Excavation Date,Colour (body),Colour (slip),Remarks"
+					{"fieldName":"Length","fieldKey":"Length"},
+					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width"},
+					{"fieldName":"Thickness","fieldKey":"Thickness"},
+					{"fieldName":"Diameter (orifice)","fieldKey":"Diameter__orifice_"},
+					{"fieldName":"Diameter (lip/top lip of knob)","fieldKey":"Diameter__lip_top_lip_of_knob_"},
+					{"fieldName":"Percentage of rim or base","fieldKey":"Percentage_of_rim_or_base"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Colour (body)","fieldKey":"Colour__body_"},
+					{"fieldName":"Colour (slip)","fieldKey":"Colour__slip_"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"}			
+				]
 			},
 			{
 				"id": "finepasteearthenware",
@@ -51,13 +65,30 @@
 				"isAirtable": true,
 				"fields":[
 					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
-					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Unit","fieldKey":"Unit"},
+					{"fieldName":"Stratigraphy—Spit","fieldKey":"Stratigraphy_Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+					{"fieldName":"Number of Pieces","fieldKey":"Number_of_Pieces"},
 					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
-					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"}
-				],
-				"rawFields":"Artefact Number,Unit,Stratigraphy—Spit,Lot,Weight,Number of Pieces,Vessel Part,Vessel Type,Length,Breadth/Width,Thickness,Diameter measured?,Diameter (throat),Percentage of throat measured?,Percentage of throat,Diameter of lip/base measured?,Diameter (lip/base),Percentage of lip/base measured?,Percentage of lip/base,Excavation Date,Colour (body),Colour (exterior),Remarks"
+					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Length","fieldKey":"Length"},
+					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width"},
+					{"fieldName":"Thickness","fieldKey":"Thickness"},
+					{"fieldName":"Diameter measured?","fieldKey":"Diameter_measured_"},
+					{"fieldName":"Diameter (throat)","fieldKey":"Diameter__throat_"},
+					{"fieldName":"Percentage of throat measured?","fieldKey":"Percentage_of_throat_measured_"},
+					{"fieldName":"Percentage of throat","fieldKey":"Percentage_of_throat"},
+					{"fieldName":"Diameter of lip/base measured?","fieldKey":"Percentage_of_lip_base_measured_"},
+					{"fieldName":"Diameter (lip/base)","fieldKey":"Diameter__lip_base_"},
+					{"fieldName":"Percentage of lip/base measured?","fieldKey":"Percentage_of_lip_base_measured_"},
+					{"fieldName":"Percentage of lip/base","fieldKey":"Percentage_of_lip_base"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Colour (body)","fieldKey":"Colour__body_"},
+					{"fieldName":"Colour (exterior)","fieldKey":"Colour__exterior_"},
+					{"fieldName":"Remarks","fieldKey": "Remarks"}
+				]
 			}
-
 		]
 	}
 }
