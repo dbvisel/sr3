@@ -52,12 +52,14 @@
 				"airtableDatasets":[
 					{
 						"baseId": "appYZGrMFEWCkndRO",
-						"tableName": "Tempered Earthenware"
+						"tableName": "SG Tempered Earthenware"
 					},
 					{
 						"baseId": "appYZGrMFEWCkndRO",
-						"tableName": "Fine Paste Earthenware"
-					},
+						"tableName": "SG Fine Paste Earthenware"
+					}
+				],
+				"airtableExcluded":[
 					{
 						"baseId": "appYZGrMFEWCkndRO",
 						"tableName": "Mercury Jar"
@@ -106,8 +108,7 @@
 						"baseId": "app8fcxCwWgy3nhPg",
 						"tableName": "Stone"
 					}
-				]
-			}
+				]			}
 		],
 		"excludedReports": ["dummy"]
 	}
