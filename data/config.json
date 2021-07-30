@@ -75,13 +75,17 @@
 					{
 						"baseId": "appYZGrMFEWCkndRO",
 						"tableName": "SG Greenware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "SG Whiteware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "SG Blue and White"
 					}
 				],
 				"airtableExcluded":[
-					{
-						"baseId": "appYZGrMFEWCkndRO",
-						"tableName": "Blue and White"
-					},
 					{
 						"baseId":"app8fcxCwWgy3nhPg", 
 						"tableName":"14th century small finds"

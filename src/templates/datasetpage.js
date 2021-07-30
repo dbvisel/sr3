@@ -6,7 +6,7 @@ import downloadCSV from "./../modules/downloadCSV";
 // TODO: do we set dataset anything else?
 
 export default function DataSetPage({ pageContext }) {
-  console.log(pageContext);
+  // console.log(pageContext);
   const { reportData, data } = pageContext;
 
   let thisPath = `/${reportData.id}/dataset/${data.id}`;

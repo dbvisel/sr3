@@ -130,6 +130,7 @@
 					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
 					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
 					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Thickness","fieldKey":"Thickness","units":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
 					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
 					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
@@ -152,6 +153,7 @@
 					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
 					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
 					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Thickness","fieldKey":"Thickness","units":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
 					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
 					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
@@ -175,14 +177,62 @@
 					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
 					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
 					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Thickness","fieldKey":"Thickness","units":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
 					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
 					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
 					{"fieldName":"Remarks","fieldKey":"Remarks"}			
 
 				]
+			},
+			{
+				"id": "whiteware",
+				"name": "Whiteware",
+				"airtableName": "SG Whiteware",
+				"isAirtable":true,
+				"fields":[
+					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+					{"fieldName":"Unit","fieldKey":"Unit"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+					{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
+					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Thickness","fieldKey":"Thickness","units":"cm"},
+					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
+					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"}			
+				]
+			},
+			{
+				"id": "blueandwhite",
+				"name":"Blue and White",
+				"airtableName": "SG Blue and White",
+				"isAirtable":true,
+				"fields":[
+					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+					{"fieldName":"Unit","fieldKey":"Unit"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+					{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
+					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Thickness","fieldKey":"Thickness","units":"cm"},
+					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
+					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"}			
+				]
 			}
-
 		]
 	}
 }
