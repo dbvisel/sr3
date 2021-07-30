@@ -67,13 +67,17 @@
 					{
 						"baseId": "appYZGrMFEWCkndRO",
 						"tableName": "SG Buff Stoneware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "SG Brittle Stoneware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "SG Greenware"
 					}
 				],
 				"airtableExcluded":[
-					{
-						"baseId": "appYZGrMFEWCkndRO",
-						"tableName": "Greenware"
-					},
 					{
 						"baseId": "appYZGrMFEWCkndRO",
 						"tableName": "Blue and White"

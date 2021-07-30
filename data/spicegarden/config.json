@@ -135,7 +135,54 @@
 					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
 					{"fieldName":"Remarks","fieldKey":"Remarks"}			
 				]
+			},{
+				"id": "brittlestoneware",
+				"name":"Brittle Stoneware",
+				"airtableName": "SG Brittle Stoneware",
+				"isAirtable":true,
+				"fields":[
+					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+					{"fieldName":"Unit","fieldKey":"Unit"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+					{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
+					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
+					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"}			
+				]
+			},
+			{
+				"baseId": "appYZGrMFEWCkndRO",
+				"name": "Greenware",
+				"airtableName": "SG Greenware",
+				"isAirtable":true,
+				"fields":[
+					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+					{"fieldName":"Unit","fieldKey":"Unit"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+					{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
+					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
+					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"}			
+
+				]
 			}
+
 		]
 	}
 }
