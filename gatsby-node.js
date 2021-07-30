@@ -142,7 +142,7 @@ exports.createPages = ({ actions, graphql }) => {
               Depth
               Distance_from_North_South
               Distance_from_East_West
-              Date_Excavated
+              Excavation_Date
               Type_of_Material
               Type_of_Ware
               Length
@@ -184,6 +184,7 @@ exports.createPages = ({ actions, graphql }) => {
               FTC_Salvage__2018_2019__pieces
               FTCSG_Pandan_Bed_pieces
               No_
+              Spit
               Archaeological_Unit
               Vessel_Information
               Dimensions_of_sherd__in_cm__1
@@ -200,6 +201,7 @@ exports.createPages = ({ actions, graphql }) => {
               Quantities_in_Weight
               Weight
               Artefact_Number
+              MNV____
             }
           }
         }

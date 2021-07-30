@@ -38,13 +38,13 @@
 					{"fieldName":"Depth","fieldKey":"Depth"},
 					{"fieldName":"Distance from North/South","fieldKey":"Distance_from_North_South"},
 					{"fieldName":"Distance from East/West","fieldKey":"Distance_from_East_West"},
-					{"fieldName":"Date Excavated","fieldKey":"Date_Excavated"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
 					{"fieldName":"Type of Material","fieldKey":"Type_of_Material"},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
 					{"fieldName":"Length","fieldKey":"Length"},
 					{"fieldName":"Width","fieldKey":"Width"},
 					{"fieldName":"Thickness","fieldKey":"Thickness"},
-					{"fieldName":"Diameter","fieldKey":"Diameter"},
+					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
 					{"fieldName":"Diameter (Ext)","fieldKey":"Diameter__Ext_"},
 					{"fieldName":"Foot Height/Thickness","fieldKey":"Foot_Height_Thickness"},
 					{"fieldName":"Number of Pieces","fieldKey":"Number_of_Pieces"},
@@ -56,7 +56,8 @@
 					{"fieldName":"Period","fieldKey":"Period"},
 					{"fieldName":"Provenance","fieldKey":"Provenance"},
 					{"fieldName":"Remarks","fieldKey":"Remarks"},
-					{"fieldName":"Date Recorded","fieldKey":"Date_Recorded"}]
+					{"fieldName":"Date Recorded","fieldKey":"Date_Recorded"}
+				]
 			},
 			{
 				"id":"salvagedatabysquare",
@@ -77,7 +78,7 @@
 					{"fieldName":"Vessel Information","fieldKey":"Vessel_Information"},
 					{"fieldName":"Type of Material","fieldKey":"Type_of_Material"},
 					{"fieldName":"Type of Vessel","fieldKey":"Vessel_Type"},
-					{"fieldName":"Part of Vessel","fieldKey":"Vessel_Part"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
 					{"fieldName":"Dimensions of sherd 1","fieldKey":"Dimensions_of_sherd__in_cm__1", "unit":"cm"},
 					{"fieldName":"Dimensions of sherd 2","fieldKey":"Dimensions_of_sherd__in_cm__2", "unit": "cm"},
 					{"fieldName":"Dimensions of sherd 3","fieldKey":"Dimensions_of_sherd__in_cm__3", "unit":"cm"},
@@ -87,7 +88,8 @@
 					{"fieldName":"Date Recorded","fieldKey":"Date_Recorded"},
 					{"fieldName":"Image Taken?","fieldKey":"Image_Taken_"},
 					{"fieldName":"Image File Name","fieldKey":"Image_File_Name"},
-					{"fieldName":"Remarks","fieldKey":"Remarks"}]
+					{"fieldName":"Remarks","fieldKey":"Remarks"}
+				]
 			},
 			{
 				"id":"salvagedatatotals",

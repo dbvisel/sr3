@@ -57,17 +57,19 @@
 					{
 						"baseId": "appYZGrMFEWCkndRO",
 						"tableName": "SG Fine Paste Earthenware"
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "SG Mercury Jar",
+						"defaultValues:": 
+							{"Colour__glaze_": ""}
+					},
+					{
+						"baseId": "appYZGrMFEWCkndRO",
+						"tableName": "SG Buff Stoneware"
 					}
 				],
 				"airtableExcluded":[
-					{
-						"baseId": "appYZGrMFEWCkndRO",
-						"tableName": "Mercury Jar"
-					},
-					{
-						"baseId": "appYZGrMFEWCkndRO",
-						"tableName": "Buff Stoneware"
-					},
 					{
 						"baseId": "appYZGrMFEWCkndRO",
 						"tableName": "Greenware"

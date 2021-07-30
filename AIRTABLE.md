@@ -35,59 +35,90 @@ where fieldValue is the table name. We have to pull in all the different field n
 ## THINGS TO REMEMBER
 
 * fieldValue must be unique.
-
-## Problem fields
-
-Artefact_Number
-Weight
-Quantities_in_Weight
-	Fort Canning Salvage Data by Square
-	SG Tempered Earthenware
+* Every usage of a fieldname must be the same type in Airtable.
 
 ## FORT CANNING VALUES
 
-Archaeological_Unit
-Artefact_Number
-Color__Munsell_Chart_
-Date_Excavated
-Date_Recorded
-Decoration
-Depth
-Diameter
-Diameter__Ext_
-Dimensions_of_sherd__in_cm__1
-Dimensions_of_sherd__in_cm__2
-Dimensions_of_sherd__in_cm__3
-Dimensions_of_sherd__in_cm__4
-Dimensions_of_sherd__in_cm__5
-Distance_from_North_South
-Distance_from_East_West
-Excavation_Date
-FTC_Salvage__2018_2019__pieces
-FTCSG_Pandan_Bed_pieces
-Foot_Height_ThicknessLength
-Hidden_order
-Image_File_Name
-Image_Taken_
-Lot
-No_
-Number_of_Pieces
-Period
-Provenance
-Quantities_in_Weight
-Quantities_in_number_of_sherds
-Remarks
-Site
-Square_Unit
-Thickness
-Total_pieces
-Total_weight
-Type
-Type_of_Material
-Type_of_Ware
-Vessel_Information
-Vessel_Part
-Vessel_Type
-Width
-Weight
+{"fieldName":"Archaeological Unit","fieldKey":"Archaeological_Unit"},
+{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+{"fieldName":"Color (Munsell Chart)","fieldKey":"Color__Munsell_Chart_"},
+{"fieldName":"Date Recorded","fieldKey":"Date_Recorded"},
+{"fieldName":"Depth","fieldKey":"Depth"},
+{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+{"fieldName":"Decoration","fieldKey":"Decoration"},
+{"fieldName":"Depth","fieldKey":"Depth"},
+{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
+{"fieldName":"Diameter (Ext)","fieldKey":"Diameter__Ext_"},
+{"fieldName":"Dimensions of sherd 1","fieldKey":"Dimensions_of_sherd__in_cm__1", "unit":"cm"},
+{"fieldName":"Dimensions of sherd 2","fieldKey":"Dimensions_of_sherd__in_cm__2", "unit": "cm"},
+{"fieldName":"Dimensions of sherd 3","fieldKey":"Dimensions_of_sherd__in_cm__3", "unit":"cm"},
+{"fieldName":"Dimensions of sherd 4","fieldKey":"Dimensions_of_sherd__in_cm__4", "unit":"cm"},
+{"fieldName":"Dimensions of sherd 5","fieldKey":"Dimensions_of_sherd__in_cm__5",	"unit":"cm"},
+{"fieldName":"Distance from North/South","fieldKey":"Distance_from_North_South"},
+{"fieldName":"Distance from East/West","fieldKey":"Distance_from_East_West"},
+{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+{"fieldName":"Foot Height/Thickness","fieldKey":"Foot_Height_Thickness"},
+{"fieldName":"Image Taken?","fieldKey":"Image_Taken_"},
+{"fieldName":"Image File Name","fieldKey":"Image_File_Name"},
+{"fieldName":"Length","fieldKey":"Length","units":"cm"},
+{"fieldName":"Lot","fieldKey":"Lot"},
+{"fieldName":"No.","fieldKey":"No_"},
+{"fieldName":"Number of Pieces","fieldKey":"Number_of_Pieces"},
+{"fieldName":"Period","fieldKey":"Period"},
+{"fieldName":"Provenance","fieldKey":"Provenance"},
+{"fieldName":"Quantities in Weight","fieldKey":"Quantities_in_Weight"},
+{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+{"fieldName":"Remarks","fieldKey":"Remarks"},
+{"fieldName":"Site","fieldKey":"Site"},
+{"fieldName":"Square Unit","fieldKey":"Square_Unit"},
+{"fieldName":"Stratigraphy","fieldKey":""},
+{"fieldName":"Thickness","fieldKey":"Thickness"},
+{"fieldName":"Type of Material","fieldKey":"Type_of_Material"},
+{"fieldName":"Type of Vessel","fieldKey":"Vessel_Type"},
+{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
+{"fieldName":"Vessel Information","fieldKey":"Vessel_Information"},
+{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+{"fieldName":"Width","fieldKey":"Width"},
 
+## SPICE GARDEN VALUES
+
+{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+{"fieldName":"Colour (body)","fieldKey":"Colour__body_"},
+{"fieldName":"Colour (slip)","fieldKey":"Colour__slip_"},
+{"fieldName":"Colour (exterior)","fieldKey":"Colour__exterior_"},
+{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+{"fieldName":"Diameter measured?","fieldKey":"Diameter_measured_"},
+{"fieldName":"Diameter (throat)","fieldKey":"Diameter__throat_"},
+{"fieldName":"Diameter (orifice)","fieldKey":"Diameter__orifice_"},
+{"fieldName":"Diameter (lip/top lip of knob)","fieldKey":"Diameter__lip_top_lip_of_knob_"},
+{"fieldName":"Diameter (lip/base)","fieldKey":"Diameter__lip_base_"},
+{"fieldName":"Diameter of lip/base measured?","fieldKey":"Percentage_of_lip_base_measured_"},
+{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+{"fieldName":"Length","fieldKey":"Length","units":"cm"},
+{"fieldName":"Lot","fieldKey":"Lot"},
+{"fieldName":"MNV (%)","fieldKey":"MNV____"},
+{"fieldName":"Number of Pieces","fieldKey":"Number_of_Pieces"},
+{"fieldName":"Percentage of rim or base","fieldKey":"Percentage_of_rim_or_base"},
+{"fieldName":"Percentage of throat measured?","fieldKey":"Percentage_of_throat_measured_"},
+{"fieldName":"Percentage of throat","fieldKey":"Percentage_of_throat"},
+{"fieldName":"Percentage of lip/base measured?","fieldKey":"Percentage_of_lip_base_measured_"},
+{"fieldName":"Percentage of lip/base","fieldKey":"Percentage_of_lip_base"},
+{"fieldName":"Quantities in Weight","fieldKey":"Quantities_in_Weight", "units":"g"},
+{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+{"fieldName":"Remarks","fieldKey":"Remarks"}
+{"fieldName":"Spit","fieldKey":"Spit"},
+{"fieldName":"Stratigraphy—Spit","fieldKey":"Stratigraphy_Spit"},
+{"fieldName":"Thickness","fieldKey":"Thickness"},
+{"fieldName":"Unit","fieldKey":"Unit"},
+{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+
+added: 
+
+
+doesn't actually appear and so NOT IN GRAPHQL:
+
+{"fieldName":"Colour (glaze)","fieldKey":"Colour__glaze_"},
