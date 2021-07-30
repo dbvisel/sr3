@@ -91,17 +91,18 @@
 					{
 						"baseId": "app8fcxCwWgy3nhPg",
 						"tableName": "SG 19th-20th C Porcelain"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "SG 19th-20th C Stoneware"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "SG 19th-20th C Glass"
 					}
 				],
-				"airtableExcluded":[
-					{
-						"baseId": "app8fcxCwWgy3nhPg",
-						"tableName": "19th-20th C Stoneware"
-					},
-					{
-						"baseId": "app8fcxCwWgy3nhPg",
-						"tableName": "19th-20th C Glass"
-					},
+				"airtableExcluded":
+				[
 					{
 						"baseId": "app8fcxCwWgy3nhPg",
 						"tableName": "Construction Materials"

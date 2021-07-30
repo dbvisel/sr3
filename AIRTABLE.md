@@ -98,7 +98,7 @@ where fieldValue is the table name. We have to pull in all the different field n
 {"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
 {"fieldName":"Length","fieldKey":"Length","units":"cm"},
 {"fieldName":"Lot","fieldKey":"Lot"},
-{"fieldName":"MNV (%)","fieldKey":"MNV____"},
+{"fieldName":"MNV (%)","fieldKey":"MNV____", "fieldType":"percent"},
 {"fieldName":"Number of Pieces","fieldKey":"Number_of_Pieces"},
 {"fieldName":"Percentage of rim or base","fieldKey":"Percentage_of_rim_or_base"},
 {"fieldName":"Percentage of throat measured?","fieldKey":"Percentage_of_throat_measured_"},
