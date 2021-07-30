@@ -99,27 +99,25 @@
 					{
 						"baseId": "app8fcxCwWgy3nhPg",
 						"tableName": "SG 19th-20th C Glass"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "SG Construction Materials"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "SG Organic"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "SG Metal"
+					},
+					{
+						"baseId": "app8fcxCwWgy3nhPg",
+						"tableName": "SG Stone"
 					}
-				],
-				"airtableExcluded":
-				[
-					{
-						"baseId": "app8fcxCwWgy3nhPg",
-						"tableName": "Construction Materials"
-					},
-					{
-						"baseId": "app8fcxCwWgy3nhPg",
-						"tableName": "Organic"
-					},
-					{
-						"baseId": "app8fcxCwWgy3nhPg",
-						"tableName": "Metal"
-					},
-					{
-						"baseId": "app8fcxCwWgy3nhPg",
-						"tableName": "Stone"
-					}
-				]			}
+				]				
+			}
 		],
 		"excludedReports": ["dummy"]
 	}
