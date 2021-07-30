@@ -111,12 +111,14 @@ where fieldValue is the table name. We have to pull in all the different field n
 {"fieldName":"Spit","fieldKey":"Spit"},
 {"fieldName":"Stratigraphy—Spit","fieldKey":"Stratigraphy_Spit"},
 {"fieldName":"Thickness","fieldKey":"Thickness"},
+{"fieldName":"Type","fieldKey":"Type"},
 {"fieldName":"Unit","fieldKey":"Unit"},
 {"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
 {"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
 {"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
 
 added: 
+
 
 
 doesn't actually appear and so NOT IN GRAPHQL:

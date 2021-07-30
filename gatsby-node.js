@@ -202,6 +202,7 @@ exports.createPages = ({ actions, graphql }) => {
               Weight
               Artefact_Number
               MNV____
+              Type
             }
           }
         }

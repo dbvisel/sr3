@@ -37,6 +37,7 @@
 				"name": "Tempered Earthenware",
 				"airtableName": "SG Tempered Earthenware",
 				"isAirtable": true,
+				"grouping": "Ceramics",
 				"fields":[
 					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit"},
@@ -61,6 +62,7 @@
 			{
 				"id": "finepasteearthenware",
 				"name": "Fine Paste Earthenware",
+				"grouping": "Ceramics",
 				"airtableName": "SG Fine Paste Earthenware",
 				"isAirtable": true,
 				"fields":[
@@ -92,6 +94,7 @@
 			{	
 				"id":"mercuryjar",
 				"name":"Mercury Jar",
+				"grouping": "Ceramics",
 				"airtableName":"SG Mercury Jar",
 				"isAirtable":true,
 				"fields":[
@@ -116,6 +119,7 @@
 			{
 				"id": "buffstoneware",
 				"name":"Buff Stoneware", 
+				"grouping": "Ceramics",
 				"airtableName": "SG Buff Stoneware",
 				"isAirtable":true,
 				"fields":[
@@ -139,6 +143,7 @@
 			},{
 				"id": "brittlestoneware",
 				"name":"Brittle Stoneware",
+				"grouping": "Ceramics",
 				"airtableName": "SG Brittle Stoneware",
 				"isAirtable":true,
 				"fields":[
@@ -163,6 +168,7 @@
 			{
 				"baseId": "appYZGrMFEWCkndRO",
 				"name": "Greenware",
+				"grouping": "Ceramics",
 				"airtableName": "SG Greenware",
 				"isAirtable":true,
 				"fields":[
@@ -188,6 +194,7 @@
 			{
 				"id": "whiteware",
 				"name": "Whiteware",
+				"grouping": "Ceramics",
 				"airtableName": "SG Whiteware",
 				"isAirtable":true,
 				"fields":[
@@ -212,6 +219,7 @@
 			{
 				"id": "blueandwhite",
 				"name":"Blue and White",
+				"grouping": "Ceramics",
 				"airtableName": "SG Blue and White",
 				"isAirtable":true,
 				"fields":[
@@ -231,6 +239,56 @@
 					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
 					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
 					{"fieldName":"Remarks","fieldKey":"Remarks"}			
+				]
+			},
+			{
+				"id":"14csmallfinds", 
+				"name":"14th-Century Small Finds",
+				"airtableName":"SG 14th century small finds",
+				"grouping": "Other objects",
+				"isAirtable":true,
+				"fields":[
+					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+					{"fieldName":"Unit","fieldKey":"Unit"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+					{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
+					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Thickness","fieldKey":"Thickness","units":"cm"},
+					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"}			
+				]
+			},
+			{
+				"id": "19th20thcporcelain",
+				"name": "19th–20th C Porcelain",
+				"airtableName": "SG 19th-20th C Porcelain",
+				"grouping": "Other objects",
+				"isAirtable":true,
+				"fields":[
+					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
+					{"fieldName":"Unit","fieldKey":"Unit"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Weight","fieldKey":"Weight", "units":"g"},
+					{"fieldName":"Quantities in number of sherds","fieldKey":"Quantities_in_number_of_sherds"},
+					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware"},
+					{"fieldName":"Vessel Part","fieldKey":"Vessel_Part"},
+					{"fieldName":"Vessel Type","fieldKey":"Vessel_Type"},
+					{"fieldName":"Length","fieldKey":"Length","units":"cm"},
+					{"fieldName":"Breadth/Width","fieldKey":"Breadth_Width","units":"cm"},
+					{"fieldName":"Thickness","fieldKey":"Thickness","units":"cm"},
+					{"fieldName":"Diameter","fieldKey":"Diameter","units":"cm"},
+					{"fieldName":"MNV (%)","fieldKey":"MNV____"},
+					{"fieldName":"Excavation Date","fieldKey":"Excavation_Date"},
+					{"fieldName":"Remarks","fieldKey":"Remarks"},			
+					{"fieldName":"Type","fieldKey":"Type"}
 				]
 			}
 		]

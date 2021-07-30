@@ -83,17 +83,17 @@
 					{
 						"baseId": "appYZGrMFEWCkndRO",
 						"tableName": "SG Blue and White"
-					}
-				],
-				"airtableExcluded":[
+					},
 					{
 						"baseId":"app8fcxCwWgy3nhPg", 
-						"tableName":"14th century small finds"
+						"tableName":"SG 14th century small finds"
 					},
 					{
 						"baseId": "app8fcxCwWgy3nhPg",
-						"tableName": "19th-20th C Porcelain"
-					},
+						"tableName": "SG 19th-20th C Porcelain"
+					}
+				],
+				"airtableExcluded":[
 					{
 						"baseId": "app8fcxCwWgy3nhPg",
 						"tableName": "19th-20th C Stoneware"
