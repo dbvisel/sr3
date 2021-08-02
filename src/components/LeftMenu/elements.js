@@ -54,6 +54,8 @@ export const MenuWrapper = styled.nav`
     font-weight: normal;
     font-style: italic;
     margin: 0;
+    margin-left: 1em;
+    text-indent: -1em;
   }
 
   @media screen and (max-width: 767px) {
