@@ -183,6 +183,10 @@ Maybe use &lt;datalist> rather than &lt;select> in table headers? Does that make
 
 ## FIXES/IMPROVEMENTS:
 
+ - there's something weird going on with filtering/pagination in datasets
+ - need to deal with dates (display, sorting)
+ - SEO – need to have descriptions for each project. An image for each project would be good too.
+   - how do we do this with data object pages?
  - Slashes at the ends of paths. Would be good to implement gatsby-plugin-force-trailing-slashes, though this breaks the build and will take some time to get right.
  - Should add a site map
 
