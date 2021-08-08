@@ -1,9 +1,9 @@
-import React from "react";
+import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "./../components/Layout/";
 import { DataSetContext } from "./../components/Context/";
 import TextWrapper from "./../components/TextWrapper/";
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import ReportHeader from "./../components/ReportHeader";
 
 const TextPage = ({ data, pageContext }) => {
@@ -34,7 +34,7 @@ const TextPage = ({ data, pageContext }) => {
 };
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     mdx(frontmatter: { path: { eq: $path } }) {
       id
       frontmatter {
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
         author
         date
       }
-			body
+      body
     }
   }
 `;

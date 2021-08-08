@@ -98,6 +98,7 @@ export const DataTableWrapper = styled.div`
   max-width: calc(100vw - 200px);
   position: relative;
   overflow-x: scroll;
+  --textCellWidth: 400px;
 `;
 
 //export const DataTable = styled.table`
@@ -113,17 +114,17 @@ export const DataTableHead = styled.div`
 
 //export const THNoWrap = styled.th`
 export const THNoWrap = styled.span`
-	white-space: nowrap;
-	font-weight: bold;
-	font-family: var(--headerFont);
-	padding: 0 4px;
-	background-color: ${(props) => (props.empty ? "white" : "#ddd")};
-	cursor: pointer;
-	position: sticky;
-	user-select: none;
-	grid-column: span ${(props) => props.columnSpan || 1};
-	text-align: center;
-	/* top: ${(props) =>
+  white-space: nowrap;
+  font-weight: bold;
+  font-family: var(--headerFont);
+  padding: 0 4px;
+  background-color: ${(props) => (props.empty ? "white" : "#ddd")};
+  cursor: pointer;
+  position: sticky;
+  user-select: none;
+  grid-column: span ${(props) => props.columnSpan || 1};
+  text-align: center;
+  /* top: ${(props) =>
     props.hideHeaders ? "3em" : props.doubleHeaders ? "6em" : "5em"};
 	&:before {
 		content: '';
@@ -181,6 +182,15 @@ export const TableCell = styled.span`
     text-decoration: none;
     &:hover {
       border-bottom: 1px solid var(--orange);
+    }
+  }
+  &.text {
+    text-align: left;
+    max-width: var(--textCellWidth);
+    & span {
+      display: inline-block;
+      max-width: 100%;
+      overflow-x: scroll;
     }
   }
 `;

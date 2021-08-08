@@ -35,11 +35,20 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
   const myFields = data.fields
     .filter((x) => x.fieldKey && x.fieldName)
     .map((x) => {
-      return {
-        fieldKey: x.fieldKey,
-        fieldName: x.fieldName,
-        fieldHidden: Boolean(x.fieldHidden), // This is because this was coming in as null
-      };
+      const output = { fieldKey: x.fieldKey, fieldName: x.fieldName };
+      if (x.fieldHidden) {
+        output.fieldHidden = Boolean(x.fieldHidden);
+      }
+      if (x.fieldUnit) {
+        output.fieldUnit = x.fieldUnit;
+      }
+      if (x.fieldType) {
+        output.fieldType = x.fieldType;
+      }
+      if (x.fieldValues) {
+        output.fieldValues = x.fieldValues;
+      }
+      return output;
     });
   const myRawData = myAirtableData.nodes.map((x) => x.data);
   // 3. build data from field data looping through selected allAirtableData
@@ -123,6 +132,9 @@ exports.createPages = ({ actions, graphql }) => {
                 fieldKey
                 fieldName
                 fieldHidden
+                fieldType
+                fieldUnit
+                fieldValues
               }
             }
             texts {

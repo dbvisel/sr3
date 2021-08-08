@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 // TODO: THIS IS REALLY BAD! GET SOMETHING BETTER TO DO THIS!
 import cloneObject from "./../../modules/cloneObject";
+import MunsellCell from "./MunsellCell";
 import {
   TableNav,
   DatasetHeader,
@@ -38,6 +39,46 @@ const toTitleCase = (text) =>
     /\w\S*/g,
     (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
   );
+
+const cleanPercent = (value) => {
+  if (value) {
+    return parseInt(parseFloat(value) * 10000, 10) / 100;
+  }
+  return "";
+};
+
+const compareDate = (a, b) => {
+  //return true if a > b
+  const madeDateA = new Date(a);
+  const madeDateB = new Date(b);
+  const compA =
+    a && madeDateA instanceof Date && !isNaN(madeDateA)
+      ? madeDateA
+      : new Date(0);
+  const compB =
+    b && madeDateB instanceof Date && !isNaN(madeDateB)
+      ? madeDateB
+      : new Date(0);
+  return compA > compB;
+};
+
+const cleanDate = (value) => {
+  if (value) {
+    const madeDate = new Date(value);
+    // this tests to see if it's an "Invalid Date"
+    if (madeDate instanceof Date && !isNaN(madeDate)) {
+      return madeDate.toLocaleDateString("en-GB", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+    } else {
+      return value;
+    }
+  }
+  return "";
+};
+
 const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const [startPoint, setStartPoint] = React.useState(0);
   const rowsPerPage = perPage || 50;
@@ -130,7 +171,10 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const changeSortBy = (fieldName) => {
     // this needs to check if fields.sortMethod is set to "integer" and if so, compare as numbers rather than comparing by string (= "alphabetical", what it's doing now.)
     const thisField = data.fields.filter((x) => x.fieldKey === fieldName)[0];
-    const thisSortMethod = thisField.sortMethod || "alphabetical";
+    const thisSortMethod =
+      thisField.fieldType === "date"
+        ? "date"
+        : thisField.sortMethod || "alphabetical";
 
     // console.log(thisField, thisSortMethod);
     const newFilteredData = cloneObject(outputData);
@@ -157,7 +201,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
         }
       }
       if (
-        thisSortMethod === "integer"
+        thisSortMethod === "date"
+          ? compareDate(aValue, bValue)
+          : thisSortMethod === "integer"
           ? parseInt(aValue, 10) > parseInt(bValue, 10)
           : thisSortMethod === "number"
           ? parseFloat(aValue) > parseFloat(bValue)
@@ -166,7 +212,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
         return coefficient;
       }
       if (
-        thisSortMethod === "integer"
+        thisSortMethod === "date"
+          ? compareDate(bValue, aValue)
+          : thisSortMethod === "integer"
           ? parseInt(aValue, 10) < parseInt(bValue, 10)
           : thisSortMethod === "number"
           ? parseFloat(aValue) < parseFloat(bValue)
@@ -225,6 +273,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
             key={key}
             empty={!entry.value}
             hideHeaders={hideHeaders}
+            className={entry.fieldType === "text" ? "text" : ""}
           >
             <span className="innertd">{entry.value}</span>
           </THNoWrap>
@@ -325,6 +374,14 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
     rowId: PropTypes.string.isRequired,
   };
 
+  const croppedFieldValues = (valuesFromSchema, fieldKey) => {
+    // this function goes through all field values in the schema and only returns what's actually used
+    const valuesUsedInData = new Set(data.data.map((x) => x[fieldKey]));
+    return valuesFromSchema.filter(
+      (x) => [...valuesUsedInData].indexOf(x) > -1
+    );
+  };
+
   // START OLD COMPONENT DID MOUNT
   React.useEffect(() => {
     if (!initialized) {
@@ -385,7 +442,9 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
             for (let j = 0; j < innerSpans.length; j++) {
               columnMaxWidths[j] = Math.max(
                 columnMaxWidths[j],
-                innerSpans[j].offsetWidth
+                [...innerSpans[j].parentNode.classList].indexOf("text") > -1
+                  ? 400
+                  : innerSpans[j].offsetWidth
               );
             }
           }
@@ -464,11 +523,20 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
               className={initialized ? "" : "initializing"}
             >
               {visibleFields.map((entry, key) => {
+                const nameOrShort = entry.fieldNameShort || entry.fieldName;
+                const unitsShown =
+                  entry.fieldType && entry.fieldType === "percent"
+                    ? " (%)"
+                    : typeof entry.fieldUnit === "string"
+                    ? ` (${entry.fieldUnit})`
+                    : "";
+                const fieldNameShown = `${nameOrShort}${unitsShown}`;
                 return entry.fieldValues ? (
                   <THNoWrap
                     key={key}
                     hideHeaders={hideHeaders}
                     superFields={superFields}
+                    className={entry.fieldType === "text" ? "text" : ""}
                   >
                     <span className="innertd">
                       <TableSelect
@@ -477,16 +545,11 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                           filterCategory(event.target.id, event.target.value);
                         }}
                       >
-                        <option defaultValue>
-                          {entry.fieldNameShort
-                            ? typeof entry.fieldUnit === "string"
-                              ? `${entry.fieldNameShort} (${entry.fieldUnit})`
-                              : entry.fieldNameShort
-                            : typeof entry.fieldUnit === "string"
-                            ? `${entry.fieldName} (${entry.fieldUnit})`
-                            : entry.fieldName}
-                        </option>
-                        {entry.fieldValues.map((value, key2) => (
+                        <option defaultValue>{fieldNameShown}</option>
+                        {croppedFieldValues(
+                          entry.fieldValues,
+                          entry.fieldKey
+                        ).map((value, key2) => (
                           <option key={key2} value={value}>
                             {value}
                           </option>
@@ -499,16 +562,11 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                     key={key}
                     hideHeaders={hideHeaders}
                     superFields={superFields}
+                    className={entry.fieldType === "text" ? "text" : ""}
                     onClick={() => changeSortBy(entry.fieldKey)}
                   >
                     <span className="innertd">
-                      {entry.fieldNameShort
-                        ? typeof entry.fieldUnit === "string"
-                          ? `${entry.fieldNameShort} (${entry.fieldUnit})`
-                          : entry.fieldNameShort
-                        : typeof entry.fieldUnit === "string"
-                        ? `${entry.fieldName} (${entry.fieldUnit})`
-                        : entry.fieldName}
+                      {fieldNameShown}
                       {sortBy ? (
                         sortBy[entry.fieldKey] ? (
                           sortBy[entry.fieldKey] > 0 ? (
@@ -539,7 +597,11 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                   {row.row.map((column, indexx) => {
                     // console.log(column);
                     const cleanedValue =
-                      typeof column.value === "object"
+                      column.fieldType === "percent"
+                        ? cleanPercent(column.value)
+                        : column.fieldType === "date"
+                        ? cleanDate(column.value)
+                        : typeof column.value === "object"
                         ? column.value
                         : column.fieldTransform
                         ? column.fieldTransform === "toLowerCase"
@@ -552,6 +614,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                       (column.fieldType === "link" ||
                         column.fieldType === "imageLink") ? (
                       <LinkCell key={indexx} rowId={row.id} column={column} />
+                    ) : column.fieldType === "munsellcolor" ? (
+                      <MunsellCell key={indexx} value={column.value} />
                     ) : column.fieldType === "filename" ? (
                       <FilenameCell
                         key={indexx}
@@ -565,7 +629,10 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                         rowId={row.id}
                       />
                     ) : (
-                      <TableCell key={indexx}>
+                      <TableCell
+                        key={indexx}
+                        className={column.fieldType === "text" ? "text" : ""}
+                      >
                         <span className="innertd">
                           {typeof cleanedValue === "object"
                             ? cleanedValue.join(", ")
@@ -604,6 +671,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                       key={key}
                       hideHeaders={hideHeaders}
                       superFields={superFields}
+                      className={entry.fieldType === "text" ? "text" : ""}
                     >
                       <span className="innertd">
                         <TableSelect
@@ -621,7 +689,10 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                               ? `${entry.fieldName} (${entry.fieldUnit})`
                               : entry.fieldName}
                           </option>
-                          {entry.fieldValues.map((value, key2) => (
+                          {croppedFieldValues(
+                            entry.fieldValues,
+                            entry.fieldKey
+                          ).map((value, key2) => (
                             <option key={key2} value={value}>
                               {value}
                             </option>
@@ -634,6 +705,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                       key={`bottom_${key}`}
                       hideHeaders={hideHeaders}
                       superFields={superFields}
+                      className={entry.fieldType === "text" ? "text" : ""}
                       onClick={() => changeSortBy(entry.fieldKey)}
                     >
                       <span className="innertd">

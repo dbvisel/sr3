@@ -1,9 +1,9 @@
-import React from "react";
+import * as React from "react";
 import { Link, withPrefix } from "gatsby";
 import Layout from "./../components/Layout/";
 import DataObjectElement from "./../components/DataObjectElement/";
 
-const getDataSetName = function(dataSets, thisID) {
+const getDataSetName = function (dataSets, thisID) {
   for (let i = 0; i < dataSets.length; i++) {
     if (thisID === dataSets[i].id) {
       return { dataSetName: dataSets[i].name, dataSetID: dataSets[i].id };

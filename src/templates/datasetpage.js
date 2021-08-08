@@ -1,15 +1,16 @@
-import React from "react";
+import * as React from "react";
 import Layout from "./../components/Layout/";
 import DataSet from "./../components/Dataset/";
 import downloadCSV from "./../modules/downloadCSV";
 
 // TODO: do we set dataset anything else?
 
-export default function DataSetPage({ pageContext }) {
+const DataSetPage = ({ pageContext }) => {
   // console.log(pageContext);
   const { reportData, data } = pageContext;
+  // console.log(new Set(data.data.map((x) => x.Colour__body_).sort()));
+  const thisPath = `/${reportData.id}/dataset/${data.id}`;
 
-  let thisPath = `/${reportData.id}/dataset/${data.id}`;
   return (
     <Layout title={data.name} menu={reportData} thisPage={thisPath}>
       <article>
@@ -36,4 +37,6 @@ export default function DataSetPage({ pageContext }) {
       </article>
     </Layout>
   );
-}
+};
+
+export default DataSetPage;
