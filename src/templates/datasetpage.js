@@ -8,7 +8,8 @@ import downloadCSV from "./../modules/downloadCSV";
 const DataSetPage = ({ pageContext }) => {
   // console.log(pageContext);
   const { reportData, data } = pageContext;
-  // console.log(new Set(data.data.map((x) => x.Colour__body_).sort()));
+  // const out = new Set(data.data.map((x) => x.Type).sort());
+  // console.log([...out].join('","'));
   const thisPath = `/${reportData.id}/dataset/${data.id}`;
 
   return (
