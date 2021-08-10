@@ -41,13 +41,15 @@ const isValidMunsell = (munsellStr) => {
 const checkStringForMunsell = (str) => {
   let found = false;
   let value = "";
-  for (let i = 0; i < str.length; i++) {
-    if (isNumeric(str[i])) {
-      const thisString = str.substring(i);
-      if (isValidMunsell(thisString)) {
-        found = true;
-        value = thisString;
-        break;
+  if (str) {
+    for (let i = 0; i < str.length; i++) {
+      if (isNumeric(str[i])) {
+        const thisString = str.substring(i);
+        if (isValidMunsell(thisString)) {
+          found = true;
+          value = thisString;
+          break;
+        }
       }
     }
   }
