@@ -273,7 +273,13 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
             key={key}
             empty={!entry.value}
             hideHeaders={hideHeaders}
-            className={entry.fieldType === "text" ? "text" : ""}
+            className={
+              entry.fieldType === "text"
+                ? "text"
+                : entry.fieldType === "munsellcolor"
+                ? "munsellcolor"
+                : ""
+            }
           >
             <span className="innertd">{entry.value}</span>
           </THNoWrap>
@@ -440,10 +446,13 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
           if (innerSpans && innerSpans.length === visibleFields.length) {
             // this doesn't work for superfields currently, though that's probably okay?
             for (let j = 0; j < innerSpans.length; j++) {
+              const theClassList = [...innerSpans[j].parentElement.classList];
               columnMaxWidths[j] = Math.max(
                 columnMaxWidths[j],
-                [...innerSpans[j].parentNode.classList].indexOf("text") > -1
+                theClassList.indexOf("text") > -1
                   ? 400
+                  : theClassList.indexOf("munsellcolor") > -1
+                  ? innerSpans[j].offsetWidth + 75
                   : innerSpans[j].offsetWidth
               );
             }
@@ -536,7 +545,13 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                     key={key}
                     hideHeaders={hideHeaders}
                     superFields={superFields}
-                    className={entry.fieldType === "text" ? "text" : ""}
+                    className={
+                      entry.fieldType === "text"
+                        ? "text"
+                        : entry.fieldType === "munsellcolor"
+                        ? "munsellcolor"
+                        : ""
+                    }
                   >
                     <span className="innertd">
                       <TableSelect
@@ -562,7 +577,13 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                     key={key}
                     hideHeaders={hideHeaders}
                     superFields={superFields}
-                    className={entry.fieldType === "text" ? "text" : ""}
+                    className={
+                      entry.fieldType === "text"
+                        ? "text"
+                        : entry.fieldType === "munsellcolor"
+                        ? "munsellcolor"
+                        : ""
+                    }
                     onClick={() => changeSortBy(entry.fieldKey)}
                   >
                     <span className="innertd">
@@ -631,7 +652,13 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                     ) : (
                       <TableCell
                         key={indexx}
-                        className={column.fieldType === "text" ? "text" : ""}
+                        className={
+                          column.fieldType === "text"
+                            ? "text"
+                            : column.fieldType === "munsellcolor"
+                            ? "munsellcolor"
+                            : ""
+                        }
                       >
                         <span className="innertd">
                           {typeof cleanedValue === "object"
@@ -671,7 +698,13 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                       key={key}
                       hideHeaders={hideHeaders}
                       superFields={superFields}
-                      className={entry.fieldType === "text" ? "text" : ""}
+                      className={
+                        entry.fieldType === "text"
+                          ? "text"
+                          : entry.fieldType === "munsellcolor"
+                          ? "munsellcolor"
+                          : ""
+                      }
                     >
                       <span className="innertd">
                         <TableSelect
@@ -705,7 +738,13 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                       key={`bottom_${key}`}
                       hideHeaders={hideHeaders}
                       superFields={superFields}
-                      className={entry.fieldType === "text" ? "text" : ""}
+                      className={
+                        entry.fieldType === "text"
+                          ? "text"
+                          : entry.fieldType === "munsellcolor"
+                          ? "munsellcolor"
+                          : ""
+                      }
                       onClick={() => changeSortBy(entry.fieldKey)}
                     >
                       <span className="innertd">
