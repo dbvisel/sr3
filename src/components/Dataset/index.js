@@ -57,7 +57,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const prevPage = () => {
     if (startPoint > 0) {
       const newStartPoint = startPoint - rowsPerPage;
-      const newShownRecords = outputData.slice(
+      const newShownRecords = filteredData.slice(
         newStartPoint,
         newStartPoint + rowsPerPage
       );
@@ -69,7 +69,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const nextPage = () => {
     if (startPoint + rowsPerPage <= totalLength) {
       const newStartPoint = startPoint + rowsPerPage;
-      const newShownRecords = outputData.slice(
+      const newShownRecords = filteredData.slice(
         newStartPoint,
         newStartPoint + rowsPerPage
       );

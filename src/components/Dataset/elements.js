@@ -241,7 +241,7 @@ export const TextPopUpCell = styled.div`
     display: block;
     text-decoration: none;
     color: var(--text);
-    border: var(--borderWidth) solid transparent;
+    border: var(--borderWidth) solid rgba(0, 0, 0, 0.125);
     transition: 0.5s;
     z-index: 999;
     font-family: var(--headerFont);
