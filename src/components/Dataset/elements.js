@@ -216,7 +216,7 @@ export const TextInnerCell = styled(TableCell)`
   max-width: var(--textCellWidth);
   overflow-y: hidden;
   overflow-x: scroll;
-  z-index: 2;
+  /* z-index: 2; */
   & a {
     text-decoration: none;
     color: var(--text);
