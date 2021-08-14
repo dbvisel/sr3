@@ -201,3 +201,55 @@ export const TdError = styled.span`
   padding-bottom: 1em;
   grid-column: 1 / ${(props) => props.colSpan};
 `;
+
+export const ColorBlock = styled.span`
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-left: 1em;
+  background-color: ${(props) => props.color || "transparent"};
+`;
+
+export const TextInnerCell = styled(TableCell)`
+  position: relative;
+  text-align: left;
+  max-width: var(--textCellWidth);
+  overflow-y: hidden;
+  overflow-x: scroll;
+  z-index: 2;
+  & a {
+    text-decoration: none;
+    color: var(--text);
+  }
+`;
+
+export const TextPopUpCell = styled.div`
+  --paddingWidth: 8px;
+  --borderWidth: 1px;
+  --totalWidth: calc(var(--paddingWidth) + var(--borderWidth));
+  background-color: var(--white);
+  position: fixed;
+  top: calc(${(props) => (props.top ? props.top : 0)}px - var(--totalWidth));
+  left: calc(${(props) => (props.left ? props.left : 0)}px - var(--totalWidth));
+  max-width: var(--textCellWidth);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+  white-space: normal;
+  z-index: 999;
+  & a {
+    position: relative;
+    padding: var(--paddingWidth);
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    border: var(--borderWidth) solid transparent;
+    transition: 0.5s;
+    z-index: 999;
+    font-family: var(--headerFont);
+    & p {
+      margin: 0;
+    }
+    &:hover {
+      border-color: var(--orange);
+    }
+  }
+`;

@@ -12,6 +12,7 @@ const TextPage = ({ data, pageContext }) => {
   const { reportData, dataSets } = pageContext;
   const { title, subtitle } = frontmatter;
   // console.log(reportData);
+  // console.log(body);
   return (
     <Layout
       title={frontmatter.title}

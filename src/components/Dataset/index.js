@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 // TODO: THIS IS REALLY BAD! GET SOMETHING BETTER TO DO THIS!
 import cloneObject from "./../../modules/cloneObject";
+import { toTitleCase, cleanPercent, compareDate, cleanDate } from "./utils";
 import MunsellCell from "./MunsellCell";
+import TextCell from "./TextCell";
 import {
   TableNav,
   DatasetHeader,
@@ -21,7 +23,7 @@ import {
   TableRow,
   TableCell,
   TdError,
-} from "./elements";
+} from "./elements.js";
 
 /** props:
  * data: the data
@@ -33,51 +35,6 @@ import {
 // TODO: make tables more responsive: https://adrianroselli.com/2020/11/under-engineered-responsive-tables.html
 // https://webup.org/blog/sticky-header-table-with-react-hooks/
 // TODO: split this up into smaller components – this is a mess!
-
-const toTitleCase = (text) =>
-  text.replace(
-    /\w\S*/g,
-    (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-  );
-
-const cleanPercent = (value) => {
-  if (value) {
-    return parseInt(parseFloat(value) * 10000, 10) / 100;
-  }
-  return "";
-};
-
-const compareDate = (a, b) => {
-  //return true if a > b
-  const madeDateA = new Date(a);
-  const madeDateB = new Date(b);
-  const compA =
-    a && madeDateA instanceof Date && !isNaN(madeDateA)
-      ? madeDateA
-      : new Date(0);
-  const compB =
-    b && madeDateB instanceof Date && !isNaN(madeDateB)
-      ? madeDateB
-      : new Date(0);
-  return compA > compB;
-};
-
-const cleanDate = (value) => {
-  if (value) {
-    const madeDate = new Date(value);
-    // this tests to see if it's an "Invalid Date"
-    if (madeDate instanceof Date && !isNaN(madeDate)) {
-      return madeDate.toLocaleDateString("en-GB", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      });
-    } else {
-      return value;
-    }
-  }
-  return "";
-};
 
 const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const [startPoint, setStartPoint] = React.useState(0);
@@ -637,6 +594,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                       <LinkCell key={indexx} rowId={row.id} column={column} />
                     ) : column.fieldType === "munsellcolor" ? (
                       <MunsellCell key={indexx} value={column.value} />
+                    ) : column.fieldType === "text" ? (
+                      <TextCell key={indexx} value={column.value} />
                     ) : column.fieldType === "filename" ? (
                       <FilenameCell
                         key={indexx}
