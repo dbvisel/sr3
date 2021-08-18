@@ -5,9 +5,9 @@ import {
   checkStringForMunsell,
   isValidMunsell,
 } from "./../../modules/munsellColor";
-import { TableCell, ColorBlock } from "./elements";
+import { MunsellBlock } from "./elements";
 
-const MunsellCell = ({ value }) => {
+const MunsellColorSquare = ({ value, children }) => {
   let valueToChange;
   // if(isValidMunsell(value)) {
   //   valueToChange = munsellToHex(value);
@@ -27,27 +27,26 @@ const MunsellCell = ({ value }) => {
         console.log("Failed Munsell color:", isValidMunsell(value), value);
       }
       // console.log(error);
-      valueToChange = "transparent";
+      valueToChange = "";
     }
   }
-  return (
-    <TableCell
-      className="munsellcell"
-      style={{
-        textAlign: "right",
-        marginRight: "1em",
-        overflow: "visible",
-        whiteSpace: "nowrap",
-      }}
-    >
-      <span>{value}</span>
-      <ColorBlock color={valueToChange} />
-    </TableCell>
-  );
+  if (valueToChange) {
+    return (
+      <span style={{ whiteSpace: "nowrap" }}>
+        <span>{children}</span>
+        {" ("}
+        <MunsellBlock color={valueToChange} />
+        {")"}
+      </span>
+    );
+  }
+  return children;
 };
 
-export default MunsellCell;
+export default MunsellColorSquare;
 
-MunsellCell.propTypes = {
+MunsellColorSquare.propTypes = {
   value: PropTypes.string,
+  shownValue: PropTypes.string,
+  childre: PropTypes.node,
 };
