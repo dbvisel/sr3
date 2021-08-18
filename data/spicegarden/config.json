@@ -27,8 +27,16 @@
 				"name":"Statistical Analysis of the Artifacts"
 			},
 			{"id":"uniqueartifacts", "name": "Unique Artifacts"},
+			{"id":"specialacknowledgements","name":"Special Acknowledgements"},
 			{"id":"conclusion", "name": "Conclusion"},
-			{"id":"specialacknowledgements","name":"Special Acknowledgements"}
+			{
+				"id":"finepasteearthenware",
+				"name":"Earthenware Types at the FTCSG Site"
+			},
+			{
+				"id": "semanalysis",
+				"name": "SEM Analysis of FTCSG Stoneware"
+			}
 		],
 		"dataSets": 
 		[
