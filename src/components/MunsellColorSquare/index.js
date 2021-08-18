@@ -48,5 +48,8 @@ export default MunsellColorSquare;
 MunsellColorSquare.propTypes = {
   value: PropTypes.string,
   shownValue: PropTypes.string,
-  childre: PropTypes.node,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
