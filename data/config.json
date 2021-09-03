@@ -117,6 +117,9 @@
 						"tableName": "SG Stone"
 					}
 				]				
+			},{
+				"id":"pulausaigon", 
+				"name":"Pulau Saigon"
 			}
 		],
 		"excludedReports": ["dummy"]

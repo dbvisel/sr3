@@ -1,0 +1,39 @@
+{
+	"report": {
+		"id": "pulausaigon",
+		"title": "The Pulau Saigon Site Report",
+		"author": "Goh Geok Yian, Nanyang Technological University Singapore, and John N. Miksic, National University of Singapore & Nanyang Technological University Singapore",
+		"lastUpdated":"31 August 2021",
+		"texts": 
+			[
+				{
+					"id": "description",
+					"name": "Description"
+				},
+				{
+					"id":"siteformationprocesses",
+					"name":"Site Formation Processes"
+				},
+				{
+					"id":"conclusion",
+					"name":"Conclusion"
+				},
+				{
+					"id":"statistics",
+					"name":"Statistics of the PSG Artifacts"
+				},
+				{
+					"id":"drawings",
+					"name":"Drawings of artifacts"
+				},
+				{
+					"id":"bibliography",
+					"name":"Bibliography"
+				},
+				{
+					"id":"appendix",
+					"name":"Appendix"
+				}
+			],
+		"dataSets": 
+		[]}}
