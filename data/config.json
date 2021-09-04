@@ -122,6 +122,6 @@
 				"name":"Pulau Saigon"
 			}
 		],
-		"excludedReports": ["dummy"]
+		"excludedReports": ["scc", "dieng", "lingga", "msatp","colombo","dummy"]
 	}
 }
