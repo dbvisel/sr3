@@ -31,7 +31,7 @@
 			{
 				"id":"fortcanning", 
 				"name":"Fort Canning",
-				"airtableDatasets":[
+				"airtableDatasetsDisabled":[
 					{
 						"baseId": "apphXa3ppciAux1Wi",
 						"tableName": "Fort Canning Artefacts"
@@ -49,7 +49,7 @@
 			{
 				"id":"spicegarden", 
 				"name":"Fort Canning Spice Garden",
-				"airtableDatasets":[
+				"airtableDatasetsDisabled":[
 					{
 						"baseId": "appYZGrMFEWCkndRO",
 						"tableName": "SG Tempered Earthenware"
@@ -119,9 +119,24 @@
 				]				
 			},{
 				"id":"pulausaigon", 
-				"name":"Pulau Saigon"
+				"name":"Pulau Saigon",
+				"airtableDatasetsDisabled":[
+					{"baseId":"appwtjoDJt3adV8XT","tableName":"PSG European Stoneware"},
+					{"baseId":"appCllwi74YYDIKwA","tableName":"PSG European Porcelain"},
+					{"baseId":"appMW2p9GST1Pumxy","tableName":"PSG 14th century Ceramics"},
+					{"baseId":"appMwnIYGUKGiQXpC","tableName":"PSG Japanese Porcelain"},
+					{"baseId":"appfEhzHbVMhYGgfT","tableName":"PSG Chinese Porcelain"},
+					{"baseId":"appbShn3keNhWAcfx","tableName":"PSG Chinese Stoneware"},
+					{"baseId":"applF9GIFlMD0SKgp","tableName":"PSG Earthenware"},
+					{"baseId":"appVMta9rDIc9JlyS","tableName":"PSG Glass"},
+					{"baseId":"appDbs5jR3cZ6nLhQ","tableName":"PSG Metal"},
+					{"baseId":"app8AdTGGSflAH5If","tableName":"PSG Stone"},
+					{"baseId":"appS1bjQRbyBLmV4i","tableName":"PSG Organic"},
+					{"baseId":"appZPQfx1M5YHwaYJ","tableName":"PSG Plastic"},
+					{"baseId":"appJNqWkxl07RSe6K","tableName":"PSG Construction Materials"}
+				]
 			}
 		],
-		"excludedReports": ["scc", "dieng", "lingga", "msatp","colombo","dummy"]
+		"excludedReports": ["dummy"]
 	}
 }

@@ -63,7 +63,8 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
   }
   const mySort =
     data.defaultSort || myFields.length ? myFields[0].fieldKey : "";
-  return {
+
+  const output = {
     reportID: reportID,
     defaultSort: mySort,
     name: data.name,
@@ -79,6 +80,27 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
     }),
     fields: myFields,
   };
+  // START OF SECTION WHICH EXPORTS
+
+  // const filename =
+  //   __dirname + `/data/` + reportID + "/datasets/" + data.id + ".json";
+
+  // if (fs.existsSync(filename)) {
+  //   console.log("This already exists: ", filename);
+  // } else {
+  //   console.log("Will write to: ", filename);
+  //   fs.writeFile(filename, JSON.stringify(output), (err) => {
+  //     if (err) {
+  //       console.log("Error writing file", err);
+  //     } else {
+  //       console.log("Successfully wrote file");
+  //     }
+  //   });
+  // }
+
+  // END OF SECTION WHICH EXPORTS
+
+  return output;
 };
 
 exports.createPages = ({ actions, graphql }) => {
@@ -144,81 +166,6 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-      allAirtableData: allAirtable {
-        group(field: table) {
-          fieldValue
-          nodes {
-            data {
-              Square_Unit
-              Lot
-              Depth
-              Distance_from_North_South
-              Distance_from_East_West
-              Excavation_Date
-              Type_of_Material
-              Type_of_Ware
-              Length
-              Width
-              Thickness
-              Number_of_Pieces
-              Vessel_Type
-              Vessel_Part
-              Decoration
-              Color__Munsell_Chart_
-              Period
-              Provenance
-              Date_Recorded
-              Site
-              Remarks
-              Unit
-              Stratigraphy_Spit
-              Breadth_Width
-              Diameter__lip_base_
-              Percentage_of_lip_base
-              Colour__body_
-              Colour__exterior_
-              Diameter_of_lip_base_measured_
-              Percentage_of_lip_base_measured_
-              Diameter__throat_
-              Percentage_of_throat
-              Excavation_Date
-              Diameter_measured_
-              Percentage_of_throat_measured_
-              Quantities_in_number_of_sherds
-              Diameter__lip_top_lip_of_knob_
-              Percentage_of_rim_or_base
-              Diameter__orifice_
-              Colour__slip_
-              Type
-              Total_pieces
-              Total_weight
-              Hidden_order
-              FTC_Salvage__2018_2019__pieces
-              FTCSG_Pandan_Bed_pieces
-              No_
-              Spit
-              Archaeological_Unit
-              Vessel_Information
-              Dimensions_of_sherd__in_cm__1
-              Dimensions_of_sherd__in_cm__2
-              Dimensions_of_sherd__in_cm__3
-              Dimensions_of_sherd__in_cm__4
-              Diameter__lip_base_
-              Image_Taken_
-              Image_File_Name
-              Dimensions_of_sherd__in_cm__5
-              Diameter
-              Diameter__Ext_
-              Foot_Height_Thickness
-              Quantities_in_Weight
-              Weight
-              Artefact_Number
-              MNV____
-              Type
-            }
-          }
-        }
-      }
     }
   `).then((result) => {
     if (result.errors) {
@@ -227,7 +174,84 @@ exports.createPages = ({ actions, graphql }) => {
     // console.log(result.data);
     const masterData = result.data.project.project;
     let textFiles = result.data.textFiles.edges;
-    const allAirtableData = result.data.allAirtableData.group;
+
+    // allAirtableData: allAirtable {
+    // 	group(field: table) {
+    // 		fieldValue
+    // 		nodes {
+    // 			data {
+    // 				Square_Unit
+    // 				Lot
+    // 				Depth
+    // 				Distance_from_North_South
+    // 				Distance_from_East_West
+    // 				Excavation_Date
+    // 				Type_of_Material
+    // 				Type_of_Ware
+    // 				Length
+    // 				Width
+    // 				Thickness
+    // 				Number_of_Pieces
+    // 				Vessel_Type
+    // 				Vessel_Part
+    // 				Decoration
+    // 				Color__Munsell_Chart_
+    // 				Period
+    // 				Provenance
+    // 				Date_Recorded
+    // 				Site
+    // 				Remarks
+    // 				Unit
+    // 				Stratigraphy_Spit
+    // 				Breadth_Width
+    // 				Diameter__lip_base_
+    // 				Percentage_of_lip_base
+    // 				Colour__body_
+    // 				Colour__exterior_
+    // 				Diameter_of_lip_base_measured_
+    // 				Percentage_of_lip_base_measured_
+    // 				Diameter__throat_
+    // 				Percentage_of_throat
+    // 				Excavation_Date
+    // 				Diameter_measured_
+    // 				Percentage_of_throat_measured_
+    // 				Quantities_in_number_of_sherds
+    // 				Diameter__lip_top_lip_of_knob_
+    // 				Percentage_of_rim_or_base
+    // 				Diameter__orifice_
+    // 				Colour__slip_
+    // 				Type
+    // 				Total_pieces
+    // 				Total_weight
+    // 				Hidden_order
+    // 				FTC_Salvage__2018_2019__pieces
+    // 				FTCSG_Pandan_Bed_pieces
+    // 				No_
+    // 				Spit
+    // 				Archaeological_Unit
+    // 				Vessel_Information
+    // 				Dimensions_of_sherd__in_cm__1
+    // 				Dimensions_of_sherd__in_cm__2
+    // 				Dimensions_of_sherd__in_cm__3
+    // 				Dimensions_of_sherd__in_cm__4
+    // 				Diameter__lip_base_
+    // 				Image_Taken_
+    // 				Image_File_Name
+    // 				Dimensions_of_sherd__in_cm__5
+    // 				Diameter
+    // 				Diameter__Ext_
+    // 				Foot_Height_Thickness
+    // 				Quantities_in_Weight
+    // 				Weight
+    // 				Artefact_Number
+    // 				MNV____
+    // 				Type
+    // 			}
+    // 		}
+    // 	}
+    // }
+
+    const allAirtableData = { nodes: [] }; // result.data.allAirtableData.group;
     let reportData = result.data.reportData.nodes.filter(
       (x) => x.report !== null
     );

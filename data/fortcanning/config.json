@@ -29,7 +29,7 @@
 				"id": "artefacts",
 				"name": "Artefacts",
 				"airtableName": "Fort Canning Artefacts",
-				"isAirtable": true,
+				"isAirtable": false,
 				"fields":[
 					{"fieldName":"Site","fieldKey":"Site"},
 					{"fieldName":"Artefact Number", "fieldKey":"Artefact_Number"},
@@ -63,7 +63,7 @@
 				"id":"salvagedatabysquare",
 				"name":"Salvage Data by Square",
 				"airtableName":"Fort Canning Salvage Data by Square",
-				"isAirtable":true,
+				"isAirtable":false,
 				"defaultSort":"No_",
 				"fields":[
 					{"fieldName":"No.","fieldKey":"No_"},
@@ -95,7 +95,7 @@
 				"id":"salvagedatatotals",
 				"name":"Salvage Data totals",
 				"airtableName":"Fort Canning Salvage Data totals",
-				"isAirtable":true,
+				"isAirtable":false,
 				"defaultSort":"Hidden_order",
 				"fields":[
 					{"fieldKey":"Hidden_order", "fieldName":"Hidden order","fieldHidden": true},

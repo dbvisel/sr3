@@ -112,7 +112,10 @@ where fieldValue is the table name. We have to pull in all the different field n
 {"fieldName":"fieldUnit","fieldKey":"fieldUnit"},
 {"fieldName":"Weight","fieldKey":"Weight", "fieldUnit":"g"},
 
-added: 
+## PULAU SAIGON
+
+{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
+
 
 
 

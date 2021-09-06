@@ -35,5 +35,99 @@
 					"name":"Appendix"
 				}
 			],
-		"dataSets": 
-		[]}}
+		"dataSetsz": 
+		[					
+			{
+				"id":"europeanstoneware",
+				"name":"European Stoneware",				
+				"isAirtable": true,
+				"airtableName":"PSG European Stoneware",
+				"fields":[]
+			},
+			{
+				"id":"europeanporcelain",
+				"name":"European Porcelain",				
+				"isAirtable": true,
+				"airtableName":"PSG European Porcelain",
+				"fields":[]
+			},
+			{
+				"id":"14thcenturyceramics",
+				"name":"14th-century Ceramics",				
+				"isAirtable": true,
+				"airtableName":"PSG 14th century Ceramics",
+				"fields":[]
+			},
+			{
+				"id":"japaneseporcelain",
+				"name":"Japanese Porcelain",				
+				"isAirtable": true,
+				"airtableName":"PSG Japanese Porcelain",
+				"fields":[]
+			},
+			{
+				"id":"chineseporcelain",
+				"name":"Chinese Porcelain",				
+				"isAirtable": true,
+				"airtableName":"PSG Chinese Porcelain",
+				"fields":[]
+			},
+			{
+				"id":"chinesestoneware",
+				"name":"Chinese Stoneware",				
+				"isAirtable": true,
+				"airtableName":"PSG Chinese Stoneware",
+				"fields":[]
+			},
+			{
+				"id":"earthenware",
+				"name":"Earthenware",				
+				"isAirtable": true,
+				"airtableName":"PSG Earthenware",
+				"fields":[]
+			},
+			{
+				"id":"glass",
+				"name":"Glass",				
+				"isAirtable": true,
+				"airtableName":"PSG Glass",
+				"fields":[]
+			},
+			{
+				"id":"metal",
+				"name":"Metal",				
+				"isAirtable": true,
+				"airtableName":"PSG Metal",
+				"fields":[]
+			},
+			{
+				"id":"stone",
+				"name":"Stone",				
+				"isAirtable": true,
+				"airtableName":"PSG Stone",
+				"fields":[]
+			},
+			{
+				"id":"organic",
+				"name":"Organic",				
+				"isAirtable": true,
+				"airtableName":"PSG Organic",
+				"fields":[]
+			},
+			{
+				"id":"plastic",
+				"name":"Plastic",				
+				"isAirtable": true,
+				"airtableName":"PSG Plastic",
+				"fields":[]
+			},
+			{
+				"id":"constructionmaterials",
+				"name":"Construction Materials",				
+				"isAirtable": true,
+				"airtableName":"PSG Construction Materials",
+				"fields":[]
+			}
+		]
+	}
+}
