@@ -120,7 +120,7 @@
 			},{
 				"id":"pulausaigon", 
 				"name":"Pulau Saigon",
-				"airtableDatasetsDisabled":[
+				"airtableDatasets":[
 					{"baseId":"appwtjoDJt3adV8XT","tableName":"PSG European Stoneware"},
 					{"baseId":"appCllwi74YYDIKwA","tableName":"PSG European Porcelain"},
 					{"baseId":"appMW2p9GST1Pumxy","tableName":"PSG 14th century Ceramics"},
@@ -133,7 +133,7 @@
 					{"baseId":"app8AdTGGSflAH5If","tableName":"PSG Stone"},
 					{"baseId":"appS1bjQRbyBLmV4i","tableName":"PSG Organic"},
 					{"baseId":"appZPQfx1M5YHwaYJ","tableName":"PSG Plastic"},
-					{"baseId":"appJNqWkxl07RSe6K","tableName":"PSG Construction Materials"}
+					{"baseId":"appJNqWkxl07RSe6K","tableName":"PSG Construction Materials"}				
 				]
 			}
 		],

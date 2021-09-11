@@ -89,7 +89,7 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
   //   console.log("This already exists: ", filename);
   // } else {
   //   console.log("Will write to: ", filename);
-  //   fs.writeFile(filename, JSON.stringify(output), (err) => {
+  //   fs.writeFile(filename, JSON.stringify({dataset:output}), (err) => {
   //     if (err) {
   //       console.log("Error writing file", err);
   //     } else {
@@ -120,7 +120,6 @@ exports.createPages = ({ actions, graphql }) => {
           makeObjectPages
         }
       }
-
       textFiles: allMdx {
         edges {
           node {
@@ -162,6 +161,41 @@ exports.createPages = ({ actions, graphql }) => {
             texts {
               id
               name
+            }
+          }
+        }
+      }
+      allAirtableData: allAirtable {
+        group(field: table) {
+          fieldValue
+          nodes {
+            data {
+              Artifact_Number
+              Unit_Number
+              Depth__cm_
+              Lot
+              Spit
+              Level
+              Material
+              Varieties_of_Material
+              Type_of_Ware
+              Provenance
+              Period
+              Form
+              Vessel_Part
+              Number_of_pieces
+              Weight__g_
+              Length__cm_
+              Width__cm_
+              Thickness__cm_
+              Thickness_of_base__complete_profile___cm_
+              Height_of_foot_rim__cm_
+              Diameter__cm_
+              MNV____
+              Color_Exterior_Earthenware__Munsell_
+              Color_Interior_Earthenware__Munsell_
+              Color_Profile_Earthenware__Munsell_
+              Filename
             }
           }
         }
@@ -251,7 +285,8 @@ exports.createPages = ({ actions, graphql }) => {
     // 	}
     // }
 
-    const allAirtableData = { nodes: [] }; // result.data.allAirtableData.group;
+    const allAirtableData =
+      result.data.allAirtableData.group; /*{ nodes: [] }; */
     let reportData = result.data.reportData.nodes.filter(
       (x) => x.report !== null
     );
@@ -281,7 +316,7 @@ exports.createPages = ({ actions, graphql }) => {
             );
           } else {
             console.log("Airtable dataset!");
-            // TODO: if we are here, the data is coming from Airtable.
+            // if we are here, the data is coming from Airtable.
             // assemble it from the GraphQL and the stub.
             pageData = {
               dataset: makeDatasetFromAirtable(
@@ -355,6 +390,7 @@ exports.createPages = ({ actions, graphql }) => {
             path: node.frontmatter.path,
             component: textPageTemplate,
             context: {
+              // pathy: node.frontmatter.path,
               report: node.frontmatter.report,
               reportData: reportConfig,
               dataSets: outDataSets.length > 0 ? outDataSets : null,

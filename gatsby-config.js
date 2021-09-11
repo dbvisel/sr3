@@ -34,15 +34,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     // `gatsby-plugin-force-trailing-slashes`,
-    //  {
-    //       resolve: `gatsby-source-airtable`,
-    //       options: {
-    //         apiKey: process.env.AIRTABLE_API_KEY,
-    //         concurrency: 5,
-    //         tables: getTheAirtableData(datasetConfig.project),
-    //       },
-    //     },
-
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        concurrency: 5,
+        tables: getTheAirtableData(datasetConfig.project),
+      },
+    },
     {
       resolve: `gatsby-plugin-notifications`,
       options: { sound: "Glass", toast: true },
