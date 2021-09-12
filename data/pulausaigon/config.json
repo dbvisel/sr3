@@ -40,13 +40,9 @@
 			"name":"European Stoneware",				
 			"isAirtable": true,
 			"airtableName":"PSG European Stoneware",
+			"defaultSort":"Artifact_Number",
 			"fields":[
 				{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-				{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-				{"fieldName":"Unit","fieldKey":"Unit_Number"},
-				{"fieldName":"Spit","fieldKey":"Spit"},
-				{"fieldName":"Lot","fieldKey":"Lot"},
-				{"fieldName":"Level","fieldKey":"Level"},
 				{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 				{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 				{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -62,7 +58,14 @@
 					{"fieldName":"Thickness of base (complete profile)","fieldKey":"Thickness_of_base__complete_profile___cm_","fieldUnit":"cm"},
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
-					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"}
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}
@@ -73,13 +76,9 @@
 				"name":"European Porcelain",				
 				"isAirtable": true,
 				"airtableName":"PSG European Porcelain",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -96,24 +95,27 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Filename","fieldKey":"Filename"}			
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}
 				]
-			},
+						},
 			{
 				"id":"14thcenturyceramics",
 				"name":"14th-century Ceramics",				
 				"isAirtable": true,
 				"airtableName":"PSG 14th century Ceramics",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -130,24 +132,26 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Filename","fieldKey":"Filename"}			
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
-				]
-			},
+					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}
+				]			},
 			{
 				"id":"japaneseporcelain",
 				"name":"Japanese Porcelain",				
 				"isAirtable": true,
 				"airtableName":"PSG Japanese Porcelain",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -164,10 +168,17 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Filename","fieldKey":"Filename"}			
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}
 				]
 			},
 			{
@@ -175,13 +186,9 @@
 				"name":"Chinese Porcelain",				
 				"isAirtable": true,
 				"airtableName":"PSG Chinese Porcelain",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -198,24 +205,27 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Filename","fieldKey":"Filename"}			
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
-				]
-			},
+					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}
+				]		
+				},
 			{
 				"id":"chinesestoneware",
 				"name":"Chinese Stoneware",				
 				"isAirtable": true,
 				"airtableName":"PSG Chinese Stoneware",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -232,24 +242,27 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Filename","fieldKey":"Filename"}			
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
-				]
-			},
+					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}
+					]		
+				},
 			{
 				"id":"earthenware",
 				"name":"Earthenware",				
 				"isAirtable": true,
 				"airtableName":"PSG Earthenware",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -266,24 +279,27 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Filename","fieldKey":"Filename"}			
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
-				]
+					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	
+				]			
 			},
 			{
 				"id":"glass",
 				"name":"Glass",				
 				"isAirtable": true,
 				"airtableName":"PSG Glass",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -300,24 +316,27 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Filename","fieldKey":"Filename"}			
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
-				]
+					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}
+				]			
 			},
 			{
 				"id":"metal",
 				"name":"Metal",				
 				"isAirtable": true,
 				"airtableName":"PSG Metal",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -334,24 +353,27 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Filename","fieldKey":"Filename"}			
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
-				]
+					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}
+				]		
 			},
 			{
 				"id":"stone",
 				"name":"Stone",				
 				"isAirtable": true,
 				"airtableName":"PSG Stone",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -367,11 +389,18 @@
 					{"fieldName":"Thickness of base (complete profile)","fieldKey":"Thickness_of_base__complete_profile___cm_","fieldUnit":"cm"},
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
-					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"}
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Filename","fieldKey":"Filename"}	
 				]
 			},
 			{
@@ -379,13 +408,9 @@
 				"name":"Organic",				
 				"isAirtable": true,
 				"airtableName":"PSG Organic",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -398,28 +423,31 @@
 					{"fieldName":"Length","fieldKey":"Length__cm_","fieldUnit":"cm"},
 					{"fieldName":"Width","fieldKey":"Width__cm_","fieldUnit":"cm"},
 					{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"},
+					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"}
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Thickness of base (complete profile)","fieldKey":"Thickness_of_base__complete_profile___cm_","fieldUnit":"cm"},
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
-					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Filename","fieldKey":"Filename"}			
-					]
+				]
 			},
 			{
 				"id":"plastic",
 				"name":"Plastic",				
 				"isAirtable": true,
 				"airtableName":"PSG Plastic",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -432,14 +460,22 @@
 					{"fieldName":"Length","fieldKey":"Length__cm_","fieldUnit":"cm"},
 					{"fieldName":"Width","fieldKey":"Width__cm_","fieldUnit":"cm"},
 					{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"},
+					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
+					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"}
+
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Thickness of base (complete profile)","fieldKey":"Thickness_of_base__complete_profile___cm_","fieldUnit":"cm"},
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
-					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
-					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Filename","fieldKey":"Filename"}	
+					{"fieldName":"Filename","fieldKey":"Filename"}				
 				]
 			},
 			{
@@ -447,13 +483,9 @@
 				"name":"Construction Materials",				
 				"isAirtable": true,
 				"airtableName":"PSG Construction Materials",
+				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
-					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
-					{"fieldName":"Unit","fieldKey":"Unit_Number"},
-					{"fieldName":"Spit","fieldKey":"Spit"},
-					{"fieldName":"Lot","fieldKey":"Lot"},
-					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
 					{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
 					{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
@@ -465,7 +497,15 @@
 					{"fieldName":"Weight","fieldKey":"Weight__g_","fieldUnit":"g"},
 					{"fieldName":"Length","fieldKey":"Length__cm_","fieldUnit":"cm"},
 					{"fieldName":"Width","fieldKey":"Width__cm_","fieldUnit":"cm"},
-					{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"},
+					{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"}
+		
+				],
+				"excludedFields": [
+					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+					{"fieldName":"Unit","fieldKey":"Unit_Number"},
+					{"fieldName":"Spit","fieldKey":"Spit"},
+					{"fieldName":"Lot","fieldKey":"Lot"},
+					{"fieldName":"Level","fieldKey":"Level"},
 					{"fieldName":"Thickness of base (complete profile)","fieldKey":"Thickness_of_base__complete_profile___cm_","fieldUnit":"cm"},
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
