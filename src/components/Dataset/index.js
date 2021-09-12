@@ -85,7 +85,8 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
         outt =
           outt ||
           (row.row[i].fieldKey === fieldName &&
-            row.row[i].value === fieldValue) ||
+            (row.row[i].value === fieldValue ||
+              row.row[i].value.indexOf(fieldValue) > -1)) ||
           fieldValue === row.row[i].fieldName ||
           fieldValue === row.row[i].fieldNameShort;
       }
@@ -339,7 +340,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
 
   const croppedFieldValues = (valuesFromSchema, fieldKey) => {
     // this function goes through all field values in the schema and only returns what's actually used
-    const valuesUsedInData = new Set(data.data.map((x) => x[fieldKey]));
+    const valuesUsedInData = new Set(data.data.flatMap((x) => x[fieldKey]));
     return valuesFromSchema.filter(
       (x) => [...valuesUsedInData].indexOf(x) > -1
     );
