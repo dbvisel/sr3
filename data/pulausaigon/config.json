@@ -95,7 +95,7 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -132,7 +132,7 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -168,7 +168,7 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -205,7 +205,7 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -242,7 +242,7 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -279,7 +279,7 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -316,7 +316,7 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -353,7 +353,7 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -400,7 +400,7 @@
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"}	,
-					{"fieldName":"Filename","fieldKey":"Filename"}	
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}	
 				]
 			},
 			{
@@ -437,7 +437,7 @@
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				]
 			},
 			{
@@ -475,7 +475,7 @@
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Filename","fieldKey":"Filename"}				
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}				
 				]
 			},
 			{
@@ -513,7 +513,7 @@
 					{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 					{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"},
-					{"fieldName":"Filename","fieldKey":"Filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
 				]
 			}
 		]

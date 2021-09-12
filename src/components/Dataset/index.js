@@ -6,6 +6,7 @@ import cloneObject from "./../../modules/cloneObject";
 import { toTitleCase, cleanPercent, compareDate, cleanDate } from "./utils";
 import MunsellCell from "./MunsellCell";
 import TextCell from "./TextCell";
+import FilenameCell from "./FilenameCell";
 import {
   TableNav,
   DatasetHeader,
@@ -37,6 +38,7 @@ import {
 // TODO: split this up into smaller components – this is a mess!
 
 const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
+  console.log(data);
   const [startPoint, setStartPoint] = React.useState(0);
   const rowsPerPage = perPage || 50;
   // const endPoint = startPoint + perPage; // this is never used
@@ -244,32 +246,6 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
         ))}
       </TableRow>
     ) : null;
-  };
-
-  const FilenameCell = ({ column, rowId }) => {
-    // TODO: maybe this should link to an object page?
-    const myRow = data.data.filter((x) => x.id === rowId)[0];
-    const myValue =
-      column.fieldNameShown && myRow[column.fieldNameShown]
-        ? myRow[column.fieldNameShown]
-        : column.value;
-    // const myImageUrl = `/${data.reportID}/images/${column.value}`;
-    // use this if we wanted to make thumbnails
-    const myPageUrl = `/${data.reportID}/dataset/${data.id}/id/${rowId}`;
-    // console.log(myImageUrl, myPageUrl);
-    return (
-      <TableCell>
-        <span className="innertd">
-          {/* <img src={myImageUrl} height={"auto"} width={200} alt={myValue} />*/}
-          <Link to={myPageUrl}>{myValue}</Link>
-        </span>
-      </TableCell>
-    );
-  };
-
-  FilenameCell.propTypes = {
-    column: PropTypes.object.isRequired,
-    rowId: PropTypes.string.isRequired,
   };
 
   const LinkingCell = ({ column, rowId }) => {
@@ -602,6 +578,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                         key={indexx}
                         column={column}
                         rowId={row.id}
+                        data={data}
                       />
                     ) : column.fieldLink ? (
                       <LinkingCell

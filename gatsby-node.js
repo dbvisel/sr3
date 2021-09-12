@@ -54,7 +54,7 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
   // 3. build data from field data looping through selected allAirtableData
   let outputData = [];
   for (let i = 0; i < myRawData.length; i++) {
-    let thisRecord = {};
+    let thisRecord = { id: i + 1 };
     for (let j = 0; j < myFields.length; j++) {
       thisRecord[myFields[j].fieldKey] =
         myRawData[i][myFields[j].fieldKey] || "";
@@ -99,7 +99,6 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
   // }
 
   // END OF SECTION WHICH EXPORTS
-
   return output;
 };
 
@@ -352,7 +351,7 @@ exports.createPages = ({ actions, graphql }) => {
                 });
               }
             });
-            console.log(outputText);
+            // console.log(outputText);
           }
         });
       }
