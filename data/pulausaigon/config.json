@@ -15,6 +15,10 @@
 					"name":"Site Formation Processes"
 				},
 				{
+					"id":"artifacttypes",
+					"name":"Artifact Types"
+				},				
+				{
 					"id":"conclusion",
 					"name":"Conclusion"
 				},
