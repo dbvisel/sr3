@@ -38,7 +38,6 @@ import {
 // TODO: split this up into smaller components – this is a mess!
 
 const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
-  console.log(data);
   const [startPoint, setStartPoint] = React.useState(0);
   const rowsPerPage = perPage || 50;
   // const endPoint = startPoint + perPage; // this is never used

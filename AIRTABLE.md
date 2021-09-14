@@ -139,7 +139,9 @@ where fieldValue is the table name. We have to pull in all the different field n
 {"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 {"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
 {"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"},
-{"fieldName":"Filename","fieldKey":"Filename"}
+{"fieldName":"Filename","fieldKey":"Filename"},
+{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}
+
 
 
 

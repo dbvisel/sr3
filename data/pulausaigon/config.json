@@ -58,7 +58,8 @@
 					{"fieldName":"Thickness of base (complete profile)","fieldKey":"Thickness_of_base__complete_profile___cm_","fieldUnit":"cm"},
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
-					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"}
+					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -95,7 +96,8 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}		
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -132,7 +134,8 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -168,7 +171,8 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}			
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -205,7 +209,8 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}	
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -242,7 +247,8 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}		
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -279,7 +285,8 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}	
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -316,7 +323,8 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -353,7 +361,8 @@
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
 					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
-					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"}			
+					{"fieldName":"Image","fieldKey":"Filename","fieldType":"filename"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -389,7 +398,8 @@
 					{"fieldName":"Thickness of base (complete profile)","fieldKey":"Thickness_of_base__complete_profile___cm_","fieldUnit":"cm"},
 					{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
-					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"}
+					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -423,7 +433,8 @@
 					{"fieldName":"Length","fieldKey":"Length__cm_","fieldUnit":"cm"},
 					{"fieldName":"Width","fieldKey":"Width__cm_","fieldUnit":"cm"},
 					{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"},
-					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"}
+					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}
 				],
 				"excludedFields": [
 					{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
@@ -461,7 +472,8 @@
 					{"fieldName":"Width","fieldKey":"Width__cm_","fieldUnit":"cm"},
 					{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"},
 					{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
-					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"}
+					{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}
 
 				],
 				"excludedFields": [
@@ -497,7 +509,8 @@
 					{"fieldName":"Weight","fieldKey":"Weight__g_","fieldUnit":"g"},
 					{"fieldName":"Length","fieldKey":"Length__cm_","fieldUnit":"cm"},
 					{"fieldName":"Width","fieldKey":"Width__cm_","fieldUnit":"cm"},
-					{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"}
+					{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"},
+					{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"}
 		
 				],
 				"excludedFields": [

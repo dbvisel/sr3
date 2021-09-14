@@ -195,6 +195,7 @@ exports.createPages = ({ actions, graphql }) => {
               Color_Interior_Earthenware__Munsell_
               Color_Profile_Earthenware__Munsell_
               Filename
+              Remarks
             }
           }
         }
