@@ -82,21 +82,25 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
   };
   // START OF SECTION WHICH EXPORTS
 
-  // const filename =
-  //   __dirname + `/data/` + reportID + "/datasets/" + data.id + ".json";
+  const downloadAirtableDatasets = false;
 
-  // if (fs.existsSync(filename)) {
-  //   console.log("This already exists: ", filename);
-  // } else {
-  //   console.log("Will write to: ", filename);
-  //   fs.writeFile(filename, JSON.stringify({dataset:output}), (err) => {
-  //     if (err) {
-  //       console.log("Error writing file", err);
-  //     } else {
-  //       console.log("Successfully wrote file");
-  //     }
-  //   });
-  // }
+  if (downloadAirtableDatasets) {
+    const filename =
+      __dirname + `/data/` + reportID + "/datasets/" + data.id + ".json";
+
+    if (fs.existsSync(filename)) {
+      console.log("This already exists: ", filename);
+    } else {
+      console.log("Will write to: ", filename);
+      fs.writeFile(filename, JSON.stringify({ dataset: output }), (err) => {
+        if (err) {
+          console.log("Error writing file", err);
+        } else {
+          console.log("Successfully wrote file");
+        }
+      });
+    }
+  }
 
   // END OF SECTION WHICH EXPORTS
   return output;
@@ -187,15 +191,14 @@ exports.createPages = ({ actions, graphql }) => {
               Length__cm_
               Width__cm_
               Thickness__cm_
-              Thickness_of_base__complete_profile___cm_
               Height_of_foot_rim__cm_
               Diameter__cm_
               MNV____
+              Date_of_excavation
               Color_Exterior_Earthenware__Munsell_
-              Color_Interior_Earthenware__Munsell_
-              Color_Profile_Earthenware__Munsell_
-              Filename
               Remarks
+              Thickness_of_base__complete_profile___cm_
+              Thickness__foot_rim___cm_
             }
           }
         }
@@ -208,6 +211,12 @@ exports.createPages = ({ actions, graphql }) => {
     // console.log(result.data);
     const masterData = result.data.project.project;
     let textFiles = result.data.textFiles.edges;
+
+    // Thickness_of_base__complete_profile___cm_
+    // Color_Exterior_Earthenware__Munsell_
+    // Color_Interior_Earthenware__Munsell_
+    // Color_Profile_Earthenware__Munsell_
+    // Filename
 
     // allAirtableData: allAirtable {
     // 	group(field: table) {

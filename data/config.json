@@ -5,7 +5,7 @@
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",
 		"lastUpdated": "27 November 2021",
-		"makeObjectPages": true,
+		"makeObjectPages": false,
 		"notes": "Make sure makeObjectReports is set to true for production. Any report ID in excluded won't appear.",
 		"possibleReports": [
 			{
@@ -120,7 +120,7 @@
 			},{
 				"id":"pulausaigon", 
 				"name":"Pulau Saigon",
-				"airtableDatasets":[
+				"airtableDatasetsDisabled":[
 					{"baseId":"appwtjoDJt3adV8XT","tableName":"PSG European Stoneware"},
 					{"baseId":"appCllwi74YYDIKwA","tableName":"PSG European Porcelain"},
 					{"baseId":"appMW2p9GST1Pumxy","tableName":"PSG 14th century Ceramics"},
@@ -135,8 +135,28 @@
 					{"baseId":"appZPQfx1M5YHwaYJ","tableName":"PSG Plastic"},
 					{"baseId":"appJNqWkxl07RSe6K","tableName":"PSG Construction Materials"}				
 				]
+			},{
+				"id":"sta", 
+				"name": "STA",
+				"airtableDatasets": [
+					{"baseId":"app7Q9PPdy7rfeCkC", "tableName":"STA Stoneware Brittle (1-582)"},
+					{"baseId":"app9eRQQWNzit0KRg", "tableName":"STA Stoneware Buff (1-403; 460-500))"},
+					{"baseId":"appFJtImRDpHGhncj", "tableName":"STA Stoneware - Mercury Jar (1-292)"},
+					{"baseId":"app1x7dRMBj2sUd8J", "tableName":"STA tempered earthenware (1 - 999)"},
+					{"baseId":"appP0OEhoLlW4PCe1", "tableName":"STA tempered earthenware (1000 - 1192)"},
+					{"baseId":"appCrfwhMBAfplNDX", "tableName":"STA FPW (1-999)"},
+					{"baseId":"appOUmZuzljsWnNMR", "tableName":"STA Blue and White (1-580)"},
+					{"baseId":"appHpod0SB0IDgMZz", "tableName":"STA White Porcelain (1-999)"},
+					{"baseId":"appJjYZpisyaDv9KD", "tableName":"STA White Porcelain (1000-1999)"},
+					{"baseId":"appM0kruBXd1zjKxI", "tableName":"STA White Porcelain (2000-2721)"},
+					{"baseId":"app9v8Y7Col5mCtE2", "tableName":"STA Green Porcelain (1-999)"},
+					{"baseId":"appO1yrl0aq1mDpcg", "tableName":"STA Green Porcelain (1000-1999)"},
+					{"baseId":"appLDWRYboz24Zte3", "tableName":"STA Green Porcelain (2000-2371)"},
+					{"baseId":"appWw28v3UsHtlUEe", "tableName":"STA Porcelain Others"},
+					{"baseId":"apprDKOvy9kwbkfHn", "tableName":"STA 19th/20th century Porcelain"}
+				]
 			}
 		],
-		"excludedReports": ["dummy"]
+		"excludedReports": ["dummy", "scc", "dieng", "lingga", "msatp", "colombo", "fortcanning", "spicegarden"]
 	}
 }
