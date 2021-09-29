@@ -1,11 +1,43 @@
 {
 	"report": {
 		"id": "sta",
-		"title": "STA",
+		"title": "The St. Andrew’s (STA) Preliminary Site Report",
 		"author": "Goh Geok Yian, Nanyang Technological University Singapore, and John N. Miksic, National University of Singapore & Nanyang Technological University Singapore",
 		"lastUpdated":"27 September 2021",
 		"texts": 
-			[
+			[	
+				{
+					"id": "introduction",
+					"name": "Introduction"
+				},
+				{
+					"id": "historicalcontext",
+					"name": "Historical Context"
+				},
+				{
+					"id": "research",
+					"name": "Research at STA"
+				},
+				{
+					"id": "publicoutreach",
+					"name": "Public Outreach"
+				},
+				{
+					"id": "results",
+					"name": "Results of the Excavation"
+				},
+				{
+					"id": "bibliography",
+					"name": "Bibliography"
+				},
+				{
+					"id": "appendix1",
+					"name": "Appendix 1"
+				},
+				{
+					"id": "appendix2",
+					"name": "Appendix 2"
+				}
 			],
 			"dataSets": 
 			[
