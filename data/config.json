@@ -153,7 +153,13 @@
 					{"baseId":"appO1yrl0aq1mDpcg", "tableName":"STA Green Porcelain (1000-1999)"},
 					{"baseId":"appLDWRYboz24Zte3", "tableName":"STA Green Porcelain (2000-2371)"},
 					{"baseId":"appWw28v3UsHtlUEe", "tableName":"STA Porcelain Others"},
-					{"baseId":"apprDKOvy9kwbkfHn", "tableName":"STA 19th/20th century Porcelain"}
+					{"baseId":"apprDKOvy9kwbkfHn", "tableName":"STA 19th/20th century Porcelain"},
+					{"baseId":"appT9vteoR3YFxcD1", "tableName":"STA Lead-glazed earthenware"},
+					{"baseId":"appBZMpWrLlCvX9ac", "tableName":"STA Other Ceramics Unknown"},
+					{"baseId":"app3pZVDRCMRxJYDs", "tableName":"STA Non-ceramics (14th century-1600)"},
+					{"baseId":"app8bidDMN6xsO0Y4", "tableName":"STA Non-ceramis (19th/20th century)"}
+				],
+				"disabledAirtableDatasets":[
 				]
 			}
 		],
