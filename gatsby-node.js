@@ -27,9 +27,22 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
   const myName = data.airtableName || data.name;
   // 2. select relevant part of allAirtableData
   let myAirtableData;
-  for (let i = 0; i < allAirtableData.length; i++) {
-    if (allAirtableData[i].fieldValue === myName) {
-      myAirtableData = allAirtableData[i];
+  if (data.isAirtableMultiple) {
+    // if we have more than one set in a section, concat them.
+    myAirtableData = { fieldName: data.airtableNames[0], nodes: [] };
+    const myNames = data.airtableNames;
+    for (let i = 0; i < allAirtableData.length; i++) {
+      if (myNames.indexOf(allAirtableData[i].fieldValue) > -1) {
+        myAirtableData.nodes = myAirtableData.nodes.concat(
+          allAirtableData[i].nodes
+        );
+      }
+    }
+  } else {
+    for (let i = 0; i < allAirtableData.length; i++) {
+      if (allAirtableData[i].fieldValue === myName) {
+        myAirtableData = allAirtableData[i];
+      }
     }
   }
   const myFields = data.fields
@@ -149,7 +162,9 @@ exports.createPages = ({ actions, graphql }) => {
               id
               name
               airtableName
+              airtableNames
               isAirtable
+              isAirtableMultiple
               grouping
               defaultSort
               fields {
