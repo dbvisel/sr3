@@ -24,7 +24,7 @@ import { FigureDiv } from "./elements";
 const Figure = ({ number, caption, credit, img }) => {
   let builtCaption = "";
   if (number) {
-    builtCaption = `Figure ${number}: `;
+    builtCaption = `Figure ${number}${caption ? ": " : ""}`;
   }
   if (caption) {
     builtCaption += caption;

@@ -28,7 +28,7 @@ module.exports = {
     author: `Dan Visel <dbvisel@gmail.com>`,
     siteUrl:
       process.env.NODE_ENV === "production"
-        ? `http://epress.nus.edu.sg/sitereports`
+        ? `https://epress.nus.edu.sg/sitereports`
         : "https://sitereports.netlify.app",
   },
   plugins: [

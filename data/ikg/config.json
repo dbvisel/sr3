@@ -1,0 +1,52 @@
+{
+	"report": {
+		"id": "ikg",
+		"title": "The Istana Kampung Gelam (IKG) Site: A Preliminary Report",
+		"author": "Goh Geok Yian, Nanyang Technological University Singapore & John Miksic, National University of Singapore & Nanyang Technological University Singapore",
+		"lastUpdated": "10 January 2022",
+		"date": "2000",
+		"doi":"TK",
+		"texts": [
+			{
+				"id": "introduction",
+				"name": "Introduction"
+			},
+			{
+				"id": "siteplan",
+				"name": "Site Plan"
+			},
+			{
+				"id": "historyofthesite",
+				"name": "History of the Site"
+			},
+			{
+				"id": "gelaminthename", 
+				"name":"_Gelam_ in the name"
+			},
+			{
+				"id":"generalresults",
+				"name":"General Results"
+			},
+			{
+				"id":"uniqueartifacts",
+				"name":"Unique Artifacts"
+			},
+			{
+				"id":"coins",
+				"name":"Coins"
+			},
+			{
+				"id":"discussion",
+				"name":"Discussion"
+			},
+			{
+				"id": "log",
+				"name": "The IKG Log"
+			},
+			{
+				"id": "bibliography",
+				"name": "Bibliography"
+			}
+		]
+	}
+}

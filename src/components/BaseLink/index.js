@@ -1,14 +1,17 @@
-import React from "react";
+import * as React from "react";
 import PropTypes from "prop-types";
+import Markdown from "markdown-to-jsx";
 import { withPrefix } from "gatsby";
 
 const BaseLink = ({ href, children, download }) =>
   download ? (
     <a href={withPrefix(href)} download>
-      {children}
+      <Markdown>{children}</Markdown>
     </a>
   ) : (
-    <a href={withPrefix(href)}>{children}</a>
+    <a href={withPrefix(href)}>
+      <Markdown>{children}</Markdown>
+    </a>
   );
 
 export default BaseLink;

@@ -5,7 +5,7 @@
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",
 		"lastUpdated": "27 November 2021",
-		"makeObjectPages": false,
+		"makeObjectPages": true,
 		"notes": "Make sure makeObjectReports is set to true for production. Any report ID in excluded won't appear.",
 		"possibleReports": [
 			{
@@ -161,8 +161,12 @@
 				],
 				"disabledAirtableDatasets":[
 				]
+			},
+			{
+				"id":"ikg",
+				"name":"IKG"
 			}
 		],
-		"excludedReports": ["dummy"]
+		"excludedReports": ["scc", "msatp", "spicegarden", "pulausaigon", "fortcanning","colombo",  "lingga","dummy"]
 	}
 }

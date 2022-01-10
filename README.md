@@ -1,6 +1,6 @@
 # sr3: Southeast Asian Archaeological Site Reports
 
-Public version: http://epress.nus.edu.sg/sitereports/
+Public version: https://epress.nus.edu.sg/sitereports/
 
 Working dev version: https://sitereports.netlify.app
 

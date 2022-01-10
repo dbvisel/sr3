@@ -34,7 +34,7 @@ const FilenameCell = ({ column, rowId, data }) => {
       </TableCell>
     );
   }
-  console.log(myValue, rowId);
+  // console.log(myValue, rowId);
   const myPageUrl = `/${data.reportID}/dataset/${data.id}/id/${rowId}`;
   return (
     <TableCell>

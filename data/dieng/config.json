@@ -2,8 +2,9 @@
 	"report": {
 		"id": "dieng",
 		"title": "Dieng Temple Complex Excavation Report",
-		"author": "Prepared by Team Projek Dieng 2010, Jurusan Arkeologi, Fakultas Ilmu Budaya, and Universitas Gadjah Mada. Translated by Goh Geok Yian and John N. Miksic. Editors: Mahirta Sasongko, Goh Geok Yian, Widya Nayati, and John N. Miksic",
+		"author": "Prepared by Team Projek Dieng 2010, Jurusan Arkeologi, Fakultas Ilmu Budaya, and Universitas Gadjah Mada. Translated by Goh Geok Yian and John N. Miksic. Editors: Mahirta, Goh Geok Yian, Widya Nayati, and John N. Miksic",
 		"lastUpdated": "June 2010",
+		"doi":"10.25717/70d9-va60",
 		"texts": [
 			{
 				"id": "background",

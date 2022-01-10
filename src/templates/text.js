@@ -6,18 +6,37 @@ import TextWrapper from "./../components/TextWrapper/";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import ReportHeader from "./../components/ReportHeader";
 
+const getFooter = (data, thisReport) => {
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].frontmatter.report === thisReport) {
+      return data[i].body;
+    }
+  }
+  // if no footer file, return the project footer
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].frontmatter.report === "project") {
+      return data[i].body;
+    }
+  }
+  return null;
+};
+
 const TextPage = ({ data, pageContext }) => {
-  // console.log(data, pageContext);
-  const { frontmatter, body } = data.mdx;
+  const { frontmatter, body } = data.pageData;
   const { reportData, dataSets } = pageContext;
   const { title, subtitle } = frontmatter;
-  // console.log(reportData);
-  // console.log(body);
+
+  const myFooter = getFooter(
+    data.footerData.edges.map((x) => x.node),
+    reportData.id || "project"
+  );
+
   return (
     <Layout
       title={frontmatter.title}
       menu={reportData}
       thisPage={frontmatter.path}
+      footer={myFooter}
     >
       <ReportHeader
         title={title}
@@ -36,7 +55,17 @@ const TextPage = ({ data, pageContext }) => {
 
 export const pageQuery = graphql`
   query ($path: String!) {
-    mdx(frontmatter: { path: { eq: $path } }) {
+    footerData: allMdx(filter: { frontmatter: { title: { eq: "footer" } } }) {
+      edges {
+        node {
+          frontmatter {
+            report
+          }
+          body
+        }
+      }
+    }
+    pageData: mdx(frontmatter: { path: { eq: $path } }) {
       id
       frontmatter {
         path

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
+import Markdown from "markdown-to-jsx";
 import { MenuWrapper } from "./elements";
 
 // TODO: This doesn't actually take account of excluded reports, does it?
@@ -49,7 +50,9 @@ const LeftMenu = ({ menuData, thisPage }) => {
                       `/${id}/text/${x.id}` === thisPage ? "selected" : null
                     }
                   >
-                    <Link to={`/${id}/text/${x.id}/`}>{x.name}</Link>
+                    <Link to={`/${id}/text/${x.id}/`}>
+                      <Markdown>{x.name}</Markdown>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Markdown from "markdown-to-jsx";
 import { HeaderSection } from "./elements";
 
 const ReportHeader = ({ title, subtitle, author, date }) => (
@@ -8,7 +9,7 @@ const ReportHeader = ({ title, subtitle, author, date }) => (
       {project}–{title}
 		</h1>*/}
     <h2>
-      {title}
+      <Markdown>{title}</Markdown>
       {subtitle ? (
         <React.Fragment>
           <br />

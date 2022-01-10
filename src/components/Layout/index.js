@@ -10,7 +10,7 @@ import { GlobalStyles } from "./globalStyles.js";
 
 // TODO: this needs to provide report ID to everything in it
 
-const Layout = ({ children, menu, thisPage }) => {
+const Layout = ({ children, menu, thisPage, footer }) => {
   const projectData = useStaticQuery(graphql`
     query LayoutQuery {
       allTheJson(project: { id: { eq: "project" } }) {
@@ -45,6 +45,7 @@ const Layout = ({ children, menu, thisPage }) => {
       <Footer
         updated={menu.lastUpdated || projectData.lastUpdated}
         reportID={menu.id || null}
+        content={footer}
       />
     </ReportContext.Provider>
   );
@@ -59,4 +60,5 @@ Layout.propTypes = {
   ]).isRequired,
   menu: PropTypes.object.isRequired,
   thisPage: PropTypes.string,
+  footer: PropTypes.string,
 };
