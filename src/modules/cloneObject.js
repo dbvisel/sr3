@@ -1,5 +1,11 @@
 // TODO: THIS DOES NOT WORK WITH null values! It turns them into empty objects.
 
+// NOTE: there's a new way to make a deep copy of an object:
+// const myDeepCopy = structuredClone(myOriginal);
+// Maybe try dpeloying this? There's some weirdness with the cloneObject function
+
+
+
 const cloneObject = function (source) {
   if (Object.prototype.toString.call(source) === "[object Array]") {
     let clone = [];

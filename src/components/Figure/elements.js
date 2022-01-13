@@ -22,6 +22,9 @@ export const FigureDiv = styled.figure`
     font-style: italic;
     font-family: var(--headerFont);
     margin: 16px 64px 0 64px;
+    & em {
+      font-style: normal;
+    }
     & p {
       text-align: left;
     }

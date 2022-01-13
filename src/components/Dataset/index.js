@@ -37,6 +37,10 @@ import {
 // https://webup.org/blog/sticky-header-table-with-react-hooks/
 // TODO: split this up into smaller components – this is a mess!
 
+// NOTE: there's a new way to make a deep copy of an object:
+// const myDeepCopy = structuredClone(myOriginal);
+// Maybe try dpeloying this? There's some weirdness with the cloneObject function
+
 const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
   const [startPoint, setStartPoint] = React.useState(0);
   const rowsPerPage = perPage || 50;

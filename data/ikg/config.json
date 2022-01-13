@@ -28,8 +28,8 @@
 				"name":"General Results"
 			},
 			{
-				"id":"uniqueartifacts",
-				"name":"Unique Artifacts"
+				"id":"uniqueartefacts",
+				"name":"Unique Artefacts"
 			},
 			{
 				"id":"coins",
