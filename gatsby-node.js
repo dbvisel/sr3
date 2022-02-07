@@ -189,31 +189,33 @@ exports.createPages = ({ actions, graphql }) => {
           nodes {
             data {
               Artifact_Number
-              Unit_Number
-              Depth__cm_
-              Lot
-              Spit
-              Level
-              Material
-              Varieties_of_Material
-              Type_of_Ware
-              Provenance
-              Period
-              Form
-              Vessel_Part
-              Number_of_pieces
-              Weight__g_
-              Length__cm_
-              Width__cm_
-              Thickness__cm_
-              Height_of_foot_rim__cm_
-              Diameter__cm_
-              MNV____
-              Date_of_excavation
               Color_Exterior_Earthenware__Munsell_
+              Color_Interior_Earthenware__Munsell_
+              Color_Profile_Earthenware__Munsell_
+              Date_of_excavation
+              Depth__cm_
+              Diameter__cm_
+              Height_of_foot_rim__cm_
+              Form
+              Length__cm_
+              Level
+              Lot
+              MNV____
+              Number_of_pieces
+              Material
+              Period
+              Provenance
               Remarks
-              Thickness_of_base__complete_profile___cm_
+              Thickness__cm_
+              Spit
               Thickness__foot_rim___cm_
+              Thickness_of_base__complete_profile___cm_
+              Type_of_Ware
+              Unit_Number
+              Varieties_of_Material
+              Width__cm_
+              Weight__g_
+              Vessel_Part
             }
           }
         }
@@ -233,84 +235,9 @@ exports.createPages = ({ actions, graphql }) => {
     // Color_Profile_Earthenware__Munsell_
     // Filename
 
-    // allAirtableData: allAirtable {
-    // 	group(field: table) {
-    // 		fieldValue
-    // 		nodes {
-    // 			data {
-    // 				Square_Unit
-    // 				Lot
-    // 				Depth
-    // 				Distance_from_North_South
-    // 				Distance_from_East_West
-    // 				Excavation_Date
-    // 				Type_of_Material
-    // 				Type_of_Ware
-    // 				Length
-    // 				Width
-    // 				Thickness
-    // 				Number_of_Pieces
-    // 				Vessel_Type
-    // 				Vessel_Part
-    // 				Decoration
-    // 				Color__Munsell_Chart_
-    // 				Period
-    // 				Provenance
-    // 				Date_Recorded
-    // 				Site
-    // 				Remarks
-    // 				Unit
-    // 				Stratigraphy_Spit
-    // 				Breadth_Width
-    // 				Diameter__lip_base_
-    // 				Percentage_of_lip_base
-    // 				Colour__body_
-    // 				Colour__exterior_
-    // 				Diameter_of_lip_base_measured_
-    // 				Percentage_of_lip_base_measured_
-    // 				Diameter__throat_
-    // 				Percentage_of_throat
-    // 				Excavation_Date
-    // 				Diameter_measured_
-    // 				Percentage_of_throat_measured_
-    // 				Quantities_in_number_of_sherds
-    // 				Diameter__lip_top_lip_of_knob_
-    // 				Percentage_of_rim_or_base
-    // 				Diameter__orifice_
-    // 				Colour__slip_
-    // 				Type
-    // 				Total_pieces
-    // 				Total_weight
-    // 				Hidden_order
-    // 				FTC_Salvage__2018_2019__pieces
-    // 				FTCSG_Pandan_Bed_pieces
-    // 				No_
-    // 				Spit
-    // 				Archaeological_Unit
-    // 				Vessel_Information
-    // 				Dimensions_of_sherd__in_cm__1
-    // 				Dimensions_of_sherd__in_cm__2
-    // 				Dimensions_of_sherd__in_cm__3
-    // 				Dimensions_of_sherd__in_cm__4
-    // 				Diameter__lip_base_
-    // 				Image_Taken_
-    // 				Image_File_Name
-    // 				Dimensions_of_sherd__in_cm__5
-    // 				Diameter
-    // 				Diameter__Ext_
-    // 				Foot_Height_Thickness
-    // 				Quantities_in_Weight
-    // 				Weight
-    // 				Artefact_Number
-    // 				MNV____
-    // 				Type
-    // 			}
-    // 		}
-    // 	}
-    // }
-
-    const allAirtableData =
-      result.data.allAirtableData.group; /*{ nodes: [] }; */
+    const allAirtableData = result.data.allAirtableData
+      ? result.data.allAirtableData.group
+      : []; /*{ nodes: [] }; */
     let reportData = result.data.reportData.nodes.filter(
       (x) => x.report !== null
     );

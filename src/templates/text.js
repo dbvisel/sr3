@@ -7,6 +7,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import ReportHeader from "./../components/ReportHeader";
 
 const getFooter = (data, thisReport) => {
+  console.log(data, thisReport);
   for (let i = 0; i < data.length; i++) {
     if (data[i].frontmatter.report === thisReport) {
       return data[i].body;
@@ -22,13 +23,14 @@ const getFooter = (data, thisReport) => {
 };
 
 const TextPage = ({ data, pageContext }) => {
+  console.log(pageContext);
   const { frontmatter, body } = data.pageData;
   const { reportData, dataSets } = pageContext;
   const { title, subtitle } = frontmatter;
 
   const myFooter = getFooter(
     data.footerData.edges.map((x) => x.node),
-    reportData.id || "project"
+    (reportData && reportData.id) || "project"
   );
 
   return (

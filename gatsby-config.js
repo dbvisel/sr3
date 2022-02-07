@@ -17,6 +17,8 @@ const getTheAirtableData = (data) => {
       }
     }
   }
+  // console.log(process.env.AIRTABLE_API_KEY);
+  // console.log(outList);
   return outList;
 };
 
@@ -39,7 +41,16 @@ module.exports = {
       options: {
         apiKey: process.env.AIRTABLE_API_KEY,
         concurrency: 5,
-        tables: getTheAirtableData(datasetConfig.project),
+        // [
+        tables:
+          // CURRENT PROBLEM:
+          // warn Error fetching tables: Could not find table IKG European Porcelain (1-999) in application apppnxYlIw3FpubR1(NOT_FOUND)[Http code 404]
+          //   {
+          //     baseId: "apppnxYlIw3FpubR1",
+          //     tableName: "IKG European Porcelain (1-999)",
+          //   },
+          // ],
+          getTheAirtableData(datasetConfig.project),
       },
     },
     {

@@ -164,9 +164,32 @@
 			},
 			{
 				"id":"ikg",
-				"name":"IKG"
+				"name":"IKG",
+				"airtableDatasets": [
+					{"baseId":"apppnxYlIw3FpubR1", "tableName":"European Porcelain 1-999"},
+					{"baseId":"appXJm9oP3rLgwgXC", "tableName":"European Porcelain 1000-1999"},
+					{"baseId":"appNgX9n2CollddWo", "tableName":"European Porcelain 2000-2999"},
+					{"baseId":"appaMkJrFMmbw2Gr6", "tableName":"European Porcelain 3000-3073"},
+					{"baseId":"appeWUgSI29Irf9uz", "tableName":"Chinese Porcelain 1-999"},
+					{"baseId":"appf7yvmpQCpayuHe", "tableName":"Chinese Porcelain 1000-1480"},
+					{"baseId":"appKetVoPY7nHKdFv", "tableName":"Japanese Porcelain"},
+					{"baseId":"appwPzOws4tDStE1u", "tableName":"European Stoneware"},
+					{"baseId":"appIxJsxvEYahOAx4", "tableName":"Yi Xing Teapot"},
+					{"baseId":"appUVpsUTJkNwCdTN", "tableName":"Local Earthenware"},
+					{"baseId":"appawHYTBjEFbQ7Jt", "tableName":"Stoneware Chinese"},
+					{"baseId":"app2r5fMSjTQx1WKt", "tableName":"Stoneware Others"},
+					{"baseId":"appE9tcyZdXyrWpl0", "tableName":"Other Ceramics"},
+					{"baseId":"app5XWraqjVStaCl5", "tableName":"Glass"},
+					{"baseId":"apphXNcfPmQkER4c4", "tableName":"Organic"},
+					{"baseId":"appKovhvklISgX6JG", "tableName":"Stone"},					
+					{"baseId":"appR8PyQdHfqa3LqS", "tableName":"Metal"},
+					{"baseId":"appCZ36taCMREafi0", "tableName":"Construction Materials"},
+					{"baseId":"app1kOEWTuijXF1W7", "tableName":"Plastic"}
+				],
+				"disabledAirtableDatasets": [					
+				]
 			}
 		],
-		"excludedReports": ["scc", "msatp", "spicegarden", "pulausaigon", "fortcanning","colombo",  "lingga","dummy"]
+		"excludedReports": ["scc", "msatp", "spicegarden", "pulausaigon", "fortcanning","colombo",  "lingga","sta", "dieng", "dummy"]
 	}
 }
