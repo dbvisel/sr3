@@ -41,10 +41,11 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.5",
-		"@netlify/plugin-gatsby": "^1.0.3",
+		"@netlify/plugin-gatsby": "^2.0.2",
 		"babel-loader": "^8.2.2",
 		"dotenv": "^10.0.0",
-		"esm": "^3.2.25"
+		"esm": "^3.2.25",
+		"gatsby-plugin-netlify": "^3.14.0"
 	},
 	"license": "MIT",
 	"scripts": {

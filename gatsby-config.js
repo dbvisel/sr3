@@ -34,6 +34,7 @@ module.exports = {
         : "https://sitereports.netlify.app",
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     // `gatsby-plugin-force-trailing-slashes`,
     {
