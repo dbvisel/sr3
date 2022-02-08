@@ -3,8 +3,11 @@
 		"id": "msatp",
 		"title": "Myanmar-Singapore Archaeology Training Project (MSATP)",
 		"author": "Goh Geok Yian & John N. Miksic",
+		"date":"2016–2019",
 		"lastUpdated": "2019",
 		"doi":"10.25717/4vsn-x426",
+		"location":"Myanmar",
+		"image":"classificationsystemchart4.png",
 		"texts": [{
 			"id": "workingguide",
 			"name": "1. A Working Guide to the Analysis of Ceramics from the Anawrahta-Kyanzittha Palace, Bagan"
