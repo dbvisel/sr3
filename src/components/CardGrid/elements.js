@@ -4,7 +4,7 @@ import { withPrefix } from "gatsby";
 export const CardGridWrapper = styled.div`
   --insidePadding: 12px;
   --gutter: 16px;
-  --cardWidth: 180px;
+  --cardWidth: 240px;
   --cardHeight: 360px;
   --borderRadius: 4px;
   max-width: 100%;

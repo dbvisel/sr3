@@ -71,6 +71,9 @@ const CardGrid = () => {
     <section>
       <h2 style={{ textAlign: "center", margin: "25px 0" }}>Reports:</h2>
       <LocationList>
+        <li>
+          <strong>Location</strong>
+        </li>
         {[...locations].map((location, index) => (
           <li key={index}>
             <span style={{ backgroundColor: getColor(location) }} />
