@@ -6,6 +6,7 @@
 		"projectAuthor": "NUS Press",
 		"lastUpdated": "27 November 2021",
 		"makeObjectPages": false,
+		"useVisualToc": true,
 		"notes": "Make sure makeObjectReports is set to true for production. Any report ID in excluded won't appear.",
 		"possibleReports": [
 			{
@@ -190,6 +191,6 @@
 				]
 			}
 		],
-		"excludedReports": ["scc", "msatp", "spicegarden", "pulausaigon", "fortcanning","colombo",  "lingga","sta", "dieng", "dummy"]
+		"excludedReports": ["scc", "colombo","dieng", "sta", "spicegarden",  "pulausaigon", "msatp", "lingga", "fortcanning", "dummy"]
 	}
 }

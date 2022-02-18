@@ -35,6 +35,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-netlify`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /static\/chart/,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     // `gatsby-plugin-force-trailing-slashes`,
     {

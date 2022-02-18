@@ -6,6 +6,8 @@ import TextWrapper from "./../components/TextWrapper/";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import ReportHeader from "./../components/ReportHeader";
 
+// TODO: The DataSetContext.Provider here is maybe passing along too much info. Can we slim this down?
+
 const getFooter = (data, thisReport) => {
   // console.log(data, thisReport);
   for (let i = 0; i < data.length; i++) {

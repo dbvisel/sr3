@@ -329,7 +329,9 @@ exports.createPages = ({ actions, graphql }) => {
               const dataSetData = JSON.parse(
                 fs.readFileSync(thisPath, { encoding: "utf-8" })
               );
-              console.log("Dataset without page: ", thisPath);
+              console.log(
+                `Inline dataset: ${thisPath}, in: ${node.frontmatter.path}`
+              );
               outDataSets.push({
                 id: node.frontmatter.datasets[i],
                 path: thisPath,
