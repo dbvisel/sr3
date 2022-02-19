@@ -5,6 +5,7 @@ title: "Discussion of IKG Data: Selected Sampling of Artefacts"
 ---
 
 import Figure from '../../../src/components/Figure/';
+import EChart from '../../../src/components/EChart/';
 
 To date, we have analyzed a total of 1,495 sherds of Chinese porcelain (17.88 kg), 159 Japanese porcelain sherds (2.8 kg), 3,492 European porcelain sherds (41.45 kg), 97 other porcelain sherds (14.44 kg), 246 Chinese stoneware sherds (7.7 kg), 9 European stoneware sherds (3.8 kg), 1,479 local earthenware sherds (30.3 kg), two other stoneware sherds (32 g), five sherds of Yixing teapots (24g), 389 glass artefacts (12.2 kg), 158 stone artefacts (2.7 kg), 198 metal artefacts (5.8 kg), 502 organic biofacts (3.9 kg), 538 pieces of construction material (4.2 kg), and 4 plastic items (12.2 g). It is important to note that the data presented in this report and database represent only a fraction of the total number of artefacts in the IKG assemblage. It is hoped that more analysis of this assemblage will be conducted in future.
 
@@ -19,5 +20,85 @@ The tree diagram shows the relative proportions of artefacts by type of material
 
 The two pie charts provide a summary of the percentages of the type of ware by number of sherds and by weight in grams. 
 
+<EChart style={{height: "500px"}} option={{
+  title: {
+    text: 'Types of Ware 19th/20th Century',
+    subtext: 'Number of Sherds',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{b}<br />{c}, {d}%'
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'left'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 9, name: 'European Stoneware' },
+        { value: 3492, name: 'European Porcelain' },
+        { value: 1495, name: 'Chinese Porcelain' },
+        { value: 246, name: 'Chinese Stoneware' },
+        { value: 159, name: 'Japanese Porcelain' },
+        { value: 1479, name: 'Local Earthenware' },
+        { value: 97, name: 'Other Porcelain' },
+        { value: 2, name: 'Other Stoneware' },
+        { value: 5, name: 'Yixing Teapot' },
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+}}  />
 <Figure img="Fig_24.jpg" />
+<EChart style={{height: "500px"}} option={{
+  title: {
+    text: 'Types of Ware 19th/20th Century',
+    subtext: 'Weight in grams',
+    left: 'center'
+  },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{b}<br />{c}, {d}%'
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'left'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 3820, name: 'European Stoneware' },
+        { value: 41448.1, name: 'European Porcelain' },
+        { value: 17889.6, name: 'Chinese Porcelain' },
+        { value: 7708.5, name: 'Chinese Stoneware' },
+        { value: 2807.7, name: 'Japanese Porcelain' },
+        { value: 30335, name: 'Local Earthenware' },
+        { value: 1444.8, name: 'Other Porcelain' },
+        { value: 32, name: 'Other Stoneware' },
+        { value: 24, name: 'Yixing Teapot' },
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+}}  />
 <Figure img="Fig_25.jpg" />

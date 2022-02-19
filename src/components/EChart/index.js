@@ -5,7 +5,7 @@ import reactElementToJSXString from "react-element-to-jsx-string";
 
 // from https://dev.to/maneetgoyal/using-apache-echarts-with-react-and-typescript-353k
 
-const ReactEChart = ({ option, style, settings, loading, theme, svg }) => {
+const EChart = ({ option, style, settings, loading, theme, svg }) => {
   const chartRef = React.useRef();
 
   React.useEffect(() => {
@@ -59,12 +59,13 @@ const ReactEChart = ({ option, style, settings, loading, theme, svg }) => {
   );
 };
 
-ReactEChart.propTypes = {
+EChart.propTypes = {
   option: PropTypes.object.isRequired,
   style: PropTypes.object,
   settings: PropTypes.object,
   loading: PropTypes.bool,
   theme: PropTypes.string, // "light" | "dark"
+  svg: PropTypes.string,
 };
 
-export default ReactEChart;
+export default EChart;

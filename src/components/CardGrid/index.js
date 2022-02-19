@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { CardGridWrapper, CardGridCard, LocationList } from "./elements";
-import ReactEChart from "./ReactEChart";
+import EChart from "./../EChart";
 import chartsvg from "../../../static/chart/Map_of_Iceland.svg";
 
 const option = {
@@ -182,7 +182,7 @@ const CardGrid = () => {
 
   return projectData.useVisualToc ? (
     <section>
-      <ReactEChart
+      <EChart
         option={option}
         style={{ height: "700px", width: "100%" }}
         svg={chartsvg}
