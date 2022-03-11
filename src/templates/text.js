@@ -34,7 +34,6 @@ const TextPage = ({ data, pageContext }) => {
     data.footerData.edges.map((x) => x.node),
     (reportData && reportData.id) || "project"
   );
-
   return (
     <Layout
       title={frontmatter.title}
@@ -43,7 +42,7 @@ const TextPage = ({ data, pageContext }) => {
       footer={myFooter}
     >
       <ReportHeader
-        title={title}
+        title={title || reportData.title}
         subtitle={subtitle}
         author={frontmatter.author || reportData.author || ""}
         date={frontmatter.date || reportData.lastUpdated || ""}

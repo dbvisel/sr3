@@ -2,7 +2,7 @@ import * as React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { CardGridWrapper, CardGridCard, LocationList } from "./elements";
 import EChart from "./../EChart";
-import chartsvg from "../../../static/chart/Map_of_Iceland.svg";
+import chartsvg from "../../../static/chart/Southeast_Asia_location_map.svg";
 
 const option = {
   tooltip: {},

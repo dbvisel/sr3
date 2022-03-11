@@ -65,7 +65,7 @@ EChart.propTypes = {
   settings: PropTypes.object,
   loading: PropTypes.bool,
   theme: PropTypes.string, // "light" | "dark"
-  svg: PropTypes.string,
+  svg: PropTypes.func,
 };
 
 export default EChart;

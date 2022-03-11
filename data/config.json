@@ -191,6 +191,6 @@
 				]
 			}
 		],
-		"excludedReports": ["scc", "colombo","dieng", "sta", "spicegarden",  "pulausaigon", "msatp", "lingga", "fortcanning", "dummy"]
+		"excludedReports": [ "dummy"]
 	}
 }
