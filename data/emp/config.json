@@ -1,0 +1,63 @@
+{
+	"report": {
+		"id": "emp",
+		"title": "The Empress Place (EMP) Site: A Preliminary Report",
+		"author": "Goh Geok Yian, Nanyang Technological University Singapore, John Miksic, National University of Singapore & Nanyang Technological University Singapore",
+		"date":"1998",
+		"lastUpdated": "2022",
+		"location":"Singapore",
+		"image":"9.jpg",
+		"doi":"TK",
+		"texts": [
+			{
+				"id": "introduction",
+				"name": "Introduction"
+			},
+			{
+				"id":"earlierobservations",
+				"name": "Earlier Observations (1990)"
+			},
+			{
+				"id":"the1998excavation",
+				"name": "The 1998 Excavation"
+			},
+			{
+				"id":"siteplan",
+				"name":"Site Plan"
+			},
+			{
+				"id":"description",
+				"name":"Description"
+			},
+			{
+				"id":"history",
+				"name":"History"
+			},
+			{
+				"id":"generalresults",
+				"name":"General Results"
+			},
+			{
+				"id":"uniqueartifacts",
+				"name":"Unique Artifacts"
+			},
+			{
+				"id":"statistics",
+				"name":"Discussion"
+			},
+			{
+				"id":"logbook",
+				"name":"Logbook"
+			},
+			{
+				"id":"drawings",
+				"name":"Artifact Drawings"
+			},
+			{
+				"id": "bibliography",
+				"name": "References"
+			}
+		],
+		"dataSets": []
+	}
+}

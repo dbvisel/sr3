@@ -6,7 +6,7 @@
 		"projectAuthor": "NUS Press",
 		"lastUpdated": "27 November 2021",
 		"makeObjectPages": false,
-		"useVisualToc": true,
+		"useVisualToc": false,
 		"notes": "Make sure makeObjectReports is set to true for production. Any report ID in excluded won't appear.",
 		"possibleReports": [
 			{
@@ -189,8 +189,11 @@
 				],
 				"disabledAirtableDatasets": [					
 				]
+			},{
+				"id": "emp",
+				"name": "EMP"
 			}
 		],
-		"excludedReports": [ "dummy"]
+		"excludedReports": ["scc", "dieng","colombo", "pulausaigon","sta", "lingga", "fortcanning", "spicegarden", "dummy"]
 	}
 }
