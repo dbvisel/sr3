@@ -189,51 +189,51 @@ exports.createPages = ({ actions, graphql }) => {
           nodes {
             data {
               Artifact_Number
+              Depth__cm_
               Color_Exterior_Earthenware__Munsell_
               Color_Interior_Earthenware__Munsell_
               Color_Profile_Earthenware__Munsell_
               Date_of_excavation
-              Depth__cm_
               Diameter__cm_
+              Length__cm_
               Height_of_foot_rim__cm_
               Form
-              Length__cm_
-              Level
-              Lot
               MNV____
-              Number_of_pieces
-              Material
-              Period
-              Provenance
-              Remarks
-              Thickness__cm_
-              Spit
-              Thickness__foot_rim___cm_
-              Thickness_of_base__complete_profile___cm_
+              Lot
+              Level
               Type_of_Ware
-              Unit_Number
-              Varieties_of_Material
               Width__cm_
               Weight__g_
               Vessel_Part
+              Varieties_of_Material
+              Unit_Number
+              Thickness_of_base__complete_profile___cm_
+              Thickness__foot_rim___cm_
+              Thickness__cm_
+              Spit
+              Provenance
+              Remarks
+              Period
+              Number_of_pieces
+              Material
+              Thickness_of_base__complete_profile___cm_
+              Color_Exterior_Earthenware__Munsell_
+              Color_Interior_Earthenware__Munsell_
+              Color_Profile_Earthenware__Munsell_
             }
           }
         }
       }
     }
   `).then((result) => {
+    // Filename
+
     if (result.errors) {
       return Promise.reject(result.errors);
     }
     // console.log(result.data);
     const masterData = result.data.project.project;
     let textFiles = result.data.textFiles.edges;
-
-    // Thickness_of_base__complete_profile___cm_
-    // Color_Exterior_Earthenware__Munsell_
-    // Color_Interior_Earthenware__Munsell_
-    // Color_Profile_Earthenware__Munsell_
-    // Filename
 
     const allAirtableData = result.data.allAirtableData
       ? result.data.allAirtableData.group

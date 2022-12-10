@@ -191,7 +191,31 @@
 				]
 			},{
 				"id": "emp",
-				"name": "EMP"
+				"name": "EMP",
+				"airtableDatasets": [
+					{"baseId":"appI2GWjWqQ4p7ja2", "tableName":"EMP Blue and White Porcelain 14th-1600"},
+					{"baseId":"appJPUz2xVIJjFGw7","tableName":"EMP Brittle Stoneware 14th-1600"},
+					{"baseId":"appHStL5IfxcI5Vot","tableName":"EMP Buff Stoneware 14th-1600"},
+					{"baseId":"app6U7OmhrQYMQEue", "tableName":"EMP Chinese Porcelain 19th-20th"},
+					{"baseId":"apppYojC08cdRirNL", "tableName":"EMP Chinese Stoneware 19th-20th"},
+					{"baseId":"appeuTVAtmstNOAL0", "tableName":"EMP Construction Materials 19th-20th"},
+					{"baseId":"appKwxQiEgsG44z29", "tableName":"EMP European Porcelain 19th-20th"},
+					{"baseId":"appeOmYA8WtGGaNcW", "tableName":"EMP European Stoneware 19th-20th"},
+					{"baseId":"app95gBXn2WJWACqr", "tableName":"EMP Fine Paste Earthenware 14th-1600"},
+					{"baseId":"apptqA8I0QkdPdHh8", "tableName":"EMP Glass Modern 19th-20th"},
+					{"baseId":"appscNuXAm1ZH12aS", "tableName":"EMP Green Porcelain 14th-1600"},
+					{"baseId":"appOSZfEEEb0552Qh", "tableName":"EMP Iron-spotted Qingbai 14th-1600"},
+					{"baseId":"app1ufsWHyEY0vrR9", "tableName":"EMP Lead Glazed Earthenware 14th-1600"},
+					{"baseId":"appFkWKKeGtDSXgJc", "tableName":"EMP Local Earthenware 19th-20th"},
+					{"baseId":"appVsQqKzDJBT6229", "tableName":"EMP Mercury Jar Stoneware 14th-1600"},
+					{"baseId":"appdOVxbpRIhuWeJ2", "tableName":"EMP Modern Metal 19th-20th"},
+					{"baseId":"appnn8aTEgRU4EknE", "tableName":"EMP Organic 19th-20th"},
+					{"baseId":"appTOtAwHF1zpBS1m", "tableName":"EMP Other Stoneware 14th-1600"},
+					{"baseId":"appD2ZYsN5lM2nSGX", "tableName":"EMP Other Stoneware 19th-20th"},
+					{"baseId":"app2KSY16msAO2qiT", "tableName":"EMP Stone 19th-20th"},
+					{"baseId":"appFC17Urv7ZUtNuE", "tableName":"EMP Tempered Earthenware 14th-1600"},
+					{"baseId":"appGSWsKC5mlZAnKU", "tableName":"EMP White Porcelain 14th-1600"}
+				]
 			}
 		],
 		"excludedReports": ["scc", "dieng","colombo", "pulausaigon","sta", "lingga", "fortcanning", "spicegarden", "dummy"]
