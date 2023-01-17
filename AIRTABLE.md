@@ -36,6 +36,8 @@ where fieldValue is the table name. We have to pull in all the different field n
 
 * fieldValue must be unique.
 * Every usage of a fieldname must be the same type in Airtable.
+* MAKE SURE THAT EVERY TABLE USED HAS A UNIQUE TABLE NAME. Base name doesn't matter. Table name does.
+
 
 ## FORT CANNING VALUES
 
