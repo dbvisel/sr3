@@ -1,0 +1,38 @@
+{
+	"report": {
+		"id": "emp2015",
+		"title": "ISEAS EMP",
+		"author": "ISEAS",
+		"date":"2015",
+		"lastUpdated": "2023",
+		"location":"Singapore",
+		"image":"9.jpg",
+		"doi":"TKTKTK",
+		"texts": [
+			{
+				"id": "introduction",
+				"name": "1. Introduction"
+			},
+			{
+				"id":"excavationmethodology",
+				"name": "2. Excavation Methodology"
+			},
+			{
+				"id":"results",
+				"name": "3. Results"
+			},
+			{
+				"id":"widersignificance",
+				"name":"4. Wider Significance"
+			},
+			{
+				"id": "figures",
+				"name": "Figures"
+			},
+			{
+				"id": "bibliography",
+				"name": "Bibliography"
+			}
+		]
+	}
+}

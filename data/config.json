@@ -216,7 +216,12 @@
 					{"baseId":"appFC17Urv7ZUtNuE", "tableName":"EMP Tempered Earthenware 14th-1600"},
 					{"baseId":"appGSWsKC5mlZAnKU", "tableName":"EMP White Porcelain 14th-1600"}
 				]
+			},
+			{
+				"id":"emp2015", 
+				"name":"ISEAS EMP"
 			}
+
 		],
 		"excludedReports": ["scc", "dieng","colombo", "pulausaigon","sta", "lingga", "fortcanning", "spicegarden", "dummy"]
 	}
