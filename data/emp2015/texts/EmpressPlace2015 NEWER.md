@@ -95,32 +95,71 @@ Figure 39. Drawing of a shaped wooden peg from the timber box feature in EMP 011
 
 ## Bibliography
 
-Andaya, Barbara Watson. 2006. “Oceans Unbounded: Transversing Asia across ‘Area Studies’.” *Journal of Asian Studies* 65 (4): 669–90. doi:10.1017/S0021911806001550.
-Borschberg, Peter. 2010. The Singapore and Melaka Straits : violence, security, and diplomacy in the 17th century. Singapore: NUS Press. doi:10.2307/j.ctv1ntgc9.
+Andaya, Barbara Watson. 2006. "Oceans Unbounded: Transversing Asia across 'Area Studies'." *Journal of Asian Studies* 65 (4): 669-90.
+https://doi.org/10.1017/S0021911806001550
+ 
+Borschberg, Peter. 2010. The Singapore and Melaka Straits : violence, security, and diplomacy in the 17th century. Singapore: NUS Press.
+https://doi.org/10.2307/j.ctv1ntgc9
+ 
 Delgado, James P. 2012. 'Ships on Land.' in Ben Ford, Donny L. Hamilton and Alexis Catsambis (eds.), *The Oxford Handbook of Maritime Archaeology* (Oxford: Oxford University Press).
-Ellen, Roy, and D. Kyle Latinis. 2012. “CERAMIC SAGO OVENS AND THE HISTORY OF REGIONAL TRADING PATTERNS IN EASTERN INDONESIA AND THE PAPUAN COAST.” *Indonesia and the Malay World* 40 (116): 20–38. doi:10.1080/13639811.2011.648994.
+https://doi.org/10.1093/oxfordhb/9780199336005.013.0008
+ 
+Ellen, Roy, and D. Kyle Latinis. 2012. "CERAMIC SAGO OVENS AND THE HISTORY OF REGIONAL TRADING PATTERNS IN EASTERN INDONESIA AND THE PAPUAN COAST." *Indonesia and the Malay World* 40 (116): 20-38.
+https://doi.org/10.1080/13639811.2011.648994
+ 
 Ford, Ben. 2011a. *The Archaeology of Maritime Landscapes* (New York: Springer).
-———. 2011b. 'Coastal Archaeology.' in Ben Ford, Donny Leon Hamilton and Alexis Catsambis (eds.), *The Oxford Handbook of Maritime Archaeology* (Oxford: Oxford University Press).
+https://doi.org/10.1007/978-1-4419-8210-0
+ 
+---. 2011b. 'Coastal Archaeology.' in Ben Ford, Donny Leon Hamilton and Alexis Catsambis (eds.), *The Oxford Handbook of Maritime Archaeology* (Oxford: Oxford University Press).
+ 
 Gibson-Hill, C. A. 1955. 'Johore Lama and other ancient sites on the Johore River', *Journal of the Malayan Branch of the Royal Asiatic Society,* 28: 127-97.
+ 
 Goh, Geok Yian, and John N Miksic. 2020. 'Colombo Court', The NUS E-Press. https://epress.nus.edu.sg/sitereports/colombo/. https://doi.org/10.25717/304q-mx31
-———. 2021. 'The St. Andrew’s (STA) Preliminary Site Report', The NUS E-Press. https://epress.nus.edu.sg/sitereports/sta/. https://doi.org/10.25717/sd70-865c
-Heng, Zhen Ying. 2020. Reinvestigating “Buddhist” Qingbai Figurines in 14th Cenutry Temasek. SOAS University of London.
+ 
+---. 2021. 'The St. Andrew's (STA) Preliminary Site Report', The NUS E-Press. https://epress.nus.edu.sg/sitereports/sta/. https://doi.org/10.25717/sd70-865c
+ 
+Heng, Zhen Ying. 2020. Reinvestigating "Buddhist" Qingbai Figurines in 14th Cenutry Temasek. SOAS University of London.
+ 
 Kao, Jiun Feng. 2021. The Geological Characterisation of Singapore Coarse-earthenware: Ceramic Production and Distribution in a Maritime Small World. University of Oxford.
+ 
 Kwa, Chong Guan, Peter Borschberg, Benjamin J. Q. Khoo, and Shengwei Xu. 2018. *Studying Singapore before 1800.* (Singapore: NUS Press).
+ 
 Latinis, David Kyle. 2004. Protohistoric Archaeology and Settlement in Central Maluki, Eastern Indonesia. National University of Singapore.
+ 
 Lim, Chen Sian. 2015. Empress Place Rescue Archaeology Excavation Project Preliminary Report. (Singapore: National Heritage Board).
-———. 2017. Preliminary Report on the Archaeological Investigations at the National Gallery Singapore. (Singapore: Nalanda-Sriwijaya Centre).
-———. 2019. Preliminary Report on the Archaeological Investigations at the Victoria Concert Hall. (Singapore: Nalanda-Sriwijaya Centre).
-Manguin, Pierre-Yves. 2001. 'Shipshape Societies: boat symbolism and political systems in Insular Southeast Asia', *Techniques et culture* (Paris): 35-36, 373-400 <doi:10.4000/tc.301.>.
-Miksic, John N, and Geok Yian Goh. 2003. 'The Singapore Cricket Club Excavation', The NUS E-Press. https://epress.nus.edu.sg/sitereports/scc/. https://doi.org/10.25717/7w0e-3n3c<
+ 
+---. 2017. Preliminary Report on the Archaeological Investigations at the National Gallery Singapore. (Singapore: Nalanda-Sriwijaya Centre).
+ 
+---. 2019. Preliminary Report on the Archaeological Investigations at the Victoria Concert Hall. (Singapore: Nalanda-Sriwijaya Centre).
+ 
+Manguin, Pierre-Yves. 2001. 'Shipshape Societies: boat symbolism and political systems in Insular Southeast Asia', *Techniques et culture* (Paris): 35-36, 373-400.
+https://doi.org/10.4000/tc.301
+ 
+Miksic, John N, and Geok Yian Goh. 2003. 'The Singapore Cricket Club Excavation', The NUS E-Press. https://epress.nus.edu.sg/sitereports/scc/. https://doi.org/10.25717/7w0e-3n3c
+ 
 Miksic, John N. 1985. *Archaeological Research on the Forbidden Hill of Singapore: Excavations at Fort Canning, 1984*. (Singapore: National Museum Singapore).
-———. 1995. 'Fourteenth Century Chinese Glass Found in Singapore and the Riau Archipelago.' in John Guy and Rosemary Scott (eds.), *South East Asia and China: Art, Interaction and Commerce: Colloquies on Art and Archaeology in Asia* (London: School of Oriental and African Studies).
-Miksic, John N. 2000. “Heterogenetic Cities in Premodern Southeast Asia.” *World Archaeology* 32 (1): 106–20. doi:10.1080/004382400409916.
-———. 2004. '14th-century Singapore: A port of trade.' in John N. Miksic and Cheryl-Ann Low Mei Gek (eds.), *Early Singapore 1300s–1819: Evidence in Maps, Text and Artefacts* (Singapore: Singapore History Museum).
-———. 2013. *Singapore & the Silk Road of the Sea, 1300-1800* (NUS Press, National Museum of Singapore: Singapore).
-Rainbird, Paul. 2007. *The Archaeology of Islands.* (Cambridge: Cambridge University Press). doi:10.1017/CBO9780511619007.
+ 
+---. 1995. 'Fourteenth Century Chinese Glass Found in Singapore and the Riau Archipelago.' in John Guy and Rosemary Scott (eds.), *South East Asia and China: Art, Interaction and Commerce: Colloquies on Art and Archaeology in Asia* (London: School of Oriental and African Studies).
+ 
+Miksic, John N. 2000. "Heterogenetic Cities in Premodern Southeast Asia." *World Archaeology* 32 (1): 106-20.
+https://doi.org/10.1080/004382400409916
+ 
+---. 2004. '14th-century Singapore: A port of trade.' in John N. Miksic and Cheryl-Ann Low Mei Gek (eds.), *Early Singapore 1300s-1819: Evidence in Maps, Text and Artefacts* (Singapore: Singapore History Museum).
+ 
+---. 2013. *Singapore & the Silk Road of the Sea, 1300-1800* (NUS Press, National Museum of Singapore: Singapore).
+ 
+Rainbird, Paul. 2007. *The Archaeology of Islands.* (Cambridge: Cambridge University Press).
+https://doi.org/10.1017/CBO9780511619007
+ 
 Solheim, Wilhelm G., David Bulbeck, and Ambika Flavel. 2006. *Archaeology and Culture in Southeast Asia : Unraveling the Nusantao.* (Quezon City, Philippines: University of the Philippines Press).
+ 
 Solheim, Wilhelm, and Ernestene Green. 1966. Johore Lama excavations, 1960 ([Museums Dept., States of Malaya]: [Kuala Lumpur]).
-Westerdahl, Christer. 1992. “The Maritime Cultural Landscape.” *International Journal of Nautical Archaeology* 21 (1): 5–14. doi:10.1111/j.1095-9270.1992.tb00336.x.
-———. 2012. 'The Maritime Cultural Landscape.' in Ben Ford, Donny L. Hamilton and Alexis Catsambis (eds.), *The Oxford Handbook of Maritime Archaeology* (Oxford University Press).
-Zaini, Shah Alam. 2019. “Metal production and social organisation in fourteenth-century Singapore.” *Journal of Southeast Asian Studies* 50 (4): 489–506. doi:10.1017/S0022463420000028.
+ 
+Westerdahl, Christer. 1992. "The Maritime Cultural Landscape." *International Journal of Nautical Archaeology* 21 (1): 5-14.
+https://doi.org/10.1111/j.1095-9270.1992.tb00336.x
+ 
+---. 2012. 'The Maritime Cultural Landscape.' in Ben Ford, Donny L. Hamilton and Alexis Catsambis (eds.), *The Oxford Handbook of Maritime Archaeology* (Oxford University Press).
+ 
+Zaini, Shah Alam. 2019. "Metal production and social organisation in fourteenth-century Singapore." *Journal of Southeast Asian Studies* 50 (4): 489-506.
+https://doi.org/10.1017/S0022463420000028
+

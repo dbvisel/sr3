@@ -1,13 +1,13 @@
 {
 	"report": {
 		"id": "emp2015",
-		"title": "ISEAS EMP",
-		"author": "ISEAS",
+		"title": "The Archaeology of the Empress Place Site, Singapore (2015)",
+		"author": "Aaron Kao - ISEAS-Yusof Ishak Institute",
 		"date":"2015",
 		"lastUpdated": "2023",
 		"location":"Singapore",
 		"image":"9.jpg",
-		"doi":"TKTKTK",
+		"doi":"https://doi.org/10.56159/sitereport12",
 		"texts": [
 			{
 				"id": "introduction",
