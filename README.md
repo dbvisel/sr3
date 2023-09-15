@@ -22,6 +22,7 @@ To build for deployment:
 
 (Prefix path is set by pathPrefix in _gatsby-config.js_)
 
+Note that this is Gatsby 3! Pretty sure you'll need Node 16 to run this – Netlify is using Node 16.3.0.
 # Technical overview
 
 This turns text files and datasets into a static site. It's build in React, using Gatsby, though it's not tightly particularly tied to that framework. Datasets are internally JSON, though you could pull them in from elsewhere – in the past we've used Google Docs. Text files are handled in MDX, which is Markdown flavored with React; MDX is used to handle footnotes, links, multilingual sections, and table inclusions that straight Markdown can't handle. Styling is handled with styled-components.
