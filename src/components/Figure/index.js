@@ -21,7 +21,8 @@ import { FigureDiv } from "./elements";
 // credit: photo credit
 // img: either a string or an array of strings, the filename for the image
 
-const Figure = ({ number, caption, credit, img }) => {
+const Figure = ({ number, caption, credit, img, resizeTo }) => {
+  const addedStyles = {};
   let builtCaption = "";
   if (number) {
     builtCaption = `Figure ${number}${caption ? ": " : ""}`;
@@ -31,6 +32,10 @@ const Figure = ({ number, caption, credit, img }) => {
   }
   if (credit) {
     builtCaption += `<span style="margin-left:2em;"><strong>Credit:</strong> ${credit}</span>`;
+  }
+  if (resizeTo) {
+    addedStyles.width = resizeTo;
+    addedStyles.height = resizeTo;
   }
   return (
     <FigureDiv>
@@ -47,12 +52,14 @@ const Figure = ({ number, caption, credit, img }) => {
                         `/${currentDataSetID}/images/${thisImg}`
                       )}
                       target="__blank"
+                      style={addedStyles}
                     >
                       <img
                         src={withPrefix(
                           `/${currentDataSetID}/images/${thisImg}`
                         )}
                         alt={caption || ""}
+                        style={addedStyles}
                       />
                     </a>
                   ))}
@@ -69,6 +76,7 @@ const Figure = ({ number, caption, credit, img }) => {
                         : null
                     }
                     alt={caption}
+                    style={addedStyles}
                   />
                 </a>
               )}
