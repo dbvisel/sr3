@@ -33,6 +33,13 @@
 				"id": "bibliography",
 				"name": "Bibliography"
 			}
+		],
+		"dataSets": [
+			{
+				"id": "emp001",
+				"name": "EMP 001",
+				"grouping": "Earthenware"
+			}
 		]
 	}
 }
