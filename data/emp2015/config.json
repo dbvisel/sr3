@@ -37,8 +37,31 @@
 		"dataSets": [
 			{
 				"id": "emp001",
-				"name": "EMP 001",
-				"grouping": "Earthenware"
+				"name": "EMP 001"
+			},
+			{
+				"id": "emp002",
+				"name": "EMP 002"
+			},
+			{
+				"id": "emp003",
+				"name": "EMP 003"
+			},
+			{
+				"id": "emp004",
+				"name": "EMP 004"
+			},
+			{
+				"id": "emp005",
+				"name": "EMP 005"
+			},
+			{
+				"id": "emp006",
+				"name": "EMP 006"
+			},
+			{
+				"id": "emp007",
+				"name": "EMP 007"
 			}
 		]
 	}
