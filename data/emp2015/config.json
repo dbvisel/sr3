@@ -62,6 +62,10 @@
 			{
 				"id": "emp007",
 				"name": "EMP 007"
+			},
+			{
+				"id": "weightBySquares",
+				"name": "Total weight of different types of objects, by square"
 			}
 		]
 	}
