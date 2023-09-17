@@ -1,0 +1,284 @@
+{
+	"dataset": {
+		"reportID": "emp2015",
+		"id": "weightBySquares",
+		"name": "Total weight of different types of objects, by square",
+		"defaultSort": "hiddenOrder",
+		"fields": [
+			{
+				"fieldKey": "artifactType",
+				"fieldName": "Artifact Type"
+			},
+			{
+				"fieldKey": "emp001",
+				"fieldName": "EMP 001"
+			},
+			{
+				"fieldKey": "emp002",
+				"fieldName": "EMP 002"
+			},
+			{
+				"fieldKey": "emp003",
+				"fieldName": "EMP 003"
+			},
+			{
+				"fieldKey": "emp004",
+				"fieldName": "EMP 004"
+			},
+			{
+				"fieldKey": "emp005",
+				"fieldName": "EMP 005"
+			},
+			{
+				"fieldKey": "emp006",
+				"fieldName": "EMP 006"
+			},
+			{
+				"fieldKey": "emp007",
+				"fieldName": "EMP 007"
+			},
+			{
+				"fieldKey": "totalWeight",
+				"fieldName": "Total weight (calculated)",
+				"fieldNameShort": "Total weight",
+				"fieldUnit": "g"
+			},
+			{
+				"fieldKey": "percent",
+				"fieldName": "Percent (calculated)",
+				"fieldNameShort": "Percent",
+				"fieldUnit": "%"
+			}
+		],
+		"data": [
+	{
+		"artifactType": "Earthenware Tempered",
+		"emp001": 36246.08,
+		"emp002": 26857.47,
+		"emp003": 24300.05,
+		"emp004": 97972.4,
+		"emp005": 3157.3,
+		"emp006": 37460.5,
+		"emp007": 20435.1,
+		"totalWeight": 246428.9,
+		"percent": "27.7%"
+	},
+	{
+		"artifactType": "Earthenware Fine Paste",
+		"emp001": 2319.9,
+		"emp002": 1422.06,
+		"emp003": 1550.3,
+		"emp004": 1140,
+		"emp005": 119.5,
+		"emp006": 1066.9,
+		"emp007": 579.6,
+		"totalWeight": 8198.3,
+		"percent": "0.9%"
+	},
+	{
+		"artifactType": "Earthenware White",
+		"emp001": 11.3,
+		"emp002": 127.3,
+		"emp003": 16.7,
+		"emp004": 11,
+		"emp005": 0,
+		"emp006": 0,
+		"emp007": 0,
+		"totalWeight": 166.3,
+		"percent": "0.0%"
+	},
+	{
+		"artifactType": "Stoneware Greenware",
+		"emp001": 5992.5,
+		"emp002": 5369.5,
+		"emp003": 6334.8,
+		"emp004": 28581.1,
+		"emp005": 454.5,
+		"emp006": 7628.7,
+		"emp007": 1198.5,
+		"totalWeight": 55559.6,
+		"percent": "6.2%"
+	},
+	{
+		"artifactType": "Stoneware Whiteware",
+		"emp001": 846.2,
+		"emp002": 609.4,
+		"emp003": 256,
+		"emp004": 2661.4,
+		"emp005": 105.6,
+		"emp006": 1477.1,
+		"emp007": 184.1,
+		"totalWeight": 6139.8,
+		"percent": "0.7%"
+	},
+	{
+		"artifactType": "Stoneware Others",
+		"emp001": 18328.8,
+		"emp002": 14034.37,
+		"emp003": 32251.6,
+		"emp004": 80185.3,
+		"emp005": 3391.8,
+		"emp006": 42364.8,
+		"emp007": 13349.1,
+		"totalWeight": 203905.8,
+		"percent": "22.9%"
+	},
+	{
+		"artifactType": "Stoneware XKP",
+		"emp001": 4179.1,
+		"emp002": 3132.19,
+		"emp003": 4105,
+		"emp004": 7014.1,
+		"emp005": 883.4,
+		"emp006": 9494,
+		"emp007": 1662.7,
+		"totalWeight": 30470.5,
+		"percent": "3.4%"
+	},
+	{
+		"artifactType": "Porcelain Blue and White",
+		"emp001": 292.6,
+		"emp002": 184.6,
+		"emp003": 39.3,
+		"emp004": 71,
+		"emp005": 30.6,
+		"emp006": 194.9,
+		"emp007": 24.3,
+		"totalWeight": 837.3,
+		"percent": "0.1%"
+	},
+	{
+		"artifactType": "Porcelain Whiteware",
+		"emp001": 542.8,
+		"emp002": 109.7,
+		"emp003": 234,
+		"emp004": 876.9,
+		"emp005": 9.9,
+		"emp006": 297.7,
+		"emp007": 72.1,
+		"totalWeight": 2143.1,
+		"percent": "0.2%"
+	},
+	{
+		"artifactType": "Porcelain Others",
+		"emp001": 0,
+		"emp002": 0,
+		"emp003": 0,
+		"emp004": 0,
+		"emp005": 0,
+		"emp006": 0,
+		"emp007": 0,
+		"totalWeight": 0,
+		"percent": "0.0%"
+	},
+	{
+		"artifactType": "CBM",
+		"emp001": 1379.6,
+		"emp002": 56.7,
+		"emp003": 948.9,
+		"emp004": 821.5,
+		"emp005": 20.8,
+		"emp006": 60.4,
+		"emp007": 126,
+		"totalWeight": 3413.9,
+		"percent": "0.4%"
+	},
+	{
+		"artifactType": "Metal",
+		"emp001": 5755.3,
+		"emp002": 2633.4,
+		"emp003": 3704.1,
+		"emp004": 8275.4,
+		"emp005": 815.6,
+		"emp006": 5210.5,
+		"emp007": 3204,
+		"totalWeight": 29598.3,
+		"percent": "3.3%"
+	},
+	{
+		"artifactType": "Geological",
+		"emp001": 53083.7,
+		"emp002": 21441.1,
+		"emp003": 19515.3,
+		"emp004": 71530.2,
+		"emp005": 2197.6,
+		"emp006": 70317.7,
+		"emp007": 41932.1,
+		"totalWeight": 280017.7,
+		"percent": "31.5%"
+	},
+	{
+		"artifactType": "Glass",
+		"emp001": 168.4,
+		"emp002": 0,
+		"emp003": 15.2,
+		"emp004": 30.6,
+		"emp005": 0,
+		"emp006": 2.3,
+		"emp007": 0.4,
+		"totalWeight": 216.9,
+		"percent": "0.0%"
+	},
+	{
+		"artifactType": "Plastic",
+		"emp001": 2,
+		"emp002": 0,
+		"emp003": 0,
+		"emp004": 0,
+		"emp005": 0,
+		"emp006": 0,
+		"emp007": 0,
+		"totalWeight": 2,
+		"percent": "0.0%"
+	},
+	{
+		"artifactType": "Fabric",
+		"emp001": 0,
+		"emp002": 0,
+		"emp003": 0,
+		"emp004": 0,
+		"emp005": 0,
+		"emp006": 0,
+		"emp007": 0,
+		"totalWeight": 0,
+		"percent": "0.0%"
+	},
+	{
+		"artifactType": "Others",
+		"emp001": 34.5,
+		"emp002": 3.9,
+		"emp003": 5.6,
+		"emp004": 1.8,
+		"emp005": 0,
+		"emp006": 111.7,
+		"emp007": 0,
+		"totalWeight": 157.5,
+		"percent": "0.0%"
+	},
+	{
+		"artifactType": "Fauna",
+		"emp001": 1547,
+		"emp002": 1786.3,
+		"emp003": 7966.8,
+		"emp004": 3118.6,
+		"emp005": 236.1,
+		"emp006": 3269.8,
+		"emp007": 4360.9,
+		"totalWeight": 22285.5,
+		"percent": "2.5%"
+	},
+	{
+		"artifactType": "Flora",
+		"emp001": 76.2,
+		"emp002": 49,
+		"emp003": 51.4,
+		"emp004": 181.8,
+		"emp005": 4,
+		"emp006": 82.1,
+		"emp007": 102.1,
+		"totalWeight": 546.6,
+		"percent": "0.1%"
+	}
+ ]
+ }
+}
