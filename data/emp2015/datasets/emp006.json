@@ -16,6 +16,7 @@
 				"fieldName": "Unit"
 			},
 			{
+				"fieldHidden": true,
 				"fieldKey": "square",
 				"fieldName": "Square"
 			},

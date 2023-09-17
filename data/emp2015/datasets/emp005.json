@@ -12,6 +12,7 @@
 				"sortMethod": "integer"
 			},
 			{
+				"fieldHidden": true,
 				"fieldKey": "unit",
 				"fieldName": "Unit"
 			},
