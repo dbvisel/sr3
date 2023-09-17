@@ -42,6 +42,27 @@ import {
 // Maybe try dpeloying this? There's some weirdness with the cloneObject function
 
 const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
+  // console.log(data.fields);
+  // console.log(
+  //   `materialSubtype "fieldValues": ${JSON.stringify([
+  //     ...new Set(data.data.map((x) => x.materialSubtype)),
+  //   ])}`
+  // );
+  // console.log(
+  //   `surfaceFinishingGlaze "fieldValues": ${JSON.stringify([
+  //     ...new Set(data.data.map((x) => x.surfaceFinishingGlaze)),
+  //   ])}`
+  // );
+  // console.log(
+  //   `surfaceFinishingDecoration "fieldValues": ${JSON.stringify([
+  //     ...new Set(data.data.map((x) => x.surfaceFinishingDecoration)),
+  //   ])}`
+  // );
+  // console.log(
+  //   `vesselPart "fieldValues": ${JSON.stringify([
+  //     ...new Set(data.data.map((x) => x.vesselPart)),
+  //   ])}`
+  // );
   const [startPoint, setStartPoint] = React.useState(0);
   const rowsPerPage = perPage || 50;
   // const endPoint = startPoint + perPage; // this is never used
