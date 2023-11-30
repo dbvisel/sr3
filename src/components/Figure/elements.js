@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const FigureDiv = styled.figure`
   text-align: center;
   margin: 32px 0;
+	& > a {
+		border: none;
+	}
   & img {
     max-width: 100%;
   }
