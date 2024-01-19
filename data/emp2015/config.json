@@ -18,16 +18,16 @@
 				"name": "2. Excavation Methodology"
 			},
 			{
+				"id": "understanding",
+				"name": "3. Understanding the Excavation"
+			},
+			{
 				"id":"results",
-				"name": "3. Results"
+				"name": "4. Results"
 			},
 			{
 				"id":"widersignificance",
-				"name":"4. Wider Significance"
-			},
-			{
-				"id": "understanding",
-				"name": "5. Understanding the Excavation"
+				"name":"5. Wider Significance"
 			},
 			{
 				"id": "figures",
