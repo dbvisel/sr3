@@ -191,7 +191,7 @@
 				]
 			},{
 				"id": "emp",
-				"name": "EMP",
+				"name": "EMP 1998",
 				"airtableDatasets": [
 					{"baseId":"appI2GWjWqQ4p7ja2", "tableName":"EMP Blue and White Porcelain 14th-1600"},
 					{"baseId":"appJPUz2xVIJjFGw7","tableName":"EMP Brittle Stoneware 14th-1600"},
@@ -219,10 +219,10 @@
 			},
 			{
 				"id":"emp2015", 
-				"name":"ISEAS EMP"
+				"name":"EMP 2015"
 			}
 
 		],
-		"excludedReports": ["scc", "dieng","colombo", "pulausaigon","sta", "lingga", "fortcanning", "spicegarden", "dummy"]
+		"excludedReports": ["scc", "dummy"]
 	}
 }
