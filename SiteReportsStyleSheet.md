@@ -27,7 +27,7 @@ Punctuation is UK style except we prefer American treatment in the choice of sin
 - 2,273 m²
 - 84 hectares 
 
-## Headings, etc
+## Headings, captions, etc
 
 - use (Figure 11) in text
 
