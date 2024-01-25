@@ -54,6 +54,9 @@ Punctuation is UK style except we prefer American treatment in the choice of sin
 ### D
 - datum - the point from which measurements are made, archaeological term
 
+### F
+- fishhooks - _OK to be one word_
+
 ### K
 - kilogram or just "kg"
 
@@ -61,10 +64,25 @@ Punctuation is UK style except we prefer American treatment in the choice of sin
 
 
 ### M
+- the Malay world
 - metre
+- Mollusca - _is a phyllum not a genus, so does not need to be italicised_
 
 ### P
+- photomap
+- postholes
+- precolonial
 - pre-modern
 - provenience is OK for "provenance"
 
+### Q
+- _qingbai_ - a shape of Chinese porcelains
 
+### S
+- *sancai* - a porcelain style, "three-coloured"
+- shophouse
+- Straits of Melaka
+- *Malay Annals/Sulalatus-salatin* - we should follow our translation style
+
+### T
+Temasek _not_ Temasik 
