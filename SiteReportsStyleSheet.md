@@ -1,0 +1,70 @@
+
+
+# Stylesheet
+
+Site Reports come from different institutional sources and settings, and so we do not enforce one style over another. However we do have an NUS Press House Style which we should try and follow whereever possible here. 
+
+## General description
+
+Spelling is British/Singapore
+Punctuation is UK style except we prefer American treatment in the choice of single or double quotation marks
+
+## Dates
+
+- 25 October 2023
+- October 2023
+- 25 October
+- *only use CE and BCE if necessary - no overuse*
+- 9th century
+- 14th-century ceramics, ie when century is used as an adjective 
+
+## Measurements
+- metres
+- 2 metres by 1 metre (use numerals when doing measurements), but "eight rain trees" when counting
+- centimetres
+- mm or cm
+- "130–150 CMBD (centimetres below datum)", there after a depth of 130 CMBD
+- 2,273 m²
+- 84 hectares 
+
+## Headings, etc
+
+- use (Figure 11) in text
+
+
+
+## Proper names
+- Cizhou, source of Cizhou wares
+- Lord Dalhousie, Governor-General of India
+- Jingdezhen, famous kiln site
+- King Chulalongkorn ("the Siamese")
+- Zhejiang
+
+
+## Word list
+
+### A
+- archaeological
+- artefact!!!
+
+### C
+- carbonised
+- centimetre
+
+### D
+- datum - the point from which measurements are made, archaeological term
+
+### K
+- kilogram or just "kg"
+
+### J
+
+
+### M
+- metre
+
+### P
+- pre-modern
+- provenience is OK for "provenance"
+
+
