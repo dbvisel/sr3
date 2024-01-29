@@ -317,8 +317,7 @@ been from similarly shaped ewers.
 
   
   **Type** |    **Weight (gms)**   | **Qty of shards**  | **Average weight/shard (g)** |  **% of total weight** 
----|---|---|---|---                          
-  
+---|---|---|---|---                            
   Bottle | 754 | 4 | 189 | 0.6%
   Bowl | 92,887 | 1,308 | 71 |71.5%
   Cover | 338 |  21 | 16 | 0.3%
