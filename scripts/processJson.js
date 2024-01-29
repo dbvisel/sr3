@@ -1,0 +1,31 @@
+// script to process pedra branca json data
+
+const theJsonData = [{"imagefiles":"1 IMG_1360.jpg, 1 a.jpg, 1 b.jpg"},{"imagefiles":""},{"imagefiles":"image.jpg"}, {"imagefiles":"image.png"},{"imagefiles":"image.jpeg, image.jpg, image.png"}];
+
+const theOutData = [];
+const errorLog = [];
+
+for(let i =0; i < theJsonData.length; i++) {
+	const thisRecord = theJsonData[i];
+	// split on internal commas
+	let theImageArray = thisRecord.imagefiles.split(',');
+	// get rid of spaces, standardize .jpg, replace spaces with hyphens
+	theImageArray = theImageArray.map((item) => item.trim().replace(".JPG",".jpg").replaceAll(" ","-"));
+	theImageArray.forEach((filename) => {
+		// if there's no .jpg in the filename, add it to an error log
+		if (filename !== '' && !filename.includes(".jpg")) {
+			errorLog.push(filename);
+		}
+	})
+	theImageArray = theImageArray.filter((item) => item !== '');
+	thisRecord.imagefiles = theImageArray;
+	theOutData.push(thisRecord);
+}
+
+console.log("\n\Output:\n\n", theOutData);
+
+if(errorLog.length) {
+	console.log("\n\nerrorLog:\n\n", errorLog);
+}
+
+// TODO: save the output to a file

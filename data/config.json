@@ -226,6 +226,6 @@
 				"name": "Pedra Branca"
 			}
 		],
-		"excludedReports": ["scc", "dieng", "lingga","msatp", "colombo", "fortcanning", "spicegarden","pulausaigon", "sta","ikg", "emp", "dummy"]
+		"excludedReports": ["scc", "dieng", "lingga","msatp", "colombo", "fortcanning", "spicegarden","pulausaigon", "sta","ikg", "dummy"]
 	}
 }
