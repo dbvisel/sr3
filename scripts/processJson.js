@@ -1,3 +1,13 @@
+/* header coming in:
+
+UIN,Grid Number,Batch Number,Description / Shape,Size,Glaze Type,Kiln,Material,Condition,Height (cm),Width / Diameter (cm),Length (cm),Weight (g),Decoration Exterior,Decoration Interior,Qty,Remarks,imagefiles,Image 1,Image 2,Box Label,Highlight
+
+change to:
+
+uin,gridNumber,batchNumber,descriptionShape,size,glazeType,kiln,material,condition,height,widthDiameter,length,weight,decorationExterior,decorationInterior,qty,remarks,imagefiles,image1,image2,boxLabel,highlight
+
+*/
+
 // script to process pedra branca json data
 
 const theJsonData = [{"imagefiles":"1 IMG_1360.jpg, 1 a.jpg, 1 b.jpg"},{"imagefiles":""},{"imagefiles":"image.jpg"}, {"imagefiles":"image.png"},{"imagefiles":"image.jpeg, image.jpg, image.png"}];
