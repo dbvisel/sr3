@@ -56,7 +56,7 @@ contribute to the accurate dating of Yuan blue-and-white porcelain.
 From the location of the wreck, the many parallel finds, and importantly
 a common dearth of large blue-and-white plates which were prized in the
 Ottoman Empire, the greater Middle East and India, it seems that Temasek
-(14^th^ century Singapore) was the most likely intended destination of
+(14th century Singapore) was the most likely intended destination of
 the *Temasek Wreck*. This being the case, the recovered ceramics and
 artefacts provide an incredible insight into the utilitarian, elite, and
 ceremonial wares that were either used by the inhabitants or
@@ -68,7 +68,7 @@ revealed in past and future terrestrial excavations in Singapore.
 For a detailed report on the *Temasek Wreck*, covering the discovery,
 survey, excavation, wrecking process, artefact overview, Temasek
 parallels, dating, likely vessel type, likely port of lading, and likely
-destination, refer to The "Temasek Wreck (Mid-14^th^ Century),
+destination, refer to The "Temasek Wreck (Mid-14th Century),
 Singapore: Preliminary Report"[^2].
 
 **The Database**
@@ -278,12 +278,7 @@ step further, when comparing the distribution of bowls decorated with
 'ducks in a lotus pond' with bowls decorated with 'lotus bouquets',
 there is yet again no discernible difference.
 
-  ---------------------------------------------------------------------------------------------------------
-  ![](media/image2.png){width="2.9428860454943133in"   ![](media/image3.png){width="2.9428860454943133in"
-  height="4.31875in"}                                  height="4.31875in"}
-  ---------------------------------------------------- ----------------------------------------------------
-
-  ---------------------------------------------------------------------------------------------------------
+<<insert distribution diagram here>>
 
 **Compositional Analysis**
 
@@ -309,7 +304,7 @@ of varying size onboard the *Temasek Wreck*.
 
 In stark contrast there were only nine intact or nearly intact vase
 bases. The total number of vase shards suggests at least double that
-number of vases, based on an average weight of 700 g per vase.
+number of vases, based on an average weight of 700 gm per vase.
 Unfortunately, the total weight of shards is not fully representative as
 many shards were too small to recover.
 
@@ -320,40 +315,26 @@ bowls. Note, however, that ewers could only be categorised when spouts
 or handles were encountered. Some of the so-called vase shards may have
 been from similarly shaped ewers.
 
-  -----------------------------------------------------------------------------
-  **Type**     **Weight      **Qty of     **Average             **% of total
-               (g)**         shards**     weight/shard (g)**    weight**
-  ------------ ------------- ------------ --------------------- ---------------
-  Bottle       754           4            189                   0.6%
-
-  Bowl         92,887        1,308        71                    71.5%
-
-  Cover        338           21           16                    0.3%
-
-  Cup          255           17           15                    0.2%
-
-  Dish         4,780         47           102                   3.7%
-
-  Ewer         488           24           20                    0.4%
-
-  Flask        1,430         8            179                   1.1%
-
-  Jar/Guan     12,189        67           182                   9.4%
-
-  Jarlet       426           18           24                    0.3%
-
-  Pouring bowl 65            2            33                    0.1%
-
-  Stem bowl    1,292         6            215                   1.0%
-
-  Stem cup     358           8            45                    0.3%
-
-  Unknown      107           1            107                   0.1%
-
-  Vase         14,471        653          22                    11.1%
-
-  **Total**    **129,923**   **2,188**                          **100.0%**
-  -----------------------------------------------------------------------------
+  
+  **Type** |    **Weight (gms)**   | **Qty of shards**  | **Average weight/shard (g)** |  **% of total weight** 
+---|---|---|---|---                          
+  
+  Bottle | 754 | 4 | 189 | 0.6%
+  Bowl | 92,887 | 1,308 | 71 |71.5%
+  Cover | 338 |  21 | 16 | 0.3%
+  Cup | 255 | 17 | 15 | 0.2%
+  Dish | 4,780 | 47 | 102 | 3.7%
+  Ewer | 488 | 24 | 20 | 0.4%
+  Flask | 1,430 | 8 | 179 | 1.1%
+  Jar/Guan | 12,189 | 67 | 182 | 9.4%
+  Jarlet | 426 | 18 | 24 | 0.3%
+  Pouring bowl | 65 | 2 | 33 | 0.1%
+  Stem bowl | 1,292 | 6 | 215 | 1.0%
+  Stem cup | 358 | 8 | 45 | 0.3%
+  Unknown | 107 | 1 | 107 | 0.1%
+  Vase | 14,471 | 653 | 22 | 11.1%
+  **Total** | **129,923** | **2,188** | **100.0%**
+  
 
 **Conclusions**
 
