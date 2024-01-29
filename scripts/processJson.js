@@ -29,20 +29,24 @@ const errorLog = [];
 for (let i = 0; i < theJsonData.length; i++) {
   const thisRecord = theJsonData[i];
   // split on internal commas
-  let theImageArray = thisRecord.imagefiles.split(",");
-  // get rid of spaces, standardize .jpg, replace spaces with hyphens
-  theImageArray = theImageArray.map((item) =>
-    item.trim().replace(".JPG", ".jpg").replaceAll(" ", "-")
-  );
-  theImageArray.forEach((filename) => {
-    // if there's no .jpg in the filename, add it to an error log
-    if (filename !== "" && !filename.includes(".jpg")) {
-      errorLog.push(filename);
-    }
-  });
-  theImageArray = theImageArray.filter((item) => item !== "");
-  thisRecord.imagefiles = theImageArray;
-  theOutData.push(thisRecord);
+	if(typeof thisRecord.imagefiles === "string") {
+		let theImageArray = thisRecord.imagefiles.split(",");
+		// get rid of spaces, standardize .jpg, replace spaces with hyphens
+		theImageArray = theImageArray.map((item) =>
+			item.trim().replace(".JPG", ".jpg").replaceAll(" ", "-")
+		);
+		theImageArray.forEach((filename) => {
+			// if there's no .jpg in the filename, add it to an error log
+			if (filename !== "" && !filename.includes(".jpg")) {
+				errorLog.push(filename);
+			}
+		});
+		theImageArray = theImageArray.filter((item) => item !== "");
+		thisRecord.imagefiles = theImageArray;
+	}
+	// strip out all null values
+	const o = Object.fromEntries(Object.entries(thisRecord).filter(([_, v]) => v != null));
+  theOutData.push(o);
 }
 
 console.log("\nOutput:\n\n", theOutData);
