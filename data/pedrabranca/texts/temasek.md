@@ -332,7 +332,7 @@ been from similarly shaped ewers.
   Stem cup | 358 | 8 | 45 | 0.3%
   Unknown | 107 | 1 | 107 | 0.1%
   Vase | 14,471 | 653 | 22 | 11.1%
-  **Total** | **129,923** | **2,188** | **100.0%**
+  **Total** | **129,923** | **2,188** | &nbsp; | **100.0%**
   
 
 **Conclusions**
