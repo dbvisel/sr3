@@ -1,75 +1,75 @@
 {
 	"dataset": {
-		"reportID":"pedrabranca",
+		"reportID":"pb1ceramics",
 		"defaultSort":"uin",
 		"name":"14th-century Ceramics",
 		"id":"14thcenturyceramics",
 		"fields": [
 			{
-				"fieldKey":"uin","fieldName":"UIN"
+				"fieldKey":"uin","fieldName":"# U."
 			},
 			{
-				"fieldKey":"gridNumber","fieldName":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]
+				"fieldKey":"gridNumber","fieldName":"Grid Number"
 			},
 			{
-				"fieldKey":"batchNumber","fieldName":"Variety of Material","fieldValues":["Earthenware","Stoneware","Porcelain","Tile","Electrical Fixtures","Unknown/Others","Bronze/Copper","Tin/Lead","Bone","Shell"]
+				"fieldKey":"batchNumber","fieldName":"Batch Number"
 			},
 			{
-				"fieldKey":"descriptionShape","fieldName":"Type of Ware","fieldValues":["Earthenware - Medium Tempered","Stoneware - Brittle","Porcelain - Green","Porcelain - Blue and White","Porcelain - White","Stoneware - Buff","Porcelain - Polychrome ","Porcelain - Monochrome Other","Porcelain - Others","Porcelain - Unknown","Stoneware - Others","Earthenware - Others"]
+				"fieldKey":"descriptionShape","fieldName":"Description/Shape"
 			},
 			{
-				"fieldKey":"size","fieldName":"Provenance","fieldValues":["Local (Singaporean)","Chinese","Guangdong","Unknown","Others","European","Dutch","British","French","Japanese"]
+				"fieldKey":"size","fieldName":"Size"
 			},
 			{
-				"fieldKey":"glazeType","fieldName":"Period","fieldValues":["14th century","15th century","19th century","20th century","Unknown"]
+				"fieldKey":"glazeType","fieldName":"Glaze Type"
 			},
 			{
-				"fieldKey":"kiln","fieldName":"Form","fieldValues":["Pot","Jar","Bowl","Statue/figurine","Jarlet","Cup","Teapot","Basin","Others","Spoon","Saucer","Plate","Unknown","Covered box","Vase","Stand","Decorative feature","Incense burner","Bottle","Trivet","Tile","Light bulb","Marble","Tumbler","Fish hook","Weapon","Toothbrush","Bead","Comb","Gun flint"]
+				"fieldKey":"kiln","fieldName":"Kiln"
 			},
 			{
-				"fieldKey":"material","fieldName":"Vessel Part","fieldValues":["Body","Base","Body (with decoration)","Rim","Others","Lug","Rim & Base (complete profile)","Spout","Handle","Lid","Shoulder","Knob","Unknown","Neck","Complete Vessel","Mouth","Carination","Complete vessel"]
+				"fieldKey":"material","fieldName":"Material"
 			},
 			{
-				"fieldKey":"condition","fieldName":"Number of Pieces"
+				"fieldKey":"condition","fieldName":"Condition"
 			},
 			{
-				"fieldKey":"height","fieldName":"Weight","fieldUnit":"g"
+				"fieldKey":"height","fieldName":"Height","fieldUnit":"cm"
 			},
 			{
-				"fieldKey":"widthDiameter","fieldName":"Length","fieldUnit":"cm"
+				"fieldKey":"widthDiameter","fieldName":"Width/Diameter","fieldUnit":"cm"
 			},
 			{
-				"fieldKey":"length","fieldName":"Width","fieldUnit":"cm"
+				"fieldKey":"length","fieldName":"Length","fieldUnit":"cm"
 			},
 			{
-				"fieldKey":"weight","fieldName":"Thickness","fieldUnit":"cm"
+				"fieldKey":"weight","fieldName":"Weight","fieldUnit":"g"
 			},
 			{
-				"fieldKey":"decorationExterior","fieldName":"Thickness of base (complete profile)","fieldUnit":"cm"
+				"fieldKey":"decorationExterior","fieldName":"Decoration Exterior"
 			},
 			{
-				"fieldKey":"decorationInterior","fieldName":"Height of foot rim","fieldUnit":"cm"
+				"fieldKey":"decorationInterior","fieldName":"Decoration Interior"
 			},
 			{
-				"fieldKey":"qty","fieldName":"Diameter","fieldUnit":"cm"
+				"fieldKey":"qty","fieldName":"Qty"
 			},
 			{
-				"fieldKey":"remarks","fieldName":"MNV","fieldType":"percent"
+				"fieldKey":"remarks","fieldName":"Remarks"
 			},
 			{
-				"fieldKey":"imagefiles","fieldName":"Image","fieldType":"filename"
+				"fieldKey":"imagefiles","fieldName":"Image"
 			},
 			{
-				"fieldKey":"image1","fieldName":"Remarks","fieldType":"text"
+				"fieldKey":"image1","fieldName":"Image 1","fieldType":"text"
 			},
 			{
-				"fieldKey":"image2","fieldName":"Remarks","fieldType":"text"
+				"fieldKey":"image2","fieldName":"Image 2","fieldType":"text"
 			},
 			{
-				"fieldKey":"boxLabel","fieldName":"Remarks","fieldType":"text"
+				"fieldKey":"boxLabel","fieldName":"Box Label","fieldType":"text"
 			},
 			{
-				"fieldKey":"highlight","fieldName":"Remarks","fieldType":"text"
+				"fieldKey":"highlight","fieldName":"Highlight","fieldType":"text"
 			}
 		], 
 		"data": [
