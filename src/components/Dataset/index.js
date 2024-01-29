@@ -589,6 +589,7 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                           ? toTitleCase(String(column.value))
                           : column.value
                         : column.value;
+                    // console.log(cleanedValue, typeof cleanedValue);
                     return column.fieldType &&
                       (column.fieldType === "link" ||
                         column.fieldType === "imageLink") ? (
@@ -622,9 +623,12 @@ const DataSet = ({ perPage, inLine, hideHeaders, data }) => {
                         }
                       >
                         <span className="innertd">
-                          {typeof cleanedValue === "object"
-                            ? cleanedValue.join(", ")
-                            : cleanedValue}
+                          {cleanedValue
+                            ? typeof cleanedValue === "object" &&
+                              cleanedValue.length
+                              ? cleanedValue.join(", ")
+                              : cleanedValue
+                            : ""}
                         </span>
                       </TableCell>
                     );
