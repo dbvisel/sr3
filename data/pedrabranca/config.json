@@ -1,0 +1,25 @@
+{
+	"report": {
+		"id": "pedrabranca",
+		"title": "Pedra Branca",
+		"author": "",
+		"doi": "",
+		"date":"",
+		"lastUpdated":"",
+		"location":"",
+		"image":"Fig2106PulauSaigondrill.jpg",
+		"texts": 
+			[
+				{
+					"id": "description",
+					"name": "Description"
+				}
+			],
+		"dataSets":[
+			{
+				"id": "pedrabranca",
+				"name": "Pedra Branc"
+			}
+		]
+	}
+}

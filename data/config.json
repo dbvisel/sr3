@@ -220,9 +220,12 @@
 			{
 				"id":"emp2015", 
 				"name":"EMP 2015"
+			},
+			{
+				"id": "pedrabranca",
+				"name": "Pedra Branca"
 			}
-
 		],
-		"excludedReports": ["scc", "dummy"]
+		"excludedReports": ["scc", "dieng", "lingga","msatp", "colombo", "fortcanning", "spicegarden","pulausaigon", "sta","ikg", "emp", "dummy"]
 	}
 }

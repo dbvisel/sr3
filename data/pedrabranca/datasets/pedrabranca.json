@@ -1,0 +1,19 @@
+{
+	"dataset": {
+		"reportID":"pedrabranca",
+		"defaultSort":"Artifact_Number",
+		"name":"14th-century Ceramics",
+		"id":"14thcenturyceramics",
+		"fields": [
+			{
+				"fieldKey":"Artifact_Number","fieldName":"Artifact Number"
+			},
+			{
+				"fieldKey":"Material","fieldName":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},{"fieldKey":"Varieties_of_Material","fieldName":"Variety of Material","fieldValues":["Earthenware","Stoneware","Porcelain","Tile","Electrical Fixtures","Unknown/Others","Bronze/Copper","Tin/Lead","Bone","Shell"]},{"fieldKey":"Type_of_Ware","fieldName":"Type of Ware","fieldValues":["Earthenware - Medium Tempered","Stoneware - Brittle","Porcelain - Green","Porcelain - Blue and White","Porcelain - White","Stoneware - Buff","Porcelain - Polychrome ","Porcelain - Monochrome Other","Porcelain - Others","Porcelain - Unknown","Stoneware - Others","Earthenware - Others"]},{"fieldKey":"Provenance","fieldName":"Provenance","fieldValues":["Local (Singaporean)","Chinese","Guangdong","Unknown","Others","European","Dutch","British","French","Japanese"]},{"fieldKey":"Period","fieldName":"Period","fieldValues":["14th century","15th century","19th century","20th century","Unknown"]},{"fieldKey":"Form","fieldName":"Form","fieldValues":["Pot","Jar","Bowl","Statue/figurine","Jarlet","Cup","Teapot","Basin","Others","Spoon","Saucer","Plate","Unknown","Covered box","Vase","Stand","Decorative feature","Incense burner","Bottle","Trivet","Tile","Light bulb","Marble","Tumbler","Fish hook","Weapon","Toothbrush","Bead","Comb","Gun flint"]},{"fieldKey":"Vessel_Part","fieldName":"Vessel Part","fieldValues":["Body","Base","Body (with decoration)","Rim","Others","Lug","Rim & Base (complete profile)","Spout","Handle","Lid","Shoulder","Knob","Unknown","Neck","Complete Vessel","Mouth","Carination","Complete vessel"]},{"fieldKey":"Number_of_pieces","fieldName":"Number of Pieces"},{"fieldKey":"Weight__g_","fieldName":"Weight","fieldUnit":"g"},{"fieldKey":"Length__cm_","fieldName":"Length","fieldUnit":"cm"},{"fieldKey":"Width__cm_","fieldName":"Width","fieldUnit":"cm"},{"fieldKey":"Thickness__cm_","fieldName":"Thickness","fieldUnit":"cm"},{"fieldKey":"Thickness_of_base__complete_profile___cm_","fieldName":"Thickness of base (complete profile)","fieldUnit":"cm"},{"fieldKey":"Height_of_foot_rim__cm_","fieldName":"Height of foot rim","fieldUnit":"cm"},{"fieldKey":"Diameter__cm_","fieldName":"Diameter","fieldUnit":"cm"},{"fieldKey":"MNV____","fieldName":"MNV","fieldType":"percent"},{"fieldKey":"Filename","fieldName":"Image","fieldType":"filename"},{"fieldKey":"Remarks","fieldName":"Remarks","fieldType":"text"
+			}
+		], 
+		"data": [
+
+		]
+	}
+}
