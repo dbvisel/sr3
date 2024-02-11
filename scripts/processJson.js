@@ -16,6 +16,15 @@ id,uin,gridNumber,batchNumber,descriptionShape,size,glazeType,kiln,material,cond
 
 // script to process pedra branca json data
 
+/*
+
+To run this: node scripts/processJson.js
+
+It makes an output.json file in the scripts folder which should be used to replace the input JSON file
+(currently hardcoded)
+
+*/
+
 const data = require("./../data/pedrabranca/datasets/pb1ceramics.json");
 const fs = require("fs");
 
