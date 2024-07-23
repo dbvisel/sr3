@@ -63,7 +63,7 @@
 				"id": "blueWhite",
 				"name": "Blue & White Porcelain 14th–1600",
 				"airtableName": "EMP Blue and White Porcelain 14th-1600",
-				"isAirtable":true,
+				"isAirtable":false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -100,7 +100,7 @@
 				"id": "brittleStoneware",
 				"name": "Brittle Stoneware 14th–1600",
 				"airtableName": "EMP Brittle Stoneware 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -137,7 +137,7 @@
 				"id": "buffStoneware",
 				"name": "Buff Stoneware 14th–1600",
 				"airtableName": "EMP Buff Stoneware 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -174,7 +174,7 @@
 				"id": "chinesePorcelain",
 				"name": "Chinese Porcelain 19th–20th",
 				"airtableName": "EMP Chinese Porcelain 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -211,7 +211,7 @@
 				"id": "chineseStoneware",
 				"name": "Chinese Stoneware 19th–20th",
 				"airtableName": "EMP Chinese Stoneware 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -248,7 +248,7 @@
 				"id": "constructionMaterials",
 				"name": "Construction Materials 19th–20th",
 				"airtableName": "EMP Construction Materials 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -285,7 +285,7 @@
 				"id": "europeanPorcelain",
 				"name": "European Porcelain 19th–20th",
 				"airtableName": "EMP European Porcelain 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -322,7 +322,7 @@
 				"id": "europeanStoneware",
 				"name": "European Stoneware 19th–20th",
 				"airtableName": "EMP European Stoneware 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -359,7 +359,7 @@
 				"id": "finePasteEarthenware",
 				"name": "Fine Paste Earthenware 14th–1600",
 				"airtableName": "EMP Fine Paste Earthenware 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -396,7 +396,7 @@
 				"id": "glassModern",
 				"name": "Glass Modern 19th–20th",
 				"airtableName": "EMP Glass Modern 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -433,7 +433,7 @@
 				"id": "greenPorcelain",
 				"name": "Green Porcelain 14th–1600",
 				"airtableName": "EMP Green Porcelain 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -470,7 +470,7 @@
 				"id": "ironSpottedQingbai",
 				"name": "Iron-spotted Qingbai 14th–1600",
 				"airtableName": "EMP Iron-spotted Qingbai 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -507,7 +507,7 @@
 				"id": "leadGlazedEarthenware",
 				"name": "Lead Glazed Earthenware 14th–1600",
 				"airtableName": "EMP Lead Glazed Earthenware 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -544,7 +544,7 @@
 				"id": "localEarthenware",
 				"name": "Local Earthenware 19th–20th",
 				"airtableName": "EMP Local Earthenware 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -581,7 +581,7 @@
 				"id": "mercuryJarStoneware",
 				"name": "Mercury Jar Stoneware 14th–1600",
 				"airtableName": "EMP Mercury Jar Stoneware 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -618,7 +618,7 @@
 				"id": "modernMetal",
 				"name": "Modern Metal 19th-20th",
 				"airtableName": "EMP Modern Metal 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -655,7 +655,7 @@
 				"id": "organic",
 				"name": "Organic 19th-20th",
 				"airtableName": "EMP Organic 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -692,7 +692,7 @@
 				"id": "otherStoneware14th1600",
 				"name": "Other Stoneware 14th–1600",
 				"airtableName": "EMP Other Stoneware 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -729,7 +729,7 @@
 				"id": "otherStoneware19th20th",
 				"name": "Other Stoneware 19th–20th",
 				"airtableName": "EMP Other Stoneware 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -766,7 +766,7 @@
 				"id": "stone",
 				"name": "Stone 19th-20th",
 				"airtableName": "EMP Stone 19th-20th",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -803,7 +803,7 @@
 				"id": "temperedEarthenware",
 				"name": "Tempered Earthenware 14th–1600",
 				"airtableName": "EMP Tempered Earthenware 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
@@ -840,7 +840,7 @@
 				"id": "whitePorcelain",
 				"name": "White Porcelain 14th–1600",
 				"airtableName": "EMP White Porcelain 14th-1600",
-				"isAirtable":true,
+				"isAirtable": false,
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
 					{"fieldName":"Unit","fieldKey":"Unit_Number"},
