@@ -48,7 +48,7 @@
 				{
 				"id":"stonewarebrittle",
 				"name":"Stoneware (Brittle)",				
-				"isAirtable": true,
+				"isAirtable": false,
 				"airtableName":"STA Stoneware Brittle (1-582)",
 				"defaultSort":"Artifact_Number",
 				"fields": [
@@ -82,7 +82,7 @@
 				"id":"stonewarebuff",
 				"name":"Stoneware (Buff)",
 				"airtableName": "STA Stoneware Buff (1-403; 460-500))",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -115,7 +115,7 @@
 				"id":"stonewaremercuryjar", 
 				"name":"Stoneware (Mercury Jar)",
 				"airtableName":"STA Stoneware - Mercury Jar (1-292)",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -148,7 +148,7 @@
 				"id":"temperedearthenware", 
 				"name":"Tempered Earthenware",
 				"airtableNames":["STA tempered earthenware (1 - 999)", "STA tempered earthenware (1000 - 1192)"],
-				"isAirtable": true,
+				"isAirtable": false,
 				"isAirtableMultiple": true,
 				"defaultSort":"Artifact_Number",
 				"fields": [
@@ -182,7 +182,7 @@
 				"id":"fpw", 
 				"name":"FPW",
 				"airtableName":"STA FPW (1-999)",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -215,7 +215,7 @@
 				"id":"blueandwhite", 
 				"name":"Blue and White",
 				"airtableName":"STA Blue and White (1-580)",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -250,7 +250,7 @@
 				"id":"whiteporcelain", 
 				"name":"White Porcelain",
 				"airtableNames":["STA White Porcelain (1-999)", "STA White Porcelain (1000-1999)", "STA White Porcelain (2000-2721)"],
-				"isAirtable": true,
+				"isAirtable": false,
 				"isAirtableMultiple": true,
 				"defaultSort":"Artifact_Number",
 				"fields": [
@@ -286,7 +286,7 @@
 				"id":"greenporcelain", 
 				"name":"Green Porcelain",
 				"airtableNames":["STA Green Porcelain (1-999)","STA Green Porcelain (1000-1999)","STA Green Porcelain (2000-2371)"],
-				"isAirtable": true,
+				"isAirtable": false,
 				"isAirtableMultiple": true,
 				"defaultSort":"Artifact_Number",
 				"fields": [
@@ -322,7 +322,7 @@
 				"id":"porcelainothers", 
 				"name":"Porcelain Others",
 				"airtableName":"STA Porcelain Others",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -357,7 +357,7 @@
 				"id":"19th20thcporcelain", 
 				"name":"19th/20th C Porcelain",
 				"airtableName":"STA 19th/20th century Porcelain",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -392,7 +392,7 @@
 				"id":"leadglazedearthenware", 
 				"name":"Lead-glazed earthenware",
 				"airtableName":"STA Lead-glazed earthenware",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -427,7 +427,7 @@
 				"id":"otherceramics", 
 				"name":"Other Ceramics Unknown",
 				"airtableName":"STA Other Ceramics Unknown",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -462,7 +462,7 @@
 				"id":"nonceramics14c1600", 
 				"name":"Non-ceramics (14th C–1600)",
 				"airtableName":"STA Non-ceramics (14th century-1600)",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -497,7 +497,7 @@
 				"id":"nonceramics19c20c", 
 				"name":"Non-ceramics (19th/20th C)",
 				"airtableName":"STA Non-ceramis (19th/20th century)",
-				"isAirtable": true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields": [
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
