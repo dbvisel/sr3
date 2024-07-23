@@ -1,4 +1,4 @@
-const path = require(`path`);
+const path = require("path");
 const fs = require("fs");
 
 // REMEMBER:
@@ -99,7 +99,7 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
 
   if (downloadAirtableDatasets) {
     const filename =
-      __dirname + `/data/` + reportID + "/datasets/" + data.id + ".json";
+      __dirname + "/data/" + reportID + "/datasets/" + data.id + ".json";
 
     if (fs.existsSync(filename)) {
       console.log("This already exists: ", filename);
@@ -121,9 +121,9 @@ const makeDatasetFromAirtable = (data, allAirtableData, reportID) => {
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-  const textPageTemplate = path.resolve(`src/templates/text.js`);
-  const datasetPageTemplate = path.resolve(`src/templates/datasetpage.js`);
-  const datasetItemPageTemplate = path.resolve(`src/templates/dataobject.js`);
+  const textPageTemplate = path.resolve("src/templates/text.js");
+  const datasetPageTemplate = path.resolve("src/templates/datasetpage.js");
+  const datasetItemPageTemplate = path.resolve("src/templates/dataobject.js");
 
   return graphql(`
     {
@@ -183,49 +183,50 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-      allAirtableData: allAirtable {
-        group(field: table) {
-          fieldValue
-          nodes {
-            data {
-              Artifact_Number
-              Depth__cm_
-              Color_Exterior_Earthenware__Munsell_
-              Color_Interior_Earthenware__Munsell_
-              Color_Profile_Earthenware__Munsell_
-              Date_of_excavation
-              Diameter__cm_
-              Length__cm_
-              Height_of_foot_rim__cm_
-              Form
-              MNV____
-              Lot
-              Level
-              Type_of_Ware
-              Width__cm_
-              Weight__g_
-              Vessel_Part
-              Varieties_of_Material
-              Unit_Number
-              Thickness_of_base__complete_profile___cm_
-              Thickness__foot_rim___cm_
-              Thickness__cm_
-              Spit
-              Provenance
-              Remarks
-              Period
-              Number_of_pieces
-              Material
-              Thickness_of_base__complete_profile___cm_
-              Color_Exterior_Earthenware__Munsell_
-              Color_Interior_Earthenware__Munsell_
-              Color_Profile_Earthenware__Munsell_
-            }
-          }
-        }
-      }
     }
   `).then((result) => {
+    // allAirtableData: allAirtable {
+    //   group(field: table) {
+    //     fieldValue
+    //     nodes {
+    //       data {
+    //         Artifact_Number
+    //         Depth__cm_
+    //         Color_Exterior_Earthenware__Munsell_
+    //         Color_Interior_Earthenware__Munsell_
+    //         Color_Profile_Earthenware__Munsell_
+    //         Date_of_excavation
+    //         Diameter__cm_
+    //         Length__cm_
+    //         Height_of_foot_rim__cm_
+    //         Form
+    //         MNV____
+    //         Lot
+    //         Level
+    //         Type_of_Ware
+    //         Width__cm_
+    //         Weight__g_
+    //         Vessel_Part
+    //         Varieties_of_Material
+    //         Unit_Number
+    //         Thickness_of_base__complete_profile___cm_
+    //         Thickness__foot_rim___cm_
+    //         Thickness__cm_
+    //         Spit
+    //         Provenance
+    //         Remarks
+    //         Period
+    //         Number_of_pieces
+    //         Material
+    //         Thickness_of_base__complete_profile___cm_
+    //         Color_Exterior_Earthenware__Munsell_
+    //         Color_Interior_Earthenware__Munsell_
+    //         Color_Profile_Earthenware__Munsell_
+    //       }
+    //     }
+    //   }
+    // }
+
     // Filename
 
     if (result.errors) {
@@ -289,7 +290,7 @@ exports.createPages = ({ actions, graphql }) => {
             pageData.dataset.data.forEach((dataItem) => {
               if (dataItem.id) {
                 let myNewPath = `/${reportID}/dataset/${dataSet.id}/id/${dataItem.id}`;
-                outputText += `${dataItem.id}, `;
+                outputText = outputText + `${dataItem.id}, `;
                 // console.log(`Creating data object page at ${myNewPath}`);
                 createPage({
                   path: myNewPath,

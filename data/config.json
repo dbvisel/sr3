@@ -160,8 +160,7 @@
 					{"baseId":"app3pZVDRCMRxJYDs", "tableName":"STA Non-ceramics (14th century-1600)"},
 					{"baseId":"app8bidDMN6xsO0Y4", "tableName":"STA Non-ceramis (19th/20th century)"}
 				],
-				"disabledAirtableDatasets":[
-				]
+				"disabledAirtableDatasets":[]
 			},
 			{
 				"id":"ikg",
@@ -187,8 +186,7 @@
 					{"baseId":"appCZ36taCMREafi0", "tableName":"Construction Materials"},
 					{"baseId":"app1kOEWTuijXF1W7", "tableName":"Plastic"}
 				],
-				"disabledAirtableDatasets": [					
-				]
+				"disabledAirtableDatasets": []
 			},{
 				"id": "emp",
 				"name": "EMP 1998",
@@ -215,7 +213,8 @@
 					{"baseId":"app2KSY16msAO2qiT", "tableName":"EMP Stone 19th-20th"},
 					{"baseId":"appFC17Urv7ZUtNuE", "tableName":"EMP Tempered Earthenware 14th-1600"},
 					{"baseId":"appGSWsKC5mlZAnKU", "tableName":"EMP White Porcelain 14th-1600"}
-				]
+				],
+				"disabledAirtableDatasets": []
 			},
 			{
 				"id":"emp2015", 
@@ -226,6 +225,6 @@
 				"name": "Pedra Branca"
 			}
 		],
-		"excludedReports": ["scc", "dieng", "lingga","msatp", "colombo", "fortcanning", "spicegarden","pulausaigon", "sta","ikg", "dummy"]
+		"excludedReports": ["scc", "dieng", "lingga","msatp", "colombo", "fortcanning", "spicegarden","pulausaigon", "sta","ikg", "emp", "dummy"]
 	}
 }
