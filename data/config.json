@@ -139,7 +139,7 @@
 			},{
 				"id":"sta", 
 				"name": "St. Andrew’s",
-				"airtableDatasets": [
+				"disabledAirtableDatasets": [
 					{"baseId":"app7Q9PPdy7rfeCkC", "tableName":"STA Stoneware Brittle (1-582)"},
 					{"baseId":"app9eRQQWNzit0KRg", "tableName":"STA Stoneware Buff (1-403; 460-500))"},
 					{"baseId":"appFJtImRDpHGhncj", "tableName":"STA Stoneware - Mercury Jar (1-292)"},
@@ -158,9 +158,8 @@
 					{"baseId":"appT9vteoR3YFxcD1", "tableName":"STA Lead-glazed earthenware"},
 					{"baseId":"appBZMpWrLlCvX9ac", "tableName":"STA Other Ceramics Unknown"},
 					{"baseId":"app3pZVDRCMRxJYDs", "tableName":"STA Non-ceramics (14th century-1600)"},
-					{"baseId":"app8bidDMN6xsO0Y4", "tableName":"STA Non-ceramis (19th/20th century)"}
+					{"baseId":"app8bidDMN6xsO0Y4", "tableName":"STA Non-ceramics (19th/20th century)"}
 				],
-				"disabledAirtableDatasets":[]
 			},
 			{
 				"id":"ikg",

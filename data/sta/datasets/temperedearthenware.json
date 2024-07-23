@@ -1,0 +1,35 @@
+{
+	"dataset": {
+		"reportID": "sta",
+		"id":"temperedearthenware", 
+		"name":"Tempered Earthenware",
+		"defaultSort":"Artifact_Number",
+		"fields": [
+			{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
+			{"fieldName":"Unit","fieldKey":"Unit_Number"},
+			{"fieldName":"Depth","fieldKey":"Depth__cm_", "fieldUnit": "cm"},
+			{"fieldName":"Level","fieldKey":"Level"},
+			{"fieldName":"Material","fieldKey":"Material","fieldValues":["Ceramics","Constructions Materials","Glass","Metal","Organic","Plastic","Stone"]},
+			{"fieldName":"Variety of Material","fieldKey":"Varieties_of_Material","fieldValues":["Earthenware", "Stoneware", "Porcelain", "Tile", "Electrical Fixtures", "Unknown/Others", "Bronze/Copper", "Tin/Lead", "Bone", "Shell"]},
+			{"fieldName":"Type of Ware","fieldKey":"Type_of_Ware","fieldValues":["Earthenware - Medium Tempered", "Stoneware - Brittle", "Porcelain - Green", "Porcelain - Blue and White", "Porcelain - White", "Stoneware - Buff", "Porcelain - Polychrome ", "Porcelain - Monochrome Other", "Porcelain - Others", "Porcelain - Unknown", "Stoneware - Others", "Earthenware - Others"]},
+			{"fieldName":"Provenance","fieldKey":"Provenance","fieldValues":["Local (Singaporean)", "Chinese", "Guangdong", "Unknown", "Others", "European", "Dutch", "British", "French", "Japanese"]},
+			{"fieldName":"Period","fieldKey":"Period","fieldValues":["14th century", "15th century", "19th century", "20th century","Unknown"]},
+			{"fieldName":"Form","fieldKey":"Form","fieldValues":["Pot", "Jar", "Bowl", "Statue/figurine", "Jarlet", "Cup", "Teapot", "Basin", "Others", "Spoon", "Saucer", "Plate", "Unknown", "Covered box", "Vase", "Stand", "Decorative feature", "Incense burner", "Bottle", "Trivet", "Tile", "Light bulb", "Marble", "Tumbler", "Fish hook", "Weapon", "Toothbrush", "Bead", "Comb", "Gun flint"]},
+			{"fieldName":"Vessel Part","fieldKey":"Vessel_Part","fieldValues":["Body", "Base", "Body (with decoration)", "Rim", "Others", "Lug", "Rim & Base (complete profile)", "Spout", "Handle", "Lid", "Shoulder", "Knob", "Unknown", "Neck", "Complete Vessel", "Mouth", "Carination", "Complete vessel"]},
+			{"fieldName":"Number of Pieces","fieldKey":"Number_of_pieces"},
+			{"fieldName":"Weight","fieldKey":"Weight__g_","fieldUnit":"g"},
+			{"fieldName":"Length","fieldKey":"Length__cm_","fieldUnit":"cm"},
+			{"fieldName":"Width","fieldKey":"Width__cm_","fieldUnit":"cm"},
+			{"fieldName":"Thickness","fieldKey":"Thickness__cm_","fieldUnit":"cm"},
+			{"fieldName":"Height of foot rim","fieldKey":"Height_of_foot_rim__cm_","fieldUnit":"cm"},
+			{"fieldName":"Diameter","fieldKey":"Diameter__cm_","fieldUnit":"cm"},
+			{"fieldName":"MNV","fieldKey":"MNV____","fieldType":"percent"},
+			{"fieldName":"Color Exterior Earthenware (Munsell)","fieldKey":"Color_Exterior_Earthenware__Munsell_","fieldType":"munsellcolor"},
+			{"fieldName":"Color Interior Earthenware (Munsell)","fieldKey":"Color_Interior_Earthenware__Munsell_","fieldType":"munsellcolor"},
+			{"fieldName":"Color Profile Earthenware (Munsell)","fieldKey":"Color_Profile_Earthenware__Munsell_","fieldType":"munsellcolor"},
+			{"fieldName":"Remarks","fieldKey":"Remarks","fieldType":"text"},
+			{"fieldName":"Excavation Date","fieldKey":"Date_of_excavation","fieldType":"date"}
+		],
+		"data": []
+	}
+	}
