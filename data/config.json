@@ -188,7 +188,7 @@
 			},{
 				"id": "emp",
 				"name": "EMP 1998",
-				"airtableDatasets": [
+				"disabledAirtableDatasets": [
 					{"baseId":"appI2GWjWqQ4p7ja2", "tableName":"EMP Blue and White Porcelain 14th-1600"},
 					{"baseId":"appJPUz2xVIJjFGw7","tableName":"EMP Brittle Stoneware 14th-1600"},
 					{"baseId":"appHStL5IfxcI5Vot","tableName":"EMP Buff Stoneware 14th-1600"},
