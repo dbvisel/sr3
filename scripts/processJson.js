@@ -4,12 +4,17 @@ UIN,Grid Number,Batch Number,Description / Shape,Size,Glaze Type,Kiln,Material,C
 
 UIN Key,UIN,Grid Number,Batch Number,Description / Shape,Size,Glaze Type,Kiln,Material,Condition,Weight (g),Decoration Exterior,Decoration Interior,Qty,Remarks,Box Label,Highlight,Filesource,imageNames
 
+UIN Key,UIN,Grid Number,Batch Number,Description / Shape,Size,Glaze Type,Kiln,Material,Condition,Weight (g),Decoration Exterior,Decoration Interior,Qty,Remarks,Box Label,Highlight,Filesource,imageNames,Created
+
 
 change to:
 
 id,gridNumber,batchNumber,descriptionShape,size,glazeType,kiln,material,condition,height,widthDiameter,length,weight,decorationExterior,decorationInterior,qty,remarks,imagefiles,image1,image2,boxLabel,highlight
 
 id,uin,gridNumber,batchNumber,descriptionShape,size,glazeType,kiln,material,condition,weight,decorationExterior,decorationInterior,qty,remarks,boxLabel,highlight,filesource,imagefiles
+
+
+id,uin,gridNumber,batchNumber,descriptionShape,size,glazeType,kiln,material,condition,weight,decorationExterior,decorationInterior,qty,remarks,boxLabel,highlight,filesource,imagefiles,created
 
 
 */
