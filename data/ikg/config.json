@@ -57,7 +57,7 @@
 				"id":"europeanporcelain",
 				"name": "European Porcelain",
 				"airtableNames":["European Porcelain 1000-1999","European Porcelain 2000-2999","European Porcelain 3000-3073"],
-				"isAirtable": true,
+				"isAirtable": false,
 				"isAirtableMultiple": true,
 				"defaultSort":"Artifact_Number",
 				"fields":[
@@ -91,7 +91,7 @@
 				"id":"chineseporcelain",
 				"name": "Chinese Porcelain",
 				"airtableNames":["Chinese Porcelain 1-999","Chinese Porcelain 1000-1480"],
-				"isAirtable": true,
+				"isAirtable": false,
 				"isAirtableMultiple": true,
 				"defaultSort":"Artifact_Number",
 				"fields":[
@@ -125,7 +125,7 @@
 				"id":"japaneseporcelain",
 				"name": "Japanese Porcelain",
 				"airtableName":"Japanese Porcelain",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -158,7 +158,7 @@
 				"id":"europeanstoneware",
 				"name": "European Stoneware",
 				"airtableName":"European Stoneware",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -191,7 +191,7 @@
 				"id":"yixingteapot",
 				"name": "Yi Xing Teapot",
 				"airtableName":"Yi Xing Teapot",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -224,7 +224,7 @@
 				"id":"localearthenware",
 				"name": "Local Earthenware",
 				"airtableName":"Local Earthenware",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -257,7 +257,7 @@
 				"id":"stonewarechinese",
 				"name": "Stoneware (Chinese)",
 				"airtableName":"Stoneware Chinese",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -290,7 +290,7 @@
 				"id":"stonewareothers",
 				"name": "Stoneware (others)",
 				"airtableName":"Stoneware Others",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -323,7 +323,7 @@
 				"id":"otherceramics",
 				"name": "Other Ceramics",
 				"airtableName":"Other Ceramics",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -356,7 +356,7 @@
 				"id":"glass",
 				"name": "Glass",
 				"airtableName":"Glass",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -389,7 +389,7 @@
 				"id":"organic",
 				"name": "Organic",
 				"airtableName":"Organic",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -422,7 +422,7 @@
 				"id":"stone",
 				"name": "Stone",
 				"airtableName":"Stone",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -455,7 +455,7 @@
 				"id":"metal",
 				"name": "Metal",
 				"airtableName":"Metal",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -488,7 +488,7 @@
 				"id":"constructionmaterials",
 				"name": "Construction Materials",
 				"airtableName":"Construction Materials",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -521,7 +521,7 @@
 				"id":"plastic",
 				"name": "Plastic",
 				"airtableName":"Plastic",
-				"isAirtable":true,
+				"isAirtable": false,
 				"defaultSort":"Artifact_Number",
 				"fields":[
 					{"fieldName":"Artifact Number", "fieldKey":"Artifact_Number"},
@@ -557,7 +557,7 @@
 				"id":"europeanporcelain", 
 				"name":"European Porcelain",
 				"airtableNames":["IKG European Porcelain (1-999)","IKG European Porcelain (1000-1999)","IKG European Porcelain (2000-2999)","IKG European Porcelain (3000-3073)"],
-				"isAirtable": true,
+				"isAirtable": false,
 				"isAirtableMultiple": true,
 				"defaultSort":"Artifact_Number",
 				"fields": [

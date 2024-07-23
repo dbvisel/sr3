@@ -164,7 +164,7 @@
 			{
 				"id":"ikg",
 				"name":"IKG",
-				"airtableDatasets": [
+				"disabledAirtableDatasets": [
 					{"baseId":"apppnxYlIw3FpubR1", "tableName":"European Porcelain 1-999"},
 					{"baseId":"appXJm9oP3rLgwgXC", "tableName":"European Porcelain 1000-1999"},
 					{"baseId":"appNgX9n2CollddWo", "tableName":"European Porcelain 2000-2999"},
