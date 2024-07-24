@@ -30,7 +30,7 @@ It makes an output.json file in the scripts folder which should be used to repla
 
 */
 
-const data = require("./../data/pedrabranca/datasets/pb1ceramics.json");
+const data = require("./../data/temasekwreck/datasets/pb1ceramics.json");
 const fs = require("fs");
 
 const theJsonData = data.dataset.data;

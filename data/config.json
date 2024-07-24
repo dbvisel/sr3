@@ -4,7 +4,7 @@
 		"id": "project",
 		"projectTitle": "Southeast Asian Archaeological Site Reports",
 		"projectAuthor": "NUS Press",
-		"lastUpdated": "27 November 2021",
+		"lastUpdated": "23 July 2024",
 		"makeObjectPages": true,
 		"useVisualToc": false,
 		"notes": "Make sure makeObjectReports is set to true for production. Any report ID in excluded won't appear.",
@@ -218,10 +218,10 @@
 				"name":"EMP 2015"
 			},
 			{
-				"id": "pedrabranca",
-				"name": "Pedra Branca"
+				"id": "temasekwreck",
+				"name": "The Temasek Wreck"
 			}
 		],
-		"excludedReports": ["scc", "dieng", "lingga","msatp", "colombo", "fortcanning", "spicegarden","pulausaigon", "dummy"]
+		"excludedReports": [ "ikg","sta","scc", "dieng", "lingga", "colombo", "emp", "emp2015", "fortcanning", "spicegarden", "pulausaigon", "spicegarden", "dummy"]
 	}
 }

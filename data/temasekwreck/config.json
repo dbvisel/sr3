@@ -1,0 +1,18 @@
+{
+	"report": {
+		"id": "temasekwreck",
+		"title": "The Temasek Wreck",
+		"author": "Michael Flecker",
+		"doi":"https://doi.org/10.56159sitereport13",
+		"date": "February 28, 2024",
+		"lastUpdated":"July 26, 2024",
+		"location":"",
+		"image":"Fig2106PulauSaigondrill.jpg",
+		"dataSets":[
+			{
+				"id": "pb1ceramics",
+				"name": "PB1 Ceramics"
+			}
+		]
+	}
+}
