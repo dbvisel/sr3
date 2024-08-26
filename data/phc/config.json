@@ -11,10 +11,6 @@
 		"texts": 
 			[
 				{
-					"id": "prelude",
-					"name": "Prelude"
-				},
-				{
 					"id":"narrative", 
 					"name":"Narrative"
 				},
