@@ -31,16 +31,16 @@
 					"name":"Bibliography"
 				}
 			],
-		"dataSetts": 
+		"dataSets": 
 		[
-			{"id":"earthenwareLocal","name":"PHC Earthenware Local 19th-20th PHCEL00001-00059"},
-			{"id":"earthenwareFinePaste","name":"PHC Earthenware Fine Paste 14th c-1600 PHCFPE0001-0071"},
-			{"id":"earthenwareTempered","name":"PHC Earthenware Tempered 14th c-1600 PHCTE0001-0854"},
-			{"id":"metal","name":"PHC Metal 14th-1600 PHCM0001-0004"},
-			{"id":"metalModern","name":"PHC Metal Modern 19th-20th PHCMM0001-0018"},
-			{"id":"porcelainGreen","name":"PHC Porcelain Green 14th c-1600 PHCGW00001-01000"},
-			{"id":"porcelainJapanese","name":"PHC Porcelain Japanese 19th-20th PHCPJ00001-00012"},
-			{"id":"stonewareBuff","name":"PHC Stoneware Buff 14th-1600 PHCBU00001-00248"}
+			{"id":"earthenwareLocal","name":"Earthenware Local 19th–20th"},
+			{"id":"earthenwareFinePaste","name":"Earthenware Fine Paste 14th c-1600"},
+			{"id":"earthenwareTempered","name":"Earthenware Tempered 14th c-1600"},
+			{"id":"metal","name":"Metal 14th-1600"},
+			{"id":"metalModern","name":"Metal Modern 19th–20th"},
+			{"id":"porcelainGreen","name":"Porcelain Green 14th c–1600"},
+			{"id":"porcelainJapanese","name":"Porcelain Japanese 19th–20th"},
+			{"id":"stonewareBuff","name":"Stoneware Buff 14th–1600"}
 		]	
 	}
 }
