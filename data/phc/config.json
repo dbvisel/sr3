@@ -18,7 +18,7 @@
 					"id":"metals",
 					"name":"Artefacts: Metals"
 				},
-                {
+        {
 					"id":"ceramics",
 					"name":"Artefacts: Ceramics"
 				},
@@ -31,8 +31,16 @@
 					"name":"Bibliography"
 				}
 			],
-		"dataSets": 
+		"dataSetts": 
 		[
+			{"id":"earthenwareLocal","name":"PHC Earthenware Local 19th-20th PHCEL00001-00059"},
+			{"id":"earthenwareFinePaste","name":"PHC Earthenware Fine Paste 14th c-1600 PHCFPE0001-0071"},
+			{"id":"earthenwareTempered","name":"PHC Earthenware Tempered 14th c-1600 PHCTE0001-0854"},
+			{"id":"metal","name":"PHC Metal 14th-1600 PHCM0001-0004"},
+			{"id":"metalModern","name":"PHC Metal Modern 19th-20th PHCMM0001-0018"},
+			{"id":"porcelainGreen","name":"PHC Porcelain Green 14th c-1600 PHCGW00001-01000"},
+			{"id":"porcelainJapanese","name":"PHC Porcelain Japanese 19th-20th PHCPJ00001-00012"},
+			{"id":"stonewareBuff","name":"PHC Stoneware Buff 14th-1600 PHCBU00001-00248"}
 		]	
 	}
 }
