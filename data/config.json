@@ -226,6 +226,6 @@
 				"name": "Parliament House Complex"
 			}
 		],
-		"excludedReports": [ "ikg","sta","scc", "dieng", "lingga", "colombo", "emp", "emp2015", "fortcanning", "spicegarden", "pulausaigon", "spicegarden", "dummy","temasekwreck"]
+		"excludedReports": [ "ikg","sta","scc", "dieng", "lingga", "colombo", "emp", "emp2015", "fortcanning", "spicegarden", "pulausaigon", "spicegarden", "dummy"]
 	}
 }
