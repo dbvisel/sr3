@@ -6,6 +6,8 @@ UIN Key,UIN,Grid Number,Batch Number,Description / Shape,Size,Glaze Type,Kiln,Ma
 
 UIN Key,UIN,Grid Number,Batch Number,Description / Shape,Size,Glaze Type,Kiln,Material,Condition,Weight (g),Decoration Exterior,Decoration Interior,Qty,Remarks,Box Label,Highlight,Filesource,imageNames,Created
 
+Artifact Number,Unit Number,Depth (cm),Lot,Spit,Level,Material,Varieties of Material,Type of Ware,Provenance,Period,Form,Vessel Part,Number of pieces,Weight (g),Length (cm),Width (cm),Thickness (cm),Thickness of base (complete profile) (cm),Height of foot rim (cm),Thickness (foot rim) (cm),Diameter (cm),MNV (%),Color Exterior Earthenware (Munsell),Color Interior Earthenware (Munsell),Color Profile Earthenware (Munsell),Remarks,Date of excavation,Image
+
 
 change to:
 
@@ -15,6 +17,8 @@ id,uin,gridNumber,batchNumber,descriptionShape,size,glazeType,kiln,material,cond
 
 
 id,uin,gridNumber,batchNumber,descriptionShape,size,glazeType,kiln,material,condition,weight,decorationExterior,decorationInterior,qty,remarks,boxLabel,highlight,filesource,imagefiles,created
+
+artifactNumber,unit,depth,lot,spit,level,material,variety,wareType,provenance,period,form,vesselPart,numPieces,weight,length,width,thickness,thicknessBase,heightFootRim,thicknessFootRim,diameter,mnv,colorExterior,colorInterior,colorProfile,remarks,date,image
 
 
 */
