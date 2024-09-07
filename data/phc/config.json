@@ -1,85 +1,105 @@
 {
-	"report": {
-		"id": "phc",
-		"title": "The Parliament House Complex (PHC) Site: A Preliminary Report",
-		"author": "Goh Geok Yian, Nanyang Technological University Singapore, and John N. Miksic, National University of Singapore and Nanyang Technological University Singapore",
-		"doi":"https://doi.org/10.56159/sitereport14",
-		"date":"1 July 2024",
-		"lastUpdated":"18 August 2024",
-		"location":"Singapore",
-		"image":"",
-		"texts": 
-			[
-				{
-					"id":"narrative", 
-					"name":"Narrative"
-				},
-				{
-					"id":"metals",
-					"name":"Artefacts: Metals"
-				},
-        {
-					"id":"ceramics",
-					"name":"Artefacts: Ceramics"
-				},
-        {
-					"id":"others",
-					"name":"Artefacts: Others"
-				},
-				{
-					"id":"biblio",
-					"name":"Bibliography"
-				}
-			],
-		"dataSets": 
-		[
-			{		"id": "constructionMaterials19th20th",
-			"name": "Construction Materials 19th-20th"
-	},{		"id": "earthenwareChinese19th20th",
-	"name": "Earthenware Chinese 19th-20th"
-},{		"id": "earthenwareLeadglazed14thc1600",
-"name": "Earthenware Lead-glazed 14th c-1600"
-},
-			{"id":"earthenwareLocal","name":"Earthenware Local 19th–20th"},
-			{"id":"earthenwareFinePaste","name":"Earthenware Fine Paste 14th c-1600"},
-			{"id":"earthenwareTempered","name":"Earthenware Tempered 14th c-1600"},
-			{		"id": "glass14th1600",
-			"name": "Glass 14th-1600"},
-			{		"id": "glassModern19th20th",
-			"name": "Glass Modern 19th-20th"},
-			{"id":"metal","name":"Metal 14th-1600"},
-			{"id":"metalModern","name":"Metal Modern 19th–20th"},
-			{		"id": "organic19th20th",
-			"name": "Organic 19th-20th"},
-			{		"id": "others19th20th",
-			"name": "Others 19th-20th"},
-			{"id": "porcelainBlueAndWhite14th1600",
-		"name": "Porcelain Blue and White 14th-1600 "},
-			{"id": "porcelainChinese19th20th",
-		"name": "Porcelain Chinese 19th-20th"},
-			{"id": "porcelainCopperRed14th1600",
-		"name": "Porcelain Copper Red 14th-1600"},
-			{"id": "porcelainEuropean19th20th",
-		"name": "Porcelain European 19th-20th"},
-			{"id":"porcelainGreen","name":"Porcelain Green 14th c–1600"},
-			{"id": "porcelainIronspottedQingbai14th1600",
-		"name": "Porcelain Iron-spotted Qingbai 14th-1600"},
-			{"id":"porcelainJapanese","name":"Porcelain Japanese 19th–20th"},
-			{"id": "porcelainWhite14th1600",
-		"name": "Porcelain White 14th-1600"},
-			{"id": "stone19th20th",
-		"name": "Stone 19th-20th"},
-			{"id": "stonewareBrittle14th1600",
-		"name": "Stoneware Brittle 14th-1600"},
-			{"id":"stonewareBuff","name":"Stoneware Buff 14th–1600"},
-			{"id": "stonewareChinese19th20th",
-		"name": "Stoneware Chinese 19th-20th"},
-			{"id": "stonewareEuropean19th20th",
-		"name": "Stoneware European 19th-20th"},
-			{"id": "stonewareMercuryJar14th1600",
-		"name": "Stoneware Mercury Jar 14th-1600"},
-			{"id": "stonewareOthers19th20th",
-		"name": " Stoneware Others 19th-20th"}
-		]	
-	}
+  "report": {
+    "id": "phc",
+    "title": "The Parliament House Complex (PHC) Site: A Preliminary Report",
+    "author": "Goh Geok Yian, Nanyang Technological University Singapore, and John N. Miksic, National University of Singapore and Nanyang Technological University Singapore",
+    "doi": "https://doi.org/10.56159/sitereport14",
+    "date": "1 July 2024",
+    "lastUpdated": "18 August 2024",
+    "location": "Singapore",
+    "image": "",
+    "texts": [
+      {
+        "id": "narrative",
+        "name": "Narrative"
+      },
+      {
+        "id": "metals",
+        "name": "Artefacts: Metals"
+      },
+      {
+        "id": "ceramics",
+        "name": "Artefacts: Ceramics"
+      },
+      {
+        "id": "others",
+        "name": "Artefacts: Others"
+      },
+      {
+        "id": "biblio",
+        "name": "Bibliography"
+      }
+    ],
+    "dataSets": [
+      {
+        "id": "constructionMaterials19th20th",
+        "name": "Construction Materials 19th-20th"
+      },
+      {
+        "id": "earthenwareChinese19th20th",
+        "name": "Earthenware Chinese 19th-20th"
+      },
+      {
+        "id": "earthenwareLeadglazed14thc1600",
+        "name": "Earthenware Lead-glazed 14th c-1600"
+      },
+      { "id": "earthenwareLocal", "name": "Earthenware Local 19th–20th" },
+      {
+        "id": "earthenwareFinePaste",
+        "name": "Earthenware Fine Paste 14th c-1600"
+      },
+      {
+        "id": "earthenwareTempered",
+        "name": "Earthenware Tempered 14th c-1600"
+      },
+      { "id": "glass14th1600", "name": "Glass 14th-1600" },
+      { "id": "glassModern19th20th", "name": "Glass Modern 19th-20th" },
+      { "id": "metal", "name": "Metal 14th-1600" },
+      { "id": "metalModern", "name": "Metal Modern 19th–20th" },
+      { "id": "organic19th20th", "name": "Organic 19th-20th" },
+      { "id": "others19th20th", "name": "Others 19th-20th" },
+      {
+        "id": "porcelainBlueAndWhite14th1600",
+        "name": "Porcelain Blue and White 14th-1600 "
+      },
+      {
+        "id": "porcelainChinese19th20th",
+        "name": "Porcelain Chinese 19th-20th"
+      },
+      {
+        "id": "porcelainCopperRed14th1600",
+        "name": "Porcelain Copper Red 14th-1600"
+      },
+      {
+        "id": "porcelainEuropean19th20th",
+        "name": "Porcelain European 19th-20th"
+      },
+      { "id": "porcelainGreen", "name": "Porcelain Green 14th c–1600" },
+      {
+        "id": "porcelainIronspottedQingbai14th1600",
+        "name": "Porcelain Iron-spotted Qingbai 14th-1600"
+      },
+      { "id": "porcelainJapanese", "name": "Porcelain Japanese 19th–20th" },
+      { "id": "porcelainWhite14th1600", "name": "Porcelain White 14th-1600" },
+      { "id": "stone19th20th", "name": "Stone 19th-20th" },
+      {
+        "id": "stonewareBrittle14th1600",
+        "name": "Stoneware Brittle 14th-1600"
+      },
+      { "id": "stonewareBuff", "name": "Stoneware Buff 14th–1600" },
+      {
+        "id": "stonewareChinese19th20th",
+        "name": "Stoneware Chinese 19th-20th"
+      },
+      {
+        "id": "stonewareEuropean19th20th",
+        "name": "Stoneware European 19th-20th"
+      },
+      {
+        "id": "stonewareMercuryJar14th1600",
+        "name": "Stoneware Mercury Jar 14th-1600"
+      },
+      { "id": "stonewareOthers19th20th", "name": " Stoneware Others 19th-20th" }
+    ]
+  }
 }
