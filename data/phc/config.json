@@ -43,33 +43,27 @@
         "id": "earthenwareFinePaste",
         "name": "Earthenware Fine Paste 14th c-1600"
       },
-      { "id": "earthenwareLocal", "name": "Earthenware Local 19th–20th" },
+			{
+        "id": "earthenwareLeadGlazed",
+        "name": "Earthenware Lead-glazed 14th c-1600"
+      },
+			{ "id": "earthenwareLocal", "name": "Earthenware Local 19th–20th" },
       {
         "id": "earthenwareTempered",
         "name": "Earthenware Tempered 14th c-1600"
       },
-      { "id": "metal", "name": "Metal 14th-1600" },
-      { "id": "metalModern", "name": "Metal Modern 19th–20th" },
-      { "id": "porcelainGreen", "name": "Porcelain Green 14th c–1600" },
-      { "id": "porcelainJapanese", "name": "Porcelain Japanese 19th–20th" },
-      { "id": "stonewareBuff", "name": "Stoneware Buff 14th–1600" }
-
-		],
-    "dataSetsUnchecked": [
-      {
-        "id": "earthenwareLeadglazed",
-        "name": "Earthenware Lead-glazed 14th c-1600"
-      },
       { "id": "glass", "name": "Glass 14th-1600" },
       { "id": "glassModern", "name": "Glass Modern 19th-20th" },
-      { "id": "organic19th20th", "name": "Organic 19th-20th" },
-      { "id": "others19th20th", "name": "Others 19th-20th" },
+      { "id": "metal", "name": "Metal 14th-1600" },
+      { "id": "metalModern", "name": "Metal Modern 19th–20th" },
+      { "id": "organic", "name": "Organic 19th-20th" },
+      { "id": "others", "name": "Others 19th-20th" },
       {
         "id": "porcelainBlueAndWhite",
         "name": "Porcelain Blue and White 14th-1600 "
       },
       {
-        "id": "porcelainChinese19th20th",
+        "id": "porcelainChinese",
         "name": "Porcelain Chinese 19th-20th"
       },
       {
@@ -77,11 +71,13 @@
         "name": "Porcelain Copper Red 14th-1600"
       },
       {
-        "id": "porcelainEuropean19th20th",
+        "id": "porcelainEuropean",
         "name": "Porcelain European 19th-20th"
       },
+      { "id": "porcelainGreen", "name": "Porcelain Green 14th c–1600" },
+      { "id": "porcelainJapanese", "name": "Porcelain Japanese 19th–20th" },
       {
-        "id": "porcelainIronspottedQingbai",
+        "id": "porcelainIronSpottedQingbai",
         "name": "Porcelain Iron-spotted Qingbai 14th-1600"
       },
       { "id": "porcelainWhite", "name": "Porcelain White 14th-1600" },
@@ -90,6 +86,7 @@
         "id": "stonewareBrittle",
         "name": "Stoneware Brittle 14th-1600"
       },
+      { "id": "stonewareBuff", "name": "Stoneware Buff 14th–1600" },
       {
         "id": "stonewareChinese",
         "name": "Stoneware Chinese 19th-20th"
@@ -103,6 +100,9 @@
         "name": "Stoneware Mercury Jar 14th-1600"
       },
       { "id": "stonewareOthers", "name": " Stoneware Others 19th-20th" }
+
+		],
+    "dataSetsUnchecked": [
     ]
   }
 }
