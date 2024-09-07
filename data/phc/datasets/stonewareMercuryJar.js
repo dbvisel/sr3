@@ -1,7 +1,7 @@
 ﻿{
 	"dataset": {
 		"reportID": "phc",
-		"id": "stonewareMercuryJar14th1600",
+		"id": "stonewareMercuryJar",
 		"name": "Stoneware Mercury Jar 14th-1600",
 		"isAirtable":false,
 		"fields": [

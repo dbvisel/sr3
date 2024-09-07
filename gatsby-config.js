@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}` || `.env.development`,
+  path: `.env.${process.env.NODE_ENV}` || ".env.development",
 });
 
 const datasetConfig = require("./data/config.json");
@@ -23,18 +23,18 @@ const getTheAirtableData = (data) => {
 };
 
 module.exports = {
-  pathPrefix: process.env.NODE_ENV === "production" ? `/sitereports` : "",
+  pathPrefix: process.env.NODE_ENV === "production" ? "/sitereports" : "",
   siteMetadata: {
-    title: `NUS Press Site Reports`,
-    description: `NUS Press Site Reports`,
-    author: `Dan Visel <dbvisel@gmail.com>`,
+    title: "NUS Press Site Reports",
+    description: "NUS Press Site Reports",
+    author: "Dan Visel <dbvisel@gmail.com>",
     siteUrl:
       process.env.NODE_ENV === "production"
-        ? `https://epress.nus.edu.sg/sitereports`
+        ? "https://epress.nus.edu.sg/sitereports"
         : "https://sitereports.netlify.app",
   },
   plugins: [
-    `gatsby-plugin-netlify`,
+    "gatsby-plugin-netlify",
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -43,31 +43,31 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-helmet",
     // `gatsby-plugin-force-trailing-slashes`,
+    // {
+    //   resolve: `gatsby-source-airtable`,
+    //   options: {
+    //     apiKey: process.env.AIRTABLE_API_KEY,
+    //     concurrency: 5,
+    //     // [
+    //     tables:
+    //       // CURRENT PROBLEM:
+    //       // warn Error fetching tables: Could not find table IKG European Porcelain (1-999) in application apppnxYlIw3FpubR1(NOT_FOUND)[Http code 404]
+    //       //   {
+    //       //     baseId: "apppnxYlIw3FpubR1",
+    //       //     tableName: "IKG European Porcelain (1-999)",
+    //       //   },
+    //       // ],
+    //       getTheAirtableData(datasetConfig.project),
+    //   },
+    // },
     {
-      resolve: `gatsby-source-airtable`,
-      options: {
-        apiKey: process.env.AIRTABLE_API_KEY,
-        concurrency: 5,
-        // [
-        tables:
-          // CURRENT PROBLEM:
-          // warn Error fetching tables: Could not find table IKG European Porcelain (1-999) in application apppnxYlIw3FpubR1(NOT_FOUND)[Http code 404]
-          //   {
-          //     baseId: "apppnxYlIw3FpubR1",
-          //     tableName: "IKG European Porcelain (1-999)",
-          //   },
-          // ],
-          getTheAirtableData(datasetConfig.project),
-      },
-    },
-    {
-      resolve: `gatsby-plugin-notifications`,
+      resolve: "gatsby-plugin-notifications",
       options: { sound: "Glass", toast: true },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-35006494-3",
         head: false,
@@ -82,11 +82,11 @@ module.exports = {
         // ],
       },
     },
-    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-transformer-json`,
+      resolve: "gatsby-transformer-json",
       options: {
-        typeName: `allTheJson`, // a fixed string
+        typeName: "allTheJson", // a fixed string
       },
     },
     // {
@@ -97,26 +97,26 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/data`,
         name: "markdown-pages",
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-gatsby-cloud`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-gatsby-cloud",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `NUS Site Reports`,
-        short_name: `sr3`,
-        start_url: `/sitereports/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `static/project/images/nus-icon.png`, // This path is relative to the root of the site.
+        name: "NUS Site Reports",
+        short_name: "sr3",
+        start_url: "/sitereports/",
+        background_color: "#663399",
+        theme_color: "#663399",
+        display: "minimal-ui",
+        icon: "static/project/images/nus-icon.png", // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

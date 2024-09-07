@@ -1,7 +1,7 @@
 ﻿{
 	"dataset": {
 		"reportID": "phc",
-		"id": "porcelainCopperRed14th1600",
+		"id": "porcelainCopperRed",
 		"name": "Porcelain Copper Red 14th-1600",
 		"isAirtable":false,
 		"fields": [

@@ -1,7 +1,7 @@
-﻿{
+{
 	"dataset": {
 		"reportID": "phc",
-		"id": "constructionMaterials19th20th",
+		"id": "constructionMaterials",
 		"name": "Construction Materials 19th-20th",
 		"isAirtable":false,
 		"fields": [

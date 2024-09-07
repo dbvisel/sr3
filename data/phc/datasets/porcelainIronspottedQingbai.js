@@ -1,7 +1,7 @@
 ﻿{
 	"dataset": {
 		"reportID": "phc",
-		"id": "porcelainIronspottedQingbai14th1600",
+		"id": "porcelainIronspottedQingbai",
 		"name": "Porcelain Iron-spotted Qingbai 14th-1600",
 		"isAirtable":false,
 		"fields": [

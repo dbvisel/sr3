@@ -1,7 +1,7 @@
 ﻿{
 	"dataset": {
 		"reportID": "phc",
-		"id": "stonewareBrittle14th1600",
+		"id": "stonewareBrittle",
 		"name": "Stoneware Brittle 14th-1600",
 		"isAirtable":false,
 		"fields": [

@@ -1,7 +1,7 @@
 ﻿{
 	"dataset": {
 		"reportID": "phc",
-		"id": "glassModern19th20th",
+		"id": "glassModern",
 		"name": "Glass Modern 19th-20th",
 		"isAirtable":false,
 		"fields": [
