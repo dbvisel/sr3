@@ -1,7 +1,7 @@
 ﻿{
 	"dataset": {
 		"reportID": "phc",
-		"id": "others19th20th",
+		"id": "others",
 		"name": "Others 19th-20th",
 		"isAirtable":false,
 		"fields": [

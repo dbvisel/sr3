@@ -36,6 +36,10 @@
         "name": "Construction Materials 19th-20th"
       },
       {
+        "id": "earthenwareChinese",
+        "name": "Earthenware Chinese 19th-20th"
+      },
+      {
         "id": "earthenwareFinePaste",
         "name": "Earthenware Fine Paste 14th c-1600"
       },
@@ -52,10 +56,6 @@
 
 		],
     "dataSetsUnchecked": [
-      {
-        "id": "earthenwareChinese",
-        "name": "Earthenware Chinese 19th-20th"
-      },
       {
         "id": "earthenwareLeadglazed",
         "name": "Earthenware Lead-glazed 14th c-1600"
@@ -85,24 +85,24 @@
         "name": "Porcelain Iron-spotted Qingbai 14th-1600"
       },
       { "id": "porcelainWhite", "name": "Porcelain White 14th-1600" },
-      { "id": "stone19th20th", "name": "Stone 19th-20th" },
+      { "id": "stone", "name": "Stone 19th-20th" },
       {
         "id": "stonewareBrittle",
         "name": "Stoneware Brittle 14th-1600"
       },
       {
-        "id": "stonewareChinese19th20th",
+        "id": "stonewareChinese",
         "name": "Stoneware Chinese 19th-20th"
       },
       {
-        "id": "stonewareEuropean19th20th",
+        "id": "stonewareEuropean",
         "name": "Stoneware European 19th-20th"
       },
       {
         "id": "stonewareMercuryJar",
         "name": "Stoneware Mercury Jar 14th-1600"
       },
-      { "id": "stonewareOthers19th20th", "name": " Stoneware Others 19th-20th" }
+      { "id": "stonewareOthers", "name": " Stoneware Others 19th-20th" }
     ]
   }
 }

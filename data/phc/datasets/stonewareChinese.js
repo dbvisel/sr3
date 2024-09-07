@@ -1,7 +1,7 @@
 ﻿{
 	"dataset": {
 		"reportID": "phc",
-		"id": "stonewareChinese19th20th",
+		"id": "stonewareChinese",
 		"name": "Stoneware Chinese 19th-20th",
 		"isAirtable":false,
 		"fields": [

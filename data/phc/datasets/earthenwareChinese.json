@@ -1,4 +1,4 @@
-﻿{
+{
   "dataset": {
     "reportID": "phc",
     "id": "earthenwareChinese",
@@ -6,7 +6,7 @@
     "isAirtable": false,
     "fields": [
       { "fieldName": "Artifact Number", "fieldKey": "artifactNumber" },
-      { "fieldName": "Unit", "fieldKey": "unit" },
+      { "fieldName": "Unit", "fieldKey": "unitt" },
       { "fieldName": "Depth", "fieldKey": "depth" },
       { "fieldName": "Lot", "fieldKey": "lot" },
       { "fieldName": "Spit", "fieldKey": "spit" },
@@ -197,7 +197,7 @@
     "data": [
       {
         "artifactNumber": "PHCEC00001",
-        "unit": "Salvage",
+        "unitt": "Salvage",
         "depth": "",
         "lot": "",
         "spit": "",
