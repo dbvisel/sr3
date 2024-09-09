@@ -2,7 +2,7 @@
 	"dataset": {
 		"reportID": "phc",
 		"id": "porcelainGreen",
-		"name": "Porcelain Green 14th c-1600 PHCGW00001-01000",
+		"name": "Porcelain Green 14th c-1600 PHCGW00001-01549",
 		"isAirtable":false,
 		"fields": [
 			{"fieldName":"Artifact Number", "fieldKey":"artifactNumber"},
