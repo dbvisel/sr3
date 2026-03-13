@@ -44,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.5",
-		"@netlify/plugin-gatsby": "^2.0.2",
+		"@netlify/plugin-gatsby": "^3.8.4",
 		"babel-loader": "^8.2.2",
 		"dotenv": "^10.0.0",
 		"esm": "^3.2.25",
